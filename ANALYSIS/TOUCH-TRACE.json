@@ -1,0 +1,1978 @@
+{
+  "schema_version": 1,
+  "scope": "Actual preserved driver instructions with synthetic optical and BIOS fixtures; not full-machine, DOS boot, real hardware, or cycle timing verification.",
+  "engine": {
+    "name": "Unicorn",
+    "version": "2.1.4"
+  },
+  "fixtures": {
+    "dark_adc": 63,
+    "illuminated_adc": 0,
+    "adc_completion": "immediate on start-pulse falling edge; result read reasserts not-ready",
+    "lcd_extension": "unsupported except explicitly identified crop scenario",
+    "text_mode": 3,
+    "bda_rows_minus_one": 24
+  },
+  "profiles": {
+    "3.02": {
+      "source": "7690diag/LEDTOUCH.SYS",
+      "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df",
+      "selftest": {
+        "output": "Optical devices settle time 003\r\nTest complete - OK\r\n",
+        "registers": {
+          "ax": 323,
+          "bx": 7,
+          "cx": 0,
+          "dx": 62209,
+          "si": 6437,
+          "di": 7071,
+          "es": 8192,
+          "instructions": 515375
+        }
+      },
+      "calibrated_usable_mask": "ffffffffffffffff",
+      "raw_cases": [
+        {
+          "x_beams": [
+            0
+          ],
+          "y_beams": [
+            0
+          ],
+          "xy": [
+            0,
+            0
+          ],
+          "bitmap": "8000000000800000",
+          "instructions": 5783
+        },
+        {
+          "x_beams": [
+            39
+          ],
+          "y_beams": [
+            23
+          ],
+          "xy": [
+            9906,
+            9982
+          ],
+          "bitmap": "0000000001000001",
+          "instructions": 5925
+        },
+        {
+          "x_beams": [
+            18
+          ],
+          "y_beams": [
+            11
+          ],
+          "xy": [
+            4572,
+            4774
+          ],
+          "bitmap": "0000200000001000",
+          "instructions": 5846
+        },
+        {
+          "x_beams": [
+            18,
+            19
+          ],
+          "y_beams": [
+            11,
+            12
+          ],
+          "xy": [
+            4699,
+            4991
+          ],
+          "bitmap": "0000300000001800",
+          "instructions": 5858
+        },
+        {
+          "x_beams": [
+            0,
+            1
+          ],
+          "y_beams": [
+            0,
+            1
+          ],
+          "xy": [
+            127,
+            217
+          ],
+          "bitmap": "c000000000c00000",
+          "instructions": 5795
+        },
+        {
+          "x_beams": [
+            38,
+            39
+          ],
+          "y_beams": [
+            22,
+            23
+          ],
+          "xy": [
+            9779,
+            9765
+          ],
+          "bitmap": "0000000003000003",
+          "instructions": 5931
+        },
+        {
+          "x_beams": [
+            2,
+            5
+          ],
+          "y_beams": [
+            3,
+            6
+          ],
+          "xy": [
+            889,
+            1953
+          ],
+          "bitmap": "2400000000120000",
+          "instructions": 5835
+        },
+        {
+          "x_beams": [
+            2,
+            18
+          ],
+          "y_beams": [
+            3,
+            20
+          ],
+          "xy": [
+            508,
+            4991
+          ],
+          "bitmap": "2000200000100008",
+          "instructions": 5920
+        },
+        {
+          "x_beams": [
+            18
+          ],
+          "y_beams": [],
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "0000200000000000",
+          "instructions": 5730
+        },
+        {
+          "x_beams": [],
+          "y_beams": [
+            11
+          ],
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "0000000000001000",
+          "instructions": 5754
+        },
+        {
+          "x_beams": [],
+          "y_beams": [],
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "0000000000000000",
+          "instructions": 5729
+        }
+      ],
+      "single_beam_axis_sweep": [
+        {
+          "axis": "x",
+          "beam": 0,
+          "xy": [
+            0,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 1,
+          "xy": [
+            254,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 2,
+          "xy": [
+            508,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 3,
+          "xy": [
+            762,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 4,
+          "xy": [
+            1016,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 5,
+          "xy": [
+            1270,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 6,
+          "xy": [
+            1524,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 7,
+          "xy": [
+            1778,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 8,
+          "xy": [
+            2032,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 9,
+          "xy": [
+            2286,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 10,
+          "xy": [
+            2540,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 11,
+          "xy": [
+            2794,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 12,
+          "xy": [
+            3048,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 13,
+          "xy": [
+            3302,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 14,
+          "xy": [
+            3556,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 15,
+          "xy": [
+            3810,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 16,
+          "xy": [
+            4064,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 17,
+          "xy": [
+            4318,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 18,
+          "xy": [
+            4572,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 19,
+          "xy": [
+            4826,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 20,
+          "xy": [
+            5080,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 21,
+          "xy": [
+            5334,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 22,
+          "xy": [
+            5588,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 23,
+          "xy": [
+            5842,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 24,
+          "xy": [
+            6096,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 25,
+          "xy": [
+            6350,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 26,
+          "xy": [
+            6604,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 27,
+          "xy": [
+            6858,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 28,
+          "xy": [
+            7112,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 29,
+          "xy": [
+            7366,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 30,
+          "xy": [
+            7620,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 31,
+          "xy": [
+            7874,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 32,
+          "xy": [
+            8128,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 33,
+          "xy": [
+            8382,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 34,
+          "xy": [
+            8636,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 35,
+          "xy": [
+            8890,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 36,
+          "xy": [
+            9144,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 37,
+          "xy": [
+            9398,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 38,
+          "xy": [
+            9652,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 39,
+          "xy": [
+            9906,
+            4774
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 0,
+          "xy": [
+            4572,
+            0
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 1,
+          "xy": [
+            4572,
+            434
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 2,
+          "xy": [
+            4572,
+            868
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 3,
+          "xy": [
+            4572,
+            1302
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 4,
+          "xy": [
+            4572,
+            1736
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 5,
+          "xy": [
+            4572,
+            2170
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 6,
+          "xy": [
+            4572,
+            2604
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 7,
+          "xy": [
+            4572,
+            3038
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 8,
+          "xy": [
+            4572,
+            3472
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 9,
+          "xy": [
+            4572,
+            3906
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 10,
+          "xy": [
+            4572,
+            4340
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 11,
+          "xy": [
+            4572,
+            4774
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 12,
+          "xy": [
+            4572,
+            5208
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 13,
+          "xy": [
+            4572,
+            5642
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 14,
+          "xy": [
+            4572,
+            6076
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 15,
+          "xy": [
+            4572,
+            6510
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 16,
+          "xy": [
+            4572,
+            6944
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 17,
+          "xy": [
+            4572,
+            7378
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 18,
+          "xy": [
+            4572,
+            7812
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 19,
+          "xy": [
+            4572,
+            8246
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 20,
+          "xy": [
+            4572,
+            8680
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 21,
+          "xy": [
+            4572,
+            9114
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 22,
+          "xy": [
+            4572,
+            9548
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 23,
+          "xy": [
+            4572,
+            9982
+          ]
+        }
+      ],
+      "api_cases": [
+        {
+          "x_beams": [
+            0
+          ],
+          "y_beams": [
+            0
+          ],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 2,
+            "dx": 1,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 5975
+          },
+          "point": "1,001,001\r"
+        },
+        {
+          "x_beams": [
+            39
+          ],
+          "y_beams": [
+            23
+          ],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 634,
+            "dx": 199,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 6114
+          },
+          "point": "1,001,001\r"
+        },
+        {
+          "x_beams": [
+            18
+          ],
+          "y_beams": [
+            11
+          ],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 292,
+            "dx": 95,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 6035
+          },
+          "point": "1,001,001\r"
+        },
+        {
+          "x_beams": [],
+          "y_beams": [],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 292,
+            "dx": 95,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 5892
+          },
+          "point": "0\r"
+        }
+      ],
+      "total_executed_instructions": 1057605,
+      "io_transactions": 225681
+    },
+    "2.4": {
+      "source": "ANALYSIS/7690KQPW/LEDTOUCH.SYS",
+      "sha256": "1c3dc5a2c4a9c6d422f03f92db6b3bcc2b314939603a117594e9573eb7ee2613",
+      "selftest": {
+        "output": "Test complete - OK\r\n",
+        "registers": {
+          "ax": 323,
+          "bx": 7,
+          "cx": 0,
+          "dx": 62209,
+          "si": 5509,
+          "di": 6089,
+          "es": 8192,
+          "instructions": 67106
+        }
+      },
+      "calibrated_usable_mask": "ffffffffffffffff",
+      "raw_cases": [
+        {
+          "x_beams": [
+            0
+          ],
+          "y_beams": [
+            0
+          ],
+          "xy": [
+            0,
+            0
+          ],
+          "bitmap": "8000000000800000",
+          "instructions": 41689
+        },
+        {
+          "x_beams": [
+            39
+          ],
+          "y_beams": [
+            23
+          ],
+          "xy": [
+            9906,
+            9982
+          ],
+          "bitmap": "0000000001000001",
+          "instructions": 41831
+        },
+        {
+          "x_beams": [
+            18
+          ],
+          "y_beams": [
+            11
+          ],
+          "xy": [
+            4572,
+            4774
+          ],
+          "bitmap": "0000200000001000",
+          "instructions": 41752
+        },
+        {
+          "x_beams": [
+            18,
+            19
+          ],
+          "y_beams": [
+            11,
+            12
+          ],
+          "xy": [
+            4699,
+            4991
+          ],
+          "bitmap": "0000300000001800",
+          "instructions": 41768
+        },
+        {
+          "x_beams": [
+            0,
+            1
+          ],
+          "y_beams": [
+            0,
+            1
+          ],
+          "xy": [
+            127,
+            217
+          ],
+          "bitmap": "c000000000c00000",
+          "instructions": 41705
+        },
+        {
+          "x_beams": [
+            38,
+            39
+          ],
+          "y_beams": [
+            22,
+            23
+          ],
+          "xy": [
+            9779,
+            9765
+          ],
+          "bitmap": "0000000003000003",
+          "instructions": 41841
+        },
+        {
+          "x_beams": [
+            2,
+            5
+          ],
+          "y_beams": [
+            3,
+            6
+          ],
+          "xy": [
+            889,
+            1953
+          ],
+          "bitmap": "2400000000120000",
+          "instructions": 41745
+        },
+        {
+          "x_beams": [
+            2,
+            18
+          ],
+          "y_beams": [
+            3,
+            20
+          ],
+          "xy": [
+            508,
+            4991
+          ],
+          "bitmap": "2000200000100008",
+          "instructions": 41830
+        },
+        {
+          "x_beams": [
+            18
+          ],
+          "y_beams": [],
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "0000200000000000",
+          "instructions": 41632
+        },
+        {
+          "x_beams": [],
+          "y_beams": [
+            11
+          ],
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "0000000000001000",
+          "instructions": 41656
+        },
+        {
+          "x_beams": [],
+          "y_beams": [],
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "0000000000000000",
+          "instructions": 41629
+        }
+      ],
+      "single_beam_axis_sweep": [
+        {
+          "axis": "x",
+          "beam": 0,
+          "xy": [
+            0,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 1,
+          "xy": [
+            254,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 2,
+          "xy": [
+            508,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 3,
+          "xy": [
+            762,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 4,
+          "xy": [
+            1016,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 5,
+          "xy": [
+            1270,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 6,
+          "xy": [
+            1524,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 7,
+          "xy": [
+            1778,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 8,
+          "xy": [
+            2032,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 9,
+          "xy": [
+            2286,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 10,
+          "xy": [
+            2540,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 11,
+          "xy": [
+            2794,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 12,
+          "xy": [
+            3048,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 13,
+          "xy": [
+            3302,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 14,
+          "xy": [
+            3556,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 15,
+          "xy": [
+            3810,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 16,
+          "xy": [
+            4064,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 17,
+          "xy": [
+            4318,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 18,
+          "xy": [
+            4572,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 19,
+          "xy": [
+            4826,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 20,
+          "xy": [
+            5080,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 21,
+          "xy": [
+            5334,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 22,
+          "xy": [
+            5588,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 23,
+          "xy": [
+            5842,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 24,
+          "xy": [
+            6096,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 25,
+          "xy": [
+            6350,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 26,
+          "xy": [
+            6604,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 27,
+          "xy": [
+            6858,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 28,
+          "xy": [
+            7112,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 29,
+          "xy": [
+            7366,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 30,
+          "xy": [
+            7620,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 31,
+          "xy": [
+            7874,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 32,
+          "xy": [
+            8128,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 33,
+          "xy": [
+            8382,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 34,
+          "xy": [
+            8636,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 35,
+          "xy": [
+            8890,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 36,
+          "xy": [
+            9144,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 37,
+          "xy": [
+            9398,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 38,
+          "xy": [
+            9652,
+            4774
+          ]
+        },
+        {
+          "axis": "x",
+          "beam": 39,
+          "xy": [
+            9906,
+            4774
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 0,
+          "xy": [
+            4572,
+            0
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 1,
+          "xy": [
+            4572,
+            434
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 2,
+          "xy": [
+            4572,
+            868
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 3,
+          "xy": [
+            4572,
+            1302
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 4,
+          "xy": [
+            4572,
+            1736
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 5,
+          "xy": [
+            4572,
+            2170
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 6,
+          "xy": [
+            4572,
+            2604
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 7,
+          "xy": [
+            4572,
+            3038
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 8,
+          "xy": [
+            4572,
+            3472
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 9,
+          "xy": [
+            4572,
+            3906
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 10,
+          "xy": [
+            4572,
+            4340
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 11,
+          "xy": [
+            4572,
+            4774
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 12,
+          "xy": [
+            4572,
+            5208
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 13,
+          "xy": [
+            4572,
+            5642
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 14,
+          "xy": [
+            4572,
+            6076
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 15,
+          "xy": [
+            4572,
+            6510
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 16,
+          "xy": [
+            4572,
+            6944
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 17,
+          "xy": [
+            4572,
+            7378
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 18,
+          "xy": [
+            4572,
+            7812
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 19,
+          "xy": [
+            4572,
+            8246
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 20,
+          "xy": [
+            4572,
+            8680
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 21,
+          "xy": [
+            4572,
+            9114
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 22,
+          "xy": [
+            4572,
+            9548
+          ]
+        },
+        {
+          "axis": "y",
+          "beam": 23,
+          "xy": [
+            4572,
+            9982
+          ]
+        }
+      ],
+      "api_cases": [
+        {
+          "x_beams": [
+            0
+          ],
+          "y_beams": [
+            0
+          ],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 1,
+            "dx": 1,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 41877
+          },
+          "point": "1,001,001\r"
+        },
+        {
+          "x_beams": [
+            39
+          ],
+          "y_beams": [
+            23
+          ],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 634,
+            "dx": 199,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 42017
+          },
+          "point": "1,001,001\r"
+        },
+        {
+          "x_beams": [
+            18
+          ],
+          "y_beams": [
+            11
+          ],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 292,
+            "dx": 95,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 41938
+          },
+          "point": "1,001,001\r"
+        },
+        {
+          "x_beams": [],
+          "y_beams": [],
+          "registers": {
+            "ax": 0,
+            "bx": 0,
+            "cx": 292,
+            "dx": 95,
+            "si": 0,
+            "di": 0,
+            "es": 8192,
+            "instructions": 41791
+          },
+          "point": "0\r"
+        }
+      ],
+      "total_executed_instructions": 3950554,
+      "io_transactions": 116151
+    }
+  },
+  "extended_3_02": {
+    "button_following": {
+      "configured_release_mask": 2,
+      "configured_tracking_mask": 1,
+      "touch": {
+        "ax": 257,
+        "bx": 1,
+        "cx": 292,
+        "dx": 95,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 6045
+      },
+      "first_no_touch": {
+        "ax": 515,
+        "bx": 2,
+        "cx": 292,
+        "dx": 95,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 5907
+      },
+      "second_no_touch": {
+        "ax": 2,
+        "bx": 0,
+        "cx": 292,
+        "dx": 95,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 5902
+      },
+      "right_press_count": {
+        "ax": 0,
+        "bx": 1,
+        "cx": 292,
+        "dx": 95,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 5896
+      },
+      "right_press_count_again": {
+        "ax": 0,
+        "bx": 0,
+        "cx": 292,
+        "dx": 95,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 5896
+      }
+    },
+    "following_survives_reset": [
+      2,
+      1
+    ],
+    "callback_timer": {
+      "first_tick": {
+        "ax": 0,
+        "bx": 0,
+        "cx": 0,
+        "dx": 0,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 8
+      },
+      "second_tick": {
+        "ax": 0,
+        "bx": 0,
+        "cx": 0,
+        "dx": 0,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 6099
+      },
+      "first_tick_io": 0,
+      "second_tick_io": 1217,
+      "callback_registers": [
+        {
+          "ax": 1,
+          "bx": 0,
+          "cx": 292,
+          "dx": 95,
+          "si": 0,
+          "di": 0
+        }
+      ],
+      "installed_int08": "0a0f0020"
+    },
+    "adc_failure_paths": [
+      {
+        "version": "3.02",
+        "fixture_change": "result_read_rearms=False",
+        "output": "Touch Panel Needs Service\r\n\r\nPress Enter to Continue\r\n",
+        "error_string_offset_si": 6579,
+        "port_transactions": 536
+      },
+      {
+        "version": "3.02",
+        "fixture_change": "conversion_completes=False",
+        "output": "Touch Panel Needs Service\r\n\r\nPress Enter to Continue\r\n",
+        "error_string_offset_si": 6754,
+        "port_transactions": 583
+      },
+      {
+        "version": "2.4",
+        "fixture_change": "result_read_rearms=False",
+        "output": "Touch Panel Needs Service\r\n\r\nPress Enter to Continue\r\n",
+        "error_string_offset_si": 5597,
+        "port_transactions": 536
+      },
+      {
+        "version": "2.4",
+        "fixture_change": "conversion_completes=False",
+        "output": "Touch Panel Needs Service\r\n\r\nPress Enter to Continue\r\n",
+        "error_string_offset_si": 5772,
+        "port_transactions": 583
+      }
+    ],
+    "absent_interface_mouse_fallback": {
+      "output": "Touch panel not installed - using IBM mouse\r\n",
+      "injected_packet": {
+        "status": 0,
+        "dx": 4,
+        "dy": 2
+      },
+      "bios_int15_calls": [
+        [
+          21,
+          49664,
+          0,
+          0,
+          0
+        ],
+        [
+          21,
+          49665,
+          0,
+          0,
+          0
+        ],
+        [
+          21,
+          49671,
+          3083,
+          0,
+          0
+        ],
+        [
+          21,
+          49664,
+          267,
+          0,
+          0
+        ]
+      ],
+      "position_after_quiet_countdown": {
+        "ax": 0,
+        "bx": 0,
+        "cx": 326,
+        "dx": 99,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 215
+      }
+    },
+    "keyboard_buttons": [
+      {
+        "bda_417": 0,
+        "buttons": 0
+      },
+      {
+        "bda_417": 4,
+        "buttons": 1
+      },
+      {
+        "bda_417": 8,
+        "buttons": 2
+      },
+      {
+        "bda_417": 2,
+        "buttons": 4
+      },
+      {
+        "bda_417": 14,
+        "buttons": 7
+      }
+    ],
+    "equal_horizontal_bounds": {
+      "requested_min": 10,
+      "requested_max": 10,
+      "observed_position": {
+        "ax": 0,
+        "bx": 0,
+        "cx": 11,
+        "dx": 1,
+        "si": 0,
+        "di": 0,
+        "es": 8192,
+        "instructions": 5975
+      },
+      "interpretation": "Driver max clamp is followed by <=min then min+1; not corrected by fixture."
+    },
+    "press_information_uses_current_position": {
+      "ax": 1,
+      "bx": 1,
+      "cx": 325,
+      "dx": 104,
+      "si": 0,
+      "di": 0,
+      "es": 8192,
+      "instructions": 6054
+    },
+    "lcd_crop": {
+      "bios_bx_top": 40,
+      "bios_cx_active": 400,
+      "bios_di_total": 480,
+      "raw_without_crop": [
+        4572,
+        4774
+      ],
+      "with_crop": {
+        "xy": [
+          4572,
+          4729
+        ],
+        "bitmap": "0000200000001000",
+        "instructions": 5888
+      }
+    },
+    "dos_strategy_interrupt_partial_reads": [
+      {
+        "requested": 2,
+        "returned": 2,
+        "request_status": 512,
+        "data": "1,"
+      },
+      {
+        "requested": 3,
+        "returned": 3,
+        "request_status": 512,
+        "data": "037"
+      },
+      {
+        "requested": 8,
+        "returned": 5,
+        "request_status": 512,
+        "data": ",012\r"
+      }
+    ],
+    "odd_divisor_rounding": {
+      "normalized_y": 9137,
+      "rows_minus_one": 29,
+      "quotient_remainder": [
+        26,
+        4999
+      ],
+      "record": "1,037,028\r"
+    },
+    "versioned_crop_and_broad_occlusion_guards": [
+      {
+        "version": "3.02",
+        "middle_y_byte_ff": {
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "000020000000ff00",
+          "instructions": 5740
+        },
+        "recognized_lcd_height_100": {
+          "xy": [
+            4572,
+            4774
+          ],
+          "bitmap": "0000200000001000",
+          "instructions": 5848
+        }
+      },
+      {
+        "version": "2.4",
+        "middle_y_byte_ff": {
+          "xy": [
+            65535,
+            65535
+          ],
+          "bitmap": "000020000000ff00",
+          "instructions": 41658
+        },
+        "recognized_lcd_height_100": {
+          "xy": [
+            4572,
+            9999
+          ],
+          "bitmap": "0000200000001000",
+          "instructions": 41774
+        }
+      }
+    ],
+    "dos_initialization_packet_caveat": [
+      {
+        "version": "3.02",
+        "fixture": "request at7000:0000; INT10 preserves BX",
+        "packet_hex": "180000000000000000000000000006190020000000000000",
+        "request_status": 0,
+        "word_at_request_segment_0204": 256,
+        "installed_int33": "3e0f0020",
+        "output": "\r\nIBM Touch Panel Device Driver\r\nWritten by: Don D. Williams\r\n(C) Copyright IBM Corp. 1987, 1990\r\nVersion 3.02\r\nAll Rights Reserved\r\n\r\nOptical devices settle time 003\r\nTest complete - OK\r\n"
+      },
+      {
+        "version": "2.4",
+        "fixture": "request at7000:0000; INT10 preserves BX",
+        "packet_hex": "180000000000000000000000000060150020000000000000",
+        "request_status": 0,
+        "word_at_request_segment_0204": 256,
+        "installed_int33": "990c0020",
+        "output": "\r\nIBM Touch Panel Device Driver\r\nWritten by: Don D. Williams\r\n(C) Copyright IBM Corp. 1987, 1989\r\nVersion 2.4\r\nAll Rights Reserved\r\n\r\nTest complete - OK\r\n"
+      }
+    ],
+    "calibration_receiver_retention_and_mask_survival": [
+      {
+        "version": "3.02",
+        "changing_neighbor_path": {
+          "selected_emitter_receiver": [
+            33,
+            33
+          ],
+          "neighbor_samples": [
+            0,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63,
+            63
+          ],
+          "usable_mask": "ffffffffffffffff"
+        },
+        "obstructed_calibration_usable_mask": "ffffdfffffffefff",
+        "usable_mask_after_clear_input_and_reset": "ffffdfffffffefff"
+      },
+      {
+        "version": "2.4",
+        "changing_neighbor_path": {
+          "selected_emitter_receiver": [
+            33,
+            33
+          ],
+          "neighbor_samples": [
+            0,
+            63
+          ],
+          "usable_mask": "ffffffffffffffff"
+        },
+        "obstructed_calibration_usable_mask": "ffffdfffffffefff",
+        "usable_mask_after_clear_input_and_reset": "ffffdfffffffefff"
+      }
+    ],
+    "lightpen_version_comparison": [
+      {
+        "version": "3.02",
+        "active": {
+          "ax": 293,
+          "bx": 292,
+          "cx": 95,
+          "dx": 3109,
+          "si": 0,
+          "di": 0,
+          "es": 8192,
+          "instructions": 6046
+        },
+        "after_set_position_zero_y_with_no_contact": {
+          "ax": 37,
+          "bx": 292,
+          "cx": 95,
+          "dx": 3109,
+          "si": 0,
+          "di": 0,
+          "es": 8192,
+          "instructions": 5895
+        }
+      },
+      {
+        "version": "2.4",
+        "active": {
+          "ax": 293,
+          "bx": 292,
+          "cx": 95,
+          "dx": 6437,
+          "si": 0,
+          "di": 0,
+          "es": 8192,
+          "instructions": 41934
+        },
+        "after_set_position_zero_y_with_no_contact": {
+          "interrupt": "00",
+          "harness_exception": "Unmodeled INT00 AX=0000"
+        }
+      }
+    ]
+  }
+}

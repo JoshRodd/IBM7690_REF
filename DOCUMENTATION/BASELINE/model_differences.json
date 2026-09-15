@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "models": [
+    "8525-8086",
+    "8530-8086"
+  ],
+  "interpretation": "Each row is an emulator decision point. hardware_effect=none means configuration/physical identity still differs but a shared emulation implementation is acceptable.",
+  "differences": [
+    {
+      "id": "rtc_presence",
+      "category": "planar_io",
+      "emulator_priority": "critical",
+      "8525": "No hardware real-time clock; ports 0xB0-0xBF and 0xE0-0xEF are not RTC decodes.",
+      "8530": "Battery-backed MM58167-family RTC; registers 16-31 at 0xB0-0xBF and registers 0-15 at 0xE0-0xEF.",
+      "required_behavior": "Conditional I/O decode, persistent RTC state only for 8530, and correct unsupported/open-bus behavior for 8525.",
+      "evidence": [
+        "model25_techref physical page 258: configuration feature byte says no real-time clock",
+        "model30_techref physical pages 38 and 254: RTC I/O ranges and RTC-present feature bit",
+        "model30_schematic physical page 6: 58167A-marked device, 32.768 kHz crystal, VBAT",
+        "vogons_M30_planar_registers.html lines 1478-1482: register-bank mapping"
+      ],
+      "verification": "On 8525, INT 15h/C0 feature byte 1 bit 5=0 and RTC I/O does not mutate clock state. On 8530 it is 1 and INT 1Ah get/set/alarm survives emulated power according to battery policy."
+    },
+    {
+      "id": "irq1_sources",
+      "category": "interrupts",
+      "emulator_priority": "critical",
+      "8525": "IRQ1 sources are keyboard and pointing device.",
+      "8530": "IRQ1 sources are keyboard, pointing device, and RTC alarm.",
+      "required_behavior": "Use proprietary shared-source INT 71h dispatch on both; add RTC source and mask/status handling only on 8530.",
+      "evidence": [
+        "model25_techref physical pages 26-27",
+        "model30_techref physical pages 27-28",
+        "vogons_M30_planar_registers.html lines 1051-1055 and 1461-1469"
+      ],
+      "verification": "Keyboard generates the configured normal IRQ1 handler, mouse reaches INT 73h, and only 8530 alarm reaches the RTC alarm path; concurrent pending sources remain distinguishable."
+    },
+    {
+      "id": "dma_page_register_map",
+      "category": "dma",
+      "emulator_priority": "critical",
+      "8525": "Standard XT map: 0x81=channel 2, 0x82=channel 3, 0x83=channel 1, 0x87=channel 0.",
+      "8530": "Same XT map as the 8525: 0x81=channel 2, 0x82=channel 3, 0x83=channel 1, 0x87=channel 0. The Model 30 TR Figure 1-8 prints a shifted map (0x80=ch2, 0x81=ch3, 0x82=ch1) that is a documentation error: the 8530 BIOS and diagnostics only ever program the XT addresses, and DMA with buffers above 64 KiB requires the XT decode.",
+      "required_behavior": "Use one shared XT page-register map for both models. Do NOT implement the Model 30 TR's shifted map: the shared BIOS INT 13h writes the page to 0x81 (FDC/ch2) and 0x82 (HDC/ch3), and under the shifted decode those writes land on the wrong channels, corrupting DMA.",
+      "evidence": [
+        "model25_techref physical page 26, Figure 1-8: XT map",
+        "model30_techref physical page 27, Figure 1-8: prints shifted map (0x80=ch2, 0x81=ch3, 0x82=ch1, 0x87=ch0); printed text confirmed at high resolution, but contradicted by the ROMs and live DMA tests",
+        "8530 BIOS rev 0 disassembly: FDC/ch2 DMA page -> out 0x81 (F000:1889, 8237 base 0x4); HDC/ch3 DMA page -> out 0x82 (F000:FF5B0, 8237 base 0x6)",
+        "8525 BIOS rev 0 disassembly: FDC/ch2 page -> out 0x81 (F000:4B4B); HDC/ch3 page -> out 0x82 (F000:FF5B2)",
+        "Live DMA probe (custom boot sector, INT 13h only, buffers at 0x20000/0x30000): XT map lands both FDC and HDD transfers at the intended addresses on both machines; shifted map crashes both (8530 at the first diskette INT 13h, 8525 during POST)"
+      ],
+      "verification": "2026-08-03: custom boot diskette whose boot sector uses only INT 13h to read a diskette sector into 0x20000 and to write/read back an XTA sector at 0x30000. With the emulator's XT map: FDC OK 20000, HDC OK 30000 on both 8525 and 8530. With the Model 30 TR's shifted map wired in temporarily: both machines crash (8530 during the FDC INT 13h, 8525 during POST), confirming the shifted map is not a functional decode. The TR figure's channel-1/2/3 rows are shifted one port while channel 0 stays at 0x87 - an internally inconsistent pattern that marks it as an editing error."
+    },
+    {
+      "id": "factory_ram_population",
+      "category": "memory",
+      "emulator_priority": "high",
+      "8525": "512 KiB standard upper memory plus optional socketed low 128 KiB, for 640 KiB maximum.",
+      "8530": "640 KiB standard; low 128 KiB chips soldered and upper 512 KiB in SIPs.",
+      "required_behavior": "Expose a 512 KiB 8525 configuration and its port-0x6B remap path. Default 8530 to 640 KiB and do not offer normal absent-low-bank configuration.",
+      "evidence": [
+        "model25_techref physical pages 16 and 35",
+        "model30_techref physical pages 17 and 36",
+        "option-announcements/187-148_8525.txt lines 26-31",
+        "option-announcements/187-048_8530.txt lines 20-23"
+      ],
+      "verification": "8525 POST boots and reports reduced/remapped memory without the 128 KiB option; both models correctly identify parity bank through port 0x6B bit 7."
+    },
+    {
+      "id": "bios_submodel",
+      "category": "firmware_identity",
+      "emulator_priority": "critical",
+      "8525": "ROM model byte 0xFA, INT 15h/C0 submodel 0x01, supplied revision 0x00.",
+      "8530": "ROM model byte 0xFA, INT 15h/C0 submodel 0x00, supplied revisions 0x00/0x01/0x02/0x04.",
+      "required_behavior": "Install a coherent model-specific ROM pair and return its table unchanged; model byte alone cannot distinguish the machines.",
+      "evidence": [
+        "reference/rom_analysis.json",
+        "model25_techref physical page 258",
+        "model30_techref physical page 254"
+      ],
+      "verification": "Read physical 0xFFFFE and call INT 15h/C0. Assert common 0xFA model byte and distinct submodel/feature values."
+    },
+    {
+      "id": "bios_rtc_feature",
+      "category": "firmware_identity",
+      "emulator_priority": "critical",
+      "8525": "INT 15h/C0 feature byte 1 bit 5 is clear.",
+      "8530": "INT 15h/C0 feature byte 1 bit 5 is set.",
+      "required_behavior": "Do not fabricate an RTC on 8525 to satisfy generic PC expectations.",
+      "evidence": [
+        "model25_techref physical page 258",
+        "model30_techref physical page 254"
+      ],
+      "verification": "Diagnostic date/time utilities choose their model-specific paths and the 8525 utility's no-RTC fallback remains reachable."
+    },
+    {
+      "id": "expansion_slots",
+      "category": "physical_bus",
+      "emulator_priority": "medium",
+      "8525": "Two 62-pin 8-bit I/O-channel slots on a riser.",
+      "8530": "Three 62-pin 8-bit I/O-channel slots on a riser.",
+      "required_behavior": "Limit configured expansion adapters to the physical slot count if the emulator exposes slots; electrical adapter model can be shared.",
+      "evidence": [
+        "model25_techref physical page 16",
+        "model30_techref physical page 17"
+      ],
+      "verification": "Machine configuration UI/API exposes two versus three assignable slots."
+    },
+    {
+      "id": "display_packaging_connector",
+      "category": "video_output",
+      "emulator_priority": "high",
+      "8525": "Integrated 12-inch monochrome or color analog display through a 14-pin planar connector.",
+      "8530": "Separate analog monitor through external 15-pin D-sub with monitor-sense 0/1.",
+      "required_behavior": "Model integrated monitor identity separately from external monitor sense; MCGA core can be shared.",
+      "evidence": [
+        "option-announcements/187-148_8525.txt lines 16-31 and 94-128",
+        "model25_techref physical page 90",
+        "model30_techref physical page 92",
+        "option-announcements/187-048_8530.txt lines 88-100"
+      ],
+      "verification": "8525 monochrome/color variants and 8530 8503/color monitor selections produce their correct sense results and grayscale behavior."
+    },
+    {
+      "id": "power_and_enclosure",
+      "category": "physical_only",
+      "emulator_priority": "low",
+      "8525": "Single system/display enclosure; one 12-pin power connector; planar earphone connection.",
+      "8530": "Separate system unit/monitor; two 6-pin power connectors; RTC VBAT wiring.",
+      "required_behavior": "Only VBAT/RTC persistence has software-visible impact; retain the rest as machine metadata.",
+      "evidence": [
+        "model25_techref physical pages 16 and 143",
+        "model30_techref physical pages 17 and 143",
+        "model30_schematic physical pages 1 and 6"
+      ],
+      "verification": "Machine metadata and RTC battery controls match profile."
+    },
+    {
+      "id": "launch_fixed_disk_configuration",
+      "category": "storage_configuration",
+      "emulator_priority": "medium",
+      "8525": "1987 launch machines were diskette configurations; IBM added optional no-slot or adapter-based 20 MB drive in 1988.",
+      "8530": "Launch 8530-021 included one 20 MB integrated-controller fixed disk; 8530-002 used two diskette drives.",
+      "required_behavior": "Default configurations differ even though the 0x320-0x32F, IRQ5, DMA3, 44-pin planar interface is common.",
+      "evidence": [
+        "option-announcements/188-083_8525-20MB-fixed-disk.txt lines 11-23 and 43-57",
+        "option-announcements/187-048_8530.txt lines 20-23 and 65-69"
+      ],
+      "verification": "Port 0x62 bit 2 and port 0x65 bit 0 reflect installed/disabled drive state in every configuration."
+    },
+    {
+      "id": "launch_diskette_count",
+      "category": "storage_configuration",
+      "emulator_priority": "medium",
+      "8525": "One 720 KiB drive standard; second 720 KiB drive optional.",
+      "8530": "8530-002 has two 720 KiB drives; 8530-021 has one 720 KiB drive plus fixed disk.",
+      "required_behavior": "Set BIOS equipment/configuration and DOR drive-presence behavior from selected machine configuration.",
+      "evidence": [
+        "option-announcements/187-148_8525.txt lines 26-31",
+        "option-announcements/187-048_8530.txt lines 20-23 and 65-75"
+      ],
+      "verification": "POST and starter disk report the expected drive count."
+    },
+    {
+      "id": "planar_rom_variants",
+      "category": "firmware",
+      "emulator_priority": "high",
+      "8525": "Two supplied planar pairs, Type 1 00F2092/00F2093 and Type 2 00F2122/00F2123; combined images differ by only 10 bytes in five runs but must stay paired with the selected planar.",
+      "8530": "Four supplied BIOS revisions: 68X1687/68X1627, 61X8938/61X8937, 61X8940/61X8939, and 33F4498/33F4499.",
+      "required_behavior": "Offer explicit ROM revision/planar selection; interleave even chip at offsets 0,2,... and odd chip at 1,3,... into F0000-FFFFF.",
+      "evidence": [
+        "reference/rom_analysis.json",
+        "8525_Planar.html",
+        "8530_Planar.html"
+      ],
+      "verification": "Every built 64 KiB image has byte-sum modulo 256 equal to zero, reset vector at 0xFFF0, 0xFA at 0xFFFE, and expected date at 0xFFF5."
+    },
+    {
+      "id": "diagnostic_software",
+      "category": "validation_assets",
+      "emulator_priority": "high",
+      "8525": "Starter 1.00 and advanced diagnostics 1.00; date/time utility contains no-RTC feature handling.",
+      "8530": "Starter 1.02 and advanced diagnostics 1.05; direct RTC service usage and larger model-specific fixed-disk diagnostic.",
+      "required_behavior": "Use each model's own images for validation. Passing only one model's disk is insufficient evidence for the other.",
+      "evidence": [
+        "reference/diagnostic_analysis.json"
+      ],
+      "verification": "Boot and execute the CPU/I/O, date/time, diskette, fixed-disk, keyboard/mouse, serial, parallel, and display diagnostics from the matching image."
+    }
+  ],
+  "shared_not_differences": [
+    {
+      "id": "cpu_timing",
+      "value": "8086-2 at 8 MHz; local 16-bit memory with no waits; I/O and DMA are 8-bit and wait-stated.",
+      "evidence": "model25_techref physical page 18; model30_techref physical pages 19-20"
+    },
+    {
+      "id": "planar_control_65",
+      "value": "Same bit allocation for serial, diskette, video, parallel, fixed-disk selects and parallel output enable.",
+      "evidence": "model25_techref physical page 21; model30_techref physical page 22"
+    },
+    {
+      "id": "memory_control_6b",
+      "value": "Same 64 KiB high-memory enables, low-memory remap bit, and parity-bank pointer; physical low-bank population differs.",
+      "evidence": "model25_techref physical page 35; model30_techref physical page 36"
+    },
+    {
+      "id": "integrated_io",
+      "value": "MCGA, uPD765/8272 diskette, NS8250 serial, parallel, IBM 44-pin fixed-disk interface, 8237-compatible DMA, PIT, keyboard and pointing serial ports.",
+      "evidence": "both Technical References, section 1"
+    },
+    {
+      "id": "io_ranges_except_rtc_and_dma_pages",
+      "value": "System, fixed-disk, parallel, MCGA, diskette, and serial ranges are the same. RTC exists only on 8530; DMA page subaddresses are also the same (shared XT map, see the dma_page_register_map difference entry).",
+      "evidence": "model25_techref physical page 37; model30_techref physical page 38"
+    }
+  ]
+}

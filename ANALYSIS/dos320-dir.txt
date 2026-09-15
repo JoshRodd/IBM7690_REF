@@ -1,0 +1,25 @@
+
+
+Booting from Floppy...
+
+A>ECHO OFF
+Derived PC DOS 3.20 / IBM 7690 v1.10 research disk
+Type SERVICES only on a compatible IBM firmware and hardware model.
+
+A>ver
+
+IBM Personal Computer DOS Version  3.20
+
+A>dir /w
+
+ Volume in drive A has no label
+ Directory of  A:\
+
+AUTOEXEC BAT    COLORFIX COM    CPU0     DGS    DCOPY    COM    DFORMAT  COM
+DIAGS    COM    DISPLAY1 DGS    COMMAND  COM    DSKT1    DGS    DTMEDTE  COM
+IBM7690  DGS    LEDINST  BAT    LEDTOUCH SYS    NSTALL   EXE    PAR1     DGS
+RBT      EXE    SER0     DGS    SERVICES COM    STG0     DGS    TXT      OK
+US0KMAIN DGS    US0PCN   DGS    VERSION  110
+       23 File(s)    555008 bytes free
+
+A>

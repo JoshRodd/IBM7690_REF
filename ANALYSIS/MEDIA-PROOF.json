@@ -1,0 +1,168 @@
+{
+  "schema": "ibm7690.media-proof.v1",
+  "scope": "Independent mtools extraction plus actual builder safety/determinism scenarios; DOS boot recorded separately.",
+  "retained_image_sha256": "d62da26560bcaab05f9d367dca6912db95b9c08b5b90111cb8bb58bb110981fd",
+  "mtools_loose_payloads": [
+    {
+      "name": "COLORFIX.COM",
+      "bytes": 267,
+      "sha256": "21f47f663254e2a08dde514d4741a291605f2eefa31fea6fda26c1c8ee912028"
+    },
+    {
+      "name": "CPU0.DGS",
+      "bytes": 2942,
+      "sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1"
+    },
+    {
+      "name": "DCOPY.COM",
+      "bytes": 2172,
+      "sha256": "f5c585544042d30fb8adaedcacad45fd51faf96f9142f995f92c7d26dce252c5"
+    },
+    {
+      "name": "DFORMAT.COM",
+      "bytes": 906,
+      "sha256": "8d7ae244bb44ea48d85a460d2475bf9f0483e34d80d0bf32d18f7eded9f6eca7"
+    },
+    {
+      "name": "DIAGS.COM",
+      "bytes": 3338,
+      "sha256": "ba9a7d2974e568e0cd80def9541613c173c30b4e5e77368c9e4ce2303498ae14"
+    },
+    {
+      "name": "DISPLAY1.DGS",
+      "bytes": 5557,
+      "sha256": "f1dbe20f6a5f1b2624f8f461f7beb756b1f3d94c467d036b8e8d1e5d31717f61"
+    },
+    {
+      "name": "DSKT1.DGS",
+      "bytes": 4800,
+      "sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c"
+    },
+    {
+      "name": "DTMEDTE.COM",
+      "bytes": 1395,
+      "sha256": "33053e2079a4a59985e738f9601de17f9fdb3a12d5580467a99068011a129e11"
+    },
+    {
+      "name": "IBM7690.DGS",
+      "bytes": 10474,
+      "sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57"
+    },
+    {
+      "name": "LEDINST.BAT",
+      "bytes": 1426,
+      "sha256": "03839e0cd9e9ecf5510e051f06ddb8afee56d034d03f18bf43457f8fa311145a"
+    },
+    {
+      "name": "LEDTOUCH.SYS",
+      "bytes": 8111,
+      "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df"
+    },
+    {
+      "name": "NSTALL.EXE",
+      "bytes": 9918,
+      "sha256": "9f3df6a4a5c24219b6476b97f198850d84b14d14342059b08cde1e10c7c67d69"
+    },
+    {
+      "name": "PAR1.DGS",
+      "bytes": 601,
+      "sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd"
+    },
+    {
+      "name": "RBT.EXE",
+      "bytes": 7828,
+      "sha256": "9cd96256b9e472ed8775048a8886a6e5c023d1f41a214c2fd056b72757870177"
+    },
+    {
+      "name": "SER0.DGS",
+      "bytes": 3039,
+      "sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4"
+    },
+    {
+      "name": "SERVICES.COM",
+      "bytes": 21696,
+      "sha256": "b20e20228d14eb0587050e5c350e33b709b5240fc27d68d78d8ba964ec1a1028"
+    },
+    {
+      "name": "STG0.DGS",
+      "bytes": 1675,
+      "sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526"
+    },
+    {
+      "name": "TXT.OK",
+      "bytes": 602,
+      "sha256": "ae255aeb50c0e7447fafa3300400f2b55bc1964cd91c2d28b9c7ef85af6683a9"
+    },
+    {
+      "name": "US0KMAIN.DGS",
+      "bytes": 1602,
+      "sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620"
+    },
+    {
+      "name": "US0PCN.DGS",
+      "bytes": 6096,
+      "sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b"
+    },
+    {
+      "name": "VERSION.110",
+      "bytes": 3,
+      "sha256": "6f864b1705ae269c03903f630181ca89b5372a25f0d17147bc9d98a5c84f72be"
+    }
+  ],
+  "builder_cases": [
+    {
+      "case": "deterministic menu rebuild repeat-a.img",
+      "result": {
+        "output": "/tmp/7690-media-proof.v4wg7e/repeat-a.img",
+        "sha256": "d62da26560bcaab05f9d367dca6912db95b9c08b5b90111cb8bb58bb110981fd",
+        "bytes": 737280,
+        "free_bytes": 555008,
+        "manifest": "/tmp/7690-media-proof.v4wg7e/repeat-a.img.json"
+      }
+    },
+    {
+      "case": "deterministic menu rebuild repeat-b.img",
+      "result": {
+        "output": "/tmp/7690-media-proof.v4wg7e/repeat-b.img",
+        "sha256": "d62da26560bcaab05f9d367dca6912db95b9c08b5b90111cb8bb58bb110981fd",
+        "bytes": 737280,
+        "free_bytes": 555008,
+        "manifest": "/tmp/7690-media-proof.v4wg7e/repeat-b.img.json"
+      }
+    },
+    {
+      "case": "existing output refused and byte-preserved",
+      "exit": 2,
+      "stderr": "usage: build_diagnostic_disk.py [-h] --donor DONOR [--loose LOOSE]\n                                --output OUTPUT [--manifest MANIFEST]\n                                [--startup {menu,prompt}] [--touch-driver]\nbuild_diagnostic_disk.py: error: Output and manifest must be distinct new paths\n"
+    },
+    {
+      "case": "existing manifest refused before output creation",
+      "exit": 2,
+      "stderr": "usage: build_diagnostic_disk.py [-h] --donor DONOR [--loose LOOSE]\n                                --output OUTPUT [--manifest MANIFEST]\n                                [--startup {menu,prompt}] [--touch-driver]\nbuild_diagnostic_disk.py: error: Output and manifest must be distinct new paths\n"
+    },
+    {
+      "case": "identical output/manifest paths refused",
+      "exit": 2,
+      "stderr": "usage: build_diagnostic_disk.py [-h] --donor DONOR [--loose LOOSE]\n                                --output OUTPUT [--manifest MANIFEST]\n                                [--startup {menu,prompt}] [--touch-driver]\nbuild_diagnostic_disk.py: error: Output and manifest must be distinct new paths\n"
+    },
+    {
+      "case": "changed donor SHA refused before output creation",
+      "exit": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/josh/src/JoshRodd/IBM7690_REF/TOOLS/build_diagnostic_disk.py\", line 119, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/josh/src/JoshRodd/IBM7690_REF/TOOLS/build_diagnostic_disk.py\", line 108, in main\n    result, manifest = build(args.donor.read_bytes(), args.loose, args.startup, args.touch_driver)\n                       ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/josh/src/JoshRodd/IBM7690_REF/TOOLS/build_diagnostic_disk.py\", line 21, in build\n    raise ValueError('Donor SHA-256 differs from documented PCDOS32.IMG; refusing')\nValueError: Donor SHA-256 differs from documented PCDOS32.IMG; refusing\n"
+    }
+  ],
+  "mtools_dos_payloads": {
+    "IBMBIO.COM": {
+      "bytes": 16369,
+      "sha256": "841bf028620d0867293d7ba7613772f07e2681f36442182d2fa439133343fd8f"
+    },
+    "IBMDOS.COM": {
+      "bytes": 28477,
+      "sha256": "bbe0ad857e91f1f077af287d2f6748bd868983be9585a6cb0bba7c52dd42f789"
+    },
+    "COMMAND.COM": {
+      "bytes": 23791,
+      "sha256": "77402f36394f77fa8270f0563068f7f75949ce030dd28ec9fee7383f1e0b64db"
+    }
+  }
+}

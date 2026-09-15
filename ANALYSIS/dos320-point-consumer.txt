@@ -1,0 +1,25 @@
+
+iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+00F91FB0+00EF1FB0 CA00
+
+
+
+Booting from Floppy...
+
+IBM Touch Panel Device Driver
+Written by: Don D. Williams
+(C) Copyright IBM Corp. 1987, 1990
+Version 3.02
+All Rights Reserved
+
+Touch panel not installed - using IBM mouse
+
+A>ECHO OFF
+Derived PC DOS 3.20 / IBM 7690 v1.10 research disk
+Type SERVICES only on a compatible IBM firmware and hardware model.
+
+A>pointchk
+DOS handle read from POINT: 0
+Returned byte count: 2
+POINT probe returned to DOS.
+
+A>

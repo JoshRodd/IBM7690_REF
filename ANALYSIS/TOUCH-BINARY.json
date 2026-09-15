@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "evidence": "static binary decode, not emulator ROM contract",
+  "profiles": {
+    "3.02": {
+      "path": "7690diag/LEDTOUCH.SYS",
+      "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df",
+      "bytes": 8111,
+      "resident_end_hex": "1906",
+      "device_header_hex": "ffffffff00800b031603504f494e54202020",
+      "dos_dispatch": {
+        "00": "0541",
+        "01": "0429",
+        "02": "0429",
+        "03": "0429",
+        "04": "037B",
+        "05": "03CE",
+        "06": "03F0",
+        "07": "03F8",
+        "08": "0406",
+        "09": "0406",
+        "0A": "0429",
+        "0B": "0429",
+        "0C": "0429",
+        "0D": "0411",
+        "0E": "041C",
+        "0F": "0429",
+        "10": "0429"
+      },
+      "mouse_dispatch": {
+        "00": {
+          "name": "reset",
+          "offset_hex": "1402"
+        },
+        "01": {
+          "name": "show",
+          "offset_hex": "1491"
+        },
+        "02": {
+          "name": "hide",
+          "offset_hex": "14A3"
+        },
+        "03": {
+          "name": "position",
+          "offset_hex": "153A"
+        },
+        "04": {
+          "name": "set_position",
+          "offset_hex": "154A"
+        },
+        "05": {
+          "name": "press_info",
+          "offset_hex": "1583"
+        },
+        "06": {
+          "name": "release_info",
+          "offset_hex": "15BD"
+        },
+        "07": {
+          "name": "horizontal_bounds",
+          "offset_hex": "15F7"
+        },
+        "08": {
+          "name": "vertical_bounds",
+          "offset_hex": "1606"
+        },
+        "09": {
+          "name": "graphics_cursor",
+          "offset_hex": "1615"
+        },
+        "0A": {
+          "name": "text_cursor",
+          "offset_hex": "1633"
+        },
+        "0B": {
+          "name": "motion",
+          "offset_hex": "1663"
+        },
+        "0C": {
+          "name": "callback",
+          "offset_hex": "16E9"
+        },
+        "0D": {
+          "name": "noop_13",
+          "offset_hex": "1753"
+        },
+        "0E": {
+          "name": "noop_14",
+          "offset_hex": "1753"
+        },
+        "0F": {
+          "name": "ratios",
+          "offset_hex": "1754"
+        },
+        "10": {
+          "name": "noop_16",
+          "offset_hex": "1753"
+        },
+        "11": {
+          "name": "noop_17",
+          "offset_hex": "1753"
+        },
+        "12": {
+          "name": "large_cursor_unsupported",
+          "offset_hex": "176F"
+        },
+        "13": {
+          "name": "noop_19",
+          "offset_hex": "1753"
+        }
+      },
+      "symbols": {
+        "dos_strategy": "030B",
+        "dos_interrupt": "0316",
+        "point_record": "043D",
+        "initialize": "0541",
+        "optical_or_mouse_scan": "0712",
+        "adc_read": "0A9B",
+        "toggle_lcd_reversal": "0AB8",
+        "ibm_mouse_poll": "0AFD",
+        "ibm_mouse_packet_callback": "0C0B",
+        "timer_hook": "0F0A",
+        "int33": "0F3E",
+        "mouse_poll": "1772",
+        "service_optical_scan": "1C20",
+        "service_receiver_dark": "1C7B",
+        "service_emitter_lit": "1C9B",
+        "service_adc_read": "1CBE",
+        "initial_selftest": "1DB4"
+      },
+      "reachable_instruction_count": 2006,
+      "reachable_code_bytes": 5227,
+      "indirect_transfers": [
+        {
+          "offset_hex": "0364",
+          "instruction": "call word ptr [di]"
+        },
+        {
+          "offset_hex": "0F39",
+          "instruction": "ljmp cs:[0xe1b]"
+        },
+        {
+          "offset_hex": "1151",
+          "instruction": "call word ptr [di]"
+        },
+        {
+          "offset_hex": "11E6",
+          "instruction": "lcall [0xe05]"
+        }
+      ],
+      "whole_file_byte_coverage": true,
+      "listing": "LEDTOUCH-3.02.lst"
+    },
+    "2.4": {
+      "path": "ANALYSIS/7690KQPW/LEDTOUCH.SYS",
+      "sha256": "1c3dc5a2c4a9c6d422f03f92db6b3bcc2b314939603a117594e9573eb7ee2613",
+      "bytes": 7021,
+      "resident_end_hex": "1560",
+      "device_header_hex": "ffffffff00800b031603504f494e54202020",
+      "dos_dispatch": {
+        "00": "051C",
+        "01": "0415",
+        "02": "0415",
+        "03": "0415",
+        "04": "0367",
+        "05": "03BA",
+        "06": "03DC",
+        "07": "03E4",
+        "08": "03F2",
+        "09": "03F2",
+        "0A": "0415",
+        "0B": "0415",
+        "0C": "0415",
+        "0D": "03FD",
+        "0E": "0408",
+        "0F": "0415",
+        "10": "0415"
+      },
+      "mouse_dispatch": {
+        "00": {
+          "name": "reset",
+          "offset_hex": "10A8"
+        },
+        "01": {
+          "name": "show",
+          "offset_hex": "1126"
+        },
+        "02": {
+          "name": "hide",
+          "offset_hex": "1138"
+        },
+        "03": {
+          "name": "position",
+          "offset_hex": "11CF"
+        },
+        "04": {
+          "name": "set_position",
+          "offset_hex": "11DF"
+        },
+        "05": {
+          "name": "press_info",
+          "offset_hex": "120C"
+        },
+        "06": {
+          "name": "release_info",
+          "offset_hex": "1246"
+        },
+        "07": {
+          "name": "horizontal_bounds",
+          "offset_hex": "1280"
+        },
+        "08": {
+          "name": "vertical_bounds",
+          "offset_hex": "128F"
+        },
+        "09": {
+          "name": "graphics_cursor",
+          "offset_hex": "129E"
+        },
+        "0A": {
+          "name": "text_cursor",
+          "offset_hex": "12BC"
+        },
+        "0B": {
+          "name": "motion",
+          "offset_hex": "12EC"
+        },
+        "0C": {
+          "name": "callback",
+          "offset_hex": "1354"
+        },
+        "0D": {
+          "name": "noop_13",
+          "offset_hex": "13BE"
+        },
+        "0E": {
+          "name": "noop_14",
+          "offset_hex": "13BE"
+        },
+        "0F": {
+          "name": "ratios",
+          "offset_hex": "13BF"
+        },
+        "10": {
+          "name": "noop_16",
+          "offset_hex": "13BE"
+        },
+        "11": {
+          "name": "noop_17",
+          "offset_hex": "13BE"
+        },
+        "12": {
+          "name": "large_cursor_unsupported",
+          "offset_hex": "13DA"
+        },
+        "13": {
+          "name": "noop_19",
+          "offset_hex": "13BE"
+        }
+      },
+      "symbols": {
+        "dos_strategy": "030B",
+        "dos_interrupt": "0316",
+        "point_record": "0429",
+        "initialize": "051C",
+        "optical_scan": "06D3",
+        "adc_read": "09CB",
+        "timer_hook": "0C65",
+        "int33": "0C99",
+        "mouse_poll": "13DD",
+        "service_optical_scan": "184A",
+        "initial_selftest": "19DB"
+      },
+      "reachable_instruction_count": 1715,
+      "reachable_code_bytes": 4321,
+      "indirect_transfers": [
+        {
+          "offset_hex": "0350",
+          "instruction": "call word ptr [di]"
+        },
+        {
+          "offset_hex": "0C94",
+          "instruction": "ljmp cs:[0xb76]"
+        },
+        {
+          "offset_hex": "0DF5",
+          "instruction": "call word ptr [di]"
+        },
+        {
+          "offset_hex": "0E8A",
+          "instruction": "lcall [0xb60]"
+        }
+      ],
+      "whole_file_byte_coverage": true,
+      "listing": "LEDTOUCH-2.4.lst"
+    }
+  }
+}

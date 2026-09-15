@@ -1,0 +1,2516 @@
+; LEDTOUCH 3.02; 7690diag/LEDTOUCH.SYS
+; SHA256 bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df
+; Offsets are SYS-file-relative. C=reachable decoded instruction; D=unclassified/data.
+; Code roots include both dispatch tables. Indirect transfers remain explicitly catalogued.
+; A code label establishes static reachability, not physical execution or a public ABI.
+0000  ffffffff00800b031603504f494e5420  D ..........POINT 
+0010  2020434f505952494748542049424d20  D   COPYRIGHT IBM 
+0020  436f72706f726174696f6e2031393836  D Corporation 1986
+0030  2c203139393000000000737461636b20  D , 1990....stack 
+0040  737461636b20737461636b2073746163  D stack stack stac
+0050  6b20737461636b20737461636b207374  D k stack stack st
+0060  61636b20737461636b20737461636b20  D ack stack stack 
+0070  737461636b20737461636b2073746163  D stack stack stac
+0080  6b20737461636b20737461636b207374  D k stack stack st
+0090  61636b20737461636b20737461636b20  D ack stack stack 
+00A0  737461636b20737461636b2073746163  D stack stack stac
+00B0  6b20737461636b20737461636b207374  D k stack stack st
+00C0  61636b20737461636b20737461636b20  D ack stack stack 
+00D0  737461636b20737461636b2073746163  D stack stack stac
+00E0  6b20737461636b20737461636b207374  D k stack stack st
+00F0  61636b20737461636b20737461636b20  D ack stack stack 
+0100  737461636b20737461636b2073746163  D stack stack stac
+0110  6b20737461636b20737461636b207374  D k stack stack st
+0120  61636b20737461636b20737461636b20  D ack stack stack 
+0130  737461636b20737461636b2073746163  D stack stack stac
+0140  6b20737461636b20737461636b207374  D k stack stack st
+0150  61636b20737461636b20737461636b20  D ack stack stack 
+0160  737461636b20737461636b2073746163  D stack stack stac
+0170  6b20737461636b20737461636b207374  D k stack stack st
+0180  61636b20737461636b20737461636b20  D ack stack stack 
+0190  737461636b20737461636b2073746163  D stack stack stac
+01A0  6b20737461636b20737461636b207374  D k stack stack st
+01B0  61636b20737461636b20737461636b20  D ack stack stack 
+01C0  737461636b20737461636b2073746163  D stack stack stac
+01D0  6b20737461636b20737461636b207374  D k stack stack st
+01E0  61636b20737461636b20737461636b20  D ack stack stack 
+01F0  737461636b20737461636b2073746163  D stack stack stac
+0200  6b20737461636b20737461636b207374  D k stack stack st
+0210  61636b20737461636b20737461636b20  D ack stack stack 
+0220  737461636b20737461636b2073746163  D stack stack stac
+0230  6b20737461636b20737461636b207374  D k stack stack st
+0240  61636b20737461636b20737461636b20  D ack stack stack 
+0250  737461636b20737461636b2073746163  D stack stack stac
+0260  6b20737461636b20737461636b207374  D k stack stack st
+0270  61636b20737461636b20000000000000  D ack stack ......
+0280  00000000000000000000000000000000  D ................
+0290  00000000000000000000000000000000  D ................
+02A0  00000000000000000000000000000000  D ................
+02B0  00000000000000000000000000000000  D ................
+02C0  00000000000000000000000000000000  D ................
+02D0  00000000000000000000000000000000  D ................
+02E0  00000000000000000041052904290429  D .........A.).).)
+02F0  047b03ce03f003f80306040604290429  D .{...........).)
+0300  04290411041c0429042904            D .).....).).
+; dos_strategy:
+030B  2e8c06e502                        C mov word ptr cs:[0x2e5], es
+0310  2e891ee702                        C mov word ptr cs:[0x2e7], bx
+0315  cb                                C retf 
+; dos_interrupt:
+0316  50                                C push ax
+0317  2e8c163600                        C mov word ptr cs:[0x36], ss
+031C  2e89263800                        C mov word ptr cs:[0x38], sp
+0321  fa                                C cli 
+0322  8cc8                              C mov ax, cs
+0324  8ed0                              C mov ss, ax
+0326  bc7a02                            C mov sp, 0x27a
+0329  fb                                C sti 
+032A  53                                C push bx
+032B  51                                C push cx
+032C  52                                C push dx
+032D  57                                C push di
+032E  56                                C push si
+032F  1e                                C push ds
+0330  06                                C push es
+0331  0e                                C push cs
+0332  1f                                C pop ds
+0333  fc                                C cld 
+0334  803e3b0600                        C cmp byte ptr [0x63b], 0
+0339  750d                              C jne 0x348
+033B  06                                C push es
+033C  0e                                C push cs
+033D  07                                C pop es
+033E  ba3e0f                            C mov dx, 0xf3e
+0341  b425                              C mov ah, 0x25
+0343  b033                              C mov al, 0x33
+0345  cd21                              C int 0x21
+0347  07                                C pop es
+; loc_0348:
+0348  8b1ee702                          C mov bx, word ptr [0x2e7]
+034C  8e06e502                          C mov es, word ptr [0x2e5]
+0350  bfe902                            C mov di, 0x2e9
+0353  268a4702                          C mov al, byte ptr es:[bx + 2]
+0357  32e4                              C xor ah, ah
+0359  3d1000                            C cmp ax, 0x10
+035C  7202                              C jb 0x360
+035E  b010                              C mov al, 0x10
+; loc_0360:
+0360  d1e0                              C shl ax, 1
+0362  03f8                              C add di, ax
+0364  ff15                              C call word ptr [di]
+0366  07                                C pop es
+0367  1f                                C pop ds
+0368  5e                                C pop si
+0369  5f                                C pop di
+036A  5a                                C pop dx
+036B  59                                C pop cx
+036C  5b                                C pop bx
+036D  fa                                C cli 
+036E  2e8e163600                        C mov ss, word ptr cs:[0x36]
+0373  2e8b263800                        C mov sp, word ptr cs:[0x38]
+0378  fb                                C sti 
+0379  58                                C pop ax
+037A  cb                                C retf 
+; dos_command_04:
+037B  33d2                              C xor dx, dx
+037D  268b4f12                          C mov cx, word ptr es:[bx + 0x12]
+0381  23c9                              C and cx, cx
+0383  7435                              C je 0x3ba
+0385  a17d02                            C mov ax, word ptr [0x27d]
+0388  23c0                              C and ax, ax
+038A  7503                              C jne 0x38f
+038C  e8ae00                            C call 0x43d
+; loc_038F:
+038F  268b7f0e                          C mov di, word ptr es:[bx + 0xe]
+0393  268b4710                          C mov ax, word ptr es:[bx + 0x10]
+0397  8ec0                              C mov es, ax
+0399  a17d02                            C mov ax, word ptr [0x27d]
+039C  23c0                              C and ax, ax
+039E  741a                              C je 0x3ba
+03A0  3bc1                              C cmp ax, cx
+03A2  7302                              C jae 0x3a6
+03A4  8bc8                              C mov cx, ax
+; loc_03A6:
+03A6  8bd1                              C mov dx, cx
+03A8  8b367f02                          C mov si, word ptr [0x27f]
+03AC  010e7f02                          C add word ptr [0x27f], cx
+03B0  290e7d02                          C sub word ptr [0x27d], cx
+03B4  81c68102                          C add si, 0x281
+03B8  f3a4                              C rep movsb byte ptr es:[di], byte ptr [si]
+; loc_03BA:
+03BA  8b1ee702                          C mov bx, word ptr [0x2e7]
+03BE  8e06e502                          C mov es, word ptr [0x2e5]
+03C2  26895712                          C mov word ptr es:[bx + 0x12], dx
+03C6  b80002                            C mov ax, 0x200
+03C9  26894703                          C mov word ptr es:[bx + 3], ax
+03CD  c3                                C ret 
+; dos_command_05:
+03CE  833e7d0200                        C cmp word ptr [0x27d], 0
+03D3  7413                              C je 0x3e8
+03D5  8b367f02                          C mov si, word ptr [0x27f]
+03D9  81c68102                          C add si, 0x281
+03DD  ac                                C lodsb al, byte ptr [si]
+03DE  2688470d                          C mov byte ptr es:[bx + 0xd], al
+03E2  b80002                            C mov ax, 0x200
+03E5  eb04                              C jmp 0x3eb
+03E7  90                                D .
+; loc_03E8:
+03E8  b80001                            C mov ax, 0x100
+; loc_03EB:
+03EB  26894703                          C mov word ptr es:[bx + 3], ax
+03EF  c3                                C ret 
+; dos_command_06:
+03F0  b80002                            C mov ax, 0x200
+03F3  26894703                          C mov word ptr es:[bx + 3], ax
+03F7  c3                                C ret 
+; dos_command_07:
+03F8  c7067d020000                      C mov word ptr [0x27d], 0
+03FE  b80002                            C mov ax, 0x200
+0401  26894703                          C mov word ptr es:[bx + 3], ax
+0405  c3                                C ret 
+; dos_command_08:
+0406  e82800                            C call 0x431
+0409  b80001                            C mov ax, 0x100
+040C  26894703                          C mov word ptr es:[bx + 3], ax
+0410  c3                                C ret 
+; dos_command_0D:
+0411  e81d00                            C call 0x431
+0414  b80001                            C mov ax, 0x100
+0417  26894703                          C mov word ptr es:[bx + 3], ax
+041B  c3                                C ret 
+; dos_command_0E:
+041C  c6067c0200                        C mov byte ptr [0x27c], 0
+0421  b80001                            C mov ax, 0x100
+0424  26894703                          C mov word ptr es:[bx + 3], ax
+0428  c3                                C ret 
+; dos_command_01:
+0429  b80381                            C mov ax, 0x8103
+042C  26894703                          C mov word ptr es:[bx + 3], ax
+0430  c3                                C ret 
+; loc_0431:
+0431  c6067c0201                        C mov byte ptr [0x27c], 1
+0436  c3                                C ret 
+0437  030100000000                      D ......
+; point_record:
+043D  53                                C push bx
+043E  51                                C push cx
+043F  52                                C push dx
+0440  06                                C push es
+0441  57                                C push di
+0442  55                                C push bp
+0443  0e                                C push cs
+0444  07                                C pop es
+0445  fc                                C cld 
+0446  c7067f020000                      C mov word ptr [0x27f], 0
+044C  c606810230                        C mov byte ptr [0x281], 0x30
+0451  c60682020d                        C mov byte ptr [0x282], 0xd
+0456  c7067d020200                      C mov word ptr [0x27d], 2
+045C  c606370401                        C mov byte ptr [0x437], 1
+0461  803e3c0600                        C cmp byte ptr [0x63c], 0
+0466  7505                              C jne 0x46d
+0468  c606370403                        C mov byte ptr [0x437], 3
+; loc_046D:
+046D  e8a202                            C call 0x712
+0470  a10107                            C mov ax, word ptr [0x701]
+0473  23c0                              C and ax, ax
+0475  7903                              C jns 0x47a
+; loc_0477:
+0477  e9b100                            C jmp 0x52b
+; loc_047A:
+047A  bb0a00                            C mov bx, 0xa
+047D  f7e3                              C mul bx
+047F  bbf204                            C mov bx, 0x4f2
+0482  f7f3                              C div bx
+0484  d1eb                              C shr bx, 1
+0486  3bd3                              C cmp dx, bx
+0488  7201                              C jb 0x48b
+048A  40                                C inc ax
+; loc_048B:
+048B  40                                C inc ax
+048C  3c50                              C cmp al, 0x50
+048E  7202                              C jb 0x492
+0490  b050                              C mov al, 0x50
+; loc_0492:
+0492  3a063904                          C cmp al, byte ptr [0x439]
+0496  7409                              C je 0x4a1
+0498  a23904                            C mov byte ptr [0x439], al
+049B  a03704                            C mov al, byte ptr [0x437]
+049E  a23804                            C mov byte ptr [0x438], al
+; loc_04A1:
+04A1  a10307                            C mov ax, word ptr [0x703]
+04A4  23c0                              C and ax, ax
+04A6  78cf                              C js 0x477
+04A8  06                                C push es
+04A9  bb4000                            C mov bx, 0x40
+04AC  8ec3                              C mov es, bx
+04AE  268b1e8400                        C mov bx, word ptr es:[0x84]
+04B3  32ff                              C xor bh, bh
+04B5  07                                C pop es
+04B6  f7e3                              C mul bx
+04B8  bb0f27                            C mov bx, 0x270f
+04BB  f7f3                              C div bx
+04BD  d1eb                              C shr bx, 1
+04BF  3bd3                              C cmp dx, bx
+04C1  7201                              C jb 0x4c4
+04C3  40                                C inc ax
+; loc_04C4:
+04C4  40                                C inc ax
+04C5  3a063a04                          C cmp al, byte ptr [0x43a]
+04C9  7409                              C je 0x4d4
+04CB  a23a04                            C mov byte ptr [0x43a], al
+04CE  a03704                            C mov al, byte ptr [0x437]
+04D1  a23804                            C mov byte ptr [0x438], al
+; loc_04D4:
+04D4  fe0e3804                          C dec byte ptr [0x438]
+04D8  7510                              C jne 0x4ea
+; loc_04DA:
+04DA  a03904                            C mov al, byte ptr [0x439]
+04DD  a23b04                            C mov byte ptr [0x43b], al
+04E0  a03a04                            C mov al, byte ptr [0x43a]
+04E3  a23c04                            C mov byte ptr [0x43c], al
+04E6  fe063804                          C inc byte ptr [0x438]
+; loc_04EA:
+04EA  a03b04                            C mov al, byte ptr [0x43b]
+04ED  32e4                              C xor ah, ah
+04EF  22c0                              C and al, al
+04F1  74e7                              C je 0x4da
+04F3  b10a                              C mov cl, 0xa
+04F5  f6f1                              C div cl
+04F7  0d3030                            C or ax, 0x3030
+04FA  c7068102312c                      C mov word ptr [0x281], 0x2c31
+0500  c606830230                        C mov byte ptr [0x283], 0x30
+0505  a38402                            C mov word ptr [0x284], ax
+0508  a03c04                            C mov al, byte ptr [0x43c]
+050B  32e4                              C xor ah, ah
+050D  b10a                              C mov cl, 0xa
+050F  f6f1                              C div cl
+0511  0d3030                            C or ax, 0x3030
+0514  c70686022c30                      C mov word ptr [0x286], 0x302c
+051A  a38802                            C mov word ptr [0x288], ax
+051D  c6068a020d                        C mov byte ptr [0x28a], 0xd
+0522  c7067d020a00                      C mov word ptr [0x27d], 0xa
+0528  eb10                              C jmp 0x53a
+052A  90                                D .
+; loc_052B:
+052B  c606380401                        C mov byte ptr [0x438], 1
+0530  c6063b0400                        C mov byte ptr [0x43b], 0
+0535  c6063c0400                        C mov byte ptr [0x43c], 0
+; loc_053A:
+053A  5d                                C pop bp
+053B  5f                                C pop di
+053C  07                                C pop es
+053D  5a                                C pop dx
+053E  59                                C pop cx
+053F  5b                                C pop bx
+0540  c3                                C ret 
+; initialize:
+0541  b82904                            C mov ax, 0x429
+0544  a3e902                            C mov word ptr [0x2e9], ax
+0547  b80619                            C mov ax, 0x1906
+054A  2689470e                          C mov word ptr es:[bx + 0xe], ax
+054E  8cc8                              C mov ax, cs
+0550  26894710                          C mov word ptr es:[bx + 0x10], ax
+0554  b8ba11                            C mov ax, 0x11ba
+0557  bb0102                            C mov bx, 0x201
+055A  cd10                              C int 0x10
+055C  26c747030001                      C mov word ptr es:[bx + 3], 0x100
+0562  be7505                            C mov si, 0x575
+0565  e89500                            C call 0x5fd
+0568  ba3e0f                            C mov dx, 0xf3e
+056B  b425                              C mov ah, 0x25
+056D  b033                              C mov al, 0x33
+056F  cd21                              C int 0x21
+0571  e84018                            C call 0x1db4
+0574  c3                                C ret 
+0575  0d0a49424d20546f7563682050616e65  D ..IBM Touch Pane
+0585  6c20446576696365204472697665720d  D l Device Driver.
+0595  0a5772697474656e2062793a20446f6e  D .Written by: Don
+05A5  20442e2057696c6c69616d730d0a2843  D  D. Williams..(C
+05B5  2920436f707972696768742049424d20  D ) Copyright IBM 
+05C5  436f72702e20313938372c2031393930  D Corp. 1987, 1990
+05D5  0d0a56657273696f6e20332e30320d0a  D ..Version 3.02..
+05E5  416c6c20526967687473205265736572  D All Rights Reser
+05F5  7665640d0a0d0aff                  D ved.....
+; loc_05FD:
+05FD  50                                C push ax
+05FE  53                                C push bx
+; loc_05FF:
+05FF  2e8a04                            C mov al, byte ptr cs:[si]
+0602  3cff                              C cmp al, 0xff
+0604  740a                              C je 0x610
+0606  b40e                              C mov ah, 0xe
+0608  bb0700                            C mov bx, 7
+060B  cd10                              C int 0x10
+060D  46                                C inc si
+060E  ebef                              C jmp 0x5ff
+; loc_0610:
+0610  5b                                C pop bx
+0611  58                                C pop ax
+0612  c3                                C ret 
+0613  00000000000000000000000000900090  D ................
+0623  000000000000000000000000000000ff  D ................
+0633  ffffffffffffff080000000000000000  D ................
+0643  00000000000000000000000000000000  D ................
+0653  00000000000000000000000000000000  D ................
+0663  00000000000000000000000000000000  D ................
+0673  00000000000000000000000000000000  D ................
+0683  00000000000000000000000000000000  D ................
+0693  00000000000000000000000000000000  D ................
+06A3  00000000000000000000000000000000  D ................
+06B3  00000000000000000000000000000000  D ................
+06C3  00000000000000000000000000000000  D ................
+06D3  00000000000000000000000000000000  D ................
+06E3  00000000000000000000000000000000  D ................
+06F3  0000000000000000000000007700ffff  D ............w...
+0703  ffff00000000000000000000000000    D ...............
+; optical_or_mouse_scan:
+0712  803e3c0600                        C cmp byte ptr [0x63c], 0
+0717  7403                              C je 0x71c
+0719  e9e103                            C jmp 0xafd
+; loc_071C:
+071C  ba02f3                            C mov dx, 0xf302
+071F  b000                              C mov al, 0
+0721  ee                                C out dx, al
+0722  803e3b0600                        C cmp byte ptr [0x63b], 0
+0727  7532                              C jne 0x75b
+0729  fe063b06                          C inc byte ptr [0x63b]
+072D  c6063a0608                        C mov byte ptr [0x63a], 8
+0732  c70620060200                      C mov word ptr [0x620], 2
+0738  c70622060200                      C mov word ptr [0x622], 2
+073E  32c0                              C xor al, al
+0740  33f6                              C xor si, si
+; loc_0742:
+0742  88843e06                          C mov byte ptr [si + 0x63e], al
+0746  88847e06                          C mov byte ptr [si + 0x67e], al
+074A  8884bf06                          C mov byte ptr [si + 0x6bf], al
+074E  46                                C inc si
+074F  fec0                              C inc al
+0751  a807                              C test al, 7
+0753  75ed                              C jne 0x742
+0755  0410                              C add al, 0x10
+0757  2470                              C and al, 0x70
+0759  75e7                              C jne 0x742
+; loc_075B:
+075B  c6063d0600                        C mov byte ptr [0x63d], 0
+0760  33c0                              C xor ax, ax
+0762  b90800                            C mov cx, 8
+0765  bf2606                            C mov di, 0x626
+0768  f3aa                              C rep stosb byte ptr es:[di], al
+076A  33f6                              C xor si, si
+076C  b380                              C mov bl, 0x80
+076E  bf2606                            C mov di, 0x626
+0771  b94000                            C mov cx, 0x40
+; loc_0774:
+0774  ba02f3                            C mov dx, 0xf302
+0777  b000                              C mov al, 0
+0779  ee                                C out dx, al
+077A  ba00f3                            C mov dx, 0xf300
+077D  8a847e06                          C mov al, byte ptr [si + 0x67e]
+0781  ee                                C out dx, al
+0782  ba02f3                            C mov dx, 0xf302
+0785  b004                              C mov al, 4
+0787  ee                                C out dx, al
+0788  b000                              C mov al, 0
+078A  ee                                C out dx, al
+078B  8b162006                          C mov dx, word ptr [0x620]
+; loc_078F:
+078F  4a                                C dec dx
+0790  75fd                              C jne 0x78f
+0792  e80603                            C call 0xa9b
+0795  2c08                              C sub al, 8
+0797  7902                              C jns 0x79b
+0799  32c0                              C xor al, al
+; loc_079B:
+079B  a20007                            C mov byte ptr [0x700], al
+079E  ba00f3                            C mov dx, 0xf300
+07A1  8a843e06                          C mov al, byte ptr [si + 0x63e]
+07A5  ee                                C out dx, al
+07A6  ba02f3                            C mov dx, 0xf302
+07A9  b001                              C mov al, 1
+07AB  ee                                C out dx, al
+07AC  b000                              C mov al, 0
+07AE  ee                                C out dx, al
+07AF  b002                              C mov al, 2
+07B1  ee                                C out dx, al
+07B2  8b162006                          C mov dx, word ptr [0x620]
+; loc_07B6:
+07B6  4a                                C dec dx
+07B7  75fd                              C jne 0x7b6
+07B9  e8df02                            C call 0xa9b
+07BC  50                                C push ax
+07BD  ba02f3                            C mov dx, 0xf302
+07C0  b000                              C mov al, 0
+07C2  ee                                C out dx, al
+07C3  58                                C pop ax
+07C4  3a060007                          C cmp al, byte ptr [0x700]
+07C8  726e                              C jb 0x838
+07CA  803e3a0600                        C cmp byte ptr [0x63a], 0
+07CF  7463                              C je 0x834
+07D1  813e2006ff00                      C cmp word ptr [0x620], 0xff
+07D7  7707                              C ja 0x7e0
+07D9  830620060a                        C add word ptr [0x620], 0xa
+07DE  eb94                              C jmp 0x774
+; loc_07E0:
+07E0  a12206                            C mov ax, word ptr [0x622]
+07E3  a32006                            C mov word ptr [0x620], ax
+07E6  fe063d06                          C inc byte ptr [0x63d]
+07EA  a03d06                            C mov al, byte ptr [0x63d]
+07ED  fec8                              C dec al
+07EF  740f                              C je 0x800
+07F1  fec8                              C dec al
+07F3  7416                              C je 0x80b
+07F5  fec8                              C dec al
+07F7  741d                              C je 0x816
+07F9  fec8                              C dec al
+07FB  742c                              C je 0x829
+07FD  eb35                              C jmp 0x834
+07FF  90                                D .
+; loc_0800:
+0800  8a84be06                          C mov al, byte ptr [si + 0x6be]
+0804  88843e06                          C mov byte ptr [si + 0x63e], al
+0808  e969ff                            C jmp 0x774
+; loc_080B:
+080B  8a84c006                          C mov al, byte ptr [si + 0x6c0]
+080F  88843e06                          C mov byte ptr [si + 0x63e], al
+0813  e95eff                            C jmp 0x774
+; loc_0816:
+0816  8a84bf06                          C mov al, byte ptr [si + 0x6bf]
+081A  88843e06                          C mov byte ptr [si + 0x63e], al
+081E  8a84be06                          C mov al, byte ptr [si + 0x6be]
+0822  88847e06                          C mov byte ptr [si + 0x67e], al
+0826  e94bff                            C jmp 0x774
+; loc_0829:
+0829  8a84c006                          C mov al, byte ptr [si + 0x6c0]
+082D  88847e06                          C mov byte ptr [si + 0x67e], al
+; loc_0831:
+0831  e940ff                            C jmp 0x774
+; loc_0834:
+0834  081d                              C or byte ptr [di], bl
+0836  eb0c                              C jmp 0x844
+; loc_0838:
+0838  a12006                            C mov ax, word ptr [0x620]
+083B  3b062206                          C cmp ax, word ptr [0x622]
+083F  7603                              C jbe 0x844
+0841  a32206                            C mov word ptr [0x622], ax
+; loc_0844:
+0844  c6063d0600                        C mov byte ptr [0x63d], 0
+0849  d0cb                              C ror bl, 1
+084B  7301                              C jae 0x84e
+084D  47                                C inc di
+; loc_084E:
+084E  46                                C inc si
+084F  e2e0                              C loop 0x831
+0851  33f6                              C xor si, si
+0853  b90800                            C mov cx, 8
+; loc_0856:
+0856  8a842606                          C mov al, byte ptr [si + 0x626]
+085A  22843206                          C and al, byte ptr [si + 0x632]
+085E  88842606                          C mov byte ptr [si + 0x626], al
+0862  46                                C inc si
+0863  e2f1                              C loop 0x856
+0865  803e3a0600                        C cmp byte ptr [0x63a], 0
+086A  7446                              C je 0x8b2
+086C  a12606                            C mov ax, word ptr [0x626]
+086F  f7d0                              C not ax
+0871  21063206                          C and word ptr [0x632], ax
+0875  a12806                            C mov ax, word ptr [0x628]
+0878  f7d0                              C not ax
+087A  21063406                          C and word ptr [0x634], ax
+087E  a02a06                            C mov al, byte ptr [0x62a]
+0881  f6d0                              C not al
+0883  20063606                          C and byte ptr [0x636], al
+0887  a12b06                            C mov ax, word ptr [0x62b]
+088A  f7d0                              C not ax
+088C  21063706                          C and word ptr [0x637], ax
+0890  a02d06                            C mov al, byte ptr [0x62d]
+0893  f6d0                              C not al
+0895  20063906                          C and byte ptr [0x639], al
+0899  fe0e3a06                          C dec byte ptr [0x63a]
+089D  7510                              C jne 0x8af
+089F  a12206                            C mov ax, word ptr [0x622]
+08A2  d1e8                              C shr ax, 1
+08A4  03062406                          C add ax, word ptr [0x624]
+08A8  03062206                          C add ax, word ptr [0x622]
+08AC  a32006                            C mov word ptr [0x620], ax
+; loc_08AF:
+08AF  e960fe                            C jmp 0x712
+; loc_08B2:
+08B2  a12b06                            C mov ax, word ptr [0x62b]
+08B5  0ac4                              C or al, ah
+08B7  0a062d06                          C or al, byte ptr [0x62d]
+08BB  7410                              C je 0x8cd
+08BD  40                                C inc ax
+08BE  740d                              C je 0x8cd
+08C0  b90500                            C mov cx, 5
+08C3  be2606                            C mov si, 0x626
+; loc_08C6:
+08C6  ac                                C lodsb al, byte ptr [si]
+08C7  22c0                              C and al, al
+08C9  752a                              C jne 0x8f5
+08CB  e2f9                              C loop 0x8c6
+; loc_08CD:
+08CD  833e0c0700                        C cmp word ptr [0x70c], 0
+08D2  7407                              C je 0x8db
+08D4  ff0e0c07                          C dec word ptr [0x70c]
+08D8  e92301                            C jmp 0x9fe
+; loc_08DB:
+08DB  c7060107ffff                      C mov word ptr [0x701], 0xffff
+08E1  c7060307ffff                      C mov word ptr [0x703], 0xffff
+08E7  c606050700                        C mov byte ptr [0x705], 0
+08EC  c7060607ffff                      C mov word ptr [0x706], 0xffff
+08F2  e90901                            C jmp 0x9fe
+; loc_08F5:
+08F5  8b1e0a07                          C mov bx, word ptr [0x70a]
+08F9  891e0c07                          C mov word ptr [0x70c], bx
+08FD  ff060807                          C inc word ptr [0x708]
+0901  bb0500                            C mov bx, 5
+0904  2bd9                              C sub bx, cx
+0906  d1e3                              C shl bx, 1
+0908  d1e3                              C shl bx, 1
+090A  d1e3                              C shl bx, 1
+090C  b90800                            C mov cx, 8
+; loc_090F:
+090F  d0e0                              C shl al, 1
+0911  7203                              C jb 0x916
+0913  43                                C inc bx
+0914  e2f9                              C loop 0x90f
+; loc_0916:
+0916  8bd3                              C mov dx, bx
+0918  49                                C dec cx
+0919  750a                              C jne 0x925
+; loc_091B:
+091B  ac                                C lodsb al, byte ptr [si]
+091C  b90800                            C mov cx, 8
+091F  81fe2c06                          C cmp si, 0x62c
+0923  7316                              C jae 0x93b
+; loc_0925:
+0925  22c0                              C and al, al
+0927  7407                              C je 0x930
+; loc_0929:
+0929  43                                C inc bx
+092A  d0e0                              C shl al, 1
+092C  e2f7                              C loop 0x925
+092E  ebeb                              C jmp 0x91b
+; loc_0930:
+0930  81fe2b06                          C cmp si, 0x62b
+0934  7305                              C jae 0x93b
+0936  803c00                            C cmp byte ptr [si], 0
+0939  75ee                              C jne 0x929
+; loc_093B:
+093B  8bc3                              C mov ax, bx
+093D  2bc2                              C sub ax, dx
+093F  d1e2                              C shl dx, 1
+0941  03c2                              C add ax, dx
+0943  bb7f00                            C mov bx, 0x7f
+0946  f7e3                              C mul bx
+0948  a30107                            C mov word ptr [0x701], ax
+094B  be2b06                            C mov si, 0x62b
+094E  33db                              C xor bx, bx
+; loc_0950:
+0950  ac                                C lodsb al, byte ptr [si]
+0951  b90800                            C mov cx, 8
+; loc_0954:
+0954  d0e0                              C shl al, 1
+0956  7205                              C jb 0x95d
+0958  43                                C inc bx
+0959  e2f9                              C loop 0x954
+095B  ebf3                              C jmp 0x950
+; loc_095D:
+095D  8bd3                              C mov dx, bx
+095F  49                                C dec cx
+0960  7504                              C jne 0x966
+; loc_0962:
+0962  ac                                C lodsb al, byte ptr [si]
+0963  b90800                            C mov cx, 8
+; loc_0966:
+0966  22c0                              C and al, al
+0968  7407                              C je 0x971
+; loc_096A:
+096A  43                                C inc bx
+096B  d0e0                              C shl al, 1
+096D  e2f7                              C loop 0x966
+096F  ebf1                              C jmp 0x962
+; loc_0971:
+0971  833c00                            C cmp word ptr [si], 0
+0974  75f4                              C jne 0x96a
+0976  2bda                              C sub bx, dx
+0978  d1e2                              C shl dx, 1
+097A  03da                              C add bx, dx
+097C  b8d900                            C mov ax, 0xd9
+097F  f7e3                              C mul bx
+0981  a30307                            C mov word ptr [0x703], ax
+0984  33c9                              C xor cx, cx
+0986  b8ba11                            C mov ax, 0x11ba
+0989  b700                              C mov bh, 0
+098B  cd10                              C int 0x10
+098D  80fcba                            C cmp ah, 0xba
+0990  756c                              C jne 0x9fe
+0992  81f9c700                          C cmp cx, 0xc7
+0996  7e66                              C jle 0x9fe
+0998  57                                C push di
+0999  56                                C push si
+099A  8bc3                              C mov ax, bx
+099C  23c0                              C and ax, ax
+099E  7419                              C je 0x9b9
+09A0  53                                C push bx
+09A1  51                                C push cx
+09A2  b80f27                            C mov ax, 0x270f
+09A5  f7e3                              C mul bx
+09A7  f7f7                              C div di
+09A9  8b1e0307                          C mov bx, word ptr [0x703]
+09AD  2bd8                              C sub bx, ax
+09AF  7902                              C jns 0x9b3
+09B1  33db                              C xor bx, bx
+; loc_09B3:
+09B3  891e0307                          C mov word ptr [0x703], bx
+09B7  59                                C pop cx
+09B8  5b                                C pop bx
+; loc_09B9:
+09B9  b80f27                            C mov ax, 0x270f
+09BC  f7e1                              C mul cx
+09BE  f7f7                              C div di
+09C0  8b1e0307                          C mov bx, word ptr [0x703]
+09C4  3bd8                              C cmp bx, ax
+09C6  7602                              C jbe 0x9ca
+09C8  8bd8                              C mov bx, ax
+; loc_09CA:
+09CA  50                                C push ax
+09CB  b80f27                            C mov ax, 0x270f
+09CE  f7e3                              C mul bx
+09D0  5b                                C pop bx
+09D1  f7f3                              C div bx
+09D3  03061007                          C add ax, word ptr [0x710]
+09D7  7902                              C jns 0x9db
+09D9  33c0                              C xor ax, ax
+; loc_09DB:
+09DB  3d0f27                            C cmp ax, 0x270f
+09DE  7603                              C jbe 0x9e3
+09E0  b80f27                            C mov ax, 0x270f
+; loc_09E3:
+09E3  a30307                            C mov word ptr [0x703], ax
+09E6  a10107                            C mov ax, word ptr [0x701]
+09E9  03060e07                          C add ax, word ptr [0x70e]
+09ED  7902                              C jns 0x9f1
+09EF  33c0                              C xor ax, ax
+; loc_09F1:
+09F1  3d0f27                            C cmp ax, 0x270f
+09F4  7603                              C jbe 0x9f9
+09F6  b80f27                            C mov ax, 0x270f
+; loc_09F9:
+09F9  a30107                            C mov word ptr [0x701], ax
+09FC  5e                                C pop si
+09FD  5f                                C pop di
+; loc_09FE:
+09FE  06                                C push es
+09FF  bb4000                            C mov bx, 0x40
+0A02  8ec3                              C mov es, bx
+0A04  bb1700                            C mov bx, 0x17
+0A07  268b1f                            C mov bx, word ptr es:[bx]
+0A0A  07                                C pop es
+0A0B  f6c301                            C test bl, 1
+0A0E  7503                              C jne 0xa13
+0A10  e98700                            C jmp 0xa9a
+; loc_0A13:
+0A13  f6c304                            C test bl, 4
+0A16  740d                              C je 0xa25
+0A18  c6063b0600                        C mov byte ptr [0x63b], 0
+0A1D  c6063a0608                        C mov byte ptr [0x63a], 8
+0A22  eb6a                              C jmp 0xa8e
+0A24  90                                D .
+; loc_0A25:
+0A25  803e050700                        C cmp byte ptr [0x705], 0
+0A2A  7562                              C jne 0xa8e
+0A2C  813e01078813                      C cmp word ptr [0x701], 0x1388
+0A32  7253                              C jb 0xa87
+0A34  a10307                            C mov ax, word ptr [0x703]
+0A37  8b1e0607                          C mov bx, word ptr [0x706]
+0A3B  a30607                            C mov word ptr [0x706], ax
+0A3E  83fbff                            C cmp bx, -1
+0A41  744b                              C je 0xa8e
+0A43  3bc3                              C cmp ax, bx
+0A45  7447                              C je 0xa8e
+0A47  771c                              C ja 0xa65
+0A49  b8ba11                            C mov ax, 0x11ba
+0A4C  b700                              C mov bh, 0
+0A4E  cd10                              C int 0x10
+0A50  83eb04                            C sub bx, 4
+0A53  7839                              C js 0xa8e
+0A55  b8ba11                            C mov ax, 0x11ba
+0A58  b701                              C mov bh, 1
+0A5A  cd10                              C int 0x10
+0A5C  c7060607ffff                      C mov word ptr [0x706], 0xffff
+0A62  eb2a                              C jmp 0xa8e
+0A64  90                                D .
+; loc_0A65:
+0A65  b8ba11                            C mov ax, 0x11ba
+0A68  b700                              C mov bh, 0
+0A6A  cd10                              C int 0x10
+0A6C  83c304                            C add bx, 4
+0A6F  8bc7                              C mov ax, di
+0A71  2bc1                              C sub ax, cx
+0A73  2bc3                              C sub ax, bx
+0A75  7817                              C js 0xa8e
+0A77  b8ba11                            C mov ax, 0x11ba
+0A7A  b701                              C mov bh, 1
+0A7C  cd10                              C int 0x10
+0A7E  c7060607ffff                      C mov word ptr [0x706], 0xffff
+0A84  eb08                              C jmp 0xa8e
+0A86  90                                D .
+; loc_0A87:
+0A87  fe060507                          C inc byte ptr [0x705]
+0A8B  e82a00                            C call 0xab8
+; loc_0A8E:
+0A8E  c7060107ffff                      C mov word ptr [0x701], 0xffff
+0A94  c7060307ffff                      C mov word ptr [0x703], 0xffff
+; loc_0A9A:
+0A9A  c3                                C ret 
+; adc_read:
+0A9B  51                                C push cx
+0A9C  ba02f3                            C mov dx, 0xf302
+0A9F  ec                                C in al, dx
+0AA0  0c08                              C or al, 8
+0AA2  ee                                C out dx, al
+0AA3  3408                              C xor al, 8
+0AA5  ee                                C out dx, al
+0AA6  b93200                            C mov cx, 0x32
+; loc_0AA9:
+0AA9  ec                                C in al, dx
+0AAA  a808                              C test al, 8
+0AAC  e0fb                              C loopne 0xaa9
+0AAE  ba03f3                            C mov dx, 0xf303
+0AB1  ec                                C in al, dx
+0AB2  253f00                            C and ax, 0x3f
+0AB5  59                                C pop cx
+0AB6  c3                                C ret 
+0AB7  01                                D .
+; toggle_lcd_reversal:
+0AB8  b8ba11                            C mov ax, 0x11ba
+0ABB  b702                              C mov bh, 2
+0ABD  8a1eb70a                          C mov bl, byte ptr [0xab7]
+0AC1  80f301                            C xor bl, 1
+0AC4  881eb70a                          C mov byte ptr [0xab7], bl
+0AC8  cd10                              C int 0x10
+0ACA  c3                                C ret 
+0ACB  88138813000000000000000000000d0a  D ................
+0ADB  074572726f7220696e74657266616369  D .Error interfaci
+0AEB  6e67206d6f757365202878787878290d  D ng mouse (xxxx).
+0AFB  0a24                              D .$
+; ibm_mouse_poll:
+0AFD  1e                                C push ds
+0AFE  06                                C push es
+0AFF  c606d80a00                        C mov byte ptr [0xad8], 0
+0B04  803e3b0600                        C cmp byte ptr [0x63b], 0
+0B09  757c                              C jne 0xb87
+0B0B  c606d70a00                        C mov byte ptr [0xad7], 0
+0B10  fe063b06                          C inc byte ptr [0x63b]
+0B14  b800c2                            C mov ax, 0xc200
+0B17  b700                              C mov bh, 0
+0B19  cd15                              C int 0x15
+0B1B  b001                              C mov al, 1
+0B1D  7209                              C jb 0xb28
+0B1F  b801c2                            C mov ax, 0xc201
+0B22  cd15                              C int 0x15
+0B24  b002                              C mov al, 2
+0B26  733b                              C jae 0xb63
+; loc_0B28:
+0B28  50                                C push ax
+0B29  8ac4                              C mov al, ah
+0B2B  d0ec                              C shr ah, 1
+0B2D  d0ec                              C shr ah, 1
+0B2F  d0ec                              C shr ah, 1
+0B31  d0ec                              C shr ah, 1
+0B33  250f0f                            C and ax, 0xf0f
+0B36  0d3030                            C or ax, 0x3030
+0B39  86e0                              C xchg al, ah
+0B3B  a3f50a                            C mov word ptr [0xaf5], ax
+0B3E  58                                C pop ax
+0B3F  8ae0                              C mov ah, al
+0B41  d0ec                              C shr ah, 1
+0B43  d0ec                              C shr ah, 1
+0B45  d0ec                              C shr ah, 1
+0B47  d0ec                              C shr ah, 1
+0B49  250f0f                            C and ax, 0xf0f
+0B4C  0d3030                            C or ax, 0x3030
+0B4F  86e0                              C xchg al, ah
+0B51  a3f70a                            C mov word ptr [0xaf7], ax
+0B54  bad90a                            C mov dx, 0xad9
+0B57  b409                              C mov ah, 9
+0B59  cd21                              C int 0x21
+0B5B  c6063b0600                        C mov byte ptr [0x63b], 0
+0B60  eb25                              C jmp 0xb87
+0B62  90                                D .
+; loc_0B63:
+0B63  b807c2                            C mov ax, 0xc207
+0B66  8ccb                              C mov bx, cs
+0B68  8ec3                              C mov es, bx
+0B6A  bb0b0c                            C mov bx, 0xc0b
+0B6D  cd15                              C int 0x15
+0B6F  b003                              C mov al, 3
+0B71  72b5                              C jb 0xb28
+0B73  b800c2                            C mov ax, 0xc200
+0B76  b701                              C mov bh, 1
+0B78  cd15                              C int 0x15
+0B7A  b004                              C mov al, 4
+0B7C  72aa                              C jb 0xb28
+0B7E  c706d30a0a00                      C mov word ptr [0xad3], 0xa
+0B84  eb11                              C jmp 0xb97
+0B86  90                                D .
+; loc_0B87:
+0B87  833ed50a00                        C cmp word ptr [0xad5], 0
+0B8C  7409                              C je 0xb97
+0B8E  c706d30a0400                      C mov word ptr [0xad3], 4
+0B94  eb1b                              C jmp 0xbb1
+0B96  90                                D .
+; loc_0B97:
+0B97  833ed30a00                        C cmp word ptr [0xad3], 0
+0B9C  7413                              C je 0xbb1
+0B9E  ff0ed30a                          C dec word ptr [0xad3]
+; loc_0BA2:
+0BA2  c7060107ffff                      C mov word ptr [0x701], 0xffff
+0BA8  c7060307ffff                      C mov word ptr [0x703], 0xffff
+0BAE  eb58                              C jmp 0xc08
+0BB0  90                                D .
+; loc_0BB1:
+0BB1  803ed70a00                        C cmp byte ptr [0xad7], 0
+0BB6  74ea                              C je 0xba2
+0BB8  a1cf0a                            C mov ax, word ptr [0xacf]
+0BBB  c706cf0a0000                      C mov word ptr [0xacf], 0
+0BC1  b91800                            C mov cx, 0x18
+0BC4  f7e1                              C mul cx
+0BC6  0306cb0a                          C add ax, word ptr [0xacb]
+0BCA  3d0f27                            C cmp ax, 0x270f
+0BCD  7e03                              C jle 0xbd2
+0BCF  b80f27                            C mov ax, 0x270f
+; loc_0BD2:
+0BD2  3d0100                            C cmp ax, 1
+0BD5  7d03                              C jge 0xbda
+0BD7  b80100                            C mov ax, 1
+; loc_0BDA:
+0BDA  a3cb0a                            C mov word ptr [0xacb], ax
+0BDD  a30107                            C mov word ptr [0x701], ax
+0BE0  a1d10a                            C mov ax, word ptr [0xad1]
+0BE3  c706d10a0000                      C mov word ptr [0xad1], 0
+0BE9  b91800                            C mov cx, 0x18
+0BEC  f7e1                              C mul cx
+0BEE  0306cd0a                          C add ax, word ptr [0xacd]
+0BF2  3d0f27                            C cmp ax, 0x270f
+0BF5  7e03                              C jle 0xbfa
+0BF7  b80f27                            C mov ax, 0x270f
+; loc_0BFA:
+0BFA  3d0100                            C cmp ax, 1
+0BFD  7d03                              C jge 0xc02
+0BFF  b80100                            C mov ax, 1
+; loc_0C02:
+0C02  a3cd0a                            C mov word ptr [0xacd], ax
+0C05  a30307                            C mov word ptr [0x703], ax
+; loc_0C08:
+0C08  07                                C pop es
+0C09  1f                                C pop ds
+0C0A  c3                                C ret 
+; ibm_mouse_packet_callback:
+0C0B  55                                C push bp
+0C0C  8bec                              C mov bp, sp
+0C0E  50                                C push ax
+0C0F  53                                C push bx
+0C10  51                                C push cx
+0C11  2ec606d70a01                      C mov byte ptr cs:[0xad7], 1
+0C17  2eff060807                        C inc word ptr cs:[0x708]
+0C1C  8b4e0c                            C mov cx, word ptr [bp + 0xc]
+0C1F  8bc1                              C mov ax, cx
+0C21  250300                            C and ax, 3
+0C24  3d0300                            C cmp ax, 3
+0C27  7503                              C jne 0xc2c
+0C29  b80400                            C mov ax, 4
+; loc_0C2C:
+0C2C  2ea3d50a                          C mov word ptr cs:[0xad5], ax
+0C30  2e3206d80a                        C xor al, byte ptr cs:[0xad8]
+0C35  2e2206d80a                        C and al, byte ptr cs:[0xad8]
+0C3A  742a                              C je 0xc66
+0C3C  a801                              C test al, 1
+0C3E  740a                              C je 0xc4a
+0C40  2eff06e90d                        C inc word ptr cs:[0xde9]
+0C45  2eff06c80d                        C inc word ptr cs:[0xdc8]
+; loc_0C4A:
+0C4A  a802                              C test al, 2
+0C4C  740a                              C je 0xc58
+0C4E  2eff06ed0d                        C inc word ptr cs:[0xded]
+0C53  2eff06cc0d                        C inc word ptr cs:[0xdcc]
+; loc_0C58:
+0C58  a804                              C test al, 4
+0C5A  740a                              C je 0xc66
+0C5C  2eff06eb0d                        C inc word ptr cs:[0xdeb]
+0C61  2eff06ca0d                        C inc word ptr cs:[0xdca]
+; loc_0C66:
+0C66  8b460a                            C mov ax, word ptr [bp + 0xa]
+0C69  f6c110                            C test cl, 0x10
+0C6C  7402                              C je 0xc70
+0C6E  b4ff                              C mov ah, 0xff
+; loc_0C70:
+0C70  2e0106cf0a                        C add word ptr cs:[0xacf], ax
+0C75  2e0106fa0d                        C add word ptr cs:[0xdfa], ax
+0C7A  8b4608                            C mov ax, word ptr [bp + 8]
+0C7D  f6c120                            C test cl, 0x20
+0C80  7402                              C je 0xc84
+0C82  b4ff                              C mov ah, 0xff
+; loc_0C84:
+0C84  2e2906d10a                        C sub word ptr cs:[0xad1], ax
+0C89  2e2906fc0d                        C sub word ptr cs:[0xdfc], ax
+0C8E  59                                C pop cx
+0C8F  5b                                C pop bx
+0C90  58                                C pop ax
+0C91  5d                                C pop bp
+0C92  cb                                C retf 
+0C93  00000000000000000000000000b99093  D ................
+0CA3  939088969198df968cdf91908bdf9edf  D ................
+0CB3  bc908f868d9698978bdfb1908b969c9a  D ................
+0CC3  df9d8a8bdf8f9e8d8bdf9099df8b979a  D ................
+0CD3  df998a919c8b9690919e93df96918b9a  D ................
+0CE3  8d999e9c9adf8b90df8c90929adf8f8d  D ................
+0CF3  90988d9e928cdf8a8c969198df8b9796  D ................
+0D03  8cdf92909b8a939ad1dfdfab979adf9a  D ................
+0D13  879c938a8c96899adfbc908f868d9698  D ................
+0D23  978bdf8b90df8b97968cdf92909b8a93  D ................
+0D33  9adf968cdf9088919a9bdf9d86dfb6bd  D ................
+0D43  b2dfbc908d8f908d9e8b969091dfc1c1  D ................
+0D53  c1bc908f868d9698978bdfcec6c7ccdf  D ................
+0D63  b2969c8d908c90998bdf9d8a8bdf9691  D ................
+0D73  df999e9c8bdfbc908f868d9698978bdf  D ................
+0D83  cec6c7cbdfb2908a8c9adfac868c8b9a  D ................
+0D93  928cdfbc908d8f908d9e8b969091dec3  D ................
+0DA3  c3c3dfbe9d90899adf8f8d9a8f9e8d9a  D ................
+0DB3  9bdf9d86dfb6bdb2dfbe8b8b908d919a  D ................
+0DC3  86010101000000000000000000000000  D ................
+0DD3  00000000000000000000000000000000  D ................
+0DE3  00000000000000000000000000000000  D ................
+0DF3  00000000000000000000000007ffff01  D ................
+0E03  0000000000000002ffffffff7f02c700  D ................
+0E13  01000100180f00000000000000000080  D ................
+0E23  0201004001c80002006400ffffffff00  D ...@.....d......
+0E33  00000000000000000000000000000000  D ................
+0E43  00000000000000000000000000000000  D ................
+0E53  00000000000000000000000000000000  D ................
+0E63  00000000000000000000000000000000  D ................
+0E73  00000000000000000000000000000000  D ................
+0E83  00000000000000000000000000000000  D ................
+0E93  000000000000000000000000000000ff  D ................
+0EA3  ffff3fff3fff0fff0fff03ff03ff003f  D ..?.?..........?
+0EB3  003f00ff03ff33ff33ffc3ffc3ffff00  D .?....3.3.......
+0EC3  00008000c000e000f000f800fc00fe00  D ................
+0ED3  ff80ff00f8008c000c00060006000002  D ................
+0EE3  149114a3143a154a158315bd15f71506  D .....:.J........
+0EF3  16151633166316e91653175317541753  D ...3.c...S.S.T.S
+0F03  1753176f175317                    D .S.o.S.
+; timer_hook:
+0F0A  2e833ed80d00                      C cmp word ptr cs:[0xdd8], 0
+0F10  7427                              C je 0xf39
+0F12  2e803e090e00                      C cmp byte ptr cs:[0xe09], 0
+0F18  751f                              C jne 0xf39
+0F1A  2efe0e0a0e                        C dec byte ptr cs:[0xe0a]
+0F1F  7518                              C jne 0xf39
+0F21  50                                C push ax
+0F22  53                                C push bx
+0F23  51                                C push cx
+0F24  52                                C push dx
+0F25  56                                C push si
+0F26  57                                C push di
+0F27  9c                                C pushf 
+0F28  0e                                C push cs
+0F29  b8330f                            C mov ax, 0xf33
+0F2C  50                                C push ax
+0F2D  b80300                            C mov ax, 3
+0F30  eb0c                              C jmp 0xf3e
+0F32  905f5e5a595b58                    D ._^ZY[X
+; loc_0F39:
+0F39  2eff2e1b0e                        C ljmp cs:[0xe1b]
+; int33:
+0F3E  2efe06090e                        C inc byte ptr cs:[0xe09]
+0F43  2ec6060a0e02                      C mov byte ptr cs:[0xe0a], 2
+0F49  55                                C push bp
+0F4A  1e                                C push ds
+0F4B  56                                C push si
+0F4C  06                                C push es
+0F4D  57                                C push di
+0F4E  fc                                C cld 
+0F4F  2e8c06030e                        C mov word ptr cs:[0xe03], es
+0F54  50                                C push ax
+0F55  53                                C push bx
+0F56  51                                C push cx
+0F57  52                                C push dx
+0F58  57                                C push di
+0F59  8cc8                              C mov ax, cs
+0F5B  8ed8                              C mov ds, ax
+0F5D  b84000                            C mov ax, 0x40
+0F60  8ec0                              C mov es, ax
+0F62  bb1700                            C mov bx, 0x17
+0F65  268a07                            C mov al, byte ptr es:[bx]
+0F68  a2fe0d                            C mov byte ptr [0xdfe], al
+0F6B  8cc8                              C mov ax, cs
+0F6D  8ec0                              C mov es, ax
+0F6F  c606210e00                        C mov byte ptr [0xe21], 0
+0F74  c7061f0e2800                      C mov word ptr [0xe1f], 0x28
+0F7A  b40f                              C mov ah, 0xf
+0F7C  cd10                              C int 0x10
+0F7E  3c02                              C cmp al, 2
+0F80  721b                              C jb 0xf9d
+0F82  3c04                              C cmp al, 4
+0F84  7417                              C je 0xf9d
+0F86  3c05                              C cmp al, 5
+0F88  7413                              C je 0xf9d
+0F8A  3c0d                              C cmp al, 0xd
+0F8C  740f                              C je 0xf9d
+0F8E  3c13                              C cmp al, 0x13
+0F90  740b                              C je 0xf9d
+0F92  c7061f0e5000                      C mov word ptr [0xe1f], 0x50
+0F98  800e210e80                        C or byte ptr [0xe21], 0x80
+; loc_0F9D:
+0F9D  3c04                              C cmp al, 4
+0F9F  7204                              C jb 0xfa5
+0FA1  3c07                              C cmp al, 7
+0FA3  7505                              C jne 0xfaa
+; loc_0FA5:
+0FA5  800e210e08                        C or byte ptr [0xe21], 8
+; loc_0FAA:
+0FAA  3c0a                              C cmp al, 0xa
+0FAC  7709                              C ja 0xfb7
+0FAE  3c07                              C cmp al, 7
+0FB0  7305                              C jae 0xfb7
+0FB2  800e210e04                        C or byte ptr [0xe21], 4
+; loc_0FB7:
+0FB7  f606210e08                        C test byte ptr [0xe21], 8
+0FBC  751d                              C jne 0xfdb
+0FBE  3c0b                              C cmp al, 0xb
+0FC0  7219                              C jb 0xfdb
+0FC2  3c0e                              C cmp al, 0xe
+0FC4  7708                              C ja 0xfce
+0FC6  800e210e01                        C or byte ptr [0xe21], 1
+0FCB  eb0e                              C jmp 0xfdb
+0FCD  90                                D .
+; loc_0FCE:
+0FCE  3c0b                              C cmp al, 0xb
+0FD0  7404                              C je 0xfd6
+0FD2  3c0c                              C cmp al, 0xc
+0FD4  7505                              C jne 0xfdb
+; loc_0FD6:
+0FD6  800e210e02                        C or byte ptr [0xe21], 2
+; loc_0FDB:
+0FDB  c706220e8002                      C mov word ptr [0xe22], 0x280
+0FE1  c706280ec800                      C mov word ptr [0xe28], 0xc8
+0FE7  a0f50d                            C mov al, byte ptr [0xdf5]
+0FEA  a2e20d                            C mov byte ptr [0xde2], al
+0FED  5f                                C pop di
+0FEE  5a                                C pop dx
+0FEF  59                                C pop cx
+0FF0  5b                                C pop bx
+0FF1  58                                C pop ax
+0FF2  bfe20e                            C mov di, 0xee2
+0FF5  3d1300                            C cmp ax, 0x13
+0FF8  7703                              C ja 0xffd
+0FFA  e93801                            C jmp 0x1135
+; loc_0FFD:
+0FFD  3c4d                              C cmp al, 0x4d
+0FFF  752f                              C jne 0x1030
+1001  5f                                C pop di
+1002  07                                C pop es
+1003  0e                                C push cs
+1004  07                                C pop es
+1005  803e540d43                        C cmp byte ptr [0xd54], 0x43
+100A  7411                              C je 0x101d
+100C  53                                C push bx
+100D  51                                C push cx
+100E  bba00c                            C mov bx, 0xca0
+1011  b92401                            C mov cx, 0x124
+1014  90                                C nop 
+; loc_1015:
+1015  8037ff                            C xor byte ptr [bx], 0xff
+1018  43                                C inc bx
+1019  e2fa                              C loop 0x1015
+101B  59                                C pop cx
+101C  5b                                C pop bx
+; loc_101D:
+101D  bf540d                            C mov di, 0xd54
+1020  e93501                            C jmp 0x1158
+1023  00000000000000000000000000        D .............
+; loc_1030:
+1030  3c58                              C cmp al, 0x58
+1032  7403                              C je 0x1037
+1034  e9ac00                            C jmp 0x10e3
+; loc_1037:
+1037  e83807                            C call 0x1772
+103A  803ef50d00                        C cmp byte ptr [0xdf5], 0
+103F  745d                              C je 0x109e
+1041  803e2f1000                        C cmp byte ptr [0x102f], 0
+1046  7444                              C je 0x108c
+1048  803e3c0600                        C cmp byte ptr [0x63c], 0
+104D  753d                              C jne 0x108c
+104F  a1260e                            C mov ax, word ptr [0xe26]
+1052  2b062d10                          C sub ax, word ptr [0x102d]
+1056  7902                              C jns 0x105a
+1058  f7d8                              C neg ax
+; loc_105A:
+105A  3d1800                            C cmp ax, 0x18
+105D  772d                              C ja 0x108c
+105F  a1260e                            C mov ax, word ptr [0xe26]
+1062  2b062b10                          C sub ax, word ptr [0x102b]
+1066  d1f8                              C sar ax, 1
+1068  01062910                          C add word ptr [0x1029], ax
+106C  a12c0e                            C mov ax, word ptr [0xe2c]
+106F  2b062710                          C sub ax, word ptr [0x1027]
+1073  7902                              C jns 0x1077
+1075  f7d8                              C neg ax
+; loc_1077:
+1077  3d1800                            C cmp ax, 0x18
+107A  7710                              C ja 0x108c
+107C  a12c0e                            C mov ax, word ptr [0xe2c]
+107F  2b062510                          C sub ax, word ptr [0x1025]
+1083  d1f8                              C sar ax, 1
+1085  01062310                          C add word ptr [0x1023], ax
+1089  eb13                              C jmp 0x109e
+108B  90                                D .
+; loc_108C:
+108C  a12c0e                            C mov ax, word ptr [0xe2c]
+108F  a32310                            C mov word ptr [0x1023], ax
+1092  a32710                            C mov word ptr [0x1027], ax
+1095  a1260e                            C mov ax, word ptr [0xe26]
+1098  a32910                            C mov word ptr [0x1029], ax
+109B  a32d10                            C mov word ptr [0x102d], ax
+; loc_109E:
+109E  a12c0e                            C mov ax, word ptr [0xe2c]
+10A1  a32510                            C mov word ptr [0x1025], ax
+10A4  8b0e2310                          C mov cx, word ptr [0x1023]
+10A8  b81800                            C mov ax, 0x18
+10AB  f7e1                              C mul cx
+10AD  b9c700                            C mov cx, 0xc7
+10B0  f7f1                              C div cx
+10B2  40                                C inc ax
+10B3  8bc8                              C mov cx, ax
+10B5  8b1e260e                          C mov bx, word ptr [0xe26]
+10B9  891e2b10                          C mov word ptr [0x102b], bx
+10BD  8b1e2910                          C mov bx, word ptr [0x1029]
+10C1  b84f00                            C mov ax, 0x4f
+10C4  f7e3                              C mul bx
+10C6  bb7f02                            C mov bx, 0x27f
+10C9  f7f3                              C div bx
+10CB  40                                C inc ax
+10CC  8ae1                              C mov ah, cl
+10CE  8bd0                              C mov dx, ax
+10D0  8b1e2910                          C mov bx, word ptr [0x1029]
+10D4  8b0e2310                          C mov cx, word ptr [0x1023]
+10D8  8a26f50d                          C mov ah, byte ptr [0xdf5]
+10DC  88262f10                          C mov byte ptr [0x102f], ah
+10E0  eb74                              C jmp 0x1156
+10E2  90                                D .
+; loc_10E3:
+10E3  3c59                              C cmp al, 0x59
+10E5  750b                              C jne 0x10f2
+10E7  881e190e                          C mov byte ptr [0xe19], bl
+10EB  880e1a0e                          C mov byte ptr [0xe1a], cl
+10EF  eb65                              C jmp 0x1156
+10F1  90                                D .
+; loc_10F2:
+10F2  3c5a                              C cmp al, 0x5a
+10F4  7515                              C jne 0x110b
+10F6  8b1e0807                          C mov bx, word ptr [0x708]
+10FA  c70608070000                      C mov word ptr [0x708], 0
+1100  8a2e3c06                          C mov ch, byte ptr [0x63c]
+1104  8a0ec40d                          C mov cl, byte ptr [0xdc4]
+1108  eb4c                              C jmp 0x1156
+110A  90                                D .
+; loc_110B:
+110B  3c5b                              C cmp al, 0x5b
+110D  7510                              C jne 0x111f
+110F  880ec40d                          C mov byte ptr [0xdc4], cl
+1113  882e3c06                          C mov byte ptr [0x63c], ch
+1117  c6063b0600                        C mov byte ptr [0x63b], 0
+111C  eb38                              C jmp 0x1156
+111E  90                                D .
+; loc_111F:
+111F  3c5c                              C cmp al, 0x5c
+1121  750f                              C jne 0x1132
+1123  891e0a07                          C mov word ptr [0x70a], bx
+1127  890e0e07                          C mov word ptr [0x70e], cx
+112B  89161007                          C mov word ptr [0x710], dx
+112F  eb25                              C jmp 0x1156
+1131  90                                D .
+; loc_1132:
+1132  eb22                              C jmp 0x1156
+1134  90                                D .
+; loc_1135:
+1135  803e540d43                        C cmp byte ptr [0xd54], 0x43
+113A  7511                              C jne 0x114d
+113C  53                                C push bx
+113D  51                                C push cx
+113E  bba00c                            C mov bx, 0xca0
+1141  b92401                            C mov cx, 0x124
+1144  90                                C nop 
+; loc_1145:
+1145  8037ff                            C xor byte ptr [bx], 0xff
+1148  43                                C inc bx
+1149  e2fa                              C loop 0x1145
+114B  59                                C pop cx
+114C  5b                                C pop bx
+; loc_114D:
+114D  d1e0                              C shl ax, 1
+114F  03f8                              C add di, ax
+1151  ff15                              C call word ptr [di]
+1153  e8a400                            C call 0x11fa
+; loc_1156:
+1156  5f                                C pop di
+1157  07                                C pop es
+; loc_1158:
+1158  803e090e02                        C cmp byte ptr [0xe09], 2
+115D  7325                              C jae 0x1184
+115F  8b36d20d                          C mov si, word ptr [0xdd2]
+1163  2336d80d                          C and si, word ptr [0xdd8]
+1167  751e                              C jne 0x1187
+1169  803ef50d00                        C cmp byte ptr [0xdf5], 0
+116E  7514                              C jne 0x1184
+1170  50                                C push ax
+1171  a1d40d                            C mov ax, word ptr [0xdd4]
+1174  a3da0d                            C mov word ptr [0xdda], ax
+1177  a1d60d                            C mov ax, word ptr [0xdd6]
+117A  a3dc0d                            C mov word ptr [0xddc], ax
+117D  c706e30d0000                      C mov word ptr [0xde3], 0
+1183  58                                C pop ax
+; loc_1184:
+1184  eb6a                              C jmp 0x11f0
+1186  90                                D .
+; loc_1187:
+1187  50                                C push ax
+1188  53                                C push bx
+1189  51                                C push cx
+118A  52                                C push dx
+118B  56                                C push si
+118C  57                                C push di
+118D  a1e30d                            C mov ax, word ptr [0xde3]
+1190  23c0                              C and ax, ax
+1192  750c                              C jne 0x11a0
+1194  a12c0e                            C mov ax, word ptr [0xe2c]
+1197  a3e50d                            C mov word ptr [0xde5], ax
+119A  a1260e                            C mov ax, word ptr [0xe26]
+119D  a3e30d                            C mov word ptr [0xde3], ax
+; loc_11A0:
+11A0  8b0e260e                          C mov cx, word ptr [0xe26]
+11A4  2bc8                              C sub cx, ax
+11A6  a1240e                            C mov ax, word ptr [0xe24]
+11A9  f7e1                              C mul cx
+11AB  d1f8                              C sar ax, 1
+11AD  0306da0d                          C add ax, word ptr [0xdda]
+11B1  8bf0                              C mov si, ax
+11B3  a3d40d                            C mov word ptr [0xdd4], ax
+11B6  8b1e2c0e                          C mov bx, word ptr [0xe2c]
+11BA  2b1ee50d                          C sub bx, word ptr [0xde5]
+11BE  a12a0e                            C mov ax, word ptr [0xe2a]
+11C1  f7e3                              C mul bx
+11C3  0306dc0d                          C add ax, word ptr [0xddc]
+11C7  8bf8                              C mov di, ax
+11C9  a3d60d                            C mov word ptr [0xdd6], ax
+11CC  a1d20d                            C mov ax, word ptr [0xdd2]
+11CF  8b1ecf0d                          C mov bx, word ptr [0xdcf]
+11D3  8b0e260e                          C mov cx, word ptr [0xe26]
+11D7  8b162c0e                          C mov dx, word ptr [0xe2c]
+11DB  c706d20d0000                      C mov word ptr [0xdd2], 0
+11E1  2efe06090e                        C inc byte ptr cs:[0xe09]
+11E6  ff1e050e                          C lcall [0xe05]
+11EA  5f                                C pop di
+11EB  5e                                C pop si
+11EC  5a                                C pop dx
+11ED  59                                C pop cx
+11EE  5b                                C pop bx
+11EF  58                                C pop ax
+; loc_11F0:
+11F0  5e                                C pop si
+11F1  1f                                C pop ds
+11F2  5d                                C pop bp
+11F3  2ec606090e00                      C mov byte ptr cs:[0xe09], 0
+11F9  cf                                C iret 
+; loc_11FA:
+11FA  803e090e02                        C cmp byte ptr [0xe09], 2
+11FF  7201                              C jb 0x1202
+1201  c3                                C ret 
+; loc_1202:
+1202  50                                C push ax
+1203  53                                C push bx
+1204  51                                C push cx
+1205  52                                C push dx
+1206  06                                C push es
+1207  833e000e00                        C cmp word ptr [0xe00], 0
+120C  7903                              C jns 0x1211
+120E  e9ba01                            C jmp 0x13cb
+; loc_1211:
+1211  f606210e08                        C test byte ptr [0xe21], 8
+1216  7403                              C je 0x121b
+1218  e94301                            C jmp 0x135e
+; loc_121B:
+121B  a1260e                            C mov ax, word ptr [0xe26]
+121E  3b062e0e                          C cmp ax, word ptr [0xe2e]
+1222  750c                              C jne 0x1230
+1224  a12c0e                            C mov ax, word ptr [0xe2c]
+1227  3b06300e                          C cmp ax, word ptr [0xe30]
+122B  7503                              C jne 0x1230
+122D  e99b01                            C jmp 0x13cb
+; loc_1230:
+1230  a1260e                            C mov ax, word ptr [0xe26]
+1233  a32e0e                            C mov word ptr [0xe2e], ax
+1236  a12c0e                            C mov ax, word ptr [0xe2c]
+1239  a3300e                            C mov word ptr [0xe30], ax
+123C  a1e00d                            C mov ax, word ptr [0xde0]
+123F  23c0                              C and ax, ax
+1241  7415                              C je 0x1258
+1243  8ec0                              C mov es, ax
+1245  8b3ede0d                          C mov di, word ptr [0xdde]
+1249  b91000                            C mov cx, 0x10
+124C  be320e                            C mov si, 0xe32
+; loc_124F:
+124F  ad                                C lodsw ax, word ptr [si]
+1250  ab                                C stosw word ptr es:[di], ax
+1251  ac                                C lodsb al, byte ptr [si]
+1252  aa                                C stosb byte ptr es:[di], al
+1253  e8c902                            C call 0x151f
+1256  e2f7                              C loop 0x124f
+; loc_1258:
+1258  33ff                              C xor di, di
+125A  f606210e03                        C test byte ptr [0xe21], 3
+125F  747b                              C je 0x12dc
+1261  b800a0                            C mov ax, 0xa000
+1264  8ec0                              C mov es, ax
+1266  a3e00d                            C mov word ptr [0xde0], ax
+1269  a12c0e                            C mov ax, word ptr [0xe2c]
+126C  f606210e02                        C test byte ptr [0xe21], 2
+1271  740a                              C je 0x127d
+1273  bbe001                            C mov bx, 0x1e0
+1276  f7e3                              C mul bx
+1278  bbc800                            C mov bx, 0xc8
+127B  f7f3                              C div bx
+; loc_127D:
+127D  2b060d0e                          C sub ax, word ptr [0xe0d]
+1281  bb5000                            C mov bx, 0x50
+1284  f7e3                              C mul bx
+1286  03f8                              C add di, ax
+1288  a1260e                            C mov ax, word ptr [0xe26]
+128B  2b060b0e                          C sub ax, word ptr [0xe0b]
+128F  8bc8                              C mov cx, ax
+1291  83e107                            C and cx, 7
+1294  d1e8                              C shr ax, 1
+1296  d1e8                              C shr ax, 1
+1298  d1e8                              C shr ax, 1
+129A  03f8                              C add di, ax
+129C  893ede0d                          C mov word ptr [0xdde], di
+12A0  be320e                            C mov si, 0xe32
+12A3  b91000                            C mov cx, 0x10
+; loc_12A6:
+12A6  268b05                            C mov ax, word ptr es:[di]
+12A9  8904                              C mov word ptr [si], ax
+12AB  268a4502                          C mov al, byte ptr es:[di + 2]
+12AF  884402                            C mov byte ptr [si + 2], al
+12B2  83c603                            C add si, 3
+12B5  83c750                            C add di, 0x50
+12B8  e2ec                              C loop 0x12a6
+12BA  8b3ede0d                          C mov di, word ptr [0xdde]
+12BE  be620e                            C mov si, 0xe62
+12C1  b91000                            C mov cx, 0x10
+; loc_12C4:
+12C4  268b05                            C mov ax, word ptr es:[di]
+12C7  86e0                              C xchg al, ah
+12C9  2304                              C and ax, word ptr [si]
+12CB  334420                            C xor ax, word ptr [si + 0x20]
+12CE  86e0                              C xchg al, ah
+12D0  ab                                C stosw word ptr es:[di], ax
+12D1  83c602                            C add si, 2
+12D4  83c74e                            C add di, 0x4e
+12D7  e2eb                              C loop 0x12c4
+12D9  e9ef00                            C jmp 0x13cb
+; loc_12DC:
+12DC  b800b8                            C mov ax, 0xb800
+12DF  8ec0                              C mov es, ax
+12E1  a3e00d                            C mov word ptr [0xde0], ax
+12E4  a12c0e                            C mov ax, word ptr [0xe2c]
+12E7  2b060d0e                          C sub ax, word ptr [0xe0d]
+12EB  a90100                            C test ax, 1
+12EE  7404                              C je 0x12f4
+12F0  81c70020                          C add di, 0x2000
+; loc_12F4:
+12F4  d1e8                              C shr ax, 1
+12F6  bb5000                            C mov bx, 0x50
+12F9  f7e3                              C mul bx
+12FB  03f8                              C add di, ax
+12FD  a1260e                            C mov ax, word ptr [0xe26]
+1300  2b060b0e                          C sub ax, word ptr [0xe0b]
+1304  8bc8                              C mov cx, ax
+1306  83e107                            C and cx, 7
+1309  d1e8                              C shr ax, 1
+130B  d1e8                              C shr ax, 1
+130D  d1e8                              C shr ax, 1
+130F  03f8                              C add di, ax
+1311  893ede0d                          C mov word ptr [0xdde], di
+1315  be320e                            C mov si, 0xe32
+1318  b91000                            C mov cx, 0x10
+; loc_131B:
+131B  268b05                            C mov ax, word ptr es:[di]
+131E  8904                              C mov word ptr [si], ax
+1320  268a4502                          C mov al, byte ptr es:[di + 2]
+1324  884402                            C mov byte ptr [si + 2], al
+1327  83c603                            C add si, 3
+132A  83c703                            C add di, 3
+132D  e8ef01                            C call 0x151f
+1330  e2e9                              C loop 0x131b
+1332  8b3ede0d                          C mov di, word ptr [0xdde]
+1336  be620e                            C mov si, 0xe62
+1339  b91000                            C mov cx, 0x10
+; loc_133C:
+133C  268b05                            C mov ax, word ptr es:[di]
+133F  86e0                              C xchg al, ah
+1341  2304                              C and ax, word ptr [si]
+1343  334420                            C xor ax, word ptr [si + 0x20]
+1346  86e0                              C xchg al, ah
+1348  23ff                              C and di, di
+134A  7807                              C js 0x1353
+134C  81ff403f                          C cmp di, 0x3f40
+1350  7709                              C ja 0x135b
+1352  ab                                C stosw word ptr es:[di], ax
+; loc_1353:
+1353  46                                C inc si
+1354  46                                C inc si
+1355  47                                C inc di
+1356  e8c601                            C call 0x151f
+1359  e2e1                              C loop 0x133c
+; loc_135B:
+135B  eb6e                              C jmp 0x13cb
+135D  90                                D .
+; loc_135E:
+135E  803e020e00                        C cmp byte ptr [0xe02], 0
+1363  7551                              C jne 0x13b6
+1365  e86900                            C call 0x13d1
+1368  3b16ef0d                          C cmp dx, word ptr [0xdef]
+136C  745d                              C je 0x13cb
+136E  8b16ef0d                          C mov dx, word ptr [0xdef]
+1372  23d2                              C and dx, dx
+1374  7414                              C je 0x138a
+1376  b402                              C mov ah, 2
+1378  b700                              C mov bh, 0
+137A  cd10                              C int 0x10
+137C  a1f30d                            C mov ax, word ptr [0xdf3]
+137F  8adc                              C mov bl, ah
+1381  b409                              C mov ah, 9
+1383  b700                              C mov bh, 0
+1385  b90100                            C mov cx, 1
+1388  cd10                              C int 0x10
+; loc_138A:
+138A  e84400                            C call 0x13d1
+138D  8916ef0d                          C mov word ptr [0xdef], dx
+1391  b700                              C mov bh, 0
+1393  b402                              C mov ah, 2
+1395  cd10                              C int 0x10
+1397  b408                              C mov ah, 8
+1399  b700                              C mov bh, 0
+139B  cd10                              C int 0x10
+139D  a3f30d                            C mov word ptr [0xdf3], ax
+13A0  2306f10d                          C and ax, word ptr [0xdf1]
+13A4  3306170e                          C xor ax, word ptr [0xe17]
+13A8  8adc                              C mov bl, ah
+13AA  b700                              C mov bh, 0
+13AC  b409                              C mov ah, 9
+13AE  b90100                            C mov cx, 1
+13B1  cd10                              C int 0x10
+13B3  eb16                              C jmp 0x13cb
+13B5  90                                D .
+; loc_13B6:
+13B6  8a2ed10d                          C mov ch, byte ptr [0xdd1]
+13BA  b401                              C mov ah, 1
+13BC  8a0eff0d                          C mov cl, byte ptr [0xdff]
+13C0  cd10                              C int 0x10
+13C2  e80c00                            C call 0x13d1
+13C5  b402                              C mov ah, 2
+13C7  b700                              C mov bh, 0
+13C9  cd10                              C int 0x10
+; loc_13CB:
+13CB  07                                C pop es
+13CC  5a                                C pop dx
+13CD  59                                C pop cx
+13CE  5b                                C pop bx
+13CF  58                                C pop ax
+13D0  c3                                C ret 
+; loc_13D1:
+13D1  a1260e                            C mov ax, word ptr [0xe26]
+13D4  8b1e1f0e                          C mov bx, word ptr [0xe1f]
+13D8  4b                                C dec bx
+13D9  f7e3                              C mul bx
+13DB  8b1e220e                          C mov bx, word ptr [0xe22]
+13DF  f7f3                              C div bx
+13E1  d1e2                              C shl dx, 1
+13E3  3bd3                              C cmp dx, bx
+13E5  7201                              C jb 0x13e8
+13E7  40                                C inc ax
+; loc_13E8:
+13E8  50                                C push ax
+13E9  a12c0e                            C mov ax, word ptr [0xe2c]
+13EC  bb1900                            C mov bx, 0x19
+13EF  f7e3                              C mul bx
+13F1  8b1e280e                          C mov bx, word ptr [0xe28]
+13F5  f7f3                              C div bx
+13F7  d1e2                              C shl dx, 1
+13F9  3bd3                              C cmp dx, bx
+13FB  7201                              C jb 0x13fe
+13FD  40                                C inc ax
+; loc_13FE:
+13FE  5a                                C pop dx
+13FF  8af0                              C mov dh, al
+1401  c3                                C ret 
+; mouse_reset:
+1402  bfc60d                            C mov di, 0xdc6
+1405  b93800                            C mov cx, 0x38
+1408  33c0                              C xor ax, ax
+140A  f3aa                              C rep stosb byte ptr es:[di], al
+140C  c6063b0600                        C mov byte ptr [0x63b], 0
+1411  c706cb0a8813                      C mov word ptr [0xacb], 0x1388
+1417  c706cd0a8813                      C mov word ptr [0xacd], 0x1388
+141D  c7062e0effff                      C mov word ptr [0xe2e], 0xffff
+1423  c706000effff                      C mov word ptr [0xe00], 0xffff
+1429  c606ff0d07                        C mov byte ptr [0xdff], 7
+142E  c606020e01                        C mov byte ptr [0xe02], 1
+1433  c706170e180f                      C mov word ptr [0xe17], 0xf18
+1439  c706130e0100                      C mov word ptr [0xe13], 1
+143F  c706150e0100                      C mov word ptr [0xe15], 1
+1445  c7060f0e7f02                      C mov word ptr [0xe0f], 0x27f
+144B  a1280e                            C mov ax, word ptr [0xe28]
+144E  48                                C dec ax
+144F  a3110e                            C mov word ptr [0xe11], ax
+1452  c706260e4001                      C mov word ptr [0xe26], 0x140
+1458  a1280e                            C mov ax, word ptr [0xe28]
+145B  d1e8                              C shr ax, 1
+145D  a32c0e                            C mov word ptr [0xe2c], ax
+1460  c706240e0100                      C mov word ptr [0xe24], 1
+1466  c7062a0e0200                      C mov word ptr [0xe2a], 2
+146C  c6060a0e02                        C mov byte ptr [0xe0a], 2
+1471  b92000                            C mov cx, 0x20
+1474  bea20e                            C mov si, 0xea2
+1477  bf620e                            C mov di, 0xe62
+147A  f3a5                              C rep movsw word ptr es:[di], word ptr [si]
+147C  b520                              C mov ch, 0x20
+147E  b401                              C mov ah, 1
+1480  8a0eff0d                          C mov cl, byte ptr [0xdff]
+1484  cd10                              C int 0x10
+1486  b8ffff                            C mov ax, 0xffff
+1489  bb0300                            C mov bx, 3
+148C  33c9                              C xor cx, cx
+148E  33d2                              C xor dx, dx
+1490  c3                                C ret 
+; mouse_show:
+1491  a1000e                            C mov ax, word ptr [0xe00]
+1494  23c0                              C and ax, ax
+1496  740a                              C je 0x14a2
+1498  40                                C inc ax
+1499  c7062e0effff                      C mov word ptr [0xe2e], 0xffff
+149F  a3000e                            C mov word ptr [0xe00], ax
+; loc_14A2:
+14A2  c3                                C ret 
+; mouse_hide:
+14A3  53                                C push bx
+14A4  51                                C push cx
+14A5  52                                C push dx
+14A6  c7062e0effff                      C mov word ptr [0xe2e], 0xffff
+14AC  ff0e000e                          C dec word ptr [0xe00]
+14B0  833e000eff                        C cmp word ptr [0xe00], -1
+14B5  7561                              C jne 0x1518
+14B7  b520                              C mov ch, 0x20
+14B9  b401                              C mov ah, 1
+14BB  8a0eff0d                          C mov cl, byte ptr [0xdff]
+14BF  cd10                              C int 0x10
+14C1  f606210e08                        C test byte ptr [0xe21], 8
+14C6  7527                              C jne 0x14ef
+14C8  a1e00d                            C mov ax, word ptr [0xde0]
+14CB  23c0                              C and ax, ax
+14CD  741d                              C je 0x14ec
+14CF  06                                C push es
+14D0  8ec0                              C mov es, ax
+14D2  8b3ede0d                          C mov di, word ptr [0xdde]
+14D6  b91000                            C mov cx, 0x10
+14D9  be320e                            C mov si, 0xe32
+; loc_14DC:
+14DC  ad                                C lodsw ax, word ptr [si]
+14DD  ab                                C stosw word ptr es:[di], ax
+14DE  ac                                C lodsb al, byte ptr [si]
+14DF  aa                                C stosb byte ptr es:[di], al
+14E0  e83c00                            C call 0x151f
+14E3  e2f7                              C loop 0x14dc
+14E5  c706e00d0000                      C mov word ptr [0xde0], 0
+14EB  07                                C pop es
+; loc_14EC:
+14EC  eb2a                              C jmp 0x1518
+14EE  90                                D .
+; loc_14EF:
+14EF  803e020e00                        C cmp byte ptr [0xe02], 0
+14F4  7522                              C jne 0x1518
+14F6  8b16ef0d                          C mov dx, word ptr [0xdef]
+14FA  23d2                              C and dx, dx
+14FC  741a                              C je 0x1518
+14FE  c706ef0d0000                      C mov word ptr [0xdef], 0
+1504  b402                              C mov ah, 2
+1506  b700                              C mov bh, 0
+1508  cd10                              C int 0x10
+150A  a1f30d                            C mov ax, word ptr [0xdf3]
+150D  8adc                              C mov bl, ah
+150F  b409                              C mov ah, 9
+1511  b700                              C mov bh, 0
+1513  b90100                            C mov cx, 1
+1516  cd10                              C int 0x10
+; loc_1518:
+1518  5a                                C pop dx
+1519  59                                C pop cx
+151A  5b                                C pop bx
+151B  a1000e                            C mov ax, word ptr [0xe00]
+151E  c3                                C ret 
+; loc_151F:
+151F  f606210e03                        C test byte ptr [0xe21], 3
+1524  7404                              C je 0x152a
+1526  83c74d                            C add di, 0x4d
+1529  c3                                C ret 
+; loc_152A:
+152A  f7c70020                          C test di, 0x2000
+152E  7505                              C jne 0x1535
+1530  81c7fd1f                          C add di, 0x1ffd
+1534  c3                                C ret 
+; loc_1535:
+1535  81efb31f                          C sub di, 0x1fb3
+1539  c3                                C ret 
+; mouse_position:
+153A  e83502                            C call 0x1772
+153D  8b1ecf0d                          C mov bx, word ptr [0xdcf]
+1541  8b0e260e                          C mov cx, word ptr [0xe26]
+1545  8b162c0e                          C mov dx, word ptr [0xe2c]
+1549  c3                                C ret 
+; mouse_set_position:
+154A  890e260e                          C mov word ptr [0xe26], cx
+154E  89162c0e                          C mov word ptr [0xe2c], dx
+1552  c706e50d0000                      C mov word ptr [0xde5], 0
+1558  c706e30d0000                      C mov word ptr [0xde3], 0
+155E  c706cb0a8813                      C mov word ptr [0xacb], 0x1388
+1564  c706cd0a8813                      C mov word ptr [0xacd], 0x1388
+156A  c706da0d0000                      C mov word ptr [0xdda], 0
+1570  c706dc0d0000                      C mov word ptr [0xddc], 0
+1576  c706d40d0000                      C mov word ptr [0xdd4], 0
+157C  c706d60d0000                      C mov word ptr [0xdd6], 0
+1582  c3                                C ret 
+; mouse_press_info:
+1583  e8ec01                            C call 0x1772
+1586  83fb01                            C cmp bx, 1
+1589  740f                              C je 0x159a
+158B  771a                              C ja 0x15a7
+158D  8b1ee90d                          C mov bx, word ptr [0xde9]
+1591  c706e90d0000                      C mov word ptr [0xde9], 0
+1597  eb18                              C jmp 0x15b1
+1599  90                                D .
+; loc_159A:
+159A  8b1eed0d                          C mov bx, word ptr [0xded]
+159E  c706ed0d0000                      C mov word ptr [0xded], 0
+15A4  eb0b                              C jmp 0x15b1
+15A6  90                                D .
+; loc_15A7:
+15A7  8b1eeb0d                          C mov bx, word ptr [0xdeb]
+15AB  c706eb0d0000                      C mov word ptr [0xdeb], 0
+; loc_15B1:
+15B1  a1cf0d                            C mov ax, word ptr [0xdcf]
+15B4  8b0e260e                          C mov cx, word ptr [0xe26]
+15B8  8b162c0e                          C mov dx, word ptr [0xe2c]
+15BC  c3                                C ret 
+; mouse_release_info:
+15BD  e8b201                            C call 0x1772
+15C0  83fb01                            C cmp bx, 1
+15C3  740f                              C je 0x15d4
+15C5  771a                              C ja 0x15e1
+15C7  8b1ec80d                          C mov bx, word ptr [0xdc8]
+15CB  c706c80d0000                      C mov word ptr [0xdc8], 0
+15D1  eb18                              C jmp 0x15eb
+15D3  90                                D .
+; loc_15D4:
+15D4  8b1ecc0d                          C mov bx, word ptr [0xdcc]
+15D8  c706cc0d0000                      C mov word ptr [0xdcc], 0
+15DE  eb0b                              C jmp 0x15eb
+15E0  90                                D .
+; loc_15E1:
+15E1  8b1eca0d                          C mov bx, word ptr [0xdca]
+15E5  c706ca0d0000                      C mov word ptr [0xdca], 0
+; loc_15EB:
+15EB  a1cf0d                            C mov ax, word ptr [0xdcf]
+15EE  8b0e260e                          C mov cx, word ptr [0xe26]
+15F2  8b162c0e                          C mov dx, word ptr [0xe2c]
+15F6  c3                                C ret 
+; mouse_horizontal_bounds:
+15F7  3bca                              C cmp cx, dx
+15F9  7202                              C jb 0x15fd
+15FB  87ca                              C xchg dx, cx
+; loc_15FD:
+15FD  890e130e                          C mov word ptr [0xe13], cx
+1601  89160f0e                          C mov word ptr [0xe0f], dx
+1605  c3                                C ret 
+; mouse_vertical_bounds:
+1606  3bca                              C cmp cx, dx
+1608  7202                              C jb 0x160c
+160A  87ca                              C xchg dx, cx
+; loc_160C:
+160C  890e150e                          C mov word ptr [0xe15], cx
+1610  8916110e                          C mov word ptr [0xe11], dx
+1614  c3                                C ret 
+; mouse_graphics_cursor:
+1615  51                                C push cx
+1616  52                                C push dx
+1617  1e                                C push ds
+1618  891e0b0e                          C mov word ptr [0xe0b], bx
+161C  890e0d0e                          C mov word ptr [0xe0d], cx
+1620  2e8e1e030e                        C mov ds, word ptr cs:[0xe03]
+1625  8bf2                              C mov si, dx
+1627  bf620e                            C mov di, 0xe62
+162A  b92000                            C mov cx, 0x20
+162D  f3a5                              C rep movsw word ptr es:[di], word ptr [si]
+162F  1f                                C pop ds
+1630  5a                                C pop dx
+1631  59                                C pop cx
+1632  c3                                C ret 
+; mouse_text_cursor:
+1633  c606d10d00                        C mov byte ptr [0xdd1], 0
+1638  c606ff0d07                        C mov byte ptr [0xdff], 7
+163D  881e020e                          C mov byte ptr [0xe02], bl
+1641  22db                              C and bl, bl
+1643  740b                              C je 0x1650
+1645  880ed10d                          C mov byte ptr [0xdd1], cl
+1649  8816ff0d                          C mov byte ptr [0xdff], dl
+164D  eb13                              C jmp 0x1662
+164F  90                                D .
+; loc_1650:
+1650  890ef10d                          C mov word ptr [0xdf1], cx
+1654  8916170e                          C mov word ptr [0xe17], dx
+1658  b520                              C mov ch, 0x20
+165A  b401                              C mov ah, 1
+165C  8a0eff0d                          C mov cl, byte ptr [0xdff]
+1660  cd10                              C int 0x10
+; loc_1662:
+1662  c3                                C ret 
+; mouse_motion:
+1663  e80c01                            C call 0x1772
+1666  c706da0d0000                      C mov word ptr [0xdda], 0
+166C  c706dc0d0000                      C mov word ptr [0xddc], 0
+1672  c706d40d0000                      C mov word ptr [0xdd4], 0
+1678  c706d60d0000                      C mov word ptr [0xdd6], 0
+167E  33c9                              C xor cx, cx
+1680  33d2                              C xor dx, dx
+1682  803ef50d00                        C cmp byte ptr [0xdf5], 0
+1687  750d                              C jne 0x1696
+1689  c706e30d0000                      C mov word ptr [0xde3], 0
+168F  c706e50d0000                      C mov word ptr [0xde5], 0
+1695  c3                                C ret 
+; loc_1696:
+1696  803e3c0600                        C cmp byte ptr [0x63c], 0
+169B  7417                              C je 0x16b4
+169D  8b0efa0d                          C mov cx, word ptr [0xdfa]
+16A1  8b16fc0d                          C mov dx, word ptr [0xdfc]
+16A5  c706fa0d0000                      C mov word ptr [0xdfa], 0
+16AB  c706fc0d0000                      C mov word ptr [0xdfc], 0
+16B1  eb28                              C jmp 0x16db
+16B3  90                                D .
+; loc_16B4:
+16B4  a1e30d                            C mov ax, word ptr [0xde3]
+16B7  23c0                              C and ax, ax
+16B9  7420                              C je 0x16db
+16BB  781e                              C js 0x16db
+16BD  8b0e260e                          C mov cx, word ptr [0xe26]
+16C1  2bc8                              C sub cx, ax
+16C3  a1240e                            C mov ax, word ptr [0xe24]
+16C6  f7e1                              C mul cx
+16C8  d1f8                              C sar ax, 1
+16CA  8bc8                              C mov cx, ax
+16CC  8b1e2c0e                          C mov bx, word ptr [0xe2c]
+16D0  2b1ee50d                          C sub bx, word ptr [0xde5]
+16D4  a12a0e                            C mov ax, word ptr [0xe2a]
+16D7  f7e3                              C mul bx
+16D9  8bd0                              C mov dx, ax
+; loc_16DB:
+16DB  a1260e                            C mov ax, word ptr [0xe26]
+16DE  a3e30d                            C mov word ptr [0xde3], ax
+16E1  a12c0e                            C mov ax, word ptr [0xe2c]
+16E4  a3e50d                            C mov word ptr [0xde5], ax
+16E7  c3                                C ret 
+16E8  cb                                D .
+; mouse_callback:
+16E9  fa                                C cli 
+16EA  890ed80d                          C mov word ptr [0xdd8], cx
+16EE  8916050e                          C mov word ptr [0xe05], dx
+16F2  c6060a0e02                        C mov byte ptr [0xe0a], 2
+16F7  c706da0d0000                      C mov word ptr [0xdda], 0
+16FD  c706dc0d0000                      C mov word ptr [0xddc], 0
+1703  c706d40d0000                      C mov word ptr [0xdd4], 0
+1709  c706d60d0000                      C mov word ptr [0xdd6], 0
+170F  a1030e                            C mov ax, word ptr [0xe03]
+1712  a3070e                            C mov word ptr [0xe07], ax
+1715  23c0                              C and ax, ax
+1717  750b                              C jne 0x1724
+1719  8cc8                              C mov ax, cs
+171B  a3070e                            C mov word ptr [0xe07], ax
+171E  b8e816                            C mov ax, 0x16e8
+1721  a3050e                            C mov word ptr [0xe05], ax
+; loc_1724:
+1724  fb                                C sti 
+1725  06                                C push es
+1726  52                                C push dx
+1727  833e1d0e00                        C cmp word ptr [0xe1d], 0
+172C  7522                              C jne 0x1750
+172E  33c0                              C xor ax, ax
+1730  8ec0                              C mov es, ax
+1732  fa                                C cli 
+1733  bb2000                            C mov bx, 0x20
+1736  268b07                            C mov ax, word ptr es:[bx]
+1739  a31b0e                            C mov word ptr [0xe1b], ax
+173C  268b4702                          C mov ax, word ptr es:[bx + 2]
+1740  a31d0e                            C mov word ptr [0xe1d], ax
+1743  8cc8                              C mov ax, cs
+1745  26894702                          C mov word ptr es:[bx + 2], ax
+1749  b80a0f                            C mov ax, 0xf0a
+174C  268907                            C mov word ptr es:[bx], ax
+174F  fb                                C sti 
+; loc_1750:
+1750  5a                                C pop dx
+1751  07                                C pop es
+1752  c3                                C ret 
+; mouse_noop_13:
+1753  c3                                C ret 
+; mouse_ratios:
+1754  83f901                            C cmp cx, 1
+1757  7d03                              C jge 0x175c
+1759  b90100                            C mov cx, 1
+; loc_175C:
+175C  83fa01                            C cmp dx, 1
+175F  7d03                              C jge 0x1764
+1761  ba0100                            C mov dx, 1
+; loc_1764:
+1764  890e240e                          C mov word ptr [0xe24], cx
+1768  d1e2                              C shl dx, 1
+176A  89162a0e                          C mov word ptr [0xe2a], dx
+176E  c3                                C ret 
+; mouse_large_cursor_unsupported:
+176F  33c0                              C xor ax, ax
+1771  c3                                C ret 
+; mouse_poll:
+1772  803e090e02                        C cmp byte ptr [0xe09], 2
+1777  7201                              C jb 0x177a
+1779  c3                                C ret 
+; loc_177A:
+177A  53                                C push bx
+177B  51                                C push cx
+177C  52                                C push dx
+177D  06                                C push es
+177E  57                                C push di
+177F  55                                C push bp
+1780  0e                                C push cs
+1781  07                                C pop es
+1782  fc                                C cld 
+1783  e88cef                            C call 0x712
+1786  a10107                            C mov ax, word ptr [0x701]
+1789  23c0                              C and ax, ax
+178B  7909                              C jns 0x1796
+178D  c706c60d0100                      C mov word ptr [0xdc6], 1
+1793  e99400                            C jmp 0x182a
+; loc_1796:
+1796  8b1e220e                          C mov bx, word ptr [0xe22]
+179A  f7e3                              C mul bx
+179C  bb0f27                            C mov bx, 0x270f
+179F  f7f3                              C div bx
+17A1  3b060f0e                          C cmp ax, word ptr [0xe0f]
+17A5  7603                              C jbe 0x17aa
+17A7  a10f0e                            C mov ax, word ptr [0xe0f]
+; loc_17AA:
+17AA  3b06130e                          C cmp ax, word ptr [0xe13]
+17AE  7704                              C ja 0x17b4
+17B0  a1130e                            C mov ax, word ptr [0xe13]
+17B3  40                                C inc ax
+; loc_17B4:
+17B4  3b06f60d                          C cmp ax, word ptr [0xdf6]
+17B8  740e                              C je 0x17c8
+17BA  830ed20d01                        C or word ptr [0xdd2], 1
+17BF  a3f60d                            C mov word ptr [0xdf6], ax
+17C2  a0c40d                            C mov al, byte ptr [0xdc4]
+17C5  a2c50d                            C mov byte ptr [0xdc5], al
+; loc_17C8:
+17C8  a10307                            C mov ax, word ptr [0x703]
+17CB  8b1e280e                          C mov bx, word ptr [0xe28]
+17CF  f7e3                              C mul bx
+17D1  bb0f27                            C mov bx, 0x270f
+17D4  f7f3                              C div bx
+17D6  3b06110e                          C cmp ax, word ptr [0xe11]
+17DA  7603                              C jbe 0x17df
+17DC  a1110e                            C mov ax, word ptr [0xe11]
+; loc_17DF:
+17DF  3b06150e                          C cmp ax, word ptr [0xe15]
+17E3  7303                              C jae 0x17e8
+17E5  a1150e                            C mov ax, word ptr [0xe15]
+; loc_17E8:
+17E8  3b06f80d                          C cmp ax, word ptr [0xdf8]
+17EC  740e                              C je 0x17fc
+17EE  a3f80d                            C mov word ptr [0xdf8], ax
+17F1  830ed20d01                        C or word ptr [0xdd2], 1
+17F6  a0c40d                            C mov al, byte ptr [0xdc4]
+17F9  a2c50d                            C mov byte ptr [0xdc5], al
+; loc_17FC:
+17FC  fe0ec50d                          C dec byte ptr [0xdc5]
+1800  7516                              C jne 0x1818
+; loc_1802:
+1802  a1f60d                            C mov ax, word ptr [0xdf6]
+1805  a3260e                            C mov word ptr [0xe26], ax
+1808  a1f80d                            C mov ax, word ptr [0xdf8]
+180B  a32c0e                            C mov word ptr [0xe2c], ax
+180E  c706c60d0000                      C mov word ptr [0xdc6], 0
+1814  fe06c50d                          C inc byte ptr [0xdc5]
+; loc_1818:
+1818  c606f50d01                        C mov byte ptr [0xdf5], 1
+181D  a1260e                            C mov ax, word ptr [0xe26]
+1820  833ec60d00                        C cmp word ptr [0xdc6], 0
+1825  75db                              C jne 0x1802
+1827  eb11                              C jmp 0x183a
+1829  90                                D .
+; loc_182A:
+182A  c606c50d01                        C mov byte ptr [0xdc5], 1
+182F  a0f50d                            C mov al, byte ptr [0xdf5]
+1832  a2ce0d                            C mov byte ptr [0xdce], al
+1835  c606f50d00                        C mov byte ptr [0xdf5], 0
+; loc_183A:
+183A  c706cf0d0000                      C mov word ptr [0xdcf], 0
+1840  8a26d50a                          C mov ah, byte ptr [0xad5]
+1844  a0fe0d                            C mov al, byte ptr [0xdfe]
+1847  803ef50d00                        C cmp byte ptr [0xdf5], 0
+184C  751c                              C jne 0x186a
+184E  0a26e70d                          C or ah, byte ptr [0xde7]
+1852  a804                              C test al, 4
+1854  7503                              C jne 0x1859
+1856  80e4fe                            C and ah, 0xfe
+; loc_1859:
+1859  a808                              C test al, 8
+185B  7503                              C jne 0x1860
+185D  80e4fd                            C and ah, 0xfd
+; loc_1860:
+1860  a802                              C test al, 2
+1862  7503                              C jne 0x1867
+1864  80e4fb                            C and ah, 0xfb
+; loc_1867:
+1867  eb21                              C jmp 0x188a
+1869  90                                D .
+; loc_186A:
+186A  0a261a0e                          C or ah, byte ptr [0xe1a]
+186E  803e3c0600                        C cmp byte ptr [0x63c], 0
+1873  7515                              C jne 0x188a
+1875  a804                              C test al, 4
+1877  7403                              C je 0x187c
+1879  80cc01                            C or ah, 1
+; loc_187C:
+187C  a808                              C test al, 8
+187E  7403                              C je 0x1883
+1880  80cc02                            C or ah, 2
+; loc_1883:
+1883  a802                              C test al, 2
+1885  7403                              C je 0x188a
+1887  80cc04                            C or ah, 4
+; loc_188A:
+188A  803ece0d00                        C cmp byte ptr [0xdce], 0
+188F  7404                              C je 0x1895
+1891  0a26190e                          C or ah, byte ptr [0xe19]
+; loc_1895:
+1895  8826cf0d                          C mov byte ptr [0xdcf], ah
+1899  a0e70d                            C mov al, byte ptr [0xde7]
+189C  8826e70d                          C mov byte ptr [0xde7], ah
+18A0  32c4                              C xor al, ah
+18A2  745a                              C je 0x18fe
+18A4  a801                              C test al, 1
+18A6  741a                              C je 0x18c2
+18A8  f6c401                            C test ah, 1
+18AB  750c                              C jne 0x18b9
+18AD  830ed20d04                        C or word ptr [0xdd2], 4
+18B2  ff06c80d                          C inc word ptr [0xdc8]
+18B6  eb0a                              C jmp 0x18c2
+18B8  90                                D .
+; loc_18B9:
+18B9  ff06e90d                          C inc word ptr [0xde9]
+18BD  830ed20d02                        C or word ptr [0xdd2], 2
+; loc_18C2:
+18C2  a802                              C test al, 2
+18C4  741a                              C je 0x18e0
+18C6  f6c402                            C test ah, 2
+18C9  750c                              C jne 0x18d7
+18CB  830ed20d10                        C or word ptr [0xdd2], 0x10
+18D0  ff06cc0d                          C inc word ptr [0xdcc]
+18D4  eb0a                              C jmp 0x18e0
+18D6  90                                D .
+; loc_18D7:
+18D7  ff06ed0d                          C inc word ptr [0xded]
+18DB  830ed20d08                        C or word ptr [0xdd2], 8
+; loc_18E0:
+18E0  a804                              C test al, 4
+18E2  741a                              C je 0x18fe
+18E4  f6c404                            C test ah, 4
+18E7  750c                              C jne 0x18f5
+18E9  830ed20d40                        C or word ptr [0xdd2], 0x40
+18EE  ff06ca0d                          C inc word ptr [0xdca]
+18F2  eb0a                              C jmp 0x18fe
+18F4  90                                D .
+; loc_18F5:
+18F5  ff06eb0d                          C inc word ptr [0xdeb]
+18F9  830ed20d20                        C or word ptr [0xdd2], 0x20
+; loc_18FE:
+18FE  5d                                C pop bp
+18FF  5f                                C pop di
+1900  07                                C pop es
+1901  5a                                C pop dx
+1902  59                                C pop cx
+1903  5b                                C pop bx
+1904  c3                                C ret 
+1905  90000000000000000000001254657374  D ............Test
+1915  20636f6d706c657465202d204f4b0d0a  D  complete - OK..
+1925  ff1f4f70746963616c20646576696365  D ..Optical device
+1935  7320736574746c652074696d65206e6e  D s settle time nn
+1945  6e0d0aff19546f7563682050616e656c  D n....Touch Panel
+1955  204e6565647320536572766963650d0a  D  Needs Service..
+1965  ff2b546f7563682070616e656c206e6f  D .+Touch panel no
+1975  7420696e7374616c6c6564202d207573  D t installed - us
+1985  696e672049424d206d6f7573650d0aff  D ing IBM mouse...
+1995  19436f6e74726f6c206c696e65207772  D .Control line wr
+19A5  6170206661696c7572650d0aff174144  D ap failure....AD
+19B5  4320427573792057696c6c204e6f7420  D C Busy Will Not 
+19C5  52657365740d0aff19546f7563682050  D Reset....Touch P
+19D5  616e656c204e6f7420436f6e6e656374  D anel Not Connect
+19E5  65640d0aff1441444320436f6e766572  D ed....ADC Conver
+19F5  73696f6e204572726f720d0aff19526f  D sion Error....Ro
+1A05  6f6d204c69676874204c6576656c2054  D om Light Level T
+1A15  6f6f20486967680d0aff1a546f756368  D oo High....Touch
+1A25  2050616e656c20526563656976657220  D  Panel Receiver 
+1A35  4572726f720d0aff0d4e6f204c454420  D Error....No LED 
+1A45  4f75747075740d0aff0f4c4544204f75  D Output....LED Ou
+1A55  74707574205765616b0d0aff12414443  D tput Weak....ADC
+1A65  2057696c6c204e6f742053746172740d  D  Will Not Start.
+1A75  0aff0d3132562046757365204f70656e  D ...12V Fuse Open
+1A85  0d0aff0d0a507265737320456e746572  D .....Press Enter
+1A95  20746f20436f6e74696e75650d0aff00  D  to Continue....
+1AA5  00000000000000000000000000000000  D ................
+1AB5  00000000000000000000000000000000  D ................
+1AC5  00000000000000000000000000000000  D ................
+1AD5  00000000000000000000000000000000  D ................
+1AE5  000000000000000000000000000000ff  D ................
+1AF5  ffffffffffffffffffffffffffffffff  D ................
+1B05  ffffffffffffffffffffffffffffffff  D ................
+1B15  ffffffffffffffffffffffffffffffff  D ................
+1B25  ffffffffffffffffffffffffffffffff  D ................
+1B35  ffffffffffffffffffffffffffffff20  D ............... 
+1B45  20202020202020202020202020202020  D                 
+1B55  20202020202020202020202020202020  D                 
+1B65  20202020202020202020202020202020  D                 
+1B75  20202020202020202020202020202020  D                 
+1B85  202020202020202020202020202020ff  D                .
+1B95  00110000000000000000000000000000  D ................
+1BA5  00000000000000000000000000000000  D ................
+1BB5  00000000000000000000000000000000  D ................
+1BC5  00000000000000000000000000000000  D ................
+1BD5  00000000000000000000000000000000  D ................
+1BE5  00000000000000000000000000000000  D ................
+1BF5  00000000000000000000000000000000  D ................
+1C05  00000000000000000000000000000000  D ................
+1C15  0000000000000000000000            D ...........
+; service_optical_scan:
+1C20  53                                C push bx
+1C21  51                                C push cx
+1C22  52                                C push dx
+1C23  06                                C push es
+1C24  57                                C push di
+1C25  56                                C push si
+1C26  55                                C push bp
+1C27  0e                                C push cs
+1C28  07                                C pop es
+1C29  fc                                C cld 
+1C2A  33c0                              C xor ax, ax
+1C2C  b90800                            C mov cx, 8
+1C2F  bf971b                            C mov di, 0x1b97
+1C32  f3aa                              C rep stosb byte ptr es:[di], al
+1C34  33db                              C xor bx, bx
+1C36  b380                              C mov bl, 0x80
+1C38  bf971b                            C mov di, 0x1b97
+1C3B  bea01b                            C mov si, 0x1ba0
+; loc_1C3E:
+1C3E  8ac7                              C mov al, bh
+1C40  e83800                            C call 0x1c7b
+1C43  8804                              C mov byte ptr [si], al
+1C45  46                                C inc si
+1C46  2c10                              C sub al, 0x10
+1C48  7902                              C jns 0x1c4c
+1C4A  32c0                              C xor al, al
+; loc_1C4C:
+1C4C  a2951b                            C mov byte ptr [0x1b95], al
+1C4F  8ac7                              C mov al, bh
+1C51  e84700                            C call 0x1c9b
+1C54  8804                              C mov byte ptr [si], al
+1C56  46                                C inc si
+1C57  3a06951b                          C cmp al, byte ptr [0x1b95]
+1C5B  7202                              C jb 0x1c5f
+1C5D  081d                              C or byte ptr [di], bl
+; loc_1C5F:
+1C5F  d0cb                              C ror bl, 1
+1C61  fec7                              C inc bh
+1C63  f6c707                            C test bh, 7
+1C66  7509                              C jne 0x1c71
+1C68  47                                C inc di
+1C69  80e7f0                            C and bh, 0xf0
+1C6C  80c710                            C add bh, 0x10
+1C6F  7802                              C js 0x1c73
+; loc_1C71:
+1C71  ebcb                              C jmp 0x1c3e
+; loc_1C73:
+1C73  5d                                C pop bp
+1C74  5e                                C pop si
+1C75  5f                                C pop di
+1C76  07                                C pop es
+1C77  5a                                C pop dx
+1C78  59                                C pop cx
+1C79  5b                                C pop bx
+1C7A  c3                                C ret 
+; service_receiver_dark:
+1C7B  50                                C push ax
+1C7C  ba02f3                            C mov dx, 0xf302
+1C7F  b000                              C mov al, 0
+1C81  ee                                C out dx, al
+1C82  ba00f3                            C mov dx, 0xf300
+1C85  58                                C pop ax
+1C86  ee                                C out dx, al
+1C87  ba02f3                            C mov dx, 0xf302
+1C8A  b004                              C mov al, 4
+1C8C  ee                                C out dx, al
+1C8D  b000                              C mov al, 0
+1C8F  ee                                C out dx, al
+1C90  8b162006                          C mov dx, word ptr [0x620]
+; loc_1C94:
+1C94  4a                                C dec dx
+1C95  75fd                              C jne 0x1c94
+1C97  e82400                            C call 0x1cbe
+1C9A  c3                                C ret 
+; service_emitter_lit:
+1C9B  ba00f3                            C mov dx, 0xf300
+1C9E  ee                                C out dx, al
+1C9F  ba02f3                            C mov dx, 0xf302
+1CA2  b001                              C mov al, 1
+1CA4  ee                                C out dx, al
+1CA5  b000                              C mov al, 0
+1CA7  ee                                C out dx, al
+1CA8  b002                              C mov al, 2
+1CAA  ee                                C out dx, al
+1CAB  8b162006                          C mov dx, word ptr [0x620]
+; loc_1CAF:
+1CAF  4a                                C dec dx
+1CB0  75fd                              C jne 0x1caf
+1CB2  e80900                            C call 0x1cbe
+1CB5  50                                C push ax
+1CB6  ba02f3                            C mov dx, 0xf302
+1CB9  b000                              C mov al, 0
+1CBB  ee                                C out dx, al
+1CBC  58                                C pop ax
+1CBD  c3                                C ret 
+; service_adc_read:
+1CBE  51                                C push cx
+1CBF  ba02f3                            C mov dx, 0xf302
+1CC2  ec                                C in al, dx
+1CC3  0c08                              C or al, 8
+1CC5  ee                                C out dx, al
+1CC6  3408                              C xor al, 8
+1CC8  ee                                C out dx, al
+1CC9  b93200                            C mov cx, 0x32
+; loc_1CCC:
+1CCC  ec                                C in al, dx
+1CCD  a808                              C test al, 8
+1CCF  e0fb                              C loopne 0x1ccc
+1CD1  ba03f3                            C mov dx, 0xf303
+1CD4  ec                                C in al, dx
+1CD5  253f00                            C and ax, 0x3f
+1CD8  59                                C pop cx
+1CD9  c3                                C ret 
+; loc_1CDA:
+1CDA  50                                C push ax
+; loc_1CDB:
+1CDB  2e8a04                            C mov al, byte ptr cs:[si]
+1CDE  3cff                              C cmp al, 0xff
+1CE0  740a                              C je 0x1cec
+1CE2  b40e                              C mov ah, 0xe
+1CE4  bb0700                            C mov bx, 7
+1CE7  cd10                              C int 0x10
+1CE9  46                                C inc si
+1CEA  ebef                              C jmp 0x1cdb
+; loc_1CEC:
+1CEC  58                                C pop ax
+1CED  c3                                C ret 
+1CEE  b80001cd1674f933c0cd163c0d75f1c3  D .....t.3...<.u..
+; loc_1CFE:
+1CFE  b80001                            C mov ax, 0x100
+1D01  cd16                              C int 0x16
+1D03  7406                              C je 0x1d0b
+1D05  33c0                              C xor ax, ax
+1D07  cd16                              C int 0x16
+1D09  ebf3                              C jmp 0x1cfe
+; loc_1D0B:
+1D0B  b80001                            C mov ax, 0x100
+1D0E  cd16                              C int 0x16
+1D10  74f9                              C je 0x1d0b
+1D12  33c0                              C xor ax, ax
+1D14  cd16                              C int 0x16
+1D16  c3                                C ret 
+; loc_1D17:
+1D17  c3                                C ret 
+1D18  5351565706b8000fcd103c117408a296  D SQVW......<.t...
+1D28  1bb81100cd10bfa41ab8ffffb95000f3  D .............P..
+1D38  aabfa41abe971bbb0500acb90800d0e0  D ................
+1D48  7204c705000083c702e2f34b75ecb800  D r..........Ku...
+1D58  a08ec033ffbe9c1bbb0300acbd080056  D ...3...........V
+1D68  d0e07211ba1400bea41ab92800f3a54a  D ..r........(...J
+1D78  75f5eb0f90ba1400bef41ab92800f3a5  D u...........(...
+1D88  4a75f54d75da5e4b75d1075f5e595bc3  D Ju.Mu.^Ku.._^Y[.
+; loc_1D98:
+1D98  c3                                C ret 
+1D99  50515706b8000fcd1032e4cd10b80002  D PQW......2......
+1DA9  33d233dbcd10075f5958c3            D 3.3...._YX.
+; initial_selftest:
+1DB4  06                                C push es
+1DB5  0e                                C push cs
+1DB6  07                                C pop es
+1DB7  ba00f3                            C mov dx, 0xf300
+1DBA  b0ff                              C mov al, 0xff
+1DBC  8ae0                              C mov ah, al
+1DBE  ee                                C out dx, al
+1DBF  ba01f3                            C mov dx, 0xf301
+1DC2  ec                                C in al, dx
+1DC3  a840                              C test al, 0x40
+1DC5  751a                              C jne 0x1de1
+1DC7  32e4                              C xor ah, ah
+; loc_1DC9:
+1DC9  ba00f3                            C mov dx, 0xf300
+1DCC  8ac4                              C mov al, ah
+1DCE  ee                                C out dx, al
+1DCF  ba01f3                            C mov dx, 0xf301
+1DD2  ec                                C in al, dx
+1DD3  a840                              C test al, 0x40
+1DD5  740a                              C je 0x1de1
+1DD7  fec4                              C inc ah
+1DD9  80fcff                            C cmp ah, 0xff
+1DDC  75eb                              C jne 0x1dc9
+1DDE  eb0f                              C jmp 0x1def
+1DE0  90                                D .
+; loc_1DE1:
+1DE1  be6719                            C mov si, 0x1967
+1DE4  e8f3fe                            C call 0x1cda
+1DE7  c6063c0601                        C mov byte ptr [0x63c], 1
+1DEC  e99d01                            C jmp 0x1f8c
+; loc_1DEF:
+1DEF  ba02f3                            C mov dx, 0xf302
+1DF2  ec                                C in al, dx
+1DF3  24f0                              C and al, 0xf0
+1DF5  8ad8                              C mov bl, al
+1DF7  b90700                            C mov cx, 7
+; loc_1DFA:
+1DFA  8ac3                              C mov al, bl
+1DFC  0ac1                              C or al, cl
+1DFE  ee                                C out dx, al
+1DFF  8ae0                              C mov ah, al
+1E01  eb01                              C jmp 0x1e04
+1E03  90                                D .
+; loc_1E04:
+1E04  ec                                C in al, dx
+1E05  24f7                              C and al, 0xf7
+1E07  3ae0                              C cmp ah, al
+1E09  7514                              C jne 0x1e1f
+1E0B  e2ed                              C loop 0x1dfa
+1E0D  8ac3                              C mov al, bl
+1E0F  ee                                C out dx, al
+1E10  eb01                              C jmp 0x1e13
+1E12  90                                D .
+; loc_1E13:
+1E13  ec                                C in al, dx
+1E14  24f7                              C and al, 0xf7
+1E16  8ae3                              C mov ah, bl
+1E18  3ac4                              C cmp al, ah
+1E1A  7503                              C jne 0x1e1f
+1E1C  eb18                              C jmp 0x1e36
+1E1E  90                                D .
+; loc_1E1F:
+1E1F  ba02f3                            C mov dx, 0xf302
+1E22  ec                                C in al, dx
+1E23  24f0                              C and al, 0xf0
+1E25  ee                                C out dx, al
+1E26  be9619                            C mov si, 0x1996
+1E29  b002                              C mov al, 2
+1E2B  e86001                            C call 0x1f8e
+1E2E  c6063c0601                        C mov byte ptr [0x63c], 1
+1E33  e95601                            C jmp 0x1f8c
+; loc_1E36:
+1E36  ba03f3                            C mov dx, 0xf303
+1E39  ec                                C in al, dx
+1E3A  ba02f3                            C mov dx, 0xf302
+1E3D  ec                                C in al, dx
+1E3E  b408                              C mov ah, 8
+1E40  84c4                              C test ah, al
+1E42  742e                              C je 0x1e72
+1E44  0c08                              C or al, 8
+1E46  ee                                C out dx, al
+1E47  3408                              C xor al, 8
+1E49  ee                                C out dx, al
+1E4A  b93200                            C mov cx, 0x32
+; loc_1E4D:
+1E4D  ec                                C in al, dx
+1E4E  a808                              C test al, 8
+1E50  7412                              C je 0x1e64
+1E52  e2f9                              C loop 0x1e4d
+1E54  be621a                            C mov si, 0x1a62
+1E57  b00b                              C mov al, 0xb
+1E59  e83201                            C call 0x1f8e
+1E5C  c6063c0601                        C mov byte ptr [0x63c], 1
+1E61  e92801                            C jmp 0x1f8c
+; loc_1E64:
+1E64  ba03f3                            C mov dx, 0xf303
+1E67  ec                                C in al, dx
+1E68  ba02f3                            C mov dx, 0xf302
+1E6B  ec                                C in al, dx
+1E6C  b408                              C mov ah, 8
+1E6E  84c4                              C test ah, al
+1E70  7510                              C jne 0x1e82
+; loc_1E72:
+1E72  beb319                            C mov si, 0x19b3
+1E75  b003                              C mov al, 3
+1E77  e81401                            C call 0x1f8e
+1E7A  c6063c0601                        C mov byte ptr [0x63c], 1
+1E7F  e90a01                            C jmp 0x1f8c
+; loc_1E82:
+1E82  ba01f3                            C mov dx, 0xf301
+1E85  ec                                C in al, dx
+1E86  b480                              C mov ah, 0x80
+1E88  84c4                              C test ah, al
+1E8A  740b                              C je 0x1e97
+1E8C  bece19                            C mov si, 0x19ce
+1E8F  b004                              C mov al, 4
+1E91  e8fa00                            C call 0x1f8e
+1E94  e9f500                            C jmp 0x1f8c
+; loc_1E97:
+1E97  b90a00                            C mov cx, 0xa
+; loc_1E9A:
+1E9A  51                                C push cx
+1E9B  c6063b0600                        C mov byte ptr [0x63b], 0
+1EA0  e86fe8                            C call 0x712
+1EA3  59                                C pop cx
+1EA4  e2f4                              C loop 0x1e9a
+; loc_1EA6:
+1EA6  e877fd                            C call 0x1c20
+1EA9  33c0                              C xor ax, ax
+1EAB  bf971b                            C mov di, 0x1b97
+1EAE  ab                                C stosw word ptr es:[di], ax
+1EAF  ab                                C stosw word ptr es:[di], ax
+1EB0  aa                                C stosb byte ptr es:[di], al
+1EB1  bf9c1b                            C mov di, 0x1b9c
+1EB4  ab                                C stosw word ptr es:[di], ax
+1EB5  aa                                C stosb byte ptr es:[di], al
+1EB6  bea01b                            C mov si, 0x1ba0
+1EB9  bf971b                            C mov di, 0x1b97
+1EBC  bb8000                            C mov bx, 0x80
+; loc_1EBF:
+1EBF  b90800                            C mov cx, 8
+; loc_1EC2:
+1EC2  ad                                C lodsw ax, word ptr [si]
+1EC3  3c1e                              C cmp al, 0x1e
+1EC5  7304                              C jae 0x1ecb
+1EC7  081d                              C or byte ptr [di], bl
+1EC9  fec7                              C inc bh
+; loc_1ECB:
+1ECB  d0cb                              C ror bl, 1
+1ECD  e2f3                              C loop 0x1ec2
+1ECF  47                                C inc di
+1ED0  81ff9c1b                          C cmp di, 0x1b9c
+1ED4  72e9                              C jb 0x1ebf
+1ED6  7503                              C jne 0x1edb
+1ED8  bf9c1b                            C mov di, 0x1b9c
+; loc_1EDB:
+1EDB  81ff9f1b                          C cmp di, 0x1b9f
+1EDF  75de                              C jne 0x1ebf
+1EE1  22ff                              C and bh, bh
+1EE3  7428                              C je 0x1f0d
+1EE5  830624060a                        C add word ptr [0x624], 0xa
+1EEA  830620060a                        C add word ptr [0x620], 0xa
+1EEF  813e24060001                      C cmp word ptr [0x624], 0x100
+1EF5  72af                              C jb 0x1ea6
+1EF7  e89efe                            C call 0x1d98
+1EFA  e81afe                            C call 0x1d17
+1EFD  be031a                            C mov si, 0x1a03
+1F00  b007                              C mov al, 7
+1F02  e88900                            C call 0x1f8e
+1F05  a0961b                            C mov al, byte ptr [0x1b96]
+1F08  32e4                              C xor ah, ah
+1F0A  e97f00                            C jmp 0x1f8c
+; loc_1F0D:
+1F0D  a12406                            C mov ax, word ptr [0x624]
+1F10  23c0                              C and ax, ax
+1F12  740e                              C je 0x1f22
+1F14  d1e8                              C shr ax, 1
+1F16  d1e8                              C shr ax, 1
+1F18  d1e8                              C shr ax, 1
+1F1A  01062406                          C add word ptr [0x624], ax
+1F1E  01062006                          C add word ptr [0x620], ax
+; loc_1F22:
+1F22  a12006                            C mov ax, word ptr [0x620]
+1F25  33d2                              C xor dx, dx
+1F27  bb6400                            C mov bx, 0x64
+1F2A  f7f3                              C div bx
+1F2C  0c30                              C or al, 0x30
+1F2E  a24319                            C mov byte ptr [0x1943], al
+1F31  8bc2                              C mov ax, dx
+1F33  b30a                              C mov bl, 0xa
+1F35  f6f3                              C div bl
+1F37  0d3030                            C or ax, 0x3030
+1F3A  a34419                            C mov word ptr [0x1944], ax
+1F3D  be2719                            C mov si, 0x1927
+1F40  e897fd                            C call 0x1cda
+1F43  e8dafc                            C call 0x1c20
+1F46  a1971b                            C mov ax, word ptr [0x1b97]
+1F49  0b06991b                          C or ax, word ptr [0x1b99]
+1F4D  0a069b1b                          C or al, byte ptr [0x1b9b]
+1F51  0a069c1b                          C or al, byte ptr [0x1b9c]
+1F55  0b069d1b                          C or ax, word ptr [0x1b9d]
+1F59  7416                              C je 0x1f71
+1F5B  e83afe                            C call 0x1d98
+1F5E  e8b6fd                            C call 0x1d17
+1F61  be3e1a                            C mov si, 0x1a3e
+1F64  b009                              C mov al, 9
+1F66  e82500                            C call 0x1f8e
+1F69  a0961b                            C mov al, byte ptr [0x1b96]
+1F6C  32e4                              C xor ah, ah
+1F6E  eb1c                              C jmp 0x1f8c
+1F70  90                                D .
+; loc_1F71:
+1F71  ba01f3                            C mov dx, 0xf301
+1F74  ec                                C in al, dx
+1F75  b401                              C mov ah, 1
+1F77  84c4                              C test ah, al
+1F79  750b                              C jne 0x1f86
+1F7B  be781a                            C mov si, 0x1a78
+1F7E  b091                              C mov al, 0x91
+1F80  e80b00                            C call 0x1f8e
+1F83  eb07                              C jmp 0x1f8c
+1F85  90                                D .
+; loc_1F86:
+1F86  be1119                            C mov si, 0x1911
+1F89  e84efd                            C call 0x1cda
+; loc_1F8C:
+1F8C  07                                C pop es
+1F8D  c3                                C ret 
+; loc_1F8E:
+1F8E  56                                C push si
+1F8F  be4a19                            C mov si, 0x194a
+1F92  e845fd                            C call 0x1cda
+; loc_1F95:
+1F95  be881a                            C mov si, 0x1a88
+1F98  e83ffd                            C call 0x1cda
+; loc_1F9B:
+1F9B  e860fd                            C call 0x1cfe
+1F9E  3c0d                              C cmp al, 0xd
+1FA0  740b                              C je 0x1fad
+1FA2  3c3f                              C cmp al, 0x3f
+1FA4  75f5                              C jne 0x1f9b
+1FA6  5e                                C pop si
+1FA7  56                                C push si
+1FA8  e82ffd                            C call 0x1cda
+1FAB  ebe8                              C jmp 0x1f95
+; loc_1FAD:
+1FAD  5e                                C pop si
+1FAE  c3                                C ret 

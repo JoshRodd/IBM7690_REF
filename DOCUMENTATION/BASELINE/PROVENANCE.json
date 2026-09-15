@@ -1,0 +1,41 @@
+{
+  "scope": "Selected unchanged copies from bios8530 for portable reference; not IBM7690 firmware; imported source_manifest describes the broader upstream corpus, not only local retained files.",
+  "sources": [
+    {
+      "upstream_path": "/Users/josh/src/bios8530/PS2_Model_25_Technical_Reference_Jun87.pdf",
+      "local_path": "DOCUMENTATION/BASELINE/PS2_Model_25_Technical_Reference_Jun87.pdf",
+      "bytes": 11833068,
+      "sha256": "b4d3df94571cfa6299f45290d75374322c03d68ddba4370cce8e41ab7dd4f899"
+    },
+    {
+      "upstream_path": "/Users/josh/src/bios8530/PS2_and_PC_BIOS_Interface_Technical_Reference_Apr87.pdf",
+      "local_path": "DOCUMENTATION/BASELINE/PS2_and_PC_BIOS_Interface_Technical_Reference_Apr87.pdf",
+      "bytes": 5816663,
+      "sha256": "950f2a5508f7092a7eaf0f6181464bc21d0d39e59a9bb63f02ee86ac8668cff2"
+    },
+    {
+      "upstream_path": "/Users/josh/src/bios8530/reference/hardware_spec.json",
+      "local_path": "DOCUMENTATION/BASELINE/hardware_spec.json",
+      "bytes": 31282,
+      "sha256": "8d7b1de0b162c062db3cf45789b2e25859a97d59e244ec7d95422b52c630e9c0"
+    },
+    {
+      "upstream_path": "/Users/josh/src/bios8530/reference/model_differences.json",
+      "local_path": "DOCUMENTATION/BASELINE/model_differences.json",
+      "bytes": 13446,
+      "sha256": "9c1c4576f8897aa83f8054720f4b53dba272737eec74ba48862769c4b6ececbd"
+    },
+    {
+      "upstream_path": "/Users/josh/src/bios8530/reference/rom_analysis.json",
+      "local_path": "DOCUMENTATION/BASELINE/rom_analysis.json",
+      "bytes": 395785,
+      "sha256": "2d2c495da644a5e83be9223462889d3353c7b2e5ee804d7050227b693a2576b5"
+    },
+    {
+      "upstream_path": "/Users/josh/src/bios8530/reference/source_manifest.json",
+      "local_path": "DOCUMENTATION/BASELINE/source_manifest.json",
+      "bytes": 12321,
+      "sha256": "20ba70991c4d4a8036d5f6ee2db1b9e3847726cb8c5220074eb7d5992db0ba05"
+    }
+  ]
+}

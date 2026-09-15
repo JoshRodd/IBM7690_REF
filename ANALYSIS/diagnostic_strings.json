@@ -1,0 +1,4658 @@
+[
+  {
+    "path": "7690diag/COLORFIX.COM",
+    "size": 267,
+    "sha256": "21f47f663254e2a08dde514d4741a291605f2eefa31fea6fda26c1c8ee912028",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "(C) Copyright IBM Corp. 1989"
+      },
+      {
+        "file_offset": 152,
+        "offset_hex": "0x0098",
+        "text": "COLORFIX"
+      },
+      {
+        "file_offset": 164,
+        "offset_hex": "0x00A4",
+        "text": "LCD Color Attribute Mapper"
+      },
+      {
+        "file_offset": 192,
+        "offset_hex": "0x00C0",
+        "text": "Written by: Don D. Williams"
+      },
+      {
+        "file_offset": 221,
+        "offset_hex": "0x00DD",
+        "text": "(C) Copyright IBM Corp. 1989"
+      },
+      {
+        "file_offset": 251,
+        "offset_hex": "0x00FB",
+        "text": "Version 0.0"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/CPU0.DGS",
+    "size": 2942,
+    "sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYTEST    "
+      },
+      {
+        "file_offset": 28,
+        "offset_hex": "0x001C",
+        "text": "      (C) COPYRIGHT IBM CORPORATION 1981, 1987      "
+      },
+      {
+        "file_offset": 223,
+        "offset_hex": "0x00DF",
+        "text": "sPuN{LyJ"
+      },
+      {
+        "file_offset": 247,
+        "offset_hex": "0x00F7",
+        "text": "r8t6x4z2"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/DCOPY.COM",
+    "size": 2172,
+    "sha256": "f5c585544042d30fb8adaedcacad45fd51faf96f9142f995f92c7d26dce252c5",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYCOPY    "
+      },
+      {
+        "file_offset": 22,
+        "offset_hex": "0x0016",
+        "text": "(C) Copyright IBM Corp 1981, 1987"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/DFORMAT.COM",
+    "size": 906,
+    "sha256": "8d7ae244bb44ea48d85a460d2475bf9f0483e34d80d0bf32d18f7eded9f6eca7",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYFMT     "
+      },
+      {
+        "file_offset": 22,
+        "offset_hex": "0x0016",
+        "text": "(C) Copyright IBM Corp 1981, 1987"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/DIAGS.COM",
+    "size": 3338,
+    "sha256": "ba9a7d2974e568e0cd80def9541613c173c30b4e5e77368c9e4ce2303498ae14",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYEDSDCP  "
+      },
+      {
+        "file_offset": 22,
+        "offset_hex": "0x0016",
+        "text": "(C) Copyright IBM Corp 1981, 1987"
+      },
+      {
+        "file_offset": 62,
+        "offset_hex": "0x003E",
+        "text": "????????DGS"
+      },
+      {
+        "file_offset": 211,
+        "offset_hex": "0x00D3",
+        "text": "     "
+      },
+      {
+        "file_offset": 226,
+        "offset_hex": "0x00E2",
+        "text": "PASS COUNT = 00000"
+      },
+      {
+        "file_offset": 1328,
+        "offset_hex": "0x0530",
+        "text": "PSQVW"
+      },
+      {
+        "file_offset": 1429,
+        "offset_hex": "0x0595",
+        "text": "_^Y[X"
+      },
+      {
+        "file_offset": 2271,
+        "offset_hex": "0x08DF",
+        "text": "X[S=c"
+      },
+      {
+        "file_offset": 2315,
+        "offset_hex": "0x090B",
+        "text": "V[S=c"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/DISPLAY1.DGS",
+    "size": 5557,
+    "sha256": "f1dbe20f6a5f1b2624f8f461f7beb756b1f3d94c467d036b8e8d1e5d31717f61",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYDISPLAY "
+      },
+      {
+        "file_offset": 29,
+        "offset_hex": "0x001D",
+        "text": "     (C)COPYRIGHT IBM CORPORATION 1981,1990     "
+      },
+      {
+        "file_offset": 83,
+        "offset_hex": "0x0053",
+        "text": "EDSYCSB     "
+      },
+      {
+        "file_offset": 142,
+        "offset_hex": "0x008E",
+        "text": "*;L]n"
+      },
+      {
+        "file_offset": 1671,
+        "offset_hex": "0x0687",
+        "text": "u3QVW"
+      },
+      {
+        "file_offset": 2387,
+        "offset_hex": "0x0953",
+        "text": "EDSYCHVF    "
+      },
+      {
+        "file_offset": 2435,
+        "offset_hex": "0x0983",
+        "text": "                              "
+      },
+      {
+        "file_offset": 2675,
+        "offset_hex": "0x0A73",
+        "text": "EDSYCDI     "
+      },
+      {
+        "file_offset": 3395,
+        "offset_hex": "0x0D43",
+        "text": "EDSYINTT    "
+      },
+      {
+        "file_offset": 3459,
+        "offset_hex": "0x0D83",
+        "text": "EDSYSELF    "
+      },
+      {
+        "file_offset": 3923,
+        "offset_hex": "0x0F53",
+        "text": "EDSYINIT    "
+      },
+      {
+        "file_offset": 4035,
+        "offset_hex": "0x0FC3",
+        "text": "EDSYDCRT    "
+      },
+      {
+        "file_offset": 4109,
+        "offset_hex": "0x100D",
+        "text": "QRVWP"
+      },
+      {
+        "file_offset": 4579,
+        "offset_hex": "0x11E3",
+        "text": "EDSYCMT     "
+      },
+      {
+        "file_offset": 4707,
+        "offset_hex": "0x1263",
+        "text": "EDSYGRP     "
+      }
+    ]
+  },
+  {
+    "path": "7690diag/DSKT1.DGS",
+    "size": 4800,
+    "sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYDSKT1   "
+      },
+      {
+        "file_offset": 28,
+        "offset_hex": "0x001C",
+        "text": "     (C)COPYRIGHT IBM CORPORATION 1981,1987     "
+      },
+      {
+        "file_offset": 1711,
+        "offset_hex": "0x06AF",
+        "text": "YRSXWTVUQb`\\^a[_]Z"
+      },
+      {
+        "file_offset": 3080,
+        "offset_hex": "0x0C08",
+        "text": "9\\ouN"
+      },
+      {
+        "file_offset": 3109,
+        "offset_hex": "0x0C25",
+        "text": "9Lou1"
+      },
+      {
+        "file_offset": 4416,
+        "offset_hex": "0x1140",
+        "text": "STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK "
+      }
+    ]
+  },
+  {
+    "path": "7690diag/DTMEDTE.COM",
+    "size": 1395,
+    "sha256": "33053e2079a4a59985e738f9601de17f9fdb3a12d5580467a99068011a129e11",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYTIMDAT  "
+      },
+      {
+        "file_offset": 57,
+        "offset_hex": "0x0039",
+        "text": "00000000"
+      },
+      {
+        "file_offset": 124,
+        "offset_hex": "0x007C",
+        "text": "0123456789"
+      },
+      {
+        "file_offset": 1330,
+        "offset_hex": "0x0532",
+        "text": "SQRWV3"
+      },
+      {
+        "file_offset": 1389,
+        "offset_hex": "0x056D",
+        "text": "^_ZY["
+      }
+    ]
+  },
+  {
+    "path": "7690diag/IBM7690.DGS",
+    "size": 10474,
+    "sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57",
+    "ascii_strings": [
+      {
+        "file_offset": 5,
+        "offset_hex": "0x0005",
+        "text": "IBM 7690 FEATURES"
+      },
+      {
+        "file_offset": 23,
+        "offset_hex": "0x0017",
+        "text": "(C) COPYRIGHT IBM CORP 1987, 1990"
+      },
+      {
+        "file_offset": 72,
+        "offset_hex": "0x0048",
+        "text": "Written by: John H. Barker and Don D. Williams"
+      },
+      {
+        "file_offset": 120,
+        "offset_hex": "0x0078",
+        "text": "MIBM 7690 FEATURE TESTS"
+      },
+      {
+        "file_offset": 145,
+        "offset_hex": "0x0091",
+        "text": "(C) Copyright IBM Corp. 1987, 1990"
+      },
+      {
+        "file_offset": 181,
+        "offset_hex": "0x00B5",
+        "text": "Version 1.1"
+      },
+      {
+        "file_offset": 200,
+        "offset_hex": "0x00C8",
+        "text": "0 - INTERFACE ADAPTER SELF TEST"
+      },
+      {
+        "file_offset": 233,
+        "offset_hex": "0x00E9",
+        "text": "1 - LCD INTERFACE TEST"
+      },
+      {
+        "file_offset": 257,
+        "offset_hex": "0x0101",
+        "text": "2 - TOUCH PANEL TESTS"
+      },
+      {
+        "file_offset": 280,
+        "offset_hex": "0x0118",
+        "text": "3 - BAR CODE FEATURE TESTS"
+      },
+      {
+        "file_offset": 310,
+        "offset_hex": "0x0136",
+        "text": "9 - EXIT TO MAIN MENU"
+      },
+      {
+        "file_offset": 335,
+        "offset_hex": "0x014F",
+        "text": "ENTER NUMBER FOR DESIRED ACTION"
+      },
+      {
+        "file_offset": 368,
+        "offset_hex": "0x0170",
+        "text": "PRESS \"ENTER\" TO RUN ALL TESTS"
+      },
+      {
+        "file_offset": 408,
+        "offset_hex": "0x0198",
+        "text": "PRESS ENTER TO CONTINUE"
+      },
+      {
+        "file_offset": 435,
+        "offset_hex": "0x01B3",
+        "text": "xxxx $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+      },
+      {
+        "file_offset": 704,
+        "offset_hex": "0x02C0",
+        "text": "DISPLAY ADAPTER FAILURE - USE NUMERIC KEYS TO DETERMINE FAILURE"
+      },
+      {
+        "file_offset": 771,
+        "offset_hex": "0x0303",
+        "text": "KEY  ERROR CODE"
+      },
+      {
+        "file_offset": 790,
+        "offset_hex": "0x0316",
+        "text": " 1 = 9031, 9035 or 9036 ROM,RAM,REGISTER"
+      },
+      {
+        "file_offset": 832,
+        "offset_hex": "0x0340",
+        "text": " 2 = 9037               LCD CABLE"
+      },
+      {
+        "file_offset": 867,
+        "offset_hex": "0x0363",
+        "text": " 3 = 9033 or 9034       PLANAR/ADAPTER SYNC"
+      },
+      {
+        "file_offset": 912,
+        "offset_hex": "0x0390",
+        "text": " 4 = 9032               -22.3V/12V"
+      },
+      {
+        "file_offset": 950,
+        "offset_hex": "0x03B6",
+        "text": "PRESS F1 TO CONTINUE"
+      },
+      {
+        "file_offset": 976,
+        "offset_hex": "0x03D0",
+        "text": "LCD INTERFACE TEST OK"
+      },
+      {
+        "file_offset": 1001,
+        "offset_hex": "0x03E9",
+        "text": "LCD Interface Error$+BIOS Error - Replace Interface Adapter Card$"
+      },
+      {
+        "file_offset": 1067,
+        "offset_hex": "0x042B",
+        "text": "-22.3V Error$"
+      },
+      {
+        "file_offset": 1081,
+        "offset_hex": "0x0439",
+        "text": "Planar Sync Error$"
+      },
+      {
+        "file_offset": 1100,
+        "offset_hex": "0x044C",
+        "text": "Interface Adapter Sync Error$4Interface Adapter RAM Error - Replace Interface Card$:Gate Array Register Error - Replace Interface Adapter Card$%Keyboard Internal Cable Not Connected$4Select line wrap failure - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 1337,
+        "offset_hex": "0x0539",
+        "text": "$5Control line wrap failure - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 1394,
+        "offset_hex": "0x0572",
+        "text": "$)12V Fuse Open - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 1439,
+        "offset_hex": "0x059F",
+        "text": "$&Internal Keyboard Cable Not Connected "
+      },
+      {
+        "file_offset": 1483,
+        "offset_hex": "0x05CB",
+        "text": "INTERFACE ADAPTER TEST OK"
+      },
+      {
+        "file_offset": 1510,
+        "offset_hex": "0x05E6",
+        "text": "$$IS BAR CODE FEATURE INSTALLED?"
+      },
+      {
+        "file_offset": 1544,
+        "offset_hex": "0x0608",
+        "text": "Y/N $"
+      },
+      {
+        "file_offset": 1550,
+        "offset_hex": "0x060E",
+        "text": "BAR CODE TEST OK"
+      },
+      {
+        "file_offset": 1570,
+        "offset_hex": "0x0622",
+        "text": "BAR CODE FEATURE FAILURE$.BAR CODE READ ERROR - REPLACE BAR CODE FEATURE"
+      },
+      {
+        "file_offset": 1646,
+        "offset_hex": "0x066E",
+        "text": "BAR CODE ERROR"
+      },
+      {
+        "file_offset": 1664,
+        "offset_hex": "0x0680",
+        "text": "BAR CODE STATUS ERROR"
+      },
+      {
+        "file_offset": 1687,
+        "offset_hex": "0x0697",
+        "text": "$ASCAN A BAR CODE.  PRESS ESC IF BAR CODE WILL NOT READ OR TO END"
+      },
+      {
+        "file_offset": 1754,
+        "offset_hex": "0x06DA",
+        "text": "$ASCAN BAR CODES.   PRESS ESC IF BAR CODE WILL NOT READ OR TO END"
+      },
+      {
+        "file_offset": 1825,
+        "offset_hex": "0x0721",
+        "text": "BAR CODE FEATURE TESTS"
+      },
+      {
+        "file_offset": 1855,
+        "offset_hex": "0x073F",
+        "text": "0 - SELF TEST"
+      },
+      {
+        "file_offset": 1870,
+        "offset_hex": "0x074E",
+        "text": "1 - SINGLE TEST"
+      },
+      {
+        "file_offset": 1887,
+        "offset_hex": "0x075F",
+        "text": "2 - MULTIPLE TESTS"
+      },
+      {
+        "file_offset": 1909,
+        "offset_hex": "0x0775",
+        "text": "9 - EXIT TO MAIN MENU"
+      },
+      {
+        "file_offset": 1934,
+        "offset_hex": "0x078E",
+        "text": "ENTER NUMBER FOR DESIRED ACTION"
+      },
+      {
+        "file_offset": 1973,
+        "offset_hex": "0x07B5",
+        "text": "9021 BAR CODE FEATURE FAILURE - REPLACE BAR CODE FEATURE"
+      },
+      {
+        "file_offset": 2035,
+        "offset_hex": "0x07F3",
+        "text": "9022 BAR CODE READ ERROR - REPLACE BAR CODE FEATURE"
+      },
+      {
+        "file_offset": 2092,
+        "offset_hex": "0x082C",
+        "text": "9023 Barcode Error - Check Cable Connections"
+      },
+      {
+        "file_offset": 2142,
+        "offset_hex": "0x085E",
+        "text": "9024 Status Error - Check Cable Connections"
+      },
+      {
+        "file_offset": 2191,
+        "offset_hex": "0x088F",
+        "text": "RESETING BAR CODE FEATURE - PLEASE WAIT"
+      },
+      {
+        "file_offset": 2232,
+        "offset_hex": "0x08B8",
+        "text": "$$P                                                                                $ IS BAR CODE DATA CORRECT? (Y/N) $"
+      },
+      {
+        "file_offset": 2355,
+        "offset_hex": "0x0933",
+        "text": "Version: ?.? $"
+      },
+      {
+        "file_offset": 2371,
+        "offset_hex": "0x0943",
+        "text": "Code 39: $"
+      },
+      {
+        "file_offset": 2382,
+        "offset_hex": "0x094E",
+        "text": "Interleaved 2 of 5: $"
+      },
+      {
+        "file_offset": 2404,
+        "offset_hex": "0x0964",
+        "text": "UPC/EAN/JAN: $"
+      },
+      {
+        "file_offset": 2419,
+        "offset_hex": "0x0973",
+        "text": "Codabar: $"
+      },
+      {
+        "file_offset": 2430,
+        "offset_hex": "0x097E",
+        "text": "Code 128: $"
+      },
+      {
+        "file_offset": 2442,
+        "offset_hex": "0x098A",
+        "text": "Fixed beam scanner read $"
+      },
+      {
+        "file_offset": 2468,
+        "offset_hex": "0x09A4",
+        "text": "Moving beam scanner read $"
+      },
+      {
+        "file_offset": 2507,
+        "offset_hex": "0x09CB",
+        "text": "-y1N%"
+      },
+      {
+        "file_offset": 2613,
+        "offset_hex": "0x0A35",
+        "text": " <nt(<yu"
+      },
+      {
+        "file_offset": 3189,
+        "offset_hex": "0x0C75",
+        "text": "1433112<"
+      },
+      {
+        "file_offset": 3421,
+        "offset_hex": "0x0D5D",
+        "text": "PSQRVW"
+      },
+      {
+        "file_offset": 3433,
+        "offset_hex": "0x0D69",
+        "text": "_^ZY[X"
+      },
+      {
+        "file_offset": 5763,
+        "offset_hex": "0x1683",
+        "text": "LED TOUCH PANEL"
+      },
+      {
+        "file_offset": 5779,
+        "offset_hex": "0x1693",
+        "text": "(C) COPYRIGHT IBM CORP 1987, 1990z"
+      },
+      {
+        "file_offset": 5815,
+        "offset_hex": "0x16B7",
+        "text": "LED TOUCH PANEL TESTS"
+      },
+      {
+        "file_offset": 5840,
+        "offset_hex": "0x16D0",
+        "text": "0 - SELF TEST"
+      },
+      {
+        "file_offset": 5855,
+        "offset_hex": "0x16DF",
+        "text": "1 - TOUCH TRACKING"
+      },
+      {
+        "file_offset": 5877,
+        "offset_hex": "0x16F5",
+        "text": "9 - EXIT TO MAIN MENU"
+      },
+      {
+        "file_offset": 5902,
+        "offset_hex": "0x170E",
+        "text": "ENTER NUMBER FOR DESIRED TEST"
+      },
+      {
+        "file_offset": 5937,
+        "offset_hex": "0x1731",
+        "text": "I/R LED TOUCH PANEL FAILURE"
+      },
+      {
+        "file_offset": 5968,
+        "offset_hex": "0x1750",
+        "text": "OPTICAL DEVICES SETTLE TIME IS ???"
+      },
+      {
+        "file_offset": 6009,
+        "offset_hex": "0x1779",
+        "text": "VERIFY LATEST EC LEVEL IS INSTALLED"
+      },
+      {
+        "file_offset": 6050,
+        "offset_hex": "0x17A2",
+        "text": "90xx $"
+      },
+      {
+        "file_offset": 6057,
+        "offset_hex": "0x17A9",
+        "text": "WAS xx S/B xx"
+      },
+      {
+        "file_offset": 6077,
+        "offset_hex": "0x17BD",
+        "text": "Following Receivers Have Excessive Conductance"
+      },
+      {
+        "file_offset": 6125,
+        "offset_hex": "0x17ED",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6190,
+        "offset_hex": "0x182E",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6255,
+        "offset_hex": "0x186F",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6320,
+        "offset_hex": "0x18B0",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6391,
+        "offset_hex": "0x18F7",
+        "text": "Following Receivers are Defective"
+      },
+      {
+        "file_offset": 6426,
+        "offset_hex": "0x191A",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6491,
+        "offset_hex": "0x195B",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6556,
+        "offset_hex": "0x199C",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6621,
+        "offset_hex": "0x19DD",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6692,
+        "offset_hex": "0x1A24",
+        "text": "Following LEDs are Defective"
+      },
+      {
+        "file_offset": 6722,
+        "offset_hex": "0x1A42",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6787,
+        "offset_hex": "0x1A83",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6852,
+        "offset_hex": "0x1AC4",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6917,
+        "offset_hex": "0x1B05",
+        "text": "Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx Xxx"
+      },
+      {
+        "file_offset": 6987,
+        "offset_hex": "0x1B4B",
+        "text": "Optical Devices Test Complete - OK"
+      },
+      {
+        "file_offset": 7027,
+        "offset_hex": "0x1B73",
+        "text": "Optical Devices Error"
+      },
+      {
+        "file_offset": 7054,
+        "offset_hex": "0x1B8E",
+        "text": "TOUCH PANEL TEST OK"
+      },
+      {
+        "file_offset": 7075,
+        "offset_hex": "0x1BA3",
+        "text": "$4Select line wrap failure - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 7131,
+        "offset_hex": "0x1BDB",
+        "text": "$5Control line wrap failure - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 7188,
+        "offset_hex": "0x1C14",
+        "text": "$.ADC Will Not Start - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 7238,
+        "offset_hex": "0x1C46",
+        "text": "$3ADC Busy Will Not Reset - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 7293,
+        "offset_hex": "0x1C7D",
+        "text": "$2Touch Panel Not Connected - Loose Cable Connection"
+      },
+      {
+        "file_offset": 7347,
+        "offset_hex": "0x1CB3",
+        "text": "$1Touch Panel Amplifier Error - Replace Touch Panel"
+      },
+      {
+        "file_offset": 7400,
+        "offset_hex": "0x1CE8",
+        "text": "$0ADC Conversion Error - Replace Interface Adapter"
+      },
+      {
+        "file_offset": 7456,
+        "offset_hex": "0x1D20",
+        "text": "Room light level too high."
+      },
+      {
+        "file_offset": 7484,
+        "offset_hex": "0x1D3C",
+        "text": "Cover display to reduce light level."
+      },
+      {
+        "file_offset": 7522,
+        "offset_hex": "0x1D62",
+        "text": "Then, press any key to continue."
+      },
+      {
+        "file_offset": 7556,
+        "offset_hex": "0x1D84",
+        "text": "Wait 5 seconds and remove cover."
+      },
+      {
+        "file_offset": 7592,
+        "offset_hex": "0x1DA8",
+        "text": "$ARoom Light Level Too High - Reposition Display and Run Test Again"
+      },
+      {
+        "file_offset": 7661,
+        "offset_hex": "0x1DED",
+        "text": "$0Touch Panel Detector Error - Replace Touch Panel"
+      },
+      {
+        "file_offset": 7713,
+        "offset_hex": "0x1E21",
+        "text": "$#I/R LED Error - Replace Touch Panel"
+      },
+      {
+        "file_offset": 7752,
+        "offset_hex": "0x1E48",
+        "text": "$2I/R LED Output Weak - Clean or Replace Touch Panel"
+      },
+      {
+        "file_offset": 7810,
+        "offset_hex": "0x1E82",
+        "text": "Press Enter to Continue"
+      },
+      {
+        "file_offset": 8146,
+        "offset_hex": "0x1FD2",
+        "text": "H              nn AA AA *    nn AA AA *    nn AA AA *    nn AA AA *    "
+      }
+    ]
+  },
+  {
+    "path": "7690diag/LEDINST.BAT",
+    "size": 1426,
+    "sha256": "03839e0cd9e9ecf5510e051f06ddb8afee56d034d03f18bf43457f8fa311145a",
+    "ascii_strings": [
+      {
+        "file_offset": 0,
+        "offset_hex": "0x0000",
+        "text": "@echo off"
+      },
+      {
+        "file_offset": 16,
+        "offset_hex": "0x0010",
+        "text": "a:nstall  a:txt.ok  a:ledtouch.sys"
+      },
+      {
+        "file_offset": 57,
+        "offset_hex": "0x0039",
+        "text": "IF ERRORLEVEL 17 ECHO NOT ENOUGH SPACE TO INSTALL"
+      },
+      {
+        "file_offset": 108,
+        "offset_hex": "0x006C",
+        "text": "IF ERRORLEVEL 17 goto failed"
+      },
+      {
+        "file_offset": 138,
+        "offset_hex": "0x008A",
+        "text": "IF ERRORLEVEL 16 ECHO INVALID ACCESS TO GET DISK SPACE"
+      },
+      {
+        "file_offset": 194,
+        "offset_hex": "0x00C2",
+        "text": "IF ERRORLEVEL 16 goto failed"
+      },
+      {
+        "file_offset": 224,
+        "offset_hex": "0x00E0",
+        "text": "IF ERRORLEVEL 15 ECHO WRITE ERROR ON DATA FILE"
+      },
+      {
+        "file_offset": 272,
+        "offset_hex": "0x0110",
+        "text": "IF ERRORLEVEL 15 goto failed"
+      },
+      {
+        "file_offset": 302,
+        "offset_hex": "0x012E",
+        "text": "IF ERRORLEVEL 14 ECHO OPEN ERROR ON DATA FILE WRITE"
+      },
+      {
+        "file_offset": 355,
+        "offset_hex": "0x0163",
+        "text": "IF ERRORLEVEL 14 goto failed"
+      },
+      {
+        "file_offset": 385,
+        "offset_hex": "0x0181",
+        "text": "IF ERRORLEVEL 13 ECHO ACCESS ERROR ON WRITE DATA FILE"
+      },
+      {
+        "file_offset": 440,
+        "offset_hex": "0x01B8",
+        "text": "IF ERRORLEVEL 13 goto failed"
+      },
+      {
+        "file_offset": 470,
+        "offset_hex": "0x01D6",
+        "text": "IF ERRORLEVEL 12 echo WRITE ERROR ON CONFIG.SYS FILE"
+      },
+      {
+        "file_offset": 524,
+        "offset_hex": "0x020C",
+        "text": "IF ERRORLEVEL 12 goto failed"
+      },
+      {
+        "file_offset": 554,
+        "offset_hex": "0x022A",
+        "text": "IF ERRORLEVEL 11 ECHO REWIND ERROR ON CONFIG.SYS FILE"
+      },
+      {
+        "file_offset": 609,
+        "offset_hex": "0x0261",
+        "text": "IF ERRORLEVEL 11 goto failed"
+      },
+      {
+        "file_offset": 639,
+        "offset_hex": "0x027F",
+        "text": "IF ERRORLEVEL 10 ECHO ACCESS ERROR ON CONFIG.SYS WRITE"
+      },
+      {
+        "file_offset": 695,
+        "offset_hex": "0x02B7",
+        "text": "IF ERRORLEVEL 10 goto failed"
+      },
+      {
+        "file_offset": 725,
+        "offset_hex": "0x02D5",
+        "text": "IF ERRORLEVEL 9 ECHO READ ERROR ON DATA FILE"
+      },
+      {
+        "file_offset": 771,
+        "offset_hex": "0x0303",
+        "text": "IF ERRORLEVEL 9 goto failed"
+      },
+      {
+        "file_offset": 800,
+        "offset_hex": "0x0320",
+        "text": "IF ERRORLEVEL 8 ECHO LENGTH ERROR ON DATA FILE"
+      },
+      {
+        "file_offset": 848,
+        "offset_hex": "0x0350",
+        "text": "IF ERRORLEVEL 8 goto failed"
+      },
+      {
+        "file_offset": 877,
+        "offset_hex": "0x036D",
+        "text": "IF ERRORLEVEL 7 ECHO DATA FILE NOT FOUND"
+      },
+      {
+        "file_offset": 919,
+        "offset_hex": "0x0397",
+        "text": "IF ERRORLEVEL 7 goto failed"
+      },
+      {
+        "file_offset": 948,
+        "offset_hex": "0x03B4",
+        "text": "IF ERRORLEVEL 6 ECHO ERROR READING TEXT FILE"
+      },
+      {
+        "file_offset": 994,
+        "offset_hex": "0x03E2",
+        "text": "IF ERRORLEVEL 6 goto failed"
+      },
+      {
+        "file_offset": 1023,
+        "offset_hex": "0x03FF",
+        "text": "IF ERRORLEVEL 5 ECHO NO TEXT FILE FOUND"
+      },
+      {
+        "file_offset": 1064,
+        "offset_hex": "0x0428",
+        "text": "IF ERRORLEVEL 5 goto failed"
+      },
+      {
+        "file_offset": 1093,
+        "offset_hex": "0x0445",
+        "text": "IF ERRORLEVEL 4 ECHO NO TEXT OR DATA FILE ON CMD LINE"
+      },
+      {
+        "file_offset": 1148,
+        "offset_hex": "0x047C",
+        "text": "IF ERRORLEVEL 4 goto failed"
+      },
+      {
+        "file_offset": 1177,
+        "offset_hex": "0x0499",
+        "text": "IF ERRORLEVEL 3 ECHO NOT ENOUGH MEMORY IN HOST"
+      },
+      {
+        "file_offset": 1225,
+        "offset_hex": "0x04C9",
+        "text": "IF ERRORLEVEL 3 goto failed"
+      },
+      {
+        "file_offset": 1254,
+        "offset_hex": "0x04E6",
+        "text": "IF ERRORLEVEL 2 goto cont"
+      },
+      {
+        "file_offset": 1281,
+        "offset_hex": "0x0501",
+        "text": "IF ERRORLEVEL 1 goto cont"
+      },
+      {
+        "file_offset": 1308,
+        "offset_hex": "0x051C",
+        "text": "goto failed"
+      },
+      {
+        "file_offset": 1321,
+        "offset_hex": "0x0529",
+        "text": ":cont"
+      },
+      {
+        "file_offset": 1328,
+        "offset_hex": "0x0530",
+        "text": "a:rbt"
+      },
+      {
+        "file_offset": 1335,
+        "offset_hex": "0x0537",
+        "text": "goto out"
+      },
+      {
+        "file_offset": 1345,
+        "offset_hex": "0x0541",
+        "text": ":failed"
+      },
+      {
+        "file_offset": 1354,
+        "offset_hex": "0x054A",
+        "text": "echo ERROR: Installation failed"
+      },
+      {
+        "file_offset": 1387,
+        "offset_hex": "0x056B",
+        "text": "echo Seek technical assistance"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/LEDTOUCH.SYS",
+    "size": 8111,
+    "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df",
+    "ascii_strings": [
+      {
+        "file_offset": 10,
+        "offset_hex": "0x000A",
+        "text": "POINT   COPYRIGHT IBM Corporation 1986, 1990"
+      },
+      {
+        "file_offset": 58,
+        "offset_hex": "0x003A",
+        "text": "stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack stack "
+      },
+      {
+        "file_offset": 810,
+        "offset_hex": "0x032A",
+        "text": "SQRWV"
+      },
+      {
+        "file_offset": 872,
+        "offset_hex": "0x0368",
+        "text": "^_ZY["
+      },
+      {
+        "file_offset": 1162,
+        "offset_hex": "0x048A",
+        "text": "@@<Pr"
+      },
+      {
+        "file_offset": 1399,
+        "offset_hex": "0x0577",
+        "text": "IBM Touch Panel Device Driver"
+      },
+      {
+        "file_offset": 1430,
+        "offset_hex": "0x0596",
+        "text": "Written by: Don D. Williams"
+      },
+      {
+        "file_offset": 1459,
+        "offset_hex": "0x05B3",
+        "text": "(C) Copyright IBM Corp. 1987, 1990"
+      },
+      {
+        "file_offset": 1495,
+        "offset_hex": "0x05D7",
+        "text": "Version 3.02"
+      },
+      {
+        "file_offset": 1509,
+        "offset_hex": "0x05E5",
+        "text": "All Rights Reserved"
+      },
+      {
+        "file_offset": 2780,
+        "offset_hex": "0x0ADC",
+        "text": "Error interfacing mouse (xxxx)"
+      },
+      {
+        "file_offset": 3873,
+        "offset_hex": "0x0F21",
+        "text": "PSQRVW"
+      },
+      {
+        "file_offset": 3891,
+        "offset_hex": "0x0F33",
+        "text": "_^ZY[X."
+      },
+      {
+        "file_offset": 3924,
+        "offset_hex": "0x0F54",
+        "text": "PSQRW"
+      },
+      {
+        "file_offset": 4077,
+        "offset_hex": "0x0FED",
+        "text": "_ZY[X"
+      },
+      {
+        "file_offset": 4093,
+        "offset_hex": "0x0FFD",
+        "text": "<Mu/_"
+      },
+      {
+        "file_offset": 4487,
+        "offset_hex": "0x1187",
+        "text": "PSQRVW"
+      },
+      {
+        "file_offset": 4586,
+        "offset_hex": "0x11EA",
+        "text": "_^ZY[X^"
+      },
+      {
+        "file_offset": 6417,
+        "offset_hex": "0x1911",
+        "text": "Test complete - OK"
+      },
+      {
+        "file_offset": 6439,
+        "offset_hex": "0x1927",
+        "text": "Optical devices settle time nnn"
+      },
+      {
+        "file_offset": 6474,
+        "offset_hex": "0x194A",
+        "text": "Touch Panel Needs Service"
+      },
+      {
+        "file_offset": 6502,
+        "offset_hex": "0x1966",
+        "text": "+Touch panel not installed - using IBM mouse"
+      },
+      {
+        "file_offset": 6550,
+        "offset_hex": "0x1996",
+        "text": "Control line wrap failure"
+      },
+      {
+        "file_offset": 6579,
+        "offset_hex": "0x19B3",
+        "text": "ADC Busy Will Not Reset"
+      },
+      {
+        "file_offset": 6606,
+        "offset_hex": "0x19CE",
+        "text": "Touch Panel Not Connected"
+      },
+      {
+        "file_offset": 6635,
+        "offset_hex": "0x19EB",
+        "text": "ADC Conversion Error"
+      },
+      {
+        "file_offset": 6659,
+        "offset_hex": "0x1A03",
+        "text": "Room Light Level Too High"
+      },
+      {
+        "file_offset": 6688,
+        "offset_hex": "0x1A20",
+        "text": "Touch Panel Receiver Error"
+      },
+      {
+        "file_offset": 6718,
+        "offset_hex": "0x1A3E",
+        "text": "No LED Output"
+      },
+      {
+        "file_offset": 6735,
+        "offset_hex": "0x1A4F",
+        "text": "LED Output Weak"
+      },
+      {
+        "file_offset": 6754,
+        "offset_hex": "0x1A62",
+        "text": "ADC Will Not Start"
+      },
+      {
+        "file_offset": 6776,
+        "offset_hex": "0x1A78",
+        "text": "12V Fuse Open"
+      },
+      {
+        "file_offset": 6794,
+        "offset_hex": "0x1A8A",
+        "text": "Press Enter to Continue"
+      },
+      {
+        "file_offset": 6980,
+        "offset_hex": "0x1B44",
+        "text": "                                                                                "
+      }
+    ]
+  },
+  {
+    "path": "7690diag/NSTALL.EXE",
+    "size": 9918,
+    "sha256": "9f3df6a4a5c24219b6476b97f198850d84b14d14342059b08cde1e10c7c67d69",
+    "ascii_strings": [
+      {
+        "file_offset": 1984,
+        "offset_hex": "0x07C0",
+        "text": "DOS 2.0 or later required"
+      },
+      {
+        "file_offset": 2092,
+        "offset_hex": "0x082C",
+        "text": "error 2000: Stack overflow"
+      },
+      {
+        "file_offset": 2122,
+        "offset_hex": "0x084A",
+        "text": "error 2003: Integer divide by 0"
+      },
+      {
+        "file_offset": 2157,
+        "offset_hex": "0x086D",
+        "text": "error 2002: Floating point not loaded"
+      },
+      {
+        "file_offset": 9240,
+        "offset_hex": "0x2418",
+        "text": "C Library - (C)Copyright Microsoft Corp 1985"
+      },
+      {
+        "file_offset": 9286,
+        "offset_hex": "0x2446",
+        "text": "error 2001: Null pointer assignment"
+      },
+      {
+        "file_offset": 9330,
+        "offset_hex": "0x2472",
+        "text": "COMSPEC"
+      },
+      {
+        "file_offset": 9350,
+        "offset_hex": "0x2486",
+        "text": "config.sys"
+      },
+      {
+        "file_offset": 9361,
+        "offset_hex": "0x2491",
+        "text": "device="
+      },
+      {
+        "file_offset": 9784,
+        "offset_hex": "0x2638",
+        "text": ";C_FILE_INFO"
+      },
+      {
+        "file_offset": 9826,
+        "offset_hex": "0x2662",
+        "text": "(null)"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/PAR1.DGS",
+    "size": 601,
+    "sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYTEST    "
+      },
+      {
+        "file_offset": 59,
+        "offset_hex": "0x003B",
+        "text": "<     (C) COPYRIGHT IBM CORPORATION 1981, 1987     "
+      }
+    ]
+  },
+  {
+    "path": "7690diag/RBT.EXE",
+    "size": 7828,
+    "sha256": "9cd96256b9e472ed8775048a8886a6e5c023d1f41a214c2fd056b72757870177",
+    "ascii_strings": [
+      {
+        "file_offset": 946,
+        "offset_hex": "0x03B2",
+        "text": "DOS 2.0 or later required"
+      },
+      {
+        "file_offset": 1054,
+        "offset_hex": "0x041E",
+        "text": "error 2000: Stack overflow"
+      },
+      {
+        "file_offset": 1084,
+        "offset_hex": "0x043C",
+        "text": "error 2003: Integer divide by 0"
+      },
+      {
+        "file_offset": 1119,
+        "offset_hex": "0x045F",
+        "text": "error 2002: Floating point not loaded"
+      },
+      {
+        "file_offset": 7208,
+        "offset_hex": "0x1C28",
+        "text": "C Library - (C)Copyright Microsoft Corp 1985"
+      },
+      {
+        "file_offset": 7254,
+        "offset_hex": "0x1C56",
+        "text": "error 2001: Null pointer assignment"
+      },
+      {
+        "file_offset": 7294,
+        "offset_hex": "0x1C7E",
+        "text": "a:txt.ok"
+      },
+      {
+        "file_offset": 7600,
+        "offset_hex": "0x1DB0",
+        "text": ";C_FILE_INFO"
+      },
+      {
+        "file_offset": 7712,
+        "offset_hex": "0x1E20",
+        "text": "(null)"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/SER0.DGS",
+    "size": 3039,
+    "sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYTEST    "
+      },
+      {
+        "file_offset": 54,
+        "offset_hex": "0x0036",
+        "text": "      (C) COPYRIGHT IBM CORPORATION 1981, 1987      "
+      },
+      {
+        "file_offset": 1939,
+        "offset_hex": "0x0793",
+        "text": "$`<`t"
+      },
+      {
+        "file_offset": 2075,
+        "offset_hex": "0x081B",
+        "text": "$34\"t"
+      },
+      {
+        "file_offset": 2092,
+        "offset_hex": "0x082C",
+        "text": "$34 t"
+      },
+      {
+        "file_offset": 2646,
+        "offset_hex": "0x0A56",
+        "text": "$`<`t"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/SERVICES.COM",
+    "size": 21696,
+    "sha256": "b20e20228d14eb0587050e5c350e33b709b5240fc27d68d78d8ba964ec1a1028",
+    "ascii_strings": [
+      {
+        "file_offset": 71,
+        "offset_hex": "0x0047",
+        "text": "ynEDSYEDSCMD  "
+      },
+      {
+        "file_offset": 96,
+        "offset_hex": "0x0060",
+        "text": "COPYRIGHT IBM CORPORATION"
+      },
+      {
+        "file_offset": 157,
+        "offset_hex": "0x009D",
+        "text": "DIAGS   COM"
+      },
+      {
+        "file_offset": 169,
+        "offset_hex": "0x00A9",
+        "text": "DFORMAT COM"
+      },
+      {
+        "file_offset": 181,
+        "offset_hex": "0x00B5",
+        "text": "DCOPY   COM"
+      },
+      {
+        "file_offset": 193,
+        "offset_hex": "0x00C1",
+        "text": "DPARKHDSCOM"
+      },
+      {
+        "file_offset": 205,
+        "offset_hex": "0x00CD",
+        "text": "DTMEDTE COM"
+      },
+      {
+        "file_offset": 217,
+        "offset_hex": "0x00D9",
+        "text": "VERSION ???X.YYA"
+      },
+      {
+        "file_offset": 274,
+        "offset_hex": "0x0112",
+        "text": "EXTENDED DIAGNOSTIC SYSTEM"
+      },
+      {
+        "file_offset": 301,
+        "offset_hex": "0x012D",
+        "text": "        DEBUG MODE        "
+      },
+      {
+        "file_offset": 328,
+        "offset_hex": "0x0148",
+        "text": "******* LEVEL ONE ********"
+      },
+      {
+        "file_offset": 1401,
+        "offset_hex": "0x0579",
+        "text": "STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK STACK "
+      },
+      {
+        "file_offset": 1795,
+        "offset_hex": "0x0703",
+        "text": "EDSYEDSBPR  "
+      },
+      {
+        "file_offset": 1891,
+        "offset_hex": "0x0763",
+        "text": "EDSYEDSCNV  "
+      },
+      {
+        "file_offset": 2067,
+        "offset_hex": "0x0813",
+        "text": "EDSYEDSMSO  "
+      },
+      {
+        "file_offset": 2515,
+        "offset_hex": "0x09D3",
+        "text": "EDSYEDSPRS  "
+      },
+      {
+        "file_offset": 2549,
+        "offset_hex": "0x09F5",
+        "text": "< tW<,tS<:tO<"
+      },
+      {
+        "file_offset": 2707,
+        "offset_hex": "0x0A93",
+        "text": "EDSYEDSPRTS "
+      },
+      {
+        "file_offset": 2727,
+        "offset_hex": "0x0AA7",
+        "text": "PRINTER NOT FUNCTIONING"
+      },
+      {
+        "file_offset": 2883,
+        "offset_hex": "0x0B43",
+        "text": "EDSYEDSPSPP "
+      },
+      {
+        "file_offset": 2899,
+        "offset_hex": "0x0B53",
+        "text": "SQRUVW"
+      },
+      {
+        "file_offset": 2932,
+        "offset_hex": "0x0B74",
+        "text": "_^]ZY["
+      },
+      {
+        "file_offset": 2947,
+        "offset_hex": "0x0B83",
+        "text": "EDSYEDSRKY  "
+      },
+      {
+        "file_offset": 4227,
+        "offset_hex": "0x1083",
+        "text": "EDSYEDSTME  "
+      },
+      {
+        "file_offset": 4483,
+        "offset_hex": "0x1183",
+        "text": "EDSYEDSLGM  "
+      },
+      {
+        "file_offset": 4500,
+        "offset_hex": "0x1194",
+        "text": "ERROR   LOG"
+      },
+      {
+        "file_offset": 4947,
+        "offset_hex": "0x1353",
+        "text": "EDSYEDSMSG  "
+      },
+      {
+        "file_offset": 5587,
+        "offset_hex": "0x15D3",
+        "text": "EDSYEDSCMOS "
+      },
+      {
+        "file_offset": 5794,
+        "offset_hex": "0x16A2",
+        "text": "EDSYEDSMFA  "
+      },
+      {
+        "file_offset": 5816,
+        "offset_hex": "0x16B8",
+        "text": "IBM 7690"
+      },
+      {
+        "file_offset": 5830,
+        "offset_hex": "0x16C6",
+        "text": "CUSTOMER LEVEL DIAGNOSTICS"
+      },
+      {
+        "file_offset": 5862,
+        "offset_hex": "0x16E6",
+        "text": "Version"
+      },
+      {
+        "file_offset": 5876,
+        "offset_hex": "0x16F4",
+        "text": "(C) Copyright IBM Corporation, 1981, 1990"
+      },
+      {
+        "file_offset": 5924,
+        "offset_hex": "0x1724",
+        "text": "INCORRECT DIAGNOSTIC DISKETTE                             "
+      },
+      {
+        "file_offset": 5983,
+        "offset_hex": "0x175F",
+        "text": "This diagnostic diskette is for the IBM MODEL 7690"
+      },
+      {
+        "file_offset": 6034,
+        "offset_hex": "0x1792",
+        "text": "and will not run on your computer. Please insert "
+      },
+      {
+        "file_offset": 6084,
+        "offset_hex": "0x17C4",
+        "text": "the diskette for your computer in drive \"A\" then          "
+      },
+      {
+        "file_offset": 6148,
+        "offset_hex": "0x1804",
+        "text": "PRESS ENTER TO CONTINUE."
+      },
+      {
+        "file_offset": 6179,
+        "offset_hex": "0x1823",
+        "text": "PROGRAMS LOADING - PLEASE WAIT"
+      },
+      {
+        "file_offset": 6215,
+        "offset_hex": "0x1847",
+        "text": "SERVICES"
+      },
+      {
+        "file_offset": 6225,
+        "offset_hex": "0x1851",
+        "text": "0 - SYSTEM CHECKOUT"
+      },
+      {
+        "file_offset": 6245,
+        "offset_hex": "0x1865",
+        "text": "1 - FORMAT DISKETTE"
+      },
+      {
+        "file_offset": 6265,
+        "offset_hex": "0x1879",
+        "text": "2 - COPY DISKETTE"
+      },
+      {
+        "file_offset": 6283,
+        "offset_hex": "0x188B",
+        "text": "3 - PREPARE SYSTEM FOR MOVING"
+      },
+      {
+        "file_offset": 6313,
+        "offset_hex": "0x18A9",
+        "text": "4 - SET TIME AND DATE"
+      },
+      {
+        "file_offset": 6336,
+        "offset_hex": "0x18C0",
+        "text": "9 - END SERVICES"
+      },
+      {
+        "file_offset": 6359,
+        "offset_hex": "0x18D7",
+        "text": "SERVICES"
+      },
+      {
+        "file_offset": 6369,
+        "offset_hex": "0x18E1",
+        "text": "0 - SYSTEM CHECKOUT"
+      },
+      {
+        "file_offset": 6389,
+        "offset_hex": "0x18F5",
+        "text": "1 - FORMAT DISKETTE"
+      },
+      {
+        "file_offset": 6409,
+        "offset_hex": "0x1909",
+        "text": "2 - COPY DISKETTE"
+      },
+      {
+        "file_offset": 6427,
+        "offset_hex": "0x191B",
+        "text": "4 - SET TIME AND DATE"
+      },
+      {
+        "file_offset": 6450,
+        "offset_hex": "0x1932",
+        "text": "9 - END SERVICES"
+      },
+      {
+        "file_offset": 6473,
+        "offset_hex": "0x1949",
+        "text": "SYSTEM CHECKOUT"
+      },
+      {
+        "file_offset": 6494,
+        "offset_hex": "0x195E",
+        "text": "0 - RUN TESTS ONE TIME"
+      },
+      {
+        "file_offset": 6517,
+        "offset_hex": "0x1975",
+        "text": "1 - RUN TESTS MULTIPLE TIMES"
+      },
+      {
+        "file_offset": 6546,
+        "offset_hex": "0x1992",
+        "text": "2 - LOG UTILITIES"
+      },
+      {
+        "file_offset": 6564,
+        "offset_hex": "0x19A4",
+        "text": "9 - EXIT"
+      },
+      {
+        "file_offset": 6579,
+        "offset_hex": "0x19B3",
+        "text": "Select a Number and Press ENTER "
+      },
+      {
+        "file_offset": 6616,
+        "offset_hex": "0x19D8",
+        "text": "DEV#  SEGMENT  OFFSET@"
+      },
+      {
+        "file_offset": 6643,
+        "offset_hex": "0x19F3",
+        "text": "IS THE LIST CORRECT (Y/N)A"
+      },
+      {
+        "file_offset": 6674,
+        "offset_hex": "0x1A12",
+        "text": "TO CHANGE INSTALLED DEVICE(S) TYPE"
+      },
+      {
+        "file_offset": 6710,
+        "offset_hex": "0x1A36",
+        "text": "0 - TO ADD ITEM(S)"
+      },
+      {
+        "file_offset": 6729,
+        "offset_hex": "0x1A49",
+        "text": "1 - TO DELETE ITEM(S)"
+      },
+      {
+        "file_offset": 6757,
+        "offset_hex": "0x1A65",
+        "text": "SEPARATED BY BLANKS OR COMMASC"
+      },
+      {
+        "file_offset": 6792,
+        "offset_hex": "0x1A88",
+        "text": "SELECT THE NUMBER OF THE ITEM(S) TO ADDD"
+      },
+      {
+        "file_offset": 6837,
+        "offset_hex": "0x1AB5",
+        "text": "SELECT THE NUMBER OF THE ITEM(S) TO DELETEE"
+      },
+      {
+        "file_offset": 6885,
+        "offset_hex": "0x1AE5",
+        "text": "SELECT OPTION NUMBER(S) TO TEST ORF"
+      },
+      {
+        "file_offset": 6925,
+        "offset_hex": "0x1B0D",
+        "text": "PRESS \"ENTER\" TO SELECT ALL OPTIONSG"
+      },
+      {
+        "file_offset": 6966,
+        "offset_hex": "0x1B36",
+        "text": "ENTER NUMBER OF TIMES TO RUN TESTSH"
+      },
+      {
+        "file_offset": 7006,
+        "offset_hex": "0x1B5E",
+        "text": "OR PRESS \"ENTER\" TO RUN CONTINUOUSLYI"
+      },
+      {
+        "file_offset": 7048,
+        "offset_hex": "0x1B88",
+        "text": "WAIT EACH TIME AN ERROR OCCURS (Y/N)M"
+      },
+      {
+        "file_offset": 7090,
+        "offset_hex": "0x1BB2",
+        "text": "TESTING -"
+      },
+      {
+        "file_offset": 7106,
+        "offset_hex": "0x1BC2",
+        "text": "END - TEST "
+      },
+      {
+        "file_offset": 7125,
+        "offset_hex": "0x1BD5",
+        "text": "LOG UTILITIESR"
+      },
+      {
+        "file_offset": 7144,
+        "offset_hex": "0x1BE8",
+        "text": "0 - START ERROR LOG"
+      },
+      {
+        "file_offset": 7164,
+        "offset_hex": "0x1BFC",
+        "text": "1 - STOP ERROR LOG"
+      },
+      {
+        "file_offset": 7183,
+        "offset_hex": "0x1C0F",
+        "text": "3 - DISPLAY TIME OF DAY"
+      },
+      {
+        "file_offset": 7207,
+        "offset_hex": "0x1C27",
+        "text": "9 - END LOG UTILITIES"
+      },
+      {
+        "file_offset": 7236,
+        "offset_hex": "0x1C44",
+        "text": "UNABLE TO READ ERROR LOG"
+      },
+      {
+        "file_offset": 7268,
+        "offset_hex": "0x1C64",
+        "text": "DISK FULL ERROR - UNABLE TO LOG"
+      },
+      {
+        "file_offset": 7307,
+        "offset_hex": "0x1C8B",
+        "text": "SELECT DEVICE FOR LOG"
+      },
+      {
+        "file_offset": 7330,
+        "offset_hex": "0x1CA2",
+        "text": "0 - DISKETTE"
+      },
+      {
+        "file_offset": 7343,
+        "offset_hex": "0x1CAF",
+        "text": "1 - PRINTER"
+      },
+      {
+        "file_offset": 7362,
+        "offset_hex": "0x1CC2",
+        "text": "ENTER THE DRIVE ID FOR ERROR LOGa"
+      },
+      {
+        "file_offset": 7400,
+        "offset_hex": "0x1CE8",
+        "text": "IS A DISPLAY ATTACHED TO"
+      },
+      {
+        "file_offset": 7425,
+        "offset_hex": "0x1D01",
+        "text": "EACH DISPLAY ADAPTER? (Y/N)c"
+      },
+      {
+        "file_offset": 7458,
+        "offset_hex": "0x1D22",
+        "text": "PRESS ENTER TO CONTINUE.i"
+      },
+      {
+        "file_offset": 7488,
+        "offset_hex": "0x1D40",
+        "text": "SYSTEM RESTARTING !"
+      },
+      {
+        "file_offset": 7509,
+        "offset_hex": "0x1D55",
+        "text": "Perform one of the following actions:"
+      },
+      {
+        "file_offset": 7548,
+        "offset_hex": "0x1D7C",
+        "text": "  -  To restart the Customer Level Diagnostics."
+      },
+      {
+        "file_offset": 7596,
+        "offset_hex": "0x1DAC",
+        "text": "        Press ENTER."
+      },
+      {
+        "file_offset": 7618,
+        "offset_hex": "0x1DC2",
+        "text": "  -  To start a new program."
+      },
+      {
+        "file_offset": 7647,
+        "offset_hex": "0x1DDF",
+        "text": "        Insert a program diskette into drive A."
+      },
+      {
+        "file_offset": 7695,
+        "offset_hex": "0x1E0F",
+        "text": "        Then press ENTER."
+      },
+      {
+        "file_offset": 7728,
+        "offset_hex": "0x1E30",
+        "text": "  -  To start the computer from a fixed disk drive."
+      },
+      {
+        "file_offset": 7780,
+        "offset_hex": "0x1E64",
+        "text": "        Remove the Starter Diskette from drive A."
+      },
+      {
+        "file_offset": 7830,
+        "offset_hex": "0x1E96",
+        "text": "        Then press ENTER."
+      },
+      {
+        "file_offset": 7863,
+        "offset_hex": "0x1EB7",
+        "text": "ERROR READING FILE"
+      },
+      {
+        "file_offset": 7882,
+        "offset_hex": "0x1ECA",
+        "text": "REINSERT CUSTOMER LEVEL DIAGNOSTIC DISKETTE IN DRIVEn"
+      },
+      {
+        "file_offset": 7940,
+        "offset_hex": "0x1F04",
+        "text": "SYSTEM RESTARTING !"
+      },
+      {
+        "file_offset": 7961,
+        "offset_hex": "0x1F19",
+        "text": "PREPARE SYSTEM FOR DESIRED OPERATION AND PRESS ENTER."
+      },
+      {
+        "file_offset": 8021,
+        "offset_hex": "0x1F55",
+        "text": "THE INSTALLED DEVICES ARE"
+      },
+      {
+        "file_offset": 8052,
+        "offset_hex": "0x1F74",
+        "text": "PRINTER NOT WORKING"
+      },
+      {
+        "file_offset": 8094,
+        "offset_hex": "0x1F9E",
+        "text": "SYSTEM UNIT"
+      },
+      {
+        "file_offset": 8111,
+        "offset_hex": "0x1FAF",
+        "text": "LIST OF INSTALLED DEVICES R"
+      },
+      {
+        "file_offset": 8153,
+        "offset_hex": "0x1FD9",
+        "text": "REPLACE SYSTEM BOARDP"
+      },
+      {
+        "file_offset": 8180,
+        "offset_hex": "0x1FF4",
+        "text": "SET TIME AND DATEQ"
+      },
+      {
+        "file_offset": 8204,
+        "offset_hex": "0x200C",
+        "text": "REPLACE SYSTEM UNITT"
+      },
+      {
+        "file_offset": 8230,
+        "offset_hex": "0x2026",
+        "text": "Press \"ENTER\" to continue ..."
+      },
+      {
+        "file_offset": 8266,
+        "offset_hex": "0x204A",
+        "text": "The current date is: X"
+      },
+      {
+        "file_offset": 8294,
+        "offset_hex": "0x2066",
+        "text": "If the current date is correct, press \"ENTER\"."
+      },
+      {
+        "file_offset": 8348,
+        "offset_hex": "0x209C",
+        "text": "If the current date is incorrect, type the new date."
+      },
+      {
+        "file_offset": 8402,
+        "offset_hex": "0x20D2",
+        "text": "Then press \"ENTER\"."
+      },
+      {
+        "file_offset": 8429,
+        "offset_hex": "0x20ED",
+        "text": "The current time is: ["
+      },
+      {
+        "file_offset": 8457,
+        "offset_hex": "0x2109",
+        "text": "If the current time is correct, press \"ENTER\"."
+      },
+      {
+        "file_offset": 8511,
+        "offset_hex": "0x213F",
+        "text": "If the current time is incorrect, type the new time."
+      },
+      {
+        "file_offset": 8565,
+        "offset_hex": "0x2175",
+        "text": "Then press \"ENTER\"."
+      },
+      {
+        "file_offset": 8592,
+        "offset_hex": "0x2190",
+        "text": "NOTE:  Time must be entered in 24 hour format."
+      },
+      {
+        "file_offset": 8647,
+        "offset_hex": "0x21C7",
+        "text": "INVALID DATE"
+      },
+      {
+        "file_offset": 8668,
+        "offset_hex": "0x21DC",
+        "text": "INVALID TIME"
+      },
+      {
+        "file_offset": 8688,
+        "offset_hex": "0x21F0",
+        "text": "  512KB MEMORY"
+      },
+      {
+        "file_offset": 8708,
+        "offset_hex": "0x2204",
+        "text": "DATA FAILURE"
+      },
+      {
+        "file_offset": 8726,
+        "offset_hex": "0x2216",
+        "text": "ADDRESSING FAILURE"
+      },
+      {
+        "file_offset": 8750,
+        "offset_hex": "0x222E",
+        "text": "REFRESH FAILURE"
+      },
+      {
+        "file_offset": 8771,
+        "offset_hex": "0x2243",
+        "text": "MEMORY ERROR"
+      },
+      {
+        "file_offset": 8789,
+        "offset_hex": "0x2255",
+        "text": "THIS TEST MAY TAKE UP TO 1 MINUTE,"
+      },
+      {
+        "file_offset": 8824,
+        "offset_hex": "0x2278",
+        "text": "PLEASE STAND BY"
+      },
+      {
+        "file_offset": 8846,
+        "offset_hex": "0x228E",
+        "text": "KEYBOARDA"
+      },
+      {
+        "file_offset": 8860,
+        "offset_hex": "0x229C",
+        "text": "REPLACE KEYBOARDB"
+      },
+      {
+        "file_offset": 8882,
+        "offset_hex": "0x22B2",
+        "text": "REPLACE INTERFACE CABLE`"
+      },
+      {
+        "file_offset": 8911,
+        "offset_hex": "0x22CF",
+        "text": "DO YOU HAVE A KEYLOCK ON"
+      },
+      {
+        "file_offset": 8936,
+        "offset_hex": "0x22E8",
+        "text": "YOUR SYSTEM UNIT (Y/N)? a"
+      },
+      {
+        "file_offset": 8966,
+        "offset_hex": "0x2306",
+        "text": "PRESS EACH KEY,"
+      },
+      {
+        "file_offset": 8982,
+        "offset_hex": "0x2316",
+        "text": "HOLD FOR TYPEMATIC TEST"
+      },
+      {
+        "file_offset": 9006,
+        "offset_hex": "0x232E",
+        "text": "IF OK PRESS \"Y THEN ENTER\""
+      },
+      {
+        "file_offset": 9033,
+        "offset_hex": "0x2349",
+        "text": "IF NOT OK PRESS \"N THEN ENTER\"b"
+      },
+      {
+        "file_offset": 9070,
+        "offset_hex": "0x236E",
+        "text": "DO YOU WANT TO TEST YOUR"
+      },
+      {
+        "file_offset": 9095,
+        "offset_hex": "0x2387",
+        "text": "SYSTEM UNIT KEYLOCK (Y/N)? c"
+      },
+      {
+        "file_offset": 9129,
+        "offset_hex": "0x23A9",
+        "text": "WHICH SHAPE IS YOUR MAIN ENTER KEY?"
+      },
+      {
+        "file_offset": 9165,
+        "offset_hex": "0x23CD",
+        "text": "(THE ONE IN THE TYPEWRITER AREA)"
+      },
+      {
+        "file_offset": 9198,
+        "offset_hex": "0x23EE",
+        "text": "PRESS \"1 OR 2 THEN "
+      },
+      {
+        "file_offset": 9221,
+        "offset_hex": "0x2405",
+        "text": "\" - q"
+      },
+      {
+        "file_offset": 9231,
+        "offset_hex": "0x240F",
+        "text": "DISCONNECT KEYBOARD AND THENr"
+      },
+      {
+        "file_offset": 9265,
+        "offset_hex": "0x2431",
+        "text": "LOCK THE SYSTEM UNIT KEYLOCKs"
+      },
+      {
+        "file_offset": 9299,
+        "offset_hex": "0x2453",
+        "text": "RECONNECT KEYBOARD AND THENt"
+      },
+      {
+        "file_offset": 9332,
+        "offset_hex": "0x2474",
+        "text": "UNLOCK THE SYSTEM UNIT KEYLOCK@"
+      },
+      {
+        "file_offset": 9369,
+        "offset_hex": "0x2499",
+        "text": "DISPLAY ATTRIBUTES "
+      },
+      {
+        "file_offset": 9396,
+        "offset_hex": "0x24B4",
+        "text": " 640X200 GRAPHICS - GRAY, GRAY, WHITE ON BLACK "
+      },
+      {
+        "file_offset": 9452,
+        "offset_hex": "0x24EC",
+        "text": " 320X200 GRAPHICS - TEST D"
+      },
+      {
+        "file_offset": 9484,
+        "offset_hex": "0x250C",
+        "text": "DISPLAY TEST"
+      },
+      {
+        "file_offset": 9505,
+        "offset_hex": "0x2521",
+        "text": "CHARACTER SET"
+      },
+      {
+        "file_offset": 9527,
+        "offset_hex": "0x2537",
+        "text": " BOXES ARE:  GRAY, GRAY, WHITE ON BLACK"
+      },
+      {
+        "file_offset": 9574,
+        "offset_hex": "0x2566",
+        "text": " BOXES ARE:  BLUE, MAGENTA, GRAY ON RED"
+      },
+      {
+        "file_offset": 9621,
+        "offset_hex": "0x2595",
+        "text": " 40X25 DISPLAY "
+      },
+      {
+        "file_offset": 9645,
+        "offset_hex": "0x25AD",
+        "text": " 80X25 DISPLAY "
+      },
+      {
+        "file_offset": 9669,
+        "offset_hex": "0x25C5",
+        "text": "THIS LINE IS O"
+      },
+      {
+        "file_offset": 9689,
+        "offset_hex": "0x25D9",
+        "text": "ENTER NUMBERS SEPARATED BY COMMAS"
+      },
+      {
+        "file_offset": 9729,
+        "offset_hex": "0x2601",
+        "text": "ENTER NUMBER OF DESIRED ACTION R"
+      },
+      {
+        "file_offset": 9767,
+        "offset_hex": "0x2627",
+        "text": "TYPE ANY KEY TO DISPLAY NEXT PAGE S"
+      },
+      {
+        "file_offset": 9808,
+        "offset_hex": "0x2650",
+        "text": "WERE ALL 8 PAGES DISPLAYED (Y/N)? T"
+      },
+      {
+        "file_offset": 9849,
+        "offset_hex": "0x2679",
+        "text": " VIDEO PAGE V"
+      },
+      {
+        "file_offset": 9868,
+        "offset_hex": "0x268C",
+        "text": "IS THE SCREEN CORRECT (Y/N)? W"
+      },
+      {
+        "file_offset": 9904,
+        "offset_hex": "0x26B0",
+        "text": "CHOOSE OPTIONS FOR UNATTENDED MODE "
+      },
+      {
+        "file_offset": 9960,
+        "offset_hex": "0x26E8",
+        "text": "1-------------------------------------40"
+      },
+      {
+        "file_offset": 10007,
+        "offset_hex": "0x2717",
+        "text": "1-------------------------------------40--------------------------------------80"
+      },
+      {
+        "file_offset": 10096,
+        "offset_hex": "0x2770",
+        "text": "THERE SHOULD BE ONLY 40 CHARACTER"
+      },
+      {
+        "file_offset": 10130,
+        "offset_hex": "0x2792",
+        "text": "POSITIONS PER LINE ON THIS SCREEN"
+      },
+      {
+        "file_offset": 10171,
+        "offset_hex": "0x27BB",
+        "text": "THERE SHOULD BE 80 CHARACTER"
+      },
+      {
+        "file_offset": 10200,
+        "offset_hex": "0x27D8",
+        "text": "POSITIONS PER LINE ON THIS SCREEN"
+      },
+      {
+        "file_offset": 10240,
+        "offset_hex": "0x2800",
+        "text": " 0 - DISPLAY SELF TEST"
+      },
+      {
+        "file_offset": 10268,
+        "offset_hex": "0x281C",
+        "text": " 1 - DISPLAY ATTRIBUTES"
+      },
+      {
+        "file_offset": 10297,
+        "offset_hex": "0x2839",
+        "text": " 2 - CHARACTER SET"
+      },
+      {
+        "file_offset": 10321,
+        "offset_hex": "0x2851",
+        "text": " 3 - 80X25 DISPLAY"
+      },
+      {
+        "file_offset": 10345,
+        "offset_hex": "0x2869",
+        "text": " 4 - 40X25 DISPLAY"
+      },
+      {
+        "file_offset": 10369,
+        "offset_hex": "0x2881",
+        "text": " 5 - 320X200 GRAPHICS"
+      },
+      {
+        "file_offset": 10396,
+        "offset_hex": "0x289C",
+        "text": " 6 - 640X200 AND 640X480 GRAPHICS"
+      },
+      {
+        "file_offset": 10435,
+        "offset_hex": "0x28C3",
+        "text": " 8 - SCREEN PAGING "
+      },
+      {
+        "file_offset": 10460,
+        "offset_hex": "0x28DC",
+        "text": " 9 - EXIT TO MAIN MENU"
+      },
+      {
+        "file_offset": 10488,
+        "offset_hex": "0x28F8",
+        "text": "10 - RUN ALL ABOVE TESTS"
+      },
+      {
+        "file_offset": 10534,
+        "offset_hex": "0x2926",
+        "text": " BLACK "
+      },
+      {
+        "file_offset": 10547,
+        "offset_hex": "0x2933",
+        "text": " BLUE "
+      },
+      {
+        "file_offset": 10559,
+        "offset_hex": "0x293F",
+        "text": " GREEN "
+      },
+      {
+        "file_offset": 10572,
+        "offset_hex": "0x294C",
+        "text": " CYAN "
+      },
+      {
+        "file_offset": 10584,
+        "offset_hex": "0x2958",
+        "text": " RED "
+      },
+      {
+        "file_offset": 10595,
+        "offset_hex": "0x2963",
+        "text": " MAGENTA "
+      },
+      {
+        "file_offset": 10610,
+        "offset_hex": "0x2972",
+        "text": " BROWN "
+      },
+      {
+        "file_offset": 10623,
+        "offset_hex": "0x297F",
+        "text": " WHITE "
+      },
+      {
+        "file_offset": 10636,
+        "offset_hex": "0x298C",
+        "text": " DARK GRAY "
+      },
+      {
+        "file_offset": 10653,
+        "offset_hex": "0x299D",
+        "text": " LIGHT BLUE "
+      },
+      {
+        "file_offset": 10671,
+        "offset_hex": "0x29AF",
+        "text": " LIGHT GREEN "
+      },
+      {
+        "file_offset": 10690,
+        "offset_hex": "0x29C2",
+        "text": " LIGHT CYAN "
+      },
+      {
+        "file_offset": 10708,
+        "offset_hex": "0x29D4",
+        "text": " LIGHT RED "
+      },
+      {
+        "file_offset": 10725,
+        "offset_hex": "0x29E5",
+        "text": " LIGHT MAGENTA "
+      },
+      {
+        "file_offset": 10746,
+        "offset_hex": "0x29FA",
+        "text": " LIGHT YELLOW "
+      },
+      {
+        "file_offset": 10766,
+        "offset_hex": "0x2A0E",
+        "text": " INTENSIFIED WHITE "
+      },
+      {
+        "file_offset": 10791,
+        "offset_hex": "0x2A27",
+        "text": "AT NORMAL INTENSITY."
+      },
+      {
+        "file_offset": 10817,
+        "offset_hex": "0x2A41",
+        "text": "INTENSIFIED."
+      },
+      {
+        "file_offset": 10835,
+        "offset_hex": "0x2A53",
+        "text": "IN REVERSE VIDEO."
+      },
+      {
+        "file_offset": 10858,
+        "offset_hex": "0x2A6A",
+        "text": "NOT VISIBLE."
+      },
+      {
+        "file_offset": 10876,
+        "offset_hex": "0x2A7C",
+        "text": "BLINKING."
+      },
+      {
+        "file_offset": 10891,
+        "offset_hex": "0x2A8B",
+        "text": "UNDERLINED."
+      },
+      {
+        "file_offset": 10908,
+        "offset_hex": "0x2A9C",
+        "text": " GRAYS "
+      },
+      {
+        "file_offset": 10921,
+        "offset_hex": "0x2AA9",
+        "text": "DISPLAY"
+      },
+      {
+        "file_offset": 10935,
+        "offset_hex": "0x2AB7",
+        "text": "640X480 GRAPHICS - GRAY, GRAY, WHITE ON BLACK"
+      },
+      {
+        "file_offset": 10989,
+        "offset_hex": "0x2AED",
+        "text": " 4 DIFFERENT COLOR BARS:"
+      },
+      {
+        "file_offset": 11021,
+        "offset_hex": "0x2B0D",
+        "text": " 4 IDENTICAL COLOR BARS:"
+      },
+      {
+        "file_offset": 11053,
+        "offset_hex": "0x2B2D",
+        "text": " BOXES ARE:  GRAY, GRAY AND WHITE"
+      },
+      {
+        "file_offset": 11094,
+        "offset_hex": "0x2B56",
+        "text": " BOXES ARE:  GRAY, GRAY AND BLACK"
+      },
+      {
+        "file_offset": 11134,
+        "offset_hex": "0x2B7E",
+        "text": " GRAY "
+      },
+      {
+        "file_offset": 11146,
+        "offset_hex": "0x2B8A",
+        "text": " SHADES VARY FROM DARK TO LIGHT"
+      },
+      {
+        "file_offset": 11184,
+        "offset_hex": "0x2BB0",
+        "text": " RED, GREEN, BLUE, GRAY ON BLACK"
+      },
+      {
+        "file_offset": 11223,
+        "offset_hex": "0x2BD7",
+        "text": " GRAY ON BLACK"
+      },
+      {
+        "file_offset": 11265,
+        "offset_hex": "0x2C01",
+        "text": "-EDSYEDSMFB  "
+      },
+      {
+        "file_offset": 11288,
+        "offset_hex": "0x2C18",
+        "text": "1 DISKETTE DRIVE(S)"
+      },
+      {
+        "file_offset": 11313,
+        "offset_hex": "0x2C31",
+        "text": "DISKETTE"
+      },
+      {
+        "file_offset": 11327,
+        "offset_hex": "0x2C3F",
+        "text": "IS THIS CORRECT? - Y/N"
+      },
+      {
+        "file_offset": 11355,
+        "offset_hex": "0x2C5B",
+        "text": " ****  WARNING  **** "
+      },
+      {
+        "file_offset": 11382,
+        "offset_hex": "0x2C76",
+        "text": "DATA WILL BE DESTROYED"
+      },
+      {
+        "file_offset": 11410,
+        "offset_hex": "0x2C92",
+        "text": "1440KB"
+      },
+      {
+        "file_offset": 11422,
+        "offset_hex": "0x2C9E",
+        "text": "720KB"
+      },
+      {
+        "file_offset": 11433,
+        "offset_hex": "0x2CA9",
+        "text": "360KB"
+      },
+      {
+        "file_offset": 11444,
+        "offset_hex": "0x2CB4",
+        "text": "DISKETTE DIAGNOSTIC MENU"
+      },
+      {
+        "file_offset": 11469,
+        "offset_hex": "0x2CCD",
+        "text": "-----------------------------"
+      },
+      {
+        "file_offset": 11499,
+        "offset_hex": "0x2CEB",
+        "text": "OPTION                       "
+      },
+      {
+        "file_offset": 11529,
+        "offset_hex": "0x2D09",
+        "text": "1 - SEEK TEST                "
+      },
+      {
+        "file_offset": 11559,
+        "offset_hex": "0x2D27",
+        "text": "2 - WRITE, READ, COMPARE TEST"
+      },
+      {
+        "file_offset": 11589,
+        "offset_hex": "0x2D45",
+        "text": "3 - VERIFY DISKETTE TEST     "
+      },
+      {
+        "file_offset": 11624,
+        "offset_hex": "0x2D68",
+        "text": "DISKETTE DRIVE "
+      },
+      {
+        "file_offset": 11645,
+        "offset_hex": "0x2D7D",
+        "text": "REMOVE DISKETTE FROM DRIVE "
+      },
+      {
+        "file_offset": 11678,
+        "offset_hex": "0x2D9E",
+        "text": "    WAS REMOVED      "
+      },
+      {
+        "file_offset": 11700,
+        "offset_hex": "0x2DB4",
+        "text": "IT IS BEING RECHECKED"
+      },
+      {
+        "file_offset": 11728,
+        "offset_hex": "0x2DD0",
+        "text": "FOR OPTION 9"
+      },
+      {
+        "file_offset": 11741,
+        "offset_hex": "0x2DDD",
+        "text": "TYPE \"9\" AND PRESS \"ENTER\" "
+      },
+      {
+        "file_offset": 11769,
+        "offset_hex": "0x2DF9",
+        "text": "FOR OTHER OPTIONS (1 THRU 5) "
+      },
+      {
+        "file_offset": 11803,
+        "offset_hex": "0x2E1B",
+        "text": "TYPE THE OPTION NUMBER,"
+      },
+      {
+        "file_offset": 11827,
+        "offset_hex": "0x2E33",
+        "text": "DRIVE ID (1,A),AND PRESS \"ENTER\""
+      },
+      {
+        "file_offset": 11866,
+        "offset_hex": "0x2E5A",
+        "text": "DISKETTE IN DRIVE *"
+      },
+      {
+        "file_offset": 11890,
+        "offset_hex": "0x2E72",
+        "text": "IS FORMATTED FOR+"
+      },
+      {
+        "file_offset": 11912,
+        "offset_hex": "0x2E88",
+        "text": "TRACKS  - ,"
+      },
+      {
+        "file_offset": 11928,
+        "offset_hex": "0x2E98",
+        "text": "SECTORS - 3"
+      },
+      {
+        "file_offset": 11944,
+        "offset_hex": "0x2EA8",
+        "text": "SPEED IS4"
+      },
+      {
+        "file_offset": 11958,
+        "offset_hex": "0x2EB6",
+        "text": "SHOULD BE 1970 TO 20305"
+      },
+      {
+        "file_offset": 11986,
+        "offset_hex": "0x2ED2",
+        "text": "PRESS ANY KEY TO EXIT6"
+      },
+      {
+        "file_offset": 12013,
+        "offset_hex": "0x2EED",
+        "text": "INSERT SCRATCH DISKETTE IN DRIVE7"
+      },
+      {
+        "file_offset": 12051,
+        "offset_hex": "0x2F13",
+        "text": "(A BLANK FORMATTED DISKETTE)8"
+      },
+      {
+        "file_offset": 12085,
+        "offset_hex": "0x2F35",
+        "text": "PRESS ENTER WHEN READY9"
+      },
+      {
+        "file_offset": 12113,
+        "offset_hex": "0x2F51",
+        "text": "INSERT DISKETTE TO VERIFY IN DRIVE:"
+      },
+      {
+        "file_offset": 12153,
+        "offset_hex": "0x2F79",
+        "text": "INSERT SCRATCH DISKETTE ;"
+      },
+      {
+        "file_offset": 12183,
+        "offset_hex": "0x2F97",
+        "text": "IN ALL DRIVES<"
+      },
+      {
+        "file_offset": 12202,
+        "offset_hex": "0x2FAA",
+        "text": "WRITE-PROTECT THE DISKETTE="
+      },
+      {
+        "file_offset": 12234,
+        "offset_hex": "0x2FCA",
+        "text": "REMOVE WRITE PROTECTION?"
+      },
+      {
+        "file_offset": 12263,
+        "offset_hex": "0x2FE7",
+        "text": "4 - SPEED TEST              "
+      },
+      {
+        "file_offset": 12292,
+        "offset_hex": "0x3004",
+        "text": "5 - DISKETTE CHANGE TEST    "
+      },
+      {
+        "file_offset": 12321,
+        "offset_hex": "0x3021",
+        "text": "9 - RETURN TO CONTROL PROGRAM"
+      },
+      {
+        "file_offset": 12357,
+        "offset_hex": "0x3045",
+        "text": "*** INVALID SELECTION ***B"
+      },
+      {
+        "file_offset": 12388,
+        "offset_hex": "0x3064",
+        "text": "REINSERT THE DISKETTE "
+      },
+      {
+        "file_offset": 12411,
+        "offset_hex": "0x307B",
+        "text": "AND PRESS ENTERE"
+      },
+      {
+        "file_offset": 12432,
+        "offset_hex": "0x3090",
+        "text": "645 NO INDEX PULSEF"
+      },
+      {
+        "file_offset": 12456,
+        "offset_hex": "0x30A8",
+        "text": "646 TRACK 0 DETECTION FAILEDG"
+      },
+      {
+        "file_offset": 12490,
+        "offset_hex": "0x30CA",
+        "text": "647 NO TRANSITIONS ON READ DATA LINEH"
+      },
+      {
+        "file_offset": 12532,
+        "offset_hex": "0x30F4",
+        "text": "648 FORMAT TEST FAILEDf"
+      },
+      {
+        "file_offset": 12560,
+        "offset_hex": "0x3110",
+        "text": "ERROR MESSAGE CAN NOT BE FOUND"
+      },
+      {
+        "file_offset": 12591,
+        "offset_hex": "0x312F",
+        "text": "RELOAD DIAGNOSTICS"
+      },
+      {
+        "file_offset": 12616,
+        "offset_hex": "0x3148",
+        "text": "ON WHICH DISKETTE DRIVE DO YOU WANT TO FORMAT?"
+      },
+      {
+        "file_offset": 12668,
+        "offset_hex": "0x317C",
+        "text": "SELECT THE DRIVE LETTER, THEN PRESS ENTER."
+      },
+      {
+        "file_offset": 12716,
+        "offset_hex": "0x31AC",
+        "text": "FORMAT WAS NOT COMPLETED."
+      },
+      {
+        "file_offset": 12747,
+        "offset_hex": "0x31CB",
+        "text": "THE SPECIFIED DRIVE IS NOT AVAILABLE."
+      },
+      {
+        "file_offset": 12790,
+        "offset_hex": "0x31F6",
+        "text": "DRIVE"
+      },
+      {
+        "file_offset": 12801,
+        "offset_hex": "0x3201",
+        "text": "WRITE PROTECTED DISKETTE"
+      },
+      {
+        "file_offset": 12831,
+        "offset_hex": "0x321F",
+        "text": "DMA BOUNDARY ERROR"
+      },
+      {
+        "file_offset": 12855,
+        "offset_hex": "0x3237",
+        "text": "TIME OUT ERROR"
+      },
+      {
+        "file_offset": 12875,
+        "offset_hex": "0x324B",
+        "text": "SEEK ERROR"
+      },
+      {
+        "file_offset": 12891,
+        "offset_hex": "0x325B",
+        "text": "CONTROLLER ERROR"
+      },
+      {
+        "file_offset": 12913,
+        "offset_hex": "0x3271",
+        "text": "CRC ERROR"
+      },
+      {
+        "file_offset": 12928,
+        "offset_hex": "0x3280",
+        "text": "DMA OVERRUN ERROR"
+      },
+      {
+        "file_offset": 12951,
+        "offset_hex": "0x3297",
+        "text": "RECORD NOT FOUND"
+      },
+      {
+        "file_offset": 12973,
+        "offset_hex": "0x32AD",
+        "text": "ADDRESS MARK NOT FOUND"
+      },
+      {
+        "file_offset": 13001,
+        "offset_hex": "0x32C9",
+        "text": "INVALID COMMAND"
+      },
+      {
+        "file_offset": 13022,
+        "offset_hex": "0x32DE",
+        "text": "UNKNOWN ERROR"
+      },
+      {
+        "file_offset": 13041,
+        "offset_hex": "0x32F1",
+        "text": "WHICH DRIVE WILL CONTAIN THE STARTER DISKETTE (THE SOURCE)?"
+      },
+      {
+        "file_offset": 13107,
+        "offset_hex": "0x3333",
+        "text": "WHICH DRIVE WILL CONTAIN THE DISKETTE TO COPY TO (THE TARGET)?"
+      },
+      {
+        "file_offset": 13176,
+        "offset_hex": "0x3378",
+        "text": "INSERT THE DISKETTES, THEN PRESS ENTER."
+      },
+      {
+        "file_offset": 13221,
+        "offset_hex": "0x33A5",
+        "text": "INSERT THE SOURCE DISKETTE, THEN PRESS ENTER."
+      },
+      {
+        "file_offset": 13272,
+        "offset_hex": "0x33D8",
+        "text": "INSERT THE TARGET DISKETTE, THEN PRESS ENTER."
+      },
+      {
+        "file_offset": 13323,
+        "offset_hex": "0x340B",
+        "text": "NOT ENOUGH MEMORY FOR COPY."
+      },
+      {
+        "file_offset": 13356,
+        "offset_hex": "0x342C",
+        "text": "INSERT THE DISKETTE FOR FORMAT, THEN PRESS ENTER."
+      },
+      {
+        "file_offset": 13411,
+        "offset_hex": "0x3463",
+        "text": "THE DISKETTE HAS BEEN FORMATTED AS 1440KB."
+      },
+      {
+        "file_offset": 13459,
+        "offset_hex": "0x3493",
+        "text": "THE DISKETTE HAS BEEN FORMATTED AS 720KB."
+      },
+      {
+        "file_offset": 13506,
+        "offset_hex": "0x34C2",
+        "text": "FORMATTING TARGET DISKETTE FOR COPY..."
+      },
+      {
+        "file_offset": 13551,
+        "offset_hex": "0x34EF",
+        "text": "THE DISKETTE WAS REMOVED."
+      },
+      {
+        "file_offset": 13582,
+        "offset_hex": "0x350E",
+        "text": "FORMAT HAS COMPLETED SUCCESSFULLY."
+      },
+      {
+        "file_offset": 13622,
+        "offset_hex": "0x3536",
+        "text": "COPY HAS COMPLETED SUCCESSFULLY."
+      },
+      {
+        "file_offset": 13660,
+        "offset_hex": "0x355C",
+        "text": "FORMATTING..."
+      },
+      {
+        "file_offset": 13679,
+        "offset_hex": "0x356F",
+        "text": "COPYING..."
+      },
+      {
+        "file_offset": 13695,
+        "offset_hex": "0x357F",
+        "text": "PRESS ENTER TO CONTINUE."
+      },
+      {
+        "file_offset": 13725,
+        "offset_hex": "0x359D",
+        "text": "INVALID SOURCE DISKETTE"
+      },
+      {
+        "file_offset": 13754,
+        "offset_hex": "0x35BA",
+        "text": "COPY WAS NOT COMPLETED."
+      },
+      {
+        "file_offset": 13783,
+        "offset_hex": "0x35D7",
+        "text": "THE DISKETTE HAS BEEN FORMATTED AS 360KB."
+      },
+      {
+        "file_offset": 13830,
+        "offset_hex": "0x3606",
+        "text": "MATH COPROCESSOR"
+      },
+      {
+        "file_offset": 13852,
+        "offset_hex": "0x361C",
+        "text": "PRIMARY - PARALLEL PORT"
+      },
+      {
+        "file_offset": 13881,
+        "offset_hex": "0x3639",
+        "text": "INSERT WRAP PLUG AND PRESS \"ENTER\""
+      },
+      {
+        "file_offset": 13922,
+        "offset_hex": "0x3662",
+        "text": "REPLACE SYSTEM BOARD"
+      },
+      {
+        "file_offset": 13948,
+        "offset_hex": "0x367C",
+        "text": "ADAPTER HAS THE SAME ASSIGNMENT AS THE"
+      },
+      {
+        "file_offset": 13993,
+        "offset_hex": "0x36A9",
+        "text": "ALTERNATE - PARALLEL PORT"
+      },
+      {
+        "file_offset": 14024,
+        "offset_hex": "0x36C8",
+        "text": "PRIMARY - SERIAL PORT"
+      },
+      {
+        "file_offset": 14051,
+        "offset_hex": "0x36E3",
+        "text": "IS AN IBM COMMUNICATIONS ADAPTER CABLE"
+      },
+      {
+        "file_offset": 14095,
+        "offset_hex": "0x370F",
+        "text": "ATTACHED TO THE SERIAL PORT?   Y/N"
+      },
+      {
+        "file_offset": 14135,
+        "offset_hex": "0x3737",
+        "text": "INSTALL THE WRAP PLUG ON SERIAL PORT"
+      },
+      {
+        "file_offset": 14177,
+        "offset_hex": "0x3761",
+        "text": "AND PRESS \"ENTER\""
+      },
+      {
+        "file_offset": 14200,
+        "offset_hex": "0x3778",
+        "text": "INSTALL THE WRAP PLUG ON THE END OF THE"
+      },
+      {
+        "file_offset": 14245,
+        "offset_hex": "0x37A5",
+        "text": "CABLE AND PRESS \"ENTER\""
+      },
+      {
+        "file_offset": 14274,
+        "offset_hex": "0x37C2",
+        "text": "REPLACE THE IBM COMMUNICATIONS"
+      },
+      {
+        "file_offset": 14310,
+        "offset_hex": "0x37E6",
+        "text": "ADAPTER CABLE"
+      },
+      {
+        "file_offset": 14329,
+        "offset_hex": "0x37F9",
+        "text": "REPLACE THE SERIAL/PARALLEL ADAPTER"
+      },
+      {
+        "file_offset": 14370,
+        "offset_hex": "0x3822",
+        "text": "ALTERNATE - SERIAL PORT"
+      },
+      {
+        "file_offset": 14399,
+        "offset_hex": "0x383F",
+        "text": "ATTACHED TO THE ALTERNATE SERIAL PORT? Y/N"
+      },
+      {
+        "file_offset": 14447,
+        "offset_hex": "0x386F",
+        "text": "GAME CONTROL ADAPTER"
+      },
+      {
+        "file_offset": 14473,
+        "offset_hex": "0x3889",
+        "text": "   ************          ************"
+      },
+      {
+        "file_offset": 14516,
+        "offset_hex": "0x38B4",
+        "text": "   *          *          *          *"
+      },
+      {
+        "file_offset": 14559,
+        "offset_hex": "0x38DF",
+        "text": "WHICH OF THE FOLLOWING IS ATTACHED:"
+      },
+      {
+        "file_offset": 14600,
+        "offset_hex": "0x3908",
+        "text": "1 = JOYSTICK"
+      },
+      {
+        "file_offset": 14618,
+        "offset_hex": "0x391A",
+        "text": "2 = PADDLE"
+      },
+      {
+        "file_offset": 14634,
+        "offset_hex": "0x392A",
+        "text": "3 = NOTHING ATTACHED"
+      },
+      {
+        "file_offset": 14660,
+        "offset_hex": "0x3944",
+        "text": "PRESS AND RELEASE ALL BUTTONS"
+      },
+      {
+        "file_offset": 14695,
+        "offset_hex": "0x3967",
+        "text": "EXERCISE ALL JOY STICKS/PADDLES"
+      },
+      {
+        "file_offset": 14732,
+        "offset_hex": "0x398C",
+        "text": "AND PRESS ANY KEY WHEN DONE."
+      },
+      {
+        "file_offset": 14766,
+        "offset_hex": "0x39AE",
+        "text": "     BUTTON A            BUTTON B       "
+      },
+      {
+        "file_offset": 14812,
+        "offset_hex": "0x39DC",
+        "text": "     BUTTON A1           BUTTON B1      "
+      },
+      {
+        "file_offset": 14858,
+        "offset_hex": "0x3A0A",
+        "text": "     BUTTON A            BUTTON B       "
+      },
+      {
+        "file_offset": 14904,
+        "offset_hex": "0x3A38",
+        "text": "PRESSED "
+      },
+      {
+        "file_offset": 14918,
+        "offset_hex": "0x3A46",
+        "text": "RELEASED"
+      },
+      {
+        "file_offset": 14932,
+        "offset_hex": "0x3A54",
+        "text": "HOW MANY JOYSTICKS DO YOU HAVE ( 1/2 )?"
+      },
+      {
+        "file_offset": 14977,
+        "offset_hex": "0x3A81",
+        "text": "HOW MANY PADDLES DO YOU HAVE ( 2/4 )?"
+      },
+      {
+        "file_offset": 15020,
+        "offset_hex": "0x3AAC",
+        "text": "                                         "
+      },
+      {
+        "file_offset": 15067,
+        "offset_hex": "0x3ADB",
+        "text": "DID ALL BUTTONS SHOW PRESSED AND"
+      },
+      {
+        "file_offset": 15100,
+        "offset_hex": "0x3AFC",
+        "text": "RELEASED, AND DID ALL JOY STICKS"
+      },
+      {
+        "file_offset": 15133,
+        "offset_hex": "0x3B1D",
+        "text": "OR PADDLES MOVE IN EACH DIRECTION?"
+      },
+      {
+        "file_offset": 15168,
+        "offset_hex": "0x3B40",
+        "text": "( Y/N )"
+      },
+      {
+        "file_offset": 15182,
+        "offset_hex": "0x3B4E",
+        "text": "     BUTTON A1           BUTTON B       "
+      },
+      {
+        "file_offset": 15228,
+        "offset_hex": "0x3B7C",
+        "text": "     BUTTON A            BUTTON B1      "
+      },
+      {
+        "file_offset": 15274,
+        "offset_hex": "0x3BAA",
+        "text": "     BUTTON A2                          "
+      },
+      {
+        "file_offset": 15320,
+        "offset_hex": "0x3BD8",
+        "text": "                         BUTTON B2      "
+      },
+      {
+        "file_offset": 15366,
+        "offset_hex": "0x3C06",
+        "text": "     BUTTON C            BUTTON D       "
+      },
+      {
+        "file_offset": 15412,
+        "offset_hex": "0x3C34",
+        "text": "     BUTTON A2           BUTTON B2      "
+      },
+      {
+        "file_offset": 15458,
+        "offset_hex": "0x3C62",
+        "text": "PRINTER"
+      },
+      {
+        "file_offset": 15471,
+        "offset_hex": "0x3C6F",
+        "text": "SDLC COMMUNICATIONS ADAPTER"
+      },
+      {
+        "file_offset": 15504,
+        "offset_hex": "0x3C90",
+        "text": "IS AN IBM COMMUNICATIONS ADAPTER CABLE"
+      },
+      {
+        "file_offset": 15548,
+        "offset_hex": "0x3CBC",
+        "text": "ATTACHED TO THE SDLC ADAPTER?  Y/N"
+      },
+      {
+        "file_offset": 15588,
+        "offset_hex": "0x3CE4",
+        "text": "DISCONNECT THE CABLE AT THE COMPUTER"
+      },
+      {
+        "file_offset": 15630,
+        "offset_hex": "0x3D0E",
+        "text": "AND INSTALL THE WRAP PLUG ON THE"
+      },
+      {
+        "file_offset": 15668,
+        "offset_hex": "0x3D34",
+        "text": "SDLC ADAPTER CONNECTOR."
+      },
+      {
+        "file_offset": 15697,
+        "offset_hex": "0x3D51",
+        "text": "PRESS \"ENTER\" WHEN READY."
+      },
+      {
+        "file_offset": 15728,
+        "offset_hex": "0x3D70",
+        "text": "DISCONNECT THE CABLE AT THE MODEM AND"
+      },
+      {
+        "file_offset": 15771,
+        "offset_hex": "0x3D9B",
+        "text": "INSTALL THE WRAP PLUG ON THE END OF"
+      },
+      {
+        "file_offset": 15812,
+        "offset_hex": "0x3DC4",
+        "text": "THE CABLE."
+      },
+      {
+        "file_offset": 15828,
+        "offset_hex": "0x3DD4",
+        "text": "REPLACE THE SDLC ADAPTER."
+      },
+      {
+        "file_offset": 15859,
+        "offset_hex": "0x3DF3",
+        "text": "REPLACE THE IBM COMMUNICATIONS"
+      },
+      {
+        "file_offset": 15895,
+        "offset_hex": "0x3E17",
+        "text": "ADAPTER CABLE."
+      },
+      {
+        "file_offset": 15915,
+        "offset_hex": "0x3E2B",
+        "text": "MOVE THE WRAP PLUG FROM THE END"
+      },
+      {
+        "file_offset": 15952,
+        "offset_hex": "0x3E50",
+        "text": "OF THE CABLE TO THE CONNECTOR ON"
+      },
+      {
+        "file_offset": 15990,
+        "offset_hex": "0x3E76",
+        "text": "THE SDLC ADAPTER."
+      },
+      {
+        "file_offset": 16013,
+        "offset_hex": "0x3E8D",
+        "text": "1 FIXED DISK DRIVE(S)"
+      },
+      {
+        "file_offset": 16040,
+        "offset_hex": "0x3EA8",
+        "text": "FIXED DISK DIAGNOSTIC MENU"
+      },
+      {
+        "file_offset": 16067,
+        "offset_hex": "0x3EC3",
+        "text": "--------------------------"
+      },
+      {
+        "file_offset": 16094,
+        "offset_hex": "0x3EDE",
+        "text": "1 - WRITE, READ, COMPARE (ON TEST CYLINDER)"
+      },
+      {
+        "file_offset": 16138,
+        "offset_hex": "0x3F0A",
+        "text": "2 - SEEK TEST"
+      },
+      {
+        "file_offset": 16152,
+        "offset_hex": "0x3F18",
+        "text": "3 - HEAD SELECT"
+      },
+      {
+        "file_offset": 16168,
+        "offset_hex": "0x3F28",
+        "text": "4 - ERROR DETECTION AND CORRECTION"
+      },
+      {
+        "file_offset": 16208,
+        "offset_hex": "0x3F50",
+        "text": "5 - RUN ALL TESTS"
+      },
+      {
+        "file_offset": 16226,
+        "offset_hex": "0x3F62",
+        "text": "6 - READ VERIFY"
+      },
+      {
+        "file_offset": 16242,
+        "offset_hex": "0x3F72",
+        "text": "7 - FORMAT MENU"
+      },
+      {
+        "file_offset": 16258,
+        "offset_hex": "0x3F82",
+        "text": "9 - RETURN TO CONTROL PROGRAM"
+      },
+      {
+        "file_offset": 16294,
+        "offset_hex": "0x3FA6",
+        "text": "FOR OPTION 9"
+      },
+      {
+        "file_offset": 16307,
+        "offset_hex": "0x3FB3",
+        "text": "TYPE \"9\" AND PRESS \"ENTER\""
+      },
+      {
+        "file_offset": 16334,
+        "offset_hex": "0x3FCE",
+        "text": "FOR OTHER OPTIONS"
+      },
+      {
+        "file_offset": 16357,
+        "offset_hex": "0x3FE5",
+        "text": "TYPE THE OPTION NUMBER,"
+      },
+      {
+        "file_offset": 16381,
+        "offset_hex": "0x3FFD",
+        "text": "DRIVE ID (1,C),AND PRESS \"ENTER\""
+      },
+      {
+        "file_offset": 16420,
+        "offset_hex": "0x4024",
+        "text": "FORMAT SELECTION MENU"
+      },
+      {
+        "file_offset": 16442,
+        "offset_hex": "0x403A",
+        "text": "---------------------"
+      },
+      {
+        "file_offset": 16464,
+        "offset_hex": "0x4050",
+        "text": "1 - CONDITIONAL FORMAT"
+      },
+      {
+        "file_offset": 16487,
+        "offset_hex": "0x4067",
+        "text": "2 - UNCONDITIONAL FORMAT"
+      },
+      {
+        "file_offset": 16512,
+        "offset_hex": "0x4080",
+        "text": "3 - SURFACE ANALYSIS"
+      },
+      {
+        "file_offset": 16533,
+        "offset_hex": "0x4095",
+        "text": "4 - CHANGE INTERLEAVE"
+      },
+      {
+        "file_offset": 16555,
+        "offset_hex": "0x40AB",
+        "text": "9 - RETURN TO FIXED DISK MENU"
+      },
+      {
+        "file_offset": 16591,
+        "offset_hex": "0x40CF",
+        "text": "*** INVALID SELECTION ***"
+      },
+      {
+        "file_offset": 16622,
+        "offset_hex": "0x40EE",
+        "text": "*** INVALID DRIVE SELECTED ***"
+      },
+      {
+        "file_offset": 16658,
+        "offset_hex": "0x4112",
+        "text": "***** WARNING *****"
+      },
+      {
+        "file_offset": 16683,
+        "offset_hex": "0x412B",
+        "text": "ALL DATA ON THE FIXED DISK"
+      },
+      {
+        "file_offset": 16710,
+        "offset_hex": "0x4146",
+        "text": "    WILL BE DESTROYED     "
+      },
+      {
+        "file_offset": 16743,
+        "offset_hex": "0x4167",
+        "text": "DO YOU WANT TO CONTINUE?"
+      },
+      {
+        "file_offset": 16773,
+        "offset_hex": "0x4185",
+        "text": "ENTER (Y/N)"
+      },
+      {
+        "file_offset": 16790,
+        "offset_hex": "0x4196",
+        "text": "ALL DATA ON DRIVE "
+      },
+      {
+        "file_offset": 16814,
+        "offset_hex": "0x41AE",
+        "text": "WILL BE DESTROYED !"
+      },
+      {
+        "file_offset": 16839,
+        "offset_hex": "0x41C7",
+        "text": "THIS IS YOUR LAST CHANCE"
+      },
+      {
+        "file_offset": 16864,
+        "offset_hex": "0x41E0",
+        "text": "       TO CANCEL !      "
+      },
+      {
+        "file_offset": 16895,
+        "offset_hex": "0x41FF",
+        "text": "     PLEASE WAIT     "
+      },
+      {
+        "file_offset": 16922,
+        "offset_hex": "0x421A",
+        "text": "WRITE, READ AND COMPARE TEST"
+      },
+      {
+        "file_offset": 16956,
+        "offset_hex": "0x423C",
+        "text": "SEEK TEST"
+      },
+      {
+        "file_offset": 16971,
+        "offset_hex": "0x424B",
+        "text": "HEAD SELECT TEST"
+      },
+      {
+        "file_offset": 16993,
+        "offset_hex": "0x4261",
+        "text": "ERROR DETECTION AND CORRECTION TEST"
+      },
+      {
+        "file_offset": 17034,
+        "offset_hex": "0x428A",
+        "text": "     SCANNING FOR"
+      },
+      {
+        "file_offset": 17052,
+        "offset_hex": "0x429C",
+        "text": "EXISTING DEFECTIVE TRACKS"
+      },
+      {
+        "file_offset": 17084,
+        "offset_hex": "0x42BC",
+        "text": "     FORMATTING"
+      },
+      {
+        "file_offset": 17105,
+        "offset_hex": "0x42D1",
+        "text": "THE FLAGGING OF DEFECTIVE TRACKS"
+      },
+      {
+        "file_offset": 17143,
+        "offset_hex": "0x42F7",
+        "text": "      SURFACE ANALYSIS"
+      },
+      {
+        "file_offset": 17171,
+        "offset_hex": "0x4313",
+        "text": "**** FORMAT COMPLETE ****"
+      },
+      {
+        "file_offset": 17202,
+        "offset_hex": "0x4332",
+        "text": "IS BEING PERFORMED ON DRIVE "
+      },
+      {
+        "file_offset": 17236,
+        "offset_hex": "0x4354",
+        "text": "CYLINDER - "
+      },
+      {
+        "file_offset": 17253,
+        "offset_hex": "0x4365",
+        "text": "HEAD     - "
+      },
+      {
+        "file_offset": 17270,
+        "offset_hex": "0x4376",
+        "text": "SECTOR   - "
+      },
+      {
+        "file_offset": 17287,
+        "offset_hex": "0x4387",
+        "text": "HAS BEEN FLAGGED DEFECTIVE "
+      },
+      {
+        "file_offset": 17319,
+        "offset_hex": "0x43A7",
+        "text": "1700 FIXED DISK TEST PASSED!"
+      },
+      {
+        "file_offset": 17352,
+        "offset_hex": "0x43C8",
+        "text": "1714 DRIVE NOT READY\""
+      },
+      {
+        "file_offset": 17378,
+        "offset_hex": "0x43E2",
+        "text": "1702 TIME OUT#"
+      },
+      {
+        "file_offset": 17397,
+        "offset_hex": "0x43F5",
+        "text": "1703 SEEK FAILED$"
+      },
+      {
+        "file_offset": 17419,
+        "offset_hex": "0x440B",
+        "text": "1704 CONTROLLER FAILED%"
+      },
+      {
+        "file_offset": 17447,
+        "offset_hex": "0x4427",
+        "text": "1705 RECORD NOT FOUND&"
+      },
+      {
+        "file_offset": 17474,
+        "offset_hex": "0x4442",
+        "text": "1706 WRITE FAULT'"
+      },
+      {
+        "file_offset": 17496,
+        "offset_hex": "0x4458",
+        "text": "1707 TRACK 0 ERROR("
+      },
+      {
+        "file_offset": 17520,
+        "offset_hex": "0x4470",
+        "text": "1708 HEAD SELECT ERROR)"
+      },
+      {
+        "file_offset": 17548,
+        "offset_hex": "0x448C",
+        "text": "1709 BAD ECC*"
+      },
+      {
+        "file_offset": 17566,
+        "offset_hex": "0x449E",
+        "text": "1710 SECTOR BUFFER OVERRUN+"
+      },
+      {
+        "file_offset": 17598,
+        "offset_hex": "0x44BE",
+        "text": "1711 BAD ADDRESS MARK,"
+      },
+      {
+        "file_offset": 17625,
+        "offset_hex": "0x44D9",
+        "text": "1712 ERROR-CAUSE UNDETERMINED."
+      },
+      {
+        "file_offset": 17660,
+        "offset_hex": "0x44FC",
+        "text": "1713 DATA COMPARE ERROR/"
+      },
+      {
+        "file_offset": 17689,
+        "offset_hex": "0x4519",
+        "text": "1720 BAD CE CYLINDER0"
+      },
+      {
+        "file_offset": 17715,
+        "offset_hex": "0x4533",
+        "text": "** CHECK PRINTER **"
+      },
+      {
+        "file_offset": 17735,
+        "offset_hex": "0x4547",
+        "text": "DO YOU WANT TO CANCEL"
+      },
+      {
+        "file_offset": 17757,
+        "offset_hex": "0x455D",
+        "text": "  PRINTING OPTION?"
+      },
+      {
+        "file_offset": 17782,
+        "offset_hex": "0x4576",
+        "text": "  ALL DEFECTS WILL BE SHOWN"
+      },
+      {
+        "file_offset": 17810,
+        "offset_hex": "0x4592",
+        "text": "      ON THE DISPLAY"
+      },
+      {
+        "file_offset": 17831,
+        "offset_hex": "0x45A7",
+        "text": "THEY CAN ALSO BE PRINTED"
+      },
+      {
+        "file_offset": 17856,
+        "offset_hex": "0x45C0",
+        "text": "    ON LPT1 "
+      },
+      {
+        "file_offset": 17869,
+        "offset_hex": "0x45CD",
+        "text": "IS A HARD COPY NEEDED? "
+      },
+      {
+        "file_offset": 17899,
+        "offset_hex": "0x45EB",
+        "text": " DO YOU WANT TO "
+      },
+      {
+        "file_offset": 17916,
+        "offset_hex": "0x45FC",
+        "text": "REPRINT LAST LINE? "
+      },
+      {
+        "file_offset": 17942,
+        "offset_hex": "0x4616",
+        "text": "FIXED DISK DRIVE A"
+      },
+      {
+        "file_offset": 17965,
+        "offset_hex": "0x462D",
+        "text": "FLAGGED DEFECTIVE TRACKS  - B"
+      },
+      {
+        "file_offset": 17999,
+        "offset_hex": "0x464F",
+        "text": "TRACKS UNABLE TO BE READ  - C"
+      },
+      {
+        "file_offset": 18033,
+        "offset_hex": "0x4671",
+        "text": "GOOD TRACKS               - D"
+      },
+      {
+        "file_offset": 18067,
+        "offset_hex": "0x4693",
+        "text": "IS FLAGGED DEFECTIVEE"
+      },
+      {
+        "file_offset": 18093,
+        "offset_hex": "0x46AD",
+        "text": "  READ / VERIFY  F"
+      },
+      {
+        "file_offset": 18116,
+        "offset_hex": "0x46C4",
+        "text": "    CONTAINSG"
+      },
+      {
+        "file_offset": 18134,
+        "offset_hex": "0x46D6",
+        "text": "EXISTING DEFECTS COULD"
+      },
+      {
+        "file_offset": 18157,
+        "offset_hex": "0x46ED",
+        "text": "    NOT BE SAVED!!    "
+      },
+      {
+        "file_offset": 18180,
+        "offset_hex": "0x4704",
+        "text": "AN UNCONDITIONAL FORMAT "
+      },
+      {
+        "file_offset": 18205,
+        "offset_hex": "0x471D",
+        "text": "  MUST BE PERFORMED    "
+      },
+      {
+        "file_offset": 18235,
+        "offset_hex": "0x473B",
+        "text": "FORMAT PROGRAM IS CURRENTLY"
+      },
+      {
+        "file_offset": 18263,
+        "offset_hex": "0x4757",
+        "text": "SET FOR AN INTERLEAVE FACTOR OF Q"
+      },
+      {
+        "file_offset": 18301,
+        "offset_hex": "0x477D",
+        "text": "DO YOU WANT TO CHANGE IT (Y/N)R"
+      },
+      {
+        "file_offset": 18337,
+        "offset_hex": "0x47A1",
+        "text": "ENTER INTERLEAVE FACTOR"
+      },
+      {
+        "file_offset": 18361,
+        "offset_hex": "0x47B9",
+        "text": "2 - 8 ARE VALID"
+      },
+      {
+        "file_offset": 18377,
+        "offset_hex": "0x47C9",
+        "text": "DEFAULT IS A 3:1 INTERLEAVE"
+      },
+      {
+        "file_offset": 18411,
+        "offset_hex": "0x47EB",
+        "text": "(EX.4:1 ENTER \"4\")T"
+      },
+      {
+        "file_offset": 18435,
+        "offset_hex": "0x4803",
+        "text": "FORMAT BUFFER HAS BEEN SET FORU"
+      },
+      {
+        "file_offset": 18471,
+        "offset_hex": "0x4827",
+        "text": "AN INTERLEAVE FACTOR OF V"
+      },
+      {
+        "file_offset": 18501,
+        "offset_hex": "0x4845",
+        "text": "RUN FORMAT PROGRAM"
+      },
+      {
+        "file_offset": 18520,
+        "offset_hex": "0x4858",
+        "text": "TO PUT INTO EFFECT"
+      },
+      {
+        "file_offset": 18541,
+        "offset_hex": "0x486D",
+        "text": "PRESS \"ENTER\" TO "
+      },
+      {
+        "file_offset": 18565,
+        "offset_hex": "0x4885",
+        "text": "RETURN TO FORMAT MENUX"
+      },
+      {
+        "file_offset": 18592,
+        "offset_hex": "0x48A0",
+        "text": "PRESS \"ENTER\" TO CONTINUEY"
+      },
+      {
+        "file_offset": 18623,
+        "offset_hex": "0x48BF",
+        "text": "CHANGING INTERLEAVE CAN RESULT"
+      },
+      {
+        "file_offset": 18654,
+        "offset_hex": "0x48DE",
+        "text": "IN A DRASTIC CHANGE IN SYSTEM "
+      },
+      {
+        "file_offset": 18685,
+        "offset_hex": "0x48FD",
+        "text": "       PERFORMANCE !          "
+      },
+      {
+        "file_offset": 18716,
+        "offset_hex": "0x491C",
+        "text": "DO NOT CHANGE IT UNLESS YOU   "
+      },
+      {
+        "file_offset": 18747,
+        "offset_hex": "0x493B",
+        "text": "  ARE SURE OF WHY YOU ARE     "
+      },
+      {
+        "file_offset": 18778,
+        "offset_hex": "0x495A",
+        "text": "       DOING IT..             "
+      },
+      {
+        "file_offset": 18815,
+        "offset_hex": "0x497F",
+        "text": "NEW DEFECTS HAVE BEEN FLAGGED["
+      },
+      {
+        "file_offset": 18850,
+        "offset_hex": "0x49A2",
+        "text": "CURRENT CYLINDER IS \\"
+      },
+      {
+        "file_offset": 18876,
+        "offset_hex": "0x49BC",
+        "text": "READING TEST CYLINDER]"
+      },
+      {
+        "file_offset": 18903,
+        "offset_hex": "0x49D7",
+        "text": "COULD NOT BE READ^"
+      },
+      {
+        "file_offset": 18926,
+        "offset_hex": "0x49EE",
+        "text": "EXPECTED_"
+      },
+      {
+        "file_offset": 18940,
+        "offset_hex": "0x49FC",
+        "text": "ACTUALa"
+      },
+      {
+        "file_offset": 18952,
+        "offset_hex": "0x4A08",
+        "text": "       MANUFACTURING DEFECT ENTRYb"
+      },
+      {
+        "file_offset": 18991,
+        "offset_hex": "0x4A2F",
+        "text": "   CYLINDER    HEAD c"
+      },
+      {
+        "file_offset": 19017,
+        "offset_hex": "0x4A49",
+        "text": "ANY DEFECTS TO ENTER  (Y/N) d"
+      },
+      {
+        "file_offset": 19051,
+        "offset_hex": "0x4A6B",
+        "text": "FORMAT WITH ENTERED DEFECTS (Y/N)e"
+      },
+      {
+        "file_offset": 19090,
+        "offset_hex": "0x4A92",
+        "text": "DO YOU WANT TO RESTART (Y/N)f"
+      },
+      {
+        "file_offset": 19124,
+        "offset_hex": "0x4AB4",
+        "text": "ENTER CYLINDER - 0001 TO g"
+      },
+      {
+        "file_offset": 19155,
+        "offset_hex": "0x4AD3",
+        "text": "ENTER HEAD - 00 TO h"
+      },
+      {
+        "file_offset": 19180,
+        "offset_hex": "0x4AEC",
+        "text": "ANY MORE DEFECTS TO ENTER (Y/N)i"
+      },
+      {
+        "file_offset": 19217,
+        "offset_hex": "0x4B11",
+        "text": "ANY ENTRIES TO BE CHANGED (Y/N)j"
+      },
+      {
+        "file_offset": 19254,
+        "offset_hex": "0x4B36",
+        "text": "ENTER NUMBER OF ENTRY TO CHANGEk"
+      },
+      {
+        "file_offset": 19291,
+        "offset_hex": "0x4B5B",
+        "text": "** CYLINDER OUT OF RANGE **l"
+      },
+      {
+        "file_offset": 19324,
+        "offset_hex": "0x4B7C",
+        "text": "** HEAD OUT OF RANGE **m"
+      },
+      {
+        "file_offset": 19353,
+        "offset_hex": "0x4B99",
+        "text": "** LINE OUT OF RANGE **n"
+      },
+      {
+        "file_offset": 19382,
+        "offset_hex": "0x4BB6",
+        "text": "ANY MORE TO BE CHANGED (Y/N)p"
+      },
+      {
+        "file_offset": 19416,
+        "offset_hex": "0x4BD8",
+        "text": "THE COMPUTER HAS BEEN PREPARED FOR MOVING."
+      },
+      {
+        "file_offset": 19467,
+        "offset_hex": "0x4C0B",
+        "text": "THE COMPUTER COULD NOT BE PREPARED FOR MOVING."
+      },
+      {
+        "file_offset": 19514,
+        "offset_hex": "0x4C3A",
+        "text": "THERE MAY BE A PROBLEM WITH THE HARDFILE."
+      },
+      {
+        "file_offset": 19557,
+        "offset_hex": "0x4C65",
+        "text": "TO CHECK THE HARDFILE, SELECT \"SYSTEM CHECKOUT\" ON THE"
+      },
+      {
+        "file_offset": 19612,
+        "offset_hex": "0x4C9C",
+        "text": "SERVICES MENU."
+      },
+      {
+        "file_offset": 19634,
+        "offset_hex": "0x4CB2",
+        "text": "*** ERROR ***t"
+      },
+      {
+        "file_offset": 19653,
+        "offset_hex": "0x4CC5",
+        "text": "TURN YOUR COMPUTER OFF.u"
+      },
+      {
+        "file_offset": 19682,
+        "offset_hex": "0x4CE2",
+        "text": "ENTER BYTE v"
+      },
+      {
+        "file_offset": 19699,
+        "offset_hex": "0x4CF3",
+        "text": " LAST OPERATION"
+      },
+      {
+        "file_offset": 19715,
+        "offset_hex": "0x4D03",
+        "text": "WAS PERFORMED ONw"
+      },
+      {
+        "file_offset": 19737,
+        "offset_hex": "0x4D19",
+        "text": "DEFECT THRESHOLD HAS BEEN EXCEEDEDx"
+      },
+      {
+        "file_offset": 19777,
+        "offset_hex": "0x4D41",
+        "text": "USEABLE CAPACITY HAS FALLEN BELOW y"
+      },
+      {
+        "file_offset": 19817,
+        "offset_hex": "0x4D69",
+        "text": "ON THE FIXED DISK DRIVE "
+      },
+      {
+        "file_offset": 19842,
+        "offset_hex": "0x4D82",
+        "text": "AN UNCONDITIONAL FORMAT IS RECOMMENDED"
+      },
+      {
+        "file_offset": 19881,
+        "offset_hex": "0x4DA9",
+        "text": "IF THIS DOES NOT CORRECT THE PROBLEM,"
+      },
+      {
+        "file_offset": 19919,
+        "offset_hex": "0x4DCF",
+        "text": "SERVICE IS NECESSARY"
+      },
+      {
+        "file_offset": 19946,
+        "offset_hex": "0x4DEA",
+        "text": "TEST 1 IN PROGRESS "
+      },
+      {
+        "file_offset": 19971,
+        "offset_hex": "0x4E03",
+        "text": "TEST 2 IN PROGRESS "
+      },
+      {
+        "file_offset": 19996,
+        "offset_hex": "0x4E1C",
+        "text": "TEST 3 IN PROGRESS "
+      },
+      {
+        "file_offset": 20021,
+        "offset_hex": "0x4E35",
+        "text": "TEST 4 IN PROGRESS "
+      },
+      {
+        "file_offset": 20046,
+        "offset_hex": "0x4E4E",
+        "text": "TEST 5 IN PROGRESS "
+      },
+      {
+        "file_offset": 20071,
+        "offset_hex": "0x4E67",
+        "text": "BSC COMMUNICATIONS ADAPTER"
+      },
+      {
+        "file_offset": 20103,
+        "offset_hex": "0x4E87",
+        "text": "IS AN IBM COMMUNICATIONS ADAPTER CABLE"
+      },
+      {
+        "file_offset": 20147,
+        "offset_hex": "0x4EB3",
+        "text": "ATTACHED TO THE BSC ADAPTER?  Y/N "
+      },
+      {
+        "file_offset": 20187,
+        "offset_hex": "0x4EDB",
+        "text": "DISCONNECT THE CABLE AT THE COMPUTER"
+      },
+      {
+        "file_offset": 20229,
+        "offset_hex": "0x4F05",
+        "text": "AND INSTALL THE WRAP PLUG ON THE"
+      },
+      {
+        "file_offset": 20267,
+        "offset_hex": "0x4F2B",
+        "text": "BSC ADAPTER CONNECTOR."
+      },
+      {
+        "file_offset": 20295,
+        "offset_hex": "0x4F47",
+        "text": "PRESS \"ENTER\" WHEN READY."
+      },
+      {
+        "file_offset": 20326,
+        "offset_hex": "0x4F66",
+        "text": "DISCONNECT THE CABLE AT THE MODEM AND"
+      },
+      {
+        "file_offset": 20369,
+        "offset_hex": "0x4F91",
+        "text": "INSTALL THE WRAP PLUG ON THE END OF"
+      },
+      {
+        "file_offset": 20410,
+        "offset_hex": "0x4FBA",
+        "text": "THE CABLE."
+      },
+      {
+        "file_offset": 20426,
+        "offset_hex": "0x4FCA",
+        "text": "REPLACE THE BSC ADAPTER."
+      },
+      {
+        "file_offset": 20456,
+        "offset_hex": "0x4FE8",
+        "text": "REPLACE THE IBM COMMUNICATIONS"
+      },
+      {
+        "file_offset": 20492,
+        "offset_hex": "0x500C",
+        "text": "ADAPTER CABLE."
+      },
+      {
+        "file_offset": 20512,
+        "offset_hex": "0x5020",
+        "text": "MOVE THE WRAP PLUG FROM THE END"
+      },
+      {
+        "file_offset": 20549,
+        "offset_hex": "0x5045",
+        "text": "OF THE CABLE TO CONNECTOR ON THE"
+      },
+      {
+        "file_offset": 20587,
+        "offset_hex": "0x506B",
+        "text": "BSC ADAPTER."
+      },
+      {
+        "file_offset": 20605,
+        "offset_hex": "0x507D",
+        "text": "ALT BSC COMMUNICATIONS ADAPTER"
+      },
+      {
+        "file_offset": 20641,
+        "offset_hex": "0x50A1",
+        "text": "ATTACHED TO THE ALT BSC ADAPTER?  Y/N "
+      },
+      {
+        "file_offset": 20685,
+        "offset_hex": "0x50CD",
+        "text": "ALT BSC ADAPTER CONNECTOR."
+      },
+      {
+        "file_offset": 20717,
+        "offset_hex": "0x50ED",
+        "text": "REPLACE THE ALT BSC ADAPTER."
+      },
+      {
+        "file_offset": 20751,
+        "offset_hex": "0x510F",
+        "text": "ALT BSC ADAPTER."
+      },
+      {
+        "file_offset": 20773,
+        "offset_hex": "0x5125",
+        "text": "COLOR PRINTER"
+      },
+      {
+        "file_offset": 20793,
+        "offset_hex": "0x5139",
+        "text": "SELECT PAPER WIDTH OPTION"
+      },
+      {
+        "file_offset": 20820,
+        "offset_hex": "0x5154",
+        "text": "1 - 8 1/2 INCH PAPER WIDTH"
+      },
+      {
+        "file_offset": 20847,
+        "offset_hex": "0x516F",
+        "text": "2 - 14 1/2 INCH PAPER WIDTH"
+      },
+      {
+        "file_offset": 20876,
+        "offset_hex": "0x518C",
+        "text": "ENTER THE OPTION DESIRED"
+      },
+      {
+        "file_offset": 20907,
+        "offset_hex": "0x51AB",
+        "text": "PLEASE WAIT UNTIL PRINTING STOPS..."
+      },
+      {
+        "file_offset": 20950,
+        "offset_hex": "0x51D6",
+        "text": "Are the characters on the printed test"
+      },
+      {
+        "file_offset": 20989,
+        "offset_hex": "0x51FD",
+        "text": "pattern correct, and each character"
+      },
+      {
+        "file_offset": 21025,
+        "offset_hex": "0x5221",
+        "text": "a single color (Y/N)"
+      },
+      {
+        "file_offset": 21052,
+        "offset_hex": "0x523C",
+        "text": "Adjust the ribbon and press \"ENTER\""
+      },
+      {
+        "file_offset": 21088,
+        "offset_hex": "0x5260",
+        "text": "to print the test pattern..."
+      },
+      {
+        "file_offset": 21122,
+        "offset_hex": "0x5282",
+        "text": "PRINTER NOT FUNCTIONING"
+      },
+      {
+        "file_offset": 21151,
+        "offset_hex": "0x529F",
+        "text": "OUT OF PAPER"
+      },
+      {
+        "file_offset": 21169,
+        "offset_hex": "0x52B1",
+        "text": "INTERRUPT FAILURE"
+      },
+      {
+        "file_offset": 21192,
+        "offset_hex": "0x52C8",
+        "text": "MOUSE"
+      },
+      {
+        "file_offset": 21203,
+        "offset_hex": "0x52D3",
+        "text": "BUTTONS  LEFT=off  RIGHT=off"
+      },
+      {
+        "file_offset": 21237,
+        "offset_hex": "0x52F5",
+        "text": "BUTTONS  LEFT=ON   RIGHT=off"
+      },
+      {
+        "file_offset": 21271,
+        "offset_hex": "0x5317",
+        "text": "BUTTONS  LEFT=off  RIGHT=ON "
+      },
+      {
+        "file_offset": 21305,
+        "offset_hex": "0x5339",
+        "text": "BUTTONS  LEFT=ON   RIGHT=ON aV"
+      },
+      {
+        "file_offset": 21339,
+        "offset_hex": "0x535B",
+        "text": "PRESS AND RELEASE EACH BUTTON."
+      },
+      {
+        "file_offset": 21370,
+        "offset_hex": "0x537A",
+        "text": "MOVE THE MOUSE UP, DOWN, LEFT AND RIGHT."
+      },
+      {
+        "file_offset": 21411,
+        "offset_hex": "0x53A3",
+        "text": "THE CURSOR SHOULD FOLLOW THE MOUSE MOVEMENT."
+      },
+      {
+        "file_offset": 21457,
+        "offset_hex": "0x53D1",
+        "text": "PRESS ANY KEY ON THE KEYBOARD WHEN YOU ARE DONE TESTING."
+      },
+      {
+        "file_offset": 21520,
+        "offset_hex": "0x5410",
+        "text": "DID THE BUTTONS SHOW PRESSED ON AND OFF AND DID THE CURSOR"
+      },
+      {
+        "file_offset": 21579,
+        "offset_hex": "0x544B",
+        "text": "FOLLOW THE MOUSE MOVEMENT (Y/N)?"
+      },
+      {
+        "file_offset": 21660,
+        "offset_hex": "0x549C",
+        "text": "ERROR - "
+      }
+    ]
+  },
+  {
+    "path": "7690diag/STG0.DGS",
+    "size": 1675,
+    "sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526",
+    "ascii_strings": [
+      {
+        "file_offset": 3,
+        "offset_hex": "0x0003",
+        "text": "EDSYTEST    "
+      },
+      {
+        "file_offset": 28,
+        "offset_hex": "0x001C",
+        "text": "      (c) COPYRIGHT IBM CORPORATION 1981, 1987      "
+      },
+      {
+        "file_offset": 86,
+        "offset_hex": "0x0056",
+        "text": "              "
+      },
+      {
+        "file_offset": 1503,
+        "offset_hex": "0x05DF",
+        "text": "F4Uut"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/TXT.OK",
+    "size": 602,
+    "sha256": "ae255aeb50c0e7447fafa3300400f2b55bc1964cd91c2d28b9c7ef85af6683a9",
+    "ascii_strings": [
+      {
+        "file_offset": 0,
+        "offset_hex": "0x0000",
+        "text": "We will be installing on your A: drive"
+      },
+      {
+        "file_offset": 40,
+        "offset_hex": "0x0028",
+        "text": "Press ENTER to continue"
+      },
+      {
+        "file_offset": 65,
+        "offset_hex": "0x0041",
+        "text": "We will be installing on your C: drive"
+      },
+      {
+        "file_offset": 105,
+        "offset_hex": "0x0069",
+        "text": "Press ENTER to continue"
+      },
+      {
+        "file_offset": 130,
+        "offset_hex": "0x0082",
+        "text": "Remove your LEDTOUCH Driver diskette and"
+      },
+      {
+        "file_offset": 172,
+        "offset_hex": "0x00AC",
+        "text": "Insert your SYSTEM diskette in drive A:"
+      },
+      {
+        "file_offset": 213,
+        "offset_hex": "0x00D5",
+        "text": "Press ENTER to continue"
+      },
+      {
+        "file_offset": 238,
+        "offset_hex": "0x00EE",
+        "text": "Remove your SYSTEM diskette and"
+      },
+      {
+        "file_offset": 271,
+        "offset_hex": "0x010F",
+        "text": "Insert your LEDTOUCH Driver diskette in drive A:"
+      },
+      {
+        "file_offset": 321,
+        "offset_hex": "0x0141",
+        "text": "Press ENTER to continue"
+      },
+      {
+        "file_offset": 346,
+        "offset_hex": "0x015A",
+        "text": "Transfer successfully completed to C:"
+      },
+      {
+        "file_offset": 385,
+        "offset_hex": "0x0181",
+        "text": "Remove all diskettes"
+      },
+      {
+        "file_offset": 407,
+        "offset_hex": "0x0197",
+        "text": "Press ENTER to restart your system"
+      },
+      {
+        "file_offset": 443,
+        "offset_hex": "0x01BB",
+        "text": "Transfer successfully completed to A:"
+      },
+      {
+        "file_offset": 482,
+        "offset_hex": "0x01E2",
+        "text": "Remove your LEDTOUCH Driver diskette and"
+      },
+      {
+        "file_offset": 524,
+        "offset_hex": "0x020C",
+        "text": "Insert your SYSTEM diskette in drive A:"
+      },
+      {
+        "file_offset": 565,
+        "offset_hex": "0x0235",
+        "text": "Press ENTER to restart your system"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/US0KMAIN.DGS",
+    "size": 1602,
+    "sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620",
+    "ascii_strings": [
+      {
+        "file_offset": 5,
+        "offset_hex": "0x0005",
+        "text": "KEYBOARD"
+      },
+      {
+        "file_offset": 14,
+        "offset_hex": "0x000E",
+        "text": "(C) COPYRIGHT IBM CORP 1981, 1988, 1989"
+      },
+      {
+        "file_offset": 54,
+        "offset_hex": "0x0036",
+        "text": "RESET FAILEDY"
+      },
+      {
+        "file_offset": 68,
+        "offset_hex": "0x0044",
+        "text": "PRESS EACH KEY, HOLD FOR TYPEMATIC TEST"
+      },
+      {
+        "file_offset": 108,
+        "offset_hex": "0x006C",
+        "text": "IF OK PRESS \"Y ENTER\""
+      },
+      {
+        "file_offset": 130,
+        "offset_hex": "0x0082",
+        "text": "IF NOT OK PRESS \"N ENTER\""
+      },
+      {
+        "file_offset": 553,
+        "offset_hex": "0x0229",
+        "text": "SRQPOMKIHGF875"
+      },
+      {
+        "file_offset": 689,
+        "offset_hex": "0x02B1",
+        "text": "[YCCC"
+      },
+      {
+        "file_offset": 850,
+        "offset_hex": "0x0352",
+        "text": "u <*t"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/US0PCN.DGS",
+    "size": 6096,
+    "sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b",
+    "ascii_strings": [
+      {
+        "file_offset": 5,
+        "offset_hex": "0x0005",
+        "text": "PC NETWORK ADAPTER"
+      },
+      {
+        "file_offset": 28,
+        "offset_hex": "0x001C",
+        "text": "ALT. PC NETWORK ADAPTER"
+      },
+      {
+        "file_offset": 53,
+        "offset_hex": "0x0035",
+        "text": "   ADAPTER STATUS  "
+      },
+      {
+        "file_offset": 74,
+        "offset_hex": "0x004A",
+        "text": "UNIT ID NUMBER ............."
+      },
+      {
+        "file_offset": 104,
+        "offset_hex": "0x0068",
+        "text": "REPORTING PERIOD IN MINUTES."
+      },
+      {
+        "file_offset": 134,
+        "offset_hex": "0x0086",
+        "text": "CRC ERRORS ................."
+      },
+      {
+        "file_offset": 164,
+        "offset_hex": "0x00A4",
+        "text": "ALIGNMENT ERRORS ..........."
+      },
+      {
+        "file_offset": 194,
+        "offset_hex": "0x00C2",
+        "text": "COLLISIONS ................."
+      },
+      {
+        "file_offset": 225,
+        "offset_hex": "0x00E1",
+        "text": "RETRANSMISSIONS ............"
+      },
+      {
+        "file_offset": 255,
+        "offset_hex": "0x00FF",
+        "text": "UNSUCCESSFUL TRANSMISSIONS.."
+      },
+      {
+        "file_offset": 285,
+        "offset_hex": "0x011D",
+        "text": "SUCCESSFUL TRANSMISSIONS...."
+      },
+      {
+        "file_offset": 315,
+        "offset_hex": "0x013B",
+        "text": "SUCCESSFUL RECEPTIONS......."
+      },
+      {
+        "file_offset": 345,
+        "offset_hex": "0x0159",
+        "text": "EXHAUSTED RESOURCES ........"
+      },
+      {
+        "file_offset": 378,
+        "offset_hex": "0x017A",
+        "text": "ENTER UNIT ID NUMBER  "
+      },
+      {
+        "file_offset": 401,
+        "offset_hex": "0x0191",
+        "text": "8ID NUMBER NOT FOUND"
+      },
+      {
+        "file_offset": 423,
+        "offset_hex": "0x01A7",
+        "text": "PRESS  \"ENTER\"  TO RETURN TO MENU"
+      },
+      {
+        "file_offset": 459,
+        "offset_hex": "0x01CB",
+        "text": "0 - DISPLAY LOCAL ADAPTER STATUS   "
+      },
+      {
+        "file_offset": 496,
+        "offset_hex": "0x01F0",
+        "text": "1 - DISPLAY REMOTE ADAPTER STATUS  "
+      },
+      {
+        "file_offset": 533,
+        "offset_hex": "0x0215",
+        "text": "9 - RETURN TO DIAGNOSTICS"
+      },
+      {
+        "file_offset": 562,
+        "offset_hex": "0x0232",
+        "text": "SELECT THE ACTION DESIRED"
+      },
+      {
+        "file_offset": 591,
+        "offset_hex": "0x024F",
+        "text": "NODE INACTIVE"
+      },
+      {
+        "file_offset": 609,
+        "offset_hex": "0x0261",
+        "text": "PRESS ENTER TO CONTINUE &PRESS ENTER TO RETURN TO DIAGNOSTICS  "
+      },
+      {
+        "file_offset": 676,
+        "offset_hex": "0x02A4",
+        "text": "STATUS UPDATED EVERY 5 SECONDS"
+      },
+      {
+        "file_offset": 708,
+        "offset_hex": "0x02C4",
+        "text": "0 - ADAPTER CONFIGURATION  "
+      },
+      {
+        "file_offset": 737,
+        "offset_hex": "0x02E1",
+        "text": "1 - DISPLAY REMOTE ADAPTER STATUS"
+      },
+      {
+        "file_offset": 772,
+        "offset_hex": "0x0304",
+        "text": "9 - RETURN TO MENU "
+      },
+      {
+        "file_offset": 795,
+        "offset_hex": "0x031B",
+        "text": "SELECT THE ACTION DESIRED"
+      },
+      {
+        "file_offset": 824,
+        "offset_hex": "0x0338",
+        "text": "NETWORK ADAPTER TESTS SUCCESSFUL"
+      },
+      {
+        "file_offset": 859,
+        "offset_hex": "0x035B",
+        "text": "DISPLAY NETWORK STATUS MONITOR  "
+      },
+      {
+        "file_offset": 894,
+        "offset_hex": "0x037E",
+        "text": "THE NETWORK STATUS MONITOR PROVIDES"
+      },
+      {
+        "file_offset": 931,
+        "offset_hex": "0x03A3",
+        "text": "STATISTICAL INFORMATION ABOUT THE "
+      },
+      {
+        "file_offset": 967,
+        "offset_hex": "0x03C7",
+        "text": "NETWORK WHICH CAN BE USED AS AN AID"
+      },
+      {
+        "file_offset": 1004,
+        "offset_hex": "0x03EC",
+        "text": "IN NETWORK PROBLEM DETERMINATION."
+      },
+      {
+        "file_offset": 1040,
+        "offset_hex": "0x0410",
+        "text": "(Y/N)"
+      },
+      {
+        "file_offset": 1047,
+        "offset_hex": "0x0417",
+        "text": "?P0 - RETURN TO ADAPTER STATUS"
+      },
+      {
+        "file_offset": 1079,
+        "offset_hex": "0x0437",
+        "text": "9 - RETURN TO MENU"
+      },
+      {
+        "file_offset": 1101,
+        "offset_hex": "0x044D",
+        "text": "SELECT THE ACTION DESIRED"
+      },
+      {
+        "file_offset": 1132,
+        "offset_hex": "0x046C",
+        "text": "ADAPTER CONFIGURATION"
+      },
+      {
+        "file_offset": 1155,
+        "offset_hex": "0x0483",
+        "text": "UNIT ID NUMBER ......            "
+      },
+      {
+        "file_offset": 1190,
+        "offset_hex": "0x04A6",
+        "text": "JUMPER    W1 "
+      },
+      {
+        "file_offset": 1209,
+        "offset_hex": "0x04B9",
+        "text": "JUMPER    W2 "
+      },
+      {
+        "file_offset": 1228,
+        "offset_hex": "0x04CC",
+        "text": "JUMPER    W3 "
+      },
+      {
+        "file_offset": 1249,
+        "offset_hex": "0x04E1",
+        "text": "JUMPER    W4 "
+      },
+      {
+        "file_offset": 1270,
+        "offset_hex": "0x04F6",
+        "text": "VERSION   "
+      },
+      {
+        "file_offset": 1295,
+        "offset_hex": "0x050F",
+        "text": "SELF TEST......................"
+      },
+      {
+        "file_offset": 1330,
+        "offset_hex": "0x0532",
+        "text": "MAXIMUM POSSIBLE NCBS......."
+      },
+      {
+        "file_offset": 1366,
+        "offset_hex": "0x0556",
+        "text": "CONFIGURED NCBS ............"
+      },
+      {
+        "file_offset": 1401,
+        "offset_hex": "0x0579",
+        "text": "FREE NCBS..................."
+      },
+      {
+        "file_offset": 1436,
+        "offset_hex": "0x059C",
+        "text": "MAXIMUM POSSIBLE SESSIONS .."
+      },
+      {
+        "file_offset": 1471,
+        "offset_hex": "0x05BF",
+        "text": "CONFIGURED SESSIONS........."
+      },
+      {
+        "file_offset": 1506,
+        "offset_hex": "0x05E2",
+        "text": "PENDING SESSIONS............"
+      },
+      {
+        "file_offset": 1541,
+        "offset_hex": "0x0605",
+        "text": "PACKET SIZE................."
+      },
+      {
+        "file_offset": 1576,
+        "offset_hex": "0x0628",
+        "text": " OFF  ONV 1.0.0R 08/08/86"
+      },
+      {
+        "file_offset": 1689,
+        "offset_hex": "0x0699",
+        "text": "0123456789ABCDEF"
+      }
+    ]
+  },
+  {
+    "path": "7690diag/VERSION.110",
+    "size": 3,
+    "sha256": "6f864b1705ae269c03903f630181ca89b5372a25f0d17147bc9d98a5c84f72be",
+    "ascii_strings": []
+  }
+]

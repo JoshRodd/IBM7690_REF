@@ -1,0 +1,330 @@
+{
+  "schema": "ibm7690.machine-contract.v1",
+  "scope": "Implementation/evidence index, not a ROM dump, emulator, reset-default table or whole-machine pass report.",
+  "path_base": "Repository root; hexadecimal address strings are explicitly suffixed _hex; ranges inclusive.",
+  "evidence_labels": [
+    "DOCUMENTED_TARGET",
+    "BINARY_TARGET_SOFTWARE",
+    "BINARY_BASELINE",
+    "EXECUTED_FIXTURE",
+    "EXECUTED_GENERIC_DOS",
+    "INFERENCE",
+    "OPEN"
+  ],
+  "identity": {
+    "manufacturer": "IBM",
+    "machine": "7690 Clinical Workstation",
+    "architectural_parent": "8086 PS/2 Model25",
+    "documented_model_hex": "FA",
+    "documented_submodel_hex": "00",
+    "authentic_system_rom_supplied": false,
+    "authentic_adapter_rom_supplied": false,
+    "target_rom_sha256": null,
+    "target_reset_vector": null,
+    "source": "HANDBOOK_7690/BOOT.md"
+  },
+  "processor": {
+    "family": "8086-2",
+    "clock_hz": 8000000,
+    "external_data_bits": 16,
+    "address_bits": 20,
+    "evidence": "DOCUMENTED_TARGET"
+  },
+  "memory": {
+    "planar_ram_bytes": 655360,
+    "parity": true,
+    "socketed_low_ram_bytes": 131072,
+    "mcga_vram_bytes": 65536,
+    "video_aperture_is_not_independent_128k_vram": true,
+    "ebda_allocation_bytes": 1024,
+    "int12_all_good_ram_kib": 639,
+    "ram_control_port_hex": "006B",
+    "remap_permutation": "OPEN",
+    "regions": [
+      {
+        "first_hex": "00000",
+        "last_hex": "9FFFF",
+        "owner": "planar RAM; enable/remap/parity controls apply"
+      },
+      {
+        "first_hex": "A0000",
+        "last_hex": "BFFFF",
+        "owner": "mode-dependent MCGA aperture; exact reserved aliases OPEN"
+      },
+      {
+        "first_hex": "C0000",
+        "last_hex": "C3FFF",
+        "owner": "16KiB clinical interface POST/BIOS ROM; bytes absent"
+      },
+      {
+        "first_hex": "C4000",
+        "last_hex": "EFFFF",
+        "owner": "not assigned built-in RAM; option space"
+      },
+      {
+        "first_hex": "F0000",
+        "last_hex": "FFFFF",
+        "owner": "64KiB system POST/BIOS ROM; target bytes absent"
+      }
+    ],
+    "source": "HANDBOOK_7690/BOOT.md"
+  },
+  "planar": {
+    "interrupt_controllers": 1,
+    "irq1_entry_vector_hex": "71",
+    "floppy_irq": 6,
+    "floppy_dma_channel": 2,
+    "nmi_control_port_hex": "00A0",
+    "nmi_enable_value_hex": "80",
+    "nmi_disable_value_hex": "00",
+    "pit1_clock": "Support-array diagnostic RAS activity; OUT unused, not refresh source",
+    "dma_page_map": {
+      "candidate_hex_by_channel": {
+        "0": "87",
+        "1": "83",
+        "2": "81",
+        "3": "82"
+      },
+      "status": "INFERENCE from comparative ROM and target CPU0 transactions; target printed table shifted; channel attribution still OPEN"
+    },
+    "clock": {
+      "status": "OPEN conflicting evidence",
+      "technical_reference": "NoRTC feature descriptor; BIOS chapter omits02..09 date/time clock functions",
+      "operations": "Continuously battery-backed internal clock",
+      "cpu0": "AH04/AH02 carry enters AL3D failure, then successful RTC/RAM/alarm tests precede PIT/PIC/DMA",
+      "not_assumed": "AT CMOS at70/71 or a physical target chip merely from model number"
+    },
+    "source": "HANDBOOK_7690/MODEL25.md"
+  },
+  "interface_ports": [
+    {
+      "port_hex": "F300",
+      "owner": "optical",
+      "access": "write",
+      "meaning": "8bit selection data; separate receiver/emitter selections latched by F302 strobes"
+    },
+    {
+      "port_hex": "F301",
+      "owner": "shared adapter/power sense",
+      "access": "read",
+      "bits": {
+        "7": "touch absent",
+        "6": "active-low all-selection-data-high comparator",
+        "5": "keyboard absent",
+        "4": "reserved",
+        "3": "scanner type,1wand",
+        "2": "ADC above half-scale",
+        "1": "LCD negative supply OK",
+        "0": "+12V OK; battery/open-fuse low condition"
+      }
+    },
+    {
+      "port_hex": "F302",
+      "owner": "optical",
+      "access": "read/write",
+      "bits": {
+        "3": "start ADC / status; ready versus consumed/re-arm distinction required by code",
+        "2": "receiver-select strobe/readback",
+        "1": "emitter enable/readback",
+        "0": "emitter-select strobe/readback"
+      },
+      "analog_timing": "OPEN"
+    },
+    {
+      "port_hex": "F303",
+      "owner": "optical ADC",
+      "access": "read",
+      "result_bits": 6,
+      "coordinate_packet": false
+    },
+    {
+      "port_hex": "F304",
+      "owner": "LCD",
+      "access": "read/write",
+      "meaning": "Full8bit LCD index, separate from MCGA index"
+    },
+    {
+      "port_hex": "F305",
+      "owner": "LCD",
+      "access": "indexed data",
+      "index_0d_bits": {
+        "0": "driver supply enable",
+        "1": "backlight OFF"
+      }
+    },
+    {
+      "port_hex": "F306",
+      "owner": "OPEN",
+      "evidence": "Actual loose IBM7690.DGS write from OR DX,4 at2769 with DX=F302; intended/decode effect not established"
+    }
+  ],
+  "optical": {
+    "horizontal_beams": 40,
+    "vertical_beams": 24,
+    "scanned_selectors": 64,
+    "documented_distinct_positions": [
+      79,
+      47
+    ],
+    "pressure": false,
+    "multitouch_resolution": "Not established; software reduces ambiguous beam masks",
+    "selector_order": "00..07,10..17,20..27,30..37,40..47,50..57,60..67,70..77; first40 X, remaining24 Y",
+    "coordinates": "Guest-driver reduction, not hardware XY packets",
+    "accepted_contiguous_run_formula": {
+      "x": "127*(first+last)",
+      "y": "217*(first+last)"
+    },
+    "guard": "Both axes need activity; Y middle usable bitmap byteFF rejects to no-touch/retention path",
+    "source": "HANDBOOK_7690/TOUCH.md"
+  },
+  "lcd": {
+    "physical_raster": [
+      640,
+      480
+    ],
+    "documented_output": "binary black/white",
+    "physical_pixel_aspect": null,
+    "calibrated_colors": null,
+    "temporal_dithering": "Not established",
+    "signal_tap": "Digital MCGA before DAC",
+    "normal_base_index_bank_switch": "No such selector established; table indices are literal",
+    "bios_extension": {
+      "interrupt_hex": "10",
+      "ax_hex": "11BA",
+      "selector": "BH",
+      "recognized_ah_hex": "BA",
+      "bh00_returns": {
+        "BX": "top active-area offset",
+        "CX": "active scanlines",
+        "DX": "hardware status",
+        "DI": "physical panel scanlines"
+      },
+      "functions": {
+        "00": "status",
+        "01": "vertical position",
+        "02": "normal/reverse",
+        "03": "backlight",
+        "04": "driver power",
+        "05": "keyboard/barcode output buffer"
+      }
+    },
+    "source": "HANDBOOK_7690/VIDEO.md"
+  },
+  "keyboard": {
+    "keys": 78,
+    "layout": "US",
+    "scan_sets": [
+      1,
+      2
+    ],
+    "transport": "Enhanced keyboard mode2 serial via clinical gateway and custom planar logic, not8042",
+    "set2_break_second_byte_timing": {
+      "origin": "interface re-enable afterF0 prefix",
+      "typical_ms": 2,
+      "worst_ms_under_documented_interference": 10
+    },
+    "barcode": "Optional wand/card-holder, keyboard insertion; not magnetic stripe",
+    "source": "HANDBOOK_7690/KEYBOARD.md"
+  },
+  "storage": {
+    "documented_drive": "3.5inch1.44MB-capable; HD/DD",
+    "supplied_image_bytes": 737280,
+    "supplied_image_geometry": {
+      "cylinders": 80,
+      "heads": 2,
+      "sectors_per_track": 9,
+      "bytes_per_sector": 512
+    },
+    "dma_bytes": true,
+    "fdc": "765class plus IBM gate-array registers",
+    "built_in_fixed_disk": false,
+    "source": "HANDBOOK_7690/STORAGE.md"
+  },
+  "power": {
+    "ride_through": "CPU/keyboard/memory remain running/retained temporarily; LCD/touch/floppy unavailable",
+    "nominal_ride_through_minutes": 3,
+    "suspend_resume_bios": "Not a5140-style suspend mechanism",
+    "clock_power_persistence": "OPEN",
+    "source": "HANDBOOK_7690/PERIPHERALS.md"
+  },
+  "drivers": {
+    "3.02": {
+      "source": "7690diag/LEDTOUCH.SYS",
+      "bytes": 8111,
+      "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df",
+      "resident_end_hex": "1906",
+      "dispatch_evidence": "ANALYSIS/TOUCH-BINARY.json",
+      "abi": "HANDBOOK_7690/DRIVER_ABI.md"
+    },
+    "2.4": {
+      "source": "ANALYSIS/7690KQPW/LEDTOUCH.SYS",
+      "bytes": 7021,
+      "sha256": "1c3dc5a2c4a9c6d422f03f92db6b3bcc2b314939603a117594e9573eb7ee2613",
+      "resident_end_hex": "1560",
+      "dispatch_evidence": "ANALYSIS/TOUCH-BINARY.json",
+      "abi": "HANDBOOK_7690/DRIVER_ABI.md"
+    }
+  },
+  "driver_quirks": {
+    "lcd_guard_3_02": "RecognizedAHBA and signedCX>199",
+    "lcd_guard_2_4": "RecognizedAHBA and CX!=0",
+    "point_row": "q,r=divmod(y*rows_minus_one,9999); row=q+(r>=4999)+1",
+    "partial_read_status_hex": "0200 observed at driver packet boundary, not DOS API AX",
+    "private_functions_3_02_hex": [
+      "4D",
+      "5A",
+      "5B",
+      "5C"
+    ],
+    "readme": "See DRIVER_ABI for defaults, counters, callbacks, reset survivors, equal-X-bounds and2.4 light-pen defects"
+  },
+  "diagnostic_prerequisites": {
+    "services_gate": {
+      "rom_segment_hex": "F000",
+      "model_offset_hex": "FFFE",
+      "model_value_hex": "FA",
+      "copyright_offset_hex": "000C",
+      "text": "COPYRIGHT IBM CORPORATION",
+      "bytes": 25
+    },
+    "dgs_load_origin_hex": "0000",
+    "services_private_vectors_hex": "80-A3",
+    "cpu0_rom_gate": "Four8KiB regions6000-DFFF then complete64KiB; forward stability/AND/OR/sum and reverse sums; failureAL05",
+    "cpu0_clock_gate": "INT1A AH04/AH02 failure goes toAL3D error, not skip; RTC/RAM/alarm before later hardware tests",
+    "source": "HANDBOOK_7690/DIAGNOSTICS.md"
+  },
+  "derived_media": {
+    "path": "MEDIA/7690diag-pcdos320.img",
+    "sha256": "d62da26560bcaab05f9d367dca6912db95b9c08b5b90111cb8bb58bb110981fd",
+    "bytes": 737280,
+    "startup": "SERVICES",
+    "driver_resident_by_default": false,
+    "free_bytes": 555008,
+    "original_ibm_media": false,
+    "donor_sha256": "87b5cc84562cdf90b367c5c575680f3d37de92cc2f684033b15299015a568915",
+    "manifest": "MEDIA/7690diag-pcdos320.img.json",
+    "executed_boundary": "Actual genericPCDOS3.20 boot and SERVICES expected firmware refusal"
+  },
+  "evidence": {
+    "sources": "ANALYSIS/SOURCE-SNAPSHOT.json",
+    "source_index": "DOCUMENTATION/OCR/INDEX.json",
+    "baseline_provenance": "DOCUMENTATION/BASELINE/PROVENANCE.json",
+    "touch_binary": "ANALYSIS/TOUCH-BINARY.json",
+    "touch_execution": "ANALYSIS/TOUCH-TRACE.json",
+    "video_tables": "ANALYSIS/video_evidence.json",
+    "video_execution": "ANALYSIS/VIDEO-TRACE.json",
+    "platform_bytes": "ANALYSIS/platform-evidence.json",
+    "platform_execution": "ANALYSIS/PLATFORM-TRACE.json",
+    "dos_execution": "ANALYSIS/DOS-BOOT-TRACE.json",
+    "verification": "HANDBOOK_7690/VERIFICATION.md"
+  },
+  "not_verified": [
+    "Authentic7690 ROM POST or complete diagnostic suite",
+    "Physical clock chip/population and alarm routing",
+    "Electrical optical timing/settling/ADC transfer curve",
+    "LCD aspect/color/persistence/scanout and actual adapter BIOS per-mode values",
+    "All undocumented decodes, reset values and aliases",
+    "Physical keyboard/barcode/serial/parallel handshakes",
+    "Real battery exhaustion and rail timing"
+  ]
+}

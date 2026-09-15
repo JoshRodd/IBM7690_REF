@@ -1,0 +1,532 @@
+{
+  "schema": "ibm7690.final-audit.v1",
+  "scope": "Final structural, source-identity, byte-accounting and evidence-consistency audit; not physical hardware or authentic7690 firmware validation. Disposable-file cleanup does not alter any audited deliverable.",
+  "handbook": {
+    "documents": 12,
+    "whitespace_delimited_words": 72025,
+    "bytes": 481881,
+    "root_readme_additional": true,
+    "machine_contract_additional": true
+  },
+  "checks": {
+    "json_documents_parsed_before_this_report": 23,
+    "python_sources_ast_parsed": 7,
+    "local_markdown_links": 242,
+    "missing_local_links": [],
+    "unresolved_markdown_fragments": [],
+    "unbalanced_code_fences": [],
+    "self_reference": "The VERIFICATION link to this audit resolves when this report is written; report self-hash intentionally excluded.",
+    "pdf_link_pages": [
+      {
+        "pdf": "IBM_7690_Clinical_Workstation_Technical_Reference.pdf",
+        "physical_page": 100,
+        "within_source_count": true
+      }
+    ],
+    "original_supplied_files_unchanged": 25,
+    "external_dos_donor_unchanged": true,
+    "upstream_baseline_copies_exact": 6,
+    "platform_declared_source_hashes_and_lengths_checked": 12,
+    "md_sha256_literals_without_retained_evidence": [],
+    "extracted_original_regular_files_verified": 61,
+    "original_nonfile_root_entries": [
+      {
+        "name": "DISK      1",
+        "attributes_hex": "08"
+      }
+    ],
+    "derived_files_independently_extracted_and_verified": 25,
+    "machine_contract_evidence_paths_and_driver_hashes_valid": true,
+    "curated_and_executed_colorfix_font_lcd_mask_evidence_agrees": true,
+    "cpu0_trace_windows_match_original": true
+  },
+  "ocr_indices": [
+    {
+      "source": "TECHREF",
+      "physical_pages": 149,
+      "exact_page_line_and_character_index": true
+    },
+    {
+      "source": "OPERATIONS",
+      "physical_pages": 41,
+      "exact_page_line_and_character_index": true
+    }
+  ],
+  "independent_listing_reconstruction": [
+    {
+      "version": "3.02",
+      "reconstructed_bytes": 8111,
+      "c_instructions": 2006,
+      "c_bytes": 5227,
+      "exact_original_match": true
+    },
+    {
+      "version": "2.4",
+      "reconstructed_bytes": 7021,
+      "c_instructions": 1715,
+      "c_bytes": 4321,
+      "exact_original_match": true
+    }
+  ],
+  "platform_original_byte_windows": [
+    {
+      "source": "m25_type1",
+      "label": "reset_cpu",
+      "start_hex": "008D",
+      "bytes": 135,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "dma_post",
+      "start_hex": "011E",
+      "bytes": 141,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "rtc_probe",
+      "start_hex": "02B5",
+      "bytes": 52,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "checksum",
+      "start_hex": "12AA",
+      "bytes": 12,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "fdc_dma",
+      "start_hex": "4B18",
+      "bytes": 101,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "fdc_command_ready",
+      "start_hex": "4D5E",
+      "bytes": 36,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "bootstrap",
+      "start_hex": "4EE8",
+      "bytes": 75,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "bootstrap_heuristic",
+      "start_hex": "4F9E",
+      "bytes": 58,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "configuration_choice",
+      "start_hex": "5857",
+      "bytes": 31,
+      "matches_original": true
+    },
+    {
+      "source": "m25_type1",
+      "label": "keyboard_base_dispatch",
+      "start_hex": "E68C",
+      "bytes": 51,
+      "matches_original": true
+    },
+    {
+      "source": "CPU0.DGS",
+      "label": "nmi_probe",
+      "start_hex": "01AE",
+      "bytes": 75,
+      "matches_original": true
+    },
+    {
+      "source": "CPU0.DGS",
+      "label": "pic_probes",
+      "start_hex": "0760",
+      "bytes": 215,
+      "matches_original": true
+    },
+    {
+      "source": "CPU0.DGS",
+      "label": "dma_address_count",
+      "start_hex": "0847",
+      "bytes": 84,
+      "matches_original": true
+    },
+    {
+      "source": "CPU0.DGS",
+      "label": "page_registers",
+      "start_hex": "0AE8",
+      "bytes": 60,
+      "matches_original": true
+    },
+    {
+      "source": "CPU0.DGS",
+      "label": "synthetic_irq_handler",
+      "start_hex": "0B24",
+      "bytes": 38,
+      "matches_original": true
+    },
+    {
+      "source": "DSKT1.DGS",
+      "label": "drive_discovery",
+      "start_hex": "06D3",
+      "bytes": 33,
+      "matches_original": true
+    },
+    {
+      "source": "DSKT1.DGS",
+      "label": "media_probe",
+      "start_hex": "0940",
+      "bytes": 92,
+      "matches_original": true
+    },
+    {
+      "source": "DSKT1.DGS",
+      "label": "format",
+      "start_hex": "0C77",
+      "bytes": 104,
+      "matches_original": true
+    }
+  ],
+  "portable_reproduction": {
+    "touch": {
+      "canonical_uv_command_executed": true,
+      "byte_identical_to_retained_report": true,
+      "sha256": "3fe0f29f663aca7edb1183cc838c868288aa9548a6da6e7d9cae1290ebe8b066"
+    },
+    "video": {
+      "canonical_uv_command_executed": true,
+      "byte_identical_to_retained_report": true,
+      "sha256": "bd61a6eb058c0f307fe28e296b7d4e74e2c2a17672514c8bc017bee7cd3a2bdc"
+    },
+    "platform": {
+      "canonical_uv_command_executed": true,
+      "self_contained_synthetic_cases_match_retained_report": true,
+      "external_baseline_inputs_not_required": true
+    },
+    "disassembler": {
+      "canonical_uv_command_executed": true,
+      "regenerated_contract_unchanged": true
+    }
+  },
+  "actual_dos_captures": [
+    {
+      "name": "dos320-menu-firmware-gate",
+      "png_sha256": "a6c0ee457c48c8535611181dce3c641684bea997eac952752bab5ed1c37a92ff",
+      "text_sha256": "25911b0fbbacd3170bd35c52597827a85456cdf76a42e33bacf51cfe62a9d7d8",
+      "text_rows": 25
+    },
+    {
+      "name": "dos320-boot",
+      "png_sha256": "dbd335b1428f75fb97b9dec1ad8117bd4e547b71a39c3c2f00ce4c8788c77ebf",
+      "text_sha256": "8da3069a3c957469e8c40852cb2e16a50df2000e37fba238844815780b99c200",
+      "text_rows": 25
+    },
+    {
+      "name": "dos320-ver",
+      "png_sha256": "25bf362c6a14071708985c78d3bd1c3e6816205c58959674d8f1910b6254f183",
+      "text_sha256": "a1e0953741b9ec27c1ccfaee9fb66481171bce06a9a27f20c1a0a1644af57585",
+      "text_rows": 25
+    },
+    {
+      "name": "dos320-dir",
+      "png_sha256": "77d798fad2a2ecac0204274146898ac7e6ebb6c1e0e8576d3d372d350e3a60e6",
+      "text_sha256": "4e39d59b5e29873ceab42c9a2937d25c1a95aed271a311228b51722047f66e73",
+      "text_rows": 25
+    },
+    {
+      "name": "dos320-autoexec",
+      "png_sha256": "4388e93643151cebc2dc24c9469ecc553e4d92ffb5547ec0745aa19bba26c835",
+      "text_sha256": "8a7fd31bf3ca96ec5be4f3606a8d00594e53e856a7dc2fdccd1438f24c136e77",
+      "text_rows": 25
+    },
+    {
+      "name": "dos320-services-gate",
+      "png_sha256": "63a2e534150ff89e293c7bccc612f96c70a7067606d754410f29ace7fc082fc8",
+      "text_sha256": "25911b0fbbacd3170bd35c52597827a85456cdf76a42e33bacf51cfe62a9d7d8",
+      "text_rows": 25
+    },
+    {
+      "name": "dos320-driver-load",
+      "png_sha256": "827c66b16c3396886373e061171fa2e96aa8c481512dc3bb9633d41442e283b0",
+      "text_sha256": "14a361c41660ff93ec414e2c7fd90d531ecc5b19f043aeb428067629ca932628",
+      "text_rows": 25
+    },
+    {
+      "name": "dos320-point-consumer",
+      "png_sha256": "a65b5a5aeb34fe1f4d3b2e1884fee4dbe182b6d23efd92ae88f7a6dca6a1eac2",
+      "text_sha256": "8c54cca8549c1ef4ef0000f4aa7b1b1f68eaf950daf3d1591292ed3a3dbaa8cc",
+      "text_rows": 25
+    },
+    {
+      "name": "msdos500-original-startup",
+      "png_sha256": "6a081a8a9ca2160b41136ad6e31dab3674b6a63171c779c464a87b4b61c4db63",
+      "text_sha256": "70a315424c615bc2380c1fe098da7b9b744208dbf84f18bd6891326951bbc066",
+      "text_rows": 25
+    },
+    {
+      "name": "msdos500-original-ver",
+      "png_sha256": "fae838eea83ec06aeafd73d236fbdbfef454f467fa074f6f615f703a82d8c87e",
+      "text_sha256": "9431f45da0c9fb2b60e677e3e851bf6755ba755a182db9daee11182ab9f52b7e",
+      "text_rows": 25
+    }
+  ],
+  "tool_versions": {
+    "python3": {
+      "exit": 0,
+      "version": "Python 3.14.7"
+    },
+    "/tmp/ibm7690-analysis/bin/python": {
+      "exit": 0,
+      "version": "Python 3.13.14"
+    },
+    "nasm": {
+      "exit": 0,
+      "version": "NASM version 3.02 compiled on Jun 29 2026"
+    },
+    "mcopy": {
+      "exit": 0,
+      "version": "mcopy (GNU mtools) 4.0.49\nconfigured with the following options: disable-xdf disable-vold disable-new-vold disable-debug enable-raw-term"
+    },
+    "pdftotext": {
+      "exit": 0,
+      "version": "pdftotext version 26.08.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC"
+    },
+    "qemu-system-i386": {
+      "exit": 0,
+      "version": "QEMU emulator version 11.0.3\nCopyright (c) 2003-2026 Fabrice Bellard and the QEMU Project developers"
+    }
+  },
+  "independent_reviews": {
+    "hardware_and_driver_reviews": "Material findings integrated and grounded in primary bytes/pages; corrected algorithm cases exercised.",
+    "final_execution_tools": "No material findings in read-only review of source/recorded evidence.",
+    "final_integrated_documents": "No material inaccuracies/overclaims found in read-only review.",
+    "reviews_are_not_runtime_proof": true
+  },
+  "audited_deliverable_files": [
+    {
+      "path": "README.md",
+      "bytes": 3850,
+      "sha256": "385dc897f9aab9763d7c8522da7dbce399e3b7611a41e4a29e0b2a92850a958e"
+    },
+    {
+      "path": "HANDBOOK_7690/README.md",
+      "bytes": 18045,
+      "sha256": "1d6168e5b59780530af54f3848b7327a45e7fdfb679a828d31e1f76a073a8868"
+    },
+    {
+      "path": "HANDBOOK_7690/BOOT.md",
+      "bytes": 46131,
+      "sha256": "210b69b857f7f4a045d95029c4eaa5a58a9ef00fd664da6faa4c3bd3a2908e12"
+    },
+    {
+      "path": "HANDBOOK_7690/MODEL25.md",
+      "bytes": 40431,
+      "sha256": "84ab49961226b3f74035ca8292772c5682492bf82651bd49a91baf65d2728964"
+    },
+    {
+      "path": "HANDBOOK_7690/VIDEO.md",
+      "bytes": 82115,
+      "sha256": "285eb910519a56ea9331bae643f8a3d7f461c4798c8df17b0ca6080714d701f2"
+    },
+    {
+      "path": "HANDBOOK_7690/KEYBOARD.md",
+      "bytes": 32887,
+      "sha256": "5cc1abefadf4b5e9090ff95322895f7777f8c06a515acc916b55616ff08b755e"
+    },
+    {
+      "path": "HANDBOOK_7690/TOUCH.md",
+      "bytes": 29718,
+      "sha256": "effb6756f62c593ec7796feafdaccc59581a3b8ca6c7283a789d7d7d34d4771c"
+    },
+    {
+      "path": "HANDBOOK_7690/DRIVER_ABI.md",
+      "bytes": 30312,
+      "sha256": "814bc07cbc640a7b96d05c80c6bcb3f6c7fcff9ff923d25192fbbf2645f427c8"
+    },
+    {
+      "path": "HANDBOOK_7690/STORAGE.md",
+      "bytes": 56678,
+      "sha256": "f9d7367900d7620b15c2ebd052f955333f77ee062278bc589d5e0e7db6c3a47f"
+    },
+    {
+      "path": "HANDBOOK_7690/PERIPHERALS.md",
+      "bytes": 51322,
+      "sha256": "71d44a82482159458aad5c1fcb7c2f56b88b5bcb1f7bf91c13d8774dca410e92"
+    },
+    {
+      "path": "HANDBOOK_7690/DIAGNOSTICS.md",
+      "bytes": 49685,
+      "sha256": "71265bbb87dce4bcd423161e549a313b7c0aa8446831e6ed052023d802f2fdb6"
+    },
+    {
+      "path": "HANDBOOK_7690/SOURCES.md",
+      "bytes": 20034,
+      "sha256": "dfe96daaca5d4d128179377f3a040956fd1354569828094ace19d8bd01a991d1"
+    },
+    {
+      "path": "HANDBOOK_7690/VERIFICATION.md",
+      "bytes": 24523,
+      "sha256": "75f761b1099176064cde17cacc6003961755aaa0e5f558bfbbbad465c6816221"
+    },
+    {
+      "path": "TOOLS/touch_trace.py",
+      "bytes": 24018,
+      "sha256": "fd98abc15def2ad6520ecc21dca52858cd1cedb40fcdd3bf9f26a9cd4f3d8c4c"
+    },
+    {
+      "path": "TOOLS/platform_trace.py",
+      "bytes": 6252,
+      "sha256": "16dc9d4366683797eebea6bc86127b66c2a8078b7f354290388f7457fe3b04ba"
+    },
+    {
+      "path": "TOOLS/video_trace.py",
+      "bytes": 11627,
+      "sha256": "988767dd485b3c5ff7443128f4b1c2c92b0c909e63eb004f48300c7950ef0cdb"
+    },
+    {
+      "path": "TOOLS/extract_sources.py",
+      "bytes": 2659,
+      "sha256": "a0c54127a3b4eba8dd352140a071cb28327a8b20921a3d76fa813eaf1c756313"
+    },
+    {
+      "path": "TOOLS/build_diagnostic_disk.py",
+      "bytes": 6967,
+      "sha256": "45813be739f90c07248c43c60dd09589c4dd0331fdb68854eed0e4fcb55f0479"
+    },
+    {
+      "path": "TOOLS/disassemble_touch.py",
+      "bytes": 7730,
+      "sha256": "d34a091c7df039eb37505119a024fc1c81cba8467888e250baae4e305be4ff55"
+    },
+    {
+      "path": "TOOLS/inspect_media.py",
+      "bytes": 5263,
+      "sha256": "2c8cbf9492e7a5533338f47297217adca26b301c4076bf5cc32dff6f47654451"
+    },
+    {
+      "path": "HANDBOOK_7690/MACHINE-CONTRACT.json",
+      "bytes": 11236,
+      "sha256": "11f26e56cc6611984969fe3f0cf4636dd5ea3adc41e9f76d43dea0fcb952ea60"
+    },
+    {
+      "path": "MEDIA/7690diag-pcdos320.img.json",
+      "bytes": 15741,
+      "sha256": "f9f9a8ee7af837faee8753855c73ddfa03df8884a17451a8cf70ad5d020d27f5"
+    },
+    {
+      "path": "DOCUMENTATION/OCR/INDEX.json",
+      "bytes": 73366,
+      "sha256": "2925d8e7b6ae2ff9ead31fcc7fd71a0dc63164e5838044dbc269ea4a7fdde90b"
+    },
+    {
+      "path": "DOCUMENTATION/BASELINE/PROVENANCE.json",
+      "bytes": 1913,
+      "sha256": "8a825ec6f974ba654bba8db29b96db40e9401f6319b81dcc7ea0e1fea7841e62"
+    },
+    {
+      "path": "DOCUMENTATION/BASELINE/rom_analysis.json",
+      "bytes": 395785,
+      "sha256": "2d2c495da644a5e83be9223462889d3353c7b2e5ee804d7050227b693a2576b5"
+    },
+    {
+      "path": "DOCUMENTATION/BASELINE/source_manifest.json",
+      "bytes": 12321,
+      "sha256": "20ba70991c4d4a8036d5f6ee2db1b9e3847726cb8c5220074eb7d5992db0ba05"
+    },
+    {
+      "path": "DOCUMENTATION/BASELINE/model_differences.json",
+      "bytes": 13446,
+      "sha256": "9c1c4576f8897aa83f8054720f4b53dba272737eec74ba48862769c4b6ececbd"
+    },
+    {
+      "path": "DOCUMENTATION/BASELINE/hardware_spec.json",
+      "bytes": 31282,
+      "sha256": "8d7b1de0b162c062db3cf45789b2e25859a97d59e244ec7d95422b52c630e9c0"
+    },
+    {
+      "path": "ANALYSIS/TOUCH-TRACE.json",
+      "bytes": 37060,
+      "sha256": "3fe0f29f663aca7edb1183cc838c868288aa9548a6da6e7d9cae1290ebe8b066"
+    },
+    {
+      "path": "ANALYSIS/MEDIA-PROOF.json",
+      "bytes": 6573,
+      "sha256": "4e42429063784a94f88896000b09ed17a749a193101daf0d196115d386e28f38"
+    },
+    {
+      "path": "ANALYSIS/SOURCE-SNAPSHOT.json",
+      "bytes": 4362,
+      "sha256": "6a87ef7937e598a1c5d8af1897d7142ab806d4bf3f634e803a48fb12a370feec"
+    },
+    {
+      "path": "ANALYSIS/PLATFORM-TRACE.json",
+      "bytes": 4899,
+      "sha256": "7101d011bb491063d75955544ead835d4d5416206906facc2ec2dd3c32c11407"
+    },
+    {
+      "path": "ANALYSIS/VIDEO-TRACE.json",
+      "bytes": 14516,
+      "sha256": "bd61a6eb058c0f307fe28e296b7d4e74e2c2a17672514c8bc017bee7cd3a2bdc"
+    },
+    {
+      "path": "ANALYSIS/DOS-BOOT-TRACE.json",
+      "bytes": 5057,
+      "sha256": "03b7e573b05b16cef12e6fa166e12415873189fa61754d3dea9c45da74380f53"
+    },
+    {
+      "path": "ANALYSIS/platform-evidence.json",
+      "bytes": 91416,
+      "sha256": "92e7550e1d60858419fd630896ce1bc43a65c61f06e87e034e7eb191f6d22936"
+    },
+    {
+      "path": "ANALYSIS/TOUCH-BINARY.json",
+      "bytes": 7271,
+      "sha256": "6ffad328a7d376ad26c5bcc63a1d706fe256f512e985272dc3c720dbfb8cc28c"
+    },
+    {
+      "path": "ANALYSIS/diagnostic_touch_observations.json",
+      "bytes": 2316,
+      "sha256": "cb8a076a4dff935dd86c9e6d070d07b5d86a5c611efa49f3403ea6fcf4c9e037"
+    },
+    {
+      "path": "ANALYSIS/video_evidence.json",
+      "bytes": 18853,
+      "sha256": "9b746659406c991788d69f984e4ca74a4130bc0a513506559b3c9bf58720a8c1"
+    },
+    {
+      "path": "ANALYSIS/diagnostic_modules.json",
+      "bytes": 3251,
+      "sha256": "e0b4fbf13d21997cee18b94dca7e65065c297d6240527c01c2f4cb621e33ec47"
+    },
+    {
+      "path": "ANALYSIS/diagnostic_strings.json",
+      "bytes": 116106,
+      "sha256": "55f72612d76cefe0480eed71511583bfdfc0d029d541239b3a39b645a7efe2f0"
+    },
+    {
+      "path": "ANALYSIS/media_pcdos32.json",
+      "bytes": 29285,
+      "sha256": "2e55f72e0721b91d3e8df8d62b67041606ea97f2aa16247afb59d6a0bb56ac26"
+    },
+    {
+      "path": "ANALYSIS/media_kqpw.json",
+      "bytes": 30933,
+      "sha256": "b198a5f58f5abbe455bd3cdf6f7b2cf9b9635f7bddaea253145832ae8126076d"
+    },
+    {
+      "path": "ANALYSIS/media_comparison.json",
+      "bytes": 5775,
+      "sha256": "16ff93fee94befb9f0ae2b131d3860c81c277bcab8957d304d7abef93201362e"
+    }
+  ],
+  "unverified": "See HANDBOOK_7690/VERIFICATION.md section8; authentic system/C000 ROMs, full machine/diagnostic execution and physical measurements absent."
+}

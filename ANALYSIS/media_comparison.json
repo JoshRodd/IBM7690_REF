@@ -1,0 +1,170 @@
+[
+  {
+    "name": "COLORFIX.COM",
+    "loose_size": 267,
+    "loose_sha256": "21f47f663254e2a08dde514d4741a291605f2eefa31fea6fda26c1c8ee912028",
+    "image_size": null,
+    "image_sha256": null,
+    "identical": null
+  },
+  {
+    "name": "CPU0.DGS",
+    "loose_size": 2942,
+    "loose_sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1",
+    "image_size": 2942,
+    "image_sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1",
+    "identical": true
+  },
+  {
+    "name": "DCOPY.COM",
+    "loose_size": 2172,
+    "loose_sha256": "f5c585544042d30fb8adaedcacad45fd51faf96f9142f995f92c7d26dce252c5",
+    "image_size": 2172,
+    "image_sha256": "f5c585544042d30fb8adaedcacad45fd51faf96f9142f995f92c7d26dce252c5",
+    "identical": true
+  },
+  {
+    "name": "DFORMAT.COM",
+    "loose_size": 906,
+    "loose_sha256": "8d7ae244bb44ea48d85a460d2475bf9f0483e34d80d0bf32d18f7eded9f6eca7",
+    "image_size": 906,
+    "image_sha256": "8d7ae244bb44ea48d85a460d2475bf9f0483e34d80d0bf32d18f7eded9f6eca7",
+    "identical": true
+  },
+  {
+    "name": "DIAGS.COM",
+    "loose_size": 3338,
+    "loose_sha256": "ba9a7d2974e568e0cd80def9541613c173c30b4e5e77368c9e4ce2303498ae14",
+    "image_size": 3338,
+    "image_sha256": "ba9a7d2974e568e0cd80def9541613c173c30b4e5e77368c9e4ce2303498ae14",
+    "identical": true
+  },
+  {
+    "name": "DISPLAY1.DGS",
+    "loose_size": 5557,
+    "loose_sha256": "f1dbe20f6a5f1b2624f8f461f7beb756b1f3d94c467d036b8e8d1e5d31717f61",
+    "image_size": 5557,
+    "image_sha256": "3e9fbd1cba041d71c48088bf5bde7c4b10e300967ebb26d60fc794c0bc0defa7",
+    "identical": false
+  },
+  {
+    "name": "DSKT1.DGS",
+    "loose_size": 4800,
+    "loose_sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c",
+    "image_size": 4800,
+    "image_sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c",
+    "identical": true
+  },
+  {
+    "name": "DTMEDTE.COM",
+    "loose_size": 1395,
+    "loose_sha256": "33053e2079a4a59985e738f9601de17f9fdb3a12d5580467a99068011a129e11",
+    "image_size": 1395,
+    "image_sha256": "33053e2079a4a59985e738f9601de17f9fdb3a12d5580467a99068011a129e11",
+    "identical": true
+  },
+  {
+    "name": "IBM7690.DGS",
+    "loose_size": 10474,
+    "loose_sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57",
+    "image_size": 11333,
+    "image_sha256": "be20cd798aef2f63d4c094bf71ebf02376b53fc31011e80a0d8595fa5a3fe4f4",
+    "identical": false
+  },
+  {
+    "name": "LEDINST.BAT",
+    "loose_size": 1426,
+    "loose_sha256": "03839e0cd9e9ecf5510e051f06ddb8afee56d034d03f18bf43457f8fa311145a",
+    "image_size": 1426,
+    "image_sha256": "03839e0cd9e9ecf5510e051f06ddb8afee56d034d03f18bf43457f8fa311145a",
+    "identical": true
+  },
+  {
+    "name": "LEDTOUCH.SYS",
+    "loose_size": 8111,
+    "loose_sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df",
+    "image_size": 7021,
+    "image_sha256": "1c3dc5a2c4a9c6d422f03f92db6b3bcc2b314939603a117594e9573eb7ee2613",
+    "identical": false
+  },
+  {
+    "name": "NSTALL.EXE",
+    "loose_size": 9918,
+    "loose_sha256": "9f3df6a4a5c24219b6476b97f198850d84b14d14342059b08cde1e10c7c67d69",
+    "image_size": 9918,
+    "image_sha256": "9f3df6a4a5c24219b6476b97f198850d84b14d14342059b08cde1e10c7c67d69",
+    "identical": true
+  },
+  {
+    "name": "PAR1.DGS",
+    "loose_size": 601,
+    "loose_sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd",
+    "image_size": 601,
+    "image_sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd",
+    "identical": true
+  },
+  {
+    "name": "RBT.EXE",
+    "loose_size": 7828,
+    "loose_sha256": "9cd96256b9e472ed8775048a8886a6e5c023d1f41a214c2fd056b72757870177",
+    "image_size": 7828,
+    "image_sha256": "9cd96256b9e472ed8775048a8886a6e5c023d1f41a214c2fd056b72757870177",
+    "identical": true
+  },
+  {
+    "name": "SER0.DGS",
+    "loose_size": 3039,
+    "loose_sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4",
+    "image_size": 3039,
+    "image_sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4",
+    "identical": true
+  },
+  {
+    "name": "SERVICES.COM",
+    "loose_size": 21696,
+    "loose_sha256": "b20e20228d14eb0587050e5c350e33b709b5240fc27d68d78d8ba964ec1a1028",
+    "image_size": 21696,
+    "image_sha256": "adc59a24633e0172c1fcf332e242dde16b8250035694151c5f61878e6f9c577a",
+    "identical": false
+  },
+  {
+    "name": "STG0.DGS",
+    "loose_size": 1675,
+    "loose_sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526",
+    "image_size": 1675,
+    "image_sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526",
+    "identical": true
+  },
+  {
+    "name": "TXT.OK",
+    "loose_size": 602,
+    "loose_sha256": "ae255aeb50c0e7447fafa3300400f2b55bc1964cd91c2d28b9c7ef85af6683a9",
+    "image_size": 602,
+    "image_sha256": "ae255aeb50c0e7447fafa3300400f2b55bc1964cd91c2d28b9c7ef85af6683a9",
+    "identical": true
+  },
+  {
+    "name": "US0KMAIN.DGS",
+    "loose_size": 1602,
+    "loose_sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620",
+    "image_size": 1602,
+    "image_sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620",
+    "identical": true
+  },
+  {
+    "name": "US0PCN.DGS",
+    "loose_size": 6096,
+    "loose_sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b",
+    "image_size": 6096,
+    "image_sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b",
+    "identical": true
+  },
+  {
+    "name": "VERSION.110",
+    "loose_size": 3,
+    "loose_sha256": "6f864b1705ae269c03903f630181ca89b5372a25f0d17147bc9d98a5c84f72be",
+    "image_size": null,
+    "image_sha256": null,
+    "identical": null
+  }
+]

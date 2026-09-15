@@ -1,0 +1,149 @@
+[
+  {
+    "file": "CPU0.DGS",
+    "sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1",
+    "edsy": true,
+    "records": [
+      {
+        "offset": 19,
+        "bytes": "eb04900101",
+        "device_id": 1,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      }
+    ]
+  },
+  {
+    "file": "DISPLAY1.DGS",
+    "sha256": "f1dbe20f6a5f1b2624f8f461f7beb756b1f3d94c467d036b8e8d1e5d31717f61",
+    "edsy": true,
+    "records": [
+      {
+        "offset": 19,
+        "bytes": "eb04900501",
+        "device_id": 5,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      }
+    ]
+  },
+  {
+    "file": "DSKT1.DGS",
+    "sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c",
+    "edsy": true,
+    "records": [
+      {
+        "offset": 19,
+        "bytes": "eb04900601",
+        "device_id": 6,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      }
+    ]
+  },
+  {
+    "file": "IBM7690.DGS",
+    "sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57",
+    "edsy": false,
+    "records": [
+      {
+        "offset": 0,
+        "bytes": "e9e7095a11",
+        "device_id": 90,
+        "high_bit": false,
+        "name": "IBM 7690 FEATURES"
+      }
+    ]
+  },
+  {
+    "file": "PAR1.DGS",
+    "sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd",
+    "edsy": true,
+    "records": [
+      {
+        "offset": 19,
+        "bytes": "eb09900901",
+        "device_id": 9,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      },
+      {
+        "offset": 24,
+        "bytes": "eb13900a01",
+        "device_id": 10,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      }
+    ]
+  },
+  {
+    "file": "SER0.DGS",
+    "sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4",
+    "edsy": true,
+    "records": [
+      {
+        "offset": 19,
+        "bytes": "eb09900b01",
+        "device_id": 11,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      },
+      {
+        "offset": 24,
+        "bytes": "eb10900c01",
+        "device_id": 12,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      }
+    ]
+  },
+  {
+    "file": "STG0.DGS",
+    "sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526",
+    "edsy": true,
+    "records": [
+      {
+        "offset": 19,
+        "bytes": "e9f5000201",
+        "device_id": 2,
+        "high_bit": false,
+        "descriptor_byte4": 1
+      }
+    ]
+  },
+  {
+    "file": "US0KMAIN.DGS",
+    "sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620",
+    "edsy": false,
+    "records": [
+      {
+        "offset": 0,
+        "bytes": "e936028308",
+        "device_id": 3,
+        "high_bit": true,
+        "name": "KEYBOARD"
+      }
+    ]
+  },
+  {
+    "file": "US0PCN.DGS",
+    "sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b",
+    "edsy": false,
+    "records": [
+      {
+        "offset": 0,
+        "bytes": "e97d081e12",
+        "device_id": 30,
+        "high_bit": false,
+        "name": "PC NETWORK ADAPTER"
+      },
+      {
+        "offset": 23,
+        "bytes": "e96e081f17",
+        "device_id": 31,
+        "high_bit": false,
+        "name": "ALT. PC NETWORK ADAPTER"
+      }
+    ]
+  }
+]

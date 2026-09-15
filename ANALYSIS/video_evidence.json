@@ -1,0 +1,955 @@
+{
+  "scope": "IBM 7690 video evidence, not an emulator implementation or authentic 7690 ROM substitute",
+  "evidence_labels": [
+    "DOCUMENTED",
+    "BINARY",
+    "INFERENCE",
+    "OPEN"
+  ],
+  "sources": {
+    "7690_technical_reference": {
+      "path": "IBM_7690_Clinical_Workstation_Technical_Reference.pdf",
+      "sha256": "e45778aea663a09a9ebd029e6bcde3e0992fd9af58ddde567c174ab708e2fe4e",
+      "physical_pages_video": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "printed_pages_video": "1-36 through 1-79",
+      "image_checked_physical_pages": [
+        27,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44,
+        46,
+        114,
+        118,
+        119,
+        139,
+        140,
+        143
+      ]
+    },
+    "model25_technical_reference": {
+      "external_path": "/Users/josh/src/bios8530/PS2_Model_25_Technical_Reference_Jun87.pdf",
+      "sha256": "b4d3df94571cfa6299f45290d75374322c03d68ddba4370cce8e41ab7dd4f899",
+      "corpus": "/Users/josh/src/bios8530/reference/corpus.sqlite3",
+      "source_id": "model25_techref",
+      "image_checked_physical_pages": [
+        75
+      ],
+      "inheritance_boundary": "MCGA baseline only, no 7690 LCD controller or adapter ROM"
+    },
+    "model25_type1_rom": {
+      "external_path": "/Users/josh/src/bios8530/goldens/8525/type1/linear.bin",
+      "sha256": "cfbdc2cd67c95c15b06be14e2e5f4bbd6991f3506428af64038b6381a1120166",
+      "bytes": 65536,
+      "origin": "F000:0000",
+      "is_7690_firmware": false
+    },
+    "colorfix": {
+      "path": "7690diag/COLORFIX.COM",
+      "sha256": "21f47f663254e2a08dde514d4741a291605f2eefa31fea6fda26c1c8ee912028",
+      "bytes": 267,
+      "origin": "COM entry at PSP:0100; file offsets = COM offsets - 0100h"
+    },
+    "diagnostic_loose": {
+      "path": "7690diag/IBM7690.DGS",
+      "sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57",
+      "bytes": 10474,
+      "origin": "file offset 0000h"
+    },
+    "diagnostic_image": {
+      "path": "ANALYSIS/7690KQPW/IBM7690.DGS",
+      "sha256": "be20cd798aef2f63d4c094bf71ebf02376b53fc31011e80a0d8595fa5a3fe4f4",
+      "bytes": 11333,
+      "origin": "file offset 0000h"
+    }
+  },
+  "mcga_initialization": {
+    "evidence": "DOCUMENTED",
+    "source": "TR PDF43 printed1-69 Figure1-56; Model25 PDF75 printed1-62 Figure1-49",
+    "columns": [
+      "00h/01h",
+      "02h/03h",
+      "04h/05h",
+      "06h",
+      "11h",
+      "13h"
+    ],
+    "null_means": "XX: unspecified, not zero and not a required write",
+    "index_3d4": {
+      "00h": [
+        "30",
+        "30",
+        "30",
+        "30",
+        "30",
+        "30"
+      ],
+      "01h": [
+        "27",
+        "27",
+        "27",
+        "27",
+        "27",
+        "27"
+      ],
+      "02h": [
+        "2A",
+        "2A",
+        "2A",
+        "2A",
+        "2A",
+        "2A"
+      ],
+      "03h": [
+        "26",
+        "26",
+        "26",
+        "26",
+        "26",
+        "26"
+      ],
+      "04h": [
+        "B0",
+        "B0",
+        "B0",
+        "B0",
+        "FF",
+        "B0"
+      ],
+      "05h": [
+        "0D",
+        "0D",
+        "0D",
+        "0D",
+        "0A",
+        "0D"
+      ],
+      "06h": [
+        "8F",
+        "8F",
+        "8F",
+        "8F",
+        "DF",
+        "8F"
+      ],
+      "07h": [
+        "9B",
+        "9B",
+        "9B",
+        "9B",
+        "E9",
+        "9B"
+      ],
+      "08h": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "09h": [
+        "07",
+        "07",
+        "01",
+        "01",
+        "00",
+        "00"
+      ],
+      "0Ah": [
+        "06",
+        "06",
+        null,
+        null,
+        null,
+        null
+      ],
+      "0Bh": [
+        "07",
+        "07",
+        null,
+        null,
+        null,
+        null
+      ],
+      "0Ch": [
+        "00",
+        "00",
+        "00",
+        "00",
+        "00",
+        "00"
+      ],
+      "0Dh": [
+        "00",
+        "00",
+        "00",
+        "00",
+        "00",
+        "00"
+      ],
+      "0Eh": [
+        "00",
+        "00",
+        null,
+        null,
+        null,
+        null
+      ],
+      "0Fh": [
+        "00",
+        "00",
+        null,
+        null,
+        null,
+        null
+      ],
+      "10h": [
+        "18",
+        "18",
+        "18",
+        "18",
+        "1A",
+        "19"
+      ],
+      "11h": [
+        "30",
+        "30",
+        "30",
+        "30",
+        "30",
+        "30"
+      ],
+      "12h": [
+        "46",
+        "46",
+        "46",
+        "46",
+        "04",
+        "46"
+      ],
+      "13h": [
+        "00",
+        "00",
+        null,
+        null,
+        null,
+        null
+      ],
+      "14h": [
+        "FF",
+        "FF",
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "formatter": {
+      "03C6h": [
+        "FF",
+        "FF",
+        "FF",
+        "FF",
+        "FF",
+        "FF"
+      ],
+      "03D8h": [
+        "28",
+        "29",
+        "0A",
+        "18",
+        "18",
+        "08"
+      ],
+      "03D9h": [
+        "30",
+        "30",
+        "30",
+        "3F",
+        "3F",
+        "30"
+      ],
+      "03DDh": [
+        "00",
+        "00",
+        "00",
+        "00",
+        "00",
+        "04"
+      ]
+    },
+    "not_lcd_initialization": true,
+    "write_inhibit_set_after_mode_set": true
+  },
+  "lcd_registers": {
+    "evidence": "DOCUMENTED plus separately labelled binary observations",
+    "index_port": "F304h",
+    "data_port": "F305h",
+    "index_bits": 8,
+    "bank_select": "OPEN: no separate normal/base bank-select transaction is documented; tables use disjoint indexes",
+    "normal": {
+      "00h": {
+        "name": "Start Address Pointer H",
+        "table_bits": "4:0",
+        "prose_bits": "5:0",
+        "conflict": true
+      },
+      "01h": {
+        "name": "Start Address Pointer V",
+        "bits": "7:0"
+      },
+      "02h": {
+        "0": "+ Reverse video",
+        "1:6": "reserved, table lists R/W",
+        "7": "320(H) +Mode45 / +Mode13; complete truth table OPEN"
+      },
+      "03h": {
+        "3:0": "reserved R/W",
+        "7:4": "reserved"
+      }
+    },
+    "base": {
+      "0Dh": {
+        "0": "1 LCD driver voltage enabled",
+        "1": "1 backlight off; 0 backlight enabled",
+        "7:2": "reserved"
+      },
+      "0Eh": {
+        "0": "1 normal / 0 test mode",
+        "1": "1 normal read clock / 0 test read clock",
+        "2": "reserved",
+        "3": "+Color(P2) emulation reverse",
+        "4": "1 320 / 0 640 horizontal mode",
+        "5:6": "reserved",
+        "7": "+Border Reverse"
+      },
+      "0Fh": {
+        "7:0": "LP period; clock/divisor formula OPEN"
+      },
+      "FFh": "write master reset"
+    },
+    "other_names": {
+      "04h": "reserved in book; BINARY: RAM address selector used with 05h",
+      "05h": "RAM row address",
+      "06h": "upper RAM data",
+      "07h": "lower RAM data",
+      "08h-0Ch": "reserved in book; BINARY: 0Bh status and 0Ch test"
+    },
+    "reset": {
+      "zeroed": "all registers except 00h,01h,0Ch,FFh",
+      "exceptions_values": "OPEN",
+      "ram_clear": "not established"
+    }
+  },
+  "document_conflicts": [
+    {
+      "subject": "mode05h remap",
+      "first": "Figure1-24 PDF29:05h->05h",
+      "second": "Figure7-1 PDF143:05h->04h",
+      "resolution": "OPEN without adapter ROM or hardware trace"
+    },
+    {
+      "subject": "LCD H pointer",
+      "first": "Figure1-54 bits4:0",
+      "second": "prose1-67 bits5:0",
+      "binary": "DGS comparison mask1Fh",
+      "resolution": "5-bit comparison mask supported; bit5 physical effect OPEN"
+    },
+    {
+      "subject": "LCD pointer axis",
+      "first": "H defines top; V defines left",
+      "second": "horizontal dot clocks +/-8; vertical HSYNCs +/-128",
+      "resolution": "OPEN raw-register-to-image transform"
+    },
+    {
+      "subject": "80-column BIOS display pages",
+      "first": "6-12 table says8",
+      "second": "6-13 AH05 explicitly accepts0..3",
+      "resolution": "do not claim8 working 80-column pages from generic table"
+    }
+  ],
+  "font_staging": {
+    "evidence": "BINARY Model25 baseline; experiment executed isolated real instructions",
+    "routine": "F000:23A0-240A",
+    "transfer": "F000:240B-2482",
+    "formula": "physical=A0000h+block*2000h+scanline*200h+character*2; byte0=character code, byte1=glyph scanline",
+    "source_api_format": "glyph-major ES:BP input, height bytes per glyph",
+    "14_high_behavior": "source last row repeated into destination rows14,15",
+    "experiments": [
+      {
+        "height": 16,
+        "block": 2,
+        "first_character": "41h",
+        "characters": 3,
+        "sample_rows": [
+          {
+            "row": 0,
+            "physical_address": "A4082h",
+            "bytes": "41 40 42 50 43 60"
+          },
+          {
+            "row": 1,
+            "physical_address": "A4282h",
+            "bytes": "41 41 42 51 43 61"
+          },
+          {
+            "row": 13,
+            "physical_address": "A5A82h",
+            "bytes": "41 4d 42 5d 43 6d"
+          },
+          {
+            "row": 14,
+            "physical_address": "A5C82h",
+            "bytes": "41 4e 42 5e 43 6e"
+          },
+          {
+            "row": 15,
+            "physical_address": "A5E82h",
+            "bytes": "41 4f 42 5f 43 6f"
+          }
+        ]
+      },
+      {
+        "height": 14,
+        "block": 2,
+        "first_character": "41h",
+        "characters": 3,
+        "sample_rows": [
+          {
+            "row": 0,
+            "physical_address": "A4082h",
+            "bytes": "41 40 42 4e 43 5c"
+          },
+          {
+            "row": 1,
+            "physical_address": "A4282h",
+            "bytes": "41 41 42 4f 43 5d"
+          },
+          {
+            "row": 13,
+            "physical_address": "A5A82h",
+            "bytes": "41 4d 42 5b 43 69"
+          },
+          {
+            "row": 14,
+            "physical_address": "A5C82h",
+            "bytes": "41 4d 42 5b 43 69"
+          },
+          {
+            "row": 15,
+            "physical_address": "A5E82h",
+            "bytes": "41 4d 42 5b 43 69"
+          }
+        ]
+      }
+    ],
+    "not_7690_execution": true
+  },
+  "colorfix_experiment": {
+    "evidence": "BINARY",
+    "runtime": "Unicorn x86 16-bit isolated instructions with intercepted DOS services and old-vector sentinel, not DOS boot or hardware execution",
+    "entry": "file0058h / COM0158h",
+    "resident_hook": "file0024h-0055h / COM0124h-0155h",
+    "dos_events": [
+      {
+        "int": "21h",
+        "ah": "09h",
+        "text": "\r\n\r\nCOLORFIX\r\n\r\nLCD Color Attribute Mapper\r\nWritten by: Don D. Williams\r\n(C) Copyright IBM Corp. 1989\r\nVersion 0.0\r\n\r\n"
+      },
+      {
+        "int": "21h",
+        "ax": "2510h",
+        "vector": "2000:0124"
+      },
+      {
+        "int": "27h",
+        "resident_end_offset": "0157h"
+      }
+    ],
+    "installer_bda_write": {
+      "address": "0040:0096",
+      "operation": "AND EFh",
+      "initial": "FFh",
+      "observed": "EFh",
+      "0040:0089_initial": "FFh",
+      "0040:0089_observed": "FFh",
+      "purpose": "OPEN; do not relabel as ColorMap flag"
+    },
+    "algorithm": "if AH==09h and (BL&0Fh)!=(BL>>4) and bit0(BL)==bit4(BL): BL ^= 1; far chain old INT10; otherwise unchanged",
+    "all_256_attribute_outputs_hex": [
+      "00",
+      "01",
+      "03",
+      "03",
+      "05",
+      "05",
+      "07",
+      "07",
+      "09",
+      "09",
+      "0B",
+      "0B",
+      "0D",
+      "0D",
+      "0F",
+      "0F",
+      "10",
+      "11",
+      "12",
+      "12",
+      "14",
+      "14",
+      "16",
+      "16",
+      "18",
+      "18",
+      "1A",
+      "1A",
+      "1C",
+      "1C",
+      "1E",
+      "1E",
+      "21",
+      "21",
+      "22",
+      "23",
+      "25",
+      "25",
+      "27",
+      "27",
+      "29",
+      "29",
+      "2B",
+      "2B",
+      "2D",
+      "2D",
+      "2F",
+      "2F",
+      "30",
+      "30",
+      "32",
+      "33",
+      "34",
+      "34",
+      "36",
+      "36",
+      "38",
+      "38",
+      "3A",
+      "3A",
+      "3C",
+      "3C",
+      "3E",
+      "3E",
+      "41",
+      "41",
+      "43",
+      "43",
+      "44",
+      "45",
+      "47",
+      "47",
+      "49",
+      "49",
+      "4B",
+      "4B",
+      "4D",
+      "4D",
+      "4F",
+      "4F",
+      "50",
+      "50",
+      "52",
+      "52",
+      "54",
+      "55",
+      "56",
+      "56",
+      "58",
+      "58",
+      "5A",
+      "5A",
+      "5C",
+      "5C",
+      "5E",
+      "5E",
+      "61",
+      "61",
+      "63",
+      "63",
+      "65",
+      "65",
+      "66",
+      "67",
+      "69",
+      "69",
+      "6B",
+      "6B",
+      "6D",
+      "6D",
+      "6F",
+      "6F",
+      "70",
+      "70",
+      "72",
+      "72",
+      "74",
+      "74",
+      "76",
+      "77",
+      "78",
+      "78",
+      "7A",
+      "7A",
+      "7C",
+      "7C",
+      "7E",
+      "7E",
+      "81",
+      "81",
+      "83",
+      "83",
+      "85",
+      "85",
+      "87",
+      "87",
+      "88",
+      "89",
+      "8B",
+      "8B",
+      "8D",
+      "8D",
+      "8F",
+      "8F",
+      "90",
+      "90",
+      "92",
+      "92",
+      "94",
+      "94",
+      "96",
+      "96",
+      "98",
+      "99",
+      "9A",
+      "9A",
+      "9C",
+      "9C",
+      "9E",
+      "9E",
+      "A1",
+      "A1",
+      "A3",
+      "A3",
+      "A5",
+      "A5",
+      "A7",
+      "A7",
+      "A9",
+      "A9",
+      "AA",
+      "AB",
+      "AD",
+      "AD",
+      "AF",
+      "AF",
+      "B0",
+      "B0",
+      "B2",
+      "B2",
+      "B4",
+      "B4",
+      "B6",
+      "B6",
+      "B8",
+      "B8",
+      "BA",
+      "BB",
+      "BC",
+      "BC",
+      "BE",
+      "BE",
+      "C1",
+      "C1",
+      "C3",
+      "C3",
+      "C5",
+      "C5",
+      "C7",
+      "C7",
+      "C9",
+      "C9",
+      "CB",
+      "CB",
+      "CC",
+      "CD",
+      "CF",
+      "CF",
+      "D0",
+      "D0",
+      "D2",
+      "D2",
+      "D4",
+      "D4",
+      "D6",
+      "D6",
+      "D8",
+      "D8",
+      "DA",
+      "DA",
+      "DC",
+      "DD",
+      "DE",
+      "DE",
+      "E1",
+      "E1",
+      "E3",
+      "E3",
+      "E5",
+      "E5",
+      "E7",
+      "E7",
+      "E9",
+      "E9",
+      "EB",
+      "EB",
+      "ED",
+      "ED",
+      "EE",
+      "EF",
+      "F0",
+      "F0",
+      "F2",
+      "F2",
+      "F4",
+      "F4",
+      "F6",
+      "F6",
+      "F8",
+      "F8",
+      "FA",
+      "FA",
+      "FC",
+      "FC",
+      "FE",
+      "FF"
+    ],
+    "changed_count": 112,
+    "unchanged_count": 144,
+    "other_AH_checked": [
+      "00",
+      "0A",
+      "0E",
+      "10",
+      "11",
+      "13",
+      "FF"
+    ],
+    "other_AH_result": "BX0217 unchanged",
+    "hardware_io": "none in reached installer or hook"
+  },
+  "lcd_diagnostic_evidence": {
+    "evidence": "BINARY",
+    "comparison_masks_00_to_0e": [
+      "1F",
+      "FF",
+      "FF",
+      "0F",
+      "00",
+      "00",
+      "00",
+      "0F",
+      "00",
+      "00",
+      "00",
+      "83",
+      "00",
+      "03",
+      "FB"
+    ],
+    "mask_offsets": {
+      "loose": "162Ch..163Ah",
+      "image": "1A8Ch..1A9Ah"
+    },
+    "mask_is_not_writable_bitmask": true,
+    "routines_loose": {
+      "sync": "12F1h..139Ah",
+      "reset_test": "139Bh..13ADh",
+      "mode03_to02": "13AEh..13C0h",
+      "ram_orchestrator": "1407h..145Fh",
+      "fill": "1460h..14A0h",
+      "address_fill": "14A1h..14E1h",
+      "address_verify": "14E2h..1551h",
+      "constant_verify": "1552h..15C5h",
+      "register_readback": "15C6h..162Bh",
+      "write_helper": "163Bh..1649h",
+      "read_helper": "164Ah..1656h"
+    },
+    "image_corresponding_offset_delta": "0460h for cited LCD block",
+    "sync_observations": {
+      "index": "0Bh",
+      "vertical_phase_mask": "02h",
+      "line_phase_mask": "80h",
+      "count_range_inclusive": [
+        "0186h",
+        "019Ah"
+      ],
+      "latched_pit_range_inclusive": [
+        "B6C3h",
+        "C413h"
+      ],
+      "bit_meanings": "INFERENCE from parallel 03DAh diagnostic; exact waveform OPEN"
+    },
+    "ram_fill_experiment": {
+      "runtime": "Unicorn x86-16, actual fill instructions, IN stub and OUT recorder; no LCD hardware model",
+      "rows_hex": "80h..01h descending",
+      "columns_hex": "40h..01h descending",
+      "write_count_by_index": {
+        "05h": 128,
+        "04h": 8192,
+        "06h": 8192,
+        "07h": 8192
+      },
+      "upper_value": "55h",
+      "lower_value": "AAh",
+      "first_transactions": [
+        [
+          "05",
+          "80"
+        ],
+        [
+          "04",
+          "40"
+        ],
+        [
+          "06",
+          "55"
+        ],
+        [
+          "07",
+          "AA"
+        ],
+        [
+          "04",
+          "3F"
+        ],
+        [
+          "06",
+          "55"
+        ],
+        [
+          "07",
+          "AA"
+        ],
+        [
+          "04",
+          "3E"
+        ],
+        [
+          "06",
+          "55"
+        ],
+        [
+          "07",
+          "AA"
+        ]
+      ],
+      "last_transactions": [
+        [
+          "07",
+          "AA"
+        ],
+        [
+          "04",
+          "03"
+        ],
+        [
+          "06",
+          "55"
+        ],
+        [
+          "07",
+          "AA"
+        ],
+        [
+          "04",
+          "02"
+        ],
+        [
+          "06",
+          "55"
+        ],
+        [
+          "07",
+          "AA"
+        ],
+        [
+          "04",
+          "01"
+        ],
+        [
+          "06",
+          "55"
+        ],
+        [
+          "07",
+          "AA"
+        ]
+      ],
+      "does_not_prove_entire_32k_ram_layout": true
+    }
+  },
+  "open_measurements": [
+    "authentic 7690 planar and adapter ROM dumps",
+    "LCD controller normal/base gate semantics if any",
+    "LP period clock and reset value",
+    "LCD pointer offset encoding and axis contradictions",
+    "RAM address decode to both32KiB banks",
+    "mode13h byte-to-digital-bit transfer and horizontal placement",
+    "physical pixel aspect ratio, tint, response and persistence",
+    "nondefault LCD mode and reserved-register effects",
+    "true panel timing and latch/blanking boundaries"
+  ],
+  "negative_findings": {
+    "lcd_physical_raster": "DOCUMENTED640x480, binary black/white",
+    "physical_pixel_aspect": "OPEN; square pixels not measured",
+    "lcd_frc_gray": "not documented; do not invent VGA/DAC grayscale-to-LCD path",
+    "contrast": "physical slide control in Operations PDF14 printed1-9, no software contrast register established",
+    "adapter_rom": "16KiB hardware documented; no supplied authentic dump"
+  }
+}

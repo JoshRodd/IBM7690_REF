@@ -1,0 +1,721 @@
+{
+  "schema_version": 1,
+  "purpose": "Agent-oriented implementation specification for emulating the IBM PS/2 Model 25 (8525-8086) and Model 30 (8530-8086).",
+  "scope": {
+    "included": [
+      "planar hardware visible to software",
+      "model-specific physical wiring that changes emulation",
+      "BIOS identity and configuration reporting",
+      "ROM pair construction",
+      "diagnostic-disk evidence"
+    ],
+    "excluded": [
+      "Model 25-286, Model 30-286, later 80286/80386 PS/2 variants",
+      "Micro Channel Architecture machines"
+    ]
+  },
+  "evidence_policy": {
+    "primary": "IBM Technical References, IBM BIOS interface reference, IBM option announcements, ROM bytes, disk-image bytes, and Model 30 schematics.",
+    "secondary": "Ardent Tool planar/MCGA notes and the archived VOGONS BIOS reverse-engineering discussion. Secondary claims are explicitly marked.",
+    "citation_format": "PDF citations name the corpus source_id and one-based physical PDF page. HTML citations name the repository path and original line range where available.",
+    "ocr_warning": "model30_techref and model30_schematic records are OCR. Verify ambiguous part numbers or single characters against page images; behavioral prose and tables were cross-checked where called out."
+  },
+  "source_ids": {
+    "model25_techref": "PS2_Model_25_Technical_Reference_Jun87.pdf",
+    "model30_techref": "PS2_Model_30_Technical_Reference_Jan87.pdf",
+    "bios_interface": "PS2_and_PC_BIOS_Interface_Technical_Reference_Apr87.pdf",
+    "model30_schematic": "m30_sch.pdf",
+    "model25_planar_notes": "8525_Planar.html",
+    "model30_planar_notes": "8530_Planar.html",
+    "mcga_notes": "MCGA.html",
+    "interrupt_sharing_notes": "ISA_Interrupt_Sharing_25_30.html",
+    "bios_reverse_engineering": "vogons_M30_planar_registers.html"
+  },
+  "machine_profiles": {
+    "8525": {
+      "name": "IBM Personal System/2 Model 25, 8086 planar",
+      "cpu": {
+        "type": "Intel 8086-2",
+        "clock_hz": 8000000,
+        "external_data_bits": 16,
+        "address_bits": 20,
+        "mode": "maximum",
+        "optional_coprocessor": "8087",
+        "citation": "model25_techref physical pages 16 and 18"
+      },
+      "memory": {
+        "factory_standard_bytes": 524288,
+        "optional_low_bank_bytes": 131072,
+        "maximum_conventional_bytes": 655360,
+        "low_128k_population": "socketed and optional on the original configuration",
+        "upper_512k_population": "two banks of 256K x 9-bit SIPs",
+        "parity": true,
+        "citation": "model25_techref physical pages 16 and 35"
+      },
+      "expansion_slots": 2,
+      "expansion_connector": "62-pin, PC/XT-compatible 8-bit I/O channel",
+      "display": {
+        "construction": "single system/display unit with integrated 12-inch analog display",
+        "variants": [
+          "monochrome",
+          "color"
+        ],
+        "planar_connector": "14-pin internal display connector",
+        "monitor_sense_effect": "monochrome configurations convert colors to as many as 64 gray shades",
+        "citation": "option-announcements/187-148_8525.txt lines 26-31, 94-128; model25_techref physical page 90"
+      },
+      "real_time_clock": {
+        "present": false,
+        "hardware_ports": [],
+        "battery_backed_clock": false,
+        "bios_configuration_feature_byte_1_bit_5": 0,
+        "citation": "model25_techref physical page 258 explicitly reports 'No Real-time clock'"
+      },
+      "power_connection": "one 12-pin planar power connector",
+      "other_physical_differences": [
+        "earphone connector on planar",
+        "system unit and display are one enclosure"
+      ],
+      "bios_identity": {
+        "model_byte_f000_fffe": "0xFA",
+        "int15_c0_submodel_byte": "0x01",
+        "int15_c0_revision_byte": "0x00 for both supplied Type 1 and Type 2 ROM pairs",
+        "rom_pairs": [
+          "8525_type1_rev0",
+          "8525_type2_rev0"
+        ],
+        "citation": "ROM-byte analysis in reference/rom_analysis.json; model25_techref physical page 258"
+      }
+    },
+    "8530": {
+      "name": "IBM Personal System/2 Model 30, 8086 planar",
+      "cpu": {
+        "type": "Intel 8086-2",
+        "clock_hz": 8000000,
+        "external_data_bits": 16,
+        "address_bits": 20,
+        "mode": "maximum",
+        "optional_coprocessor": "8087",
+        "citation": "model30_techref physical pages 17-20"
+      },
+      "memory": {
+        "factory_standard_bytes": 655360,
+        "optional_low_bank_bytes": 0,
+        "maximum_conventional_bytes": 655360,
+        "low_128k_population": "four 64K x 4-bit and two 64K x 1-bit chips soldered to the planar",
+        "upper_512k_population": "two banks of 256K x 9-bit SIPs",
+        "parity": true,
+        "citation": "model30_techref physical page 36"
+      },
+      "expansion_slots": 3,
+      "expansion_connector": "62-pin, PC/XT-compatible 8-bit I/O channel",
+      "display": {
+        "construction": "separate system unit and IBM analog monitor",
+        "planar_connector": "external 15-pin D-sub analog display connector",
+        "monitor_sense_effect": "MCGA can identify analog color/monochrome display; IBM 8503 monochrome uses as many as 64 gray shades",
+        "citation": "model30_techref physical page 92; option-announcements/187-048_8530.txt lines 88-100"
+      },
+      "real_time_clock": {
+        "present": true,
+        "device": "MM58167-family RTC; Model 30 schematic marking 58167A, reverse-engineered board identified as MM58167B",
+        "crystal_hz": 32768,
+        "hardware_ports": [
+          "0xB0-0xBF",
+          "0xE0-0xEF"
+        ],
+        "register_mapping": {
+          "0xE0-0xEF": "RTC registers 0-15, counter/RAM",
+          "0xB0-0xBF": "RTC registers 16-31, command/status"
+        },
+        "irq": 1,
+        "alarm_dispatch": "shared IRQ1 first enters INT 71h, then BIOS dispatches RTC alarm through INT 70h / INT 4Ah-compatible service",
+        "battery_backed_clock": true,
+        "bios_configuration_feature_byte_1_bit_5": 1,
+        "citation": "model30_techref physical pages 27, 38, and 254; model30_schematic physical page 6; vogons_M30_planar_registers.html lines 1478-1494"
+      },
+      "power_connection": "two 6-pin planar power connectors",
+      "bios_identity": {
+        "model_byte_f000_fffe": "0xFA",
+        "int15_c0_submodel_byte": "0x00",
+        "int15_c0_revision_byte": "matches the supplied BIOS revision: 0x00, 0x01, 0x02, or 0x04",
+        "rom_pairs": [
+          "8530_rev0",
+          "8530_rev1",
+          "8530_rev2",
+          "8530_rev4"
+        ],
+        "citation": "ROM-byte analysis in reference/rom_analysis.json; model30_techref physical page 254"
+      }
+    }
+  },
+  "shared_architecture": {
+    "bus_cycles": {
+      "local_rom_and_ram": "16-bit, four 125 ns CPU clocks, 500 ns, no wait states",
+      "io": "8-bit, eight 125 ns CPU clocks including four wait states, nominal 1 microsecond",
+      "dma": "8-bit only, six 250 ns DMA clocks, nominal 1.5 microseconds",
+      "io_channel_ready": "may extend I/O and DMA cycles",
+      "compatibility_logic": "splits 16-bit CPU cycles into sequential 8-bit channel operations and delays setup timing for 8088-era adapters",
+      "citation": "model25_techref physical page 18; model30_techref physical pages 19-20 and 27"
+    },
+    "memory_map": [
+      {
+        "start": "0x00000",
+        "end": "0x9FFFF",
+        "function": "up to 640 KiB parity-checked planar RAM"
+      },
+      {
+        "start": "0xA0000",
+        "end": "0xBFFFF",
+        "function": "video aperture"
+      },
+      {
+        "start": "0xC0000",
+        "end": "0xEFFFF",
+        "function": "reserved for adapter BIOS / I/O-channel memory"
+      },
+      {
+        "start": "0xF0000",
+        "end": "0xFFFFF",
+        "function": "64 KiB system ROM"
+      }
+    ],
+    "gate_arrays": {
+      "count": 5,
+      "roles": [
+        "system support: bus controller, memory controller, parity, wait states, DMA support",
+        "I/O support: chip selects, proprietary keyboard/pointing controller, I/O ports, proprietary interrupt controller",
+        "two video-support arrays",
+        "diskette-controller support array"
+      ],
+      "important_negative_fact": "Do not instantiate an 8042 keyboard controller. Do not assume a discrete 8259A part: PIC-compatible functions and PS/2 extensions are inside IBM custom logic.",
+      "citation": "model25_techref physical pages 16, 19, and 21; model30_techref physical pages 17, 20, and 22; Model 30 schematic sheets 2, 7, and 8"
+    },
+    "rom": {
+      "size_bytes": 65536,
+      "mapping": "F0000-FFFFF",
+      "physical_layout": "two 32K x 8 ROM chips on the 16-bit local bus",
+      "contains": [
+        "POST",
+        "BIOS",
+        "128-character graphics dot patterns",
+        "diskette bootstrap",
+        "IBM ROM BASIC C1.10 in supplied images"
+      ],
+      "citation": "model25_techref physical page 35; model30_techref physical page 36; reference/rom_analysis.json"
+    }
+  },
+  "io_map": [
+    {
+      "range": "0x0000-0x001F",
+      "device": "8237A-compatible DMA controller",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x0020-0x003F",
+      "device": "IBM gate-array interrupt controller with 8259 programming compatibility plus model-specific IRQ1 behavior",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x0040-0x005F",
+      "device": "8253 programmable interval timer",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x0060-0x0062",
+      "device": "system I/O ports",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x0063-0x006F",
+      "device": "planar control/status including keyboard/pointing interface",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x0080-0x008F",
+      "device": "DMA page registers",
+      "models": [
+        "8525",
+        "8530"
+      ],
+      "warning": "channel-to-port mapping differs between the two Technical References; see dma below"
+    },
+    {
+      "range": "0x00A0-0x00AF",
+      "device": "interrupt-controller extension and NMI mask",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x00B0-0x00BF",
+      "device": "MM58167 RTC command/status half",
+      "models": [
+        "8530"
+      ]
+    },
+    {
+      "range": "0x00E0-0x00EF",
+      "device": "MM58167 RTC counter/RAM half",
+      "models": [
+        "8530"
+      ]
+    },
+    {
+      "range": "0x0320-0x032F",
+      "device": "dedicated fixed-disk interface decode",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x0378-0x037F",
+      "device": "parallel port",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x03C0-0x03DF",
+      "device": "MCGA video subsystem",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x03F0-0x03F7",
+      "device": "diskette interface",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    },
+    {
+      "range": "0x03F8-0x03FF",
+      "device": "NS8250-compatible serial port",
+      "models": [
+        "8525",
+        "8530"
+      ]
+    }
+  ],
+  "planar_registers": {
+    "0x60": {
+      "access": "read/write latch as implemented by gate array",
+      "behavior": "BIOS scratch/keystroke latch, not an 8042 data register. BIOS copies keyboard or pointing bytes from 0x67/0x68 here before invoking standard handlers.",
+      "confidence": "primary for latch use; secondary ROM reverse engineering for copy/dispatch detail",
+      "citation": "model25_techref physical page 24; model30_techref physical page 25; vogons_M30_planar_registers.html lines 682-684 and 1429"
+    },
+    "0x61": {
+      "access": "read/write",
+      "bits": {
+        "7:6": "reserved",
+        "5": "1 masks I/O-channel-check NMI; 0 enables it",
+        "4": "1 masks planar-memory parity NMI; 0 enables it",
+        "3:2": "reserved",
+        "1": "speaker data gate; 1 passes timer-2 output, 0 forces speaker data to zero",
+        "0": "PIT channel-2 gate; 0 halts channel 2"
+      },
+      "citation": "model25_techref physical page 24; model30_techref physical page 25"
+    },
+    "0x62": {
+      "access": "read-only",
+      "bits": {
+        "7": "planar RAM parity-error status",
+        "6": "I/O channel check status",
+        "5": "PIT channel-2 output",
+        "4:3": "reserved",
+        "2": "active-low fixed-disk/controller installed status",
+        "1": "8087 coprocessor installed",
+        "0": "reserved"
+      },
+      "citation": "model25_techref physical page 25; model30_techref physical page 26"
+    },
+    "0x65": {
+      "access": "read/write",
+      "reset_expectation": "enable integrated functions used by machine configuration; preserve software programmability",
+      "bits": {
+        "7": "parallel-port output-driver enable (direction control)",
+        "6:5": "reserved, read/retain as zero",
+        "4": "integrated serial chip-select enable",
+        "3": "integrated diskette chip-select enable",
+        "2": "integrated video chip-select enable",
+        "1": "integrated parallel chip-select enable",
+        "0": "integrated fixed-disk chip-select enable"
+      },
+      "routing_rule": "When a function bit is 1, the planar consumes its address cycle and blocks channel read/write. When 0, the planar does not assert its chip select and the cycle reaches the expansion channel.",
+      "citation": "model25_techref physical page 21; model30_techref physical page 22"
+    },
+    "0x66": {
+      "access": "proprietary keyboard/pointing control and status",
+      "secondary_reverse_engineered_bits": {
+        "0": "port-1 error status, likely serial parity",
+        "1": "port-2 error status, likely serial parity",
+        "2": "keyboard lock status; BIOS drops keyboard bytes when clear",
+        "3": "software-only port-role selection: 1 keyboard=port1/mouse=port2; 0 swaps roles",
+        "4": "pulse/release receive/transmit clock for port 1",
+        "5": "active-low force clock for port 1 before transmit",
+        "6": "pulse/release receive/transmit clock for port 2",
+        "7": "active-low force clock for port 2 before transmit"
+      },
+      "citation": "vogons_M30_planar_registers.html lines 1434-1446; verify uncertain electrical semantics against ROM before cycle-exact implementation"
+    },
+    "0x67": {
+      "behavior": "bidirectional data buffer for PS/2 serial port 1",
+      "citation": "vogons_M30_planar_registers.html line 1447"
+    },
+    "0x68": {
+      "behavior": "bidirectional data buffer for PS/2 serial port 2",
+      "citation": "vogons_M30_planar_registers.html line 1448"
+    },
+    "0x69": {
+      "secondary_reverse_engineered_bits": {
+        "2": "probable NMI allowance",
+        "3": "pulse starts port-1 transmit state machine",
+        "4": "pulse starts port-2 transmit state machine"
+      },
+      "citation": "vogons_M30_planar_registers.html lines 1449-1454"
+    },
+    "0x6A": {
+      "secondary_reverse_engineered_bits": {
+        "0": "probable diskette-density feedback",
+        "2": "port-1 byte available at 0x67",
+        "5": "port-2 byte available at 0x68"
+      },
+      "citation": "vogons_M30_planar_registers.html lines 1455-1460"
+    },
+    "0x6B": {
+      "access": "read/write control plus parity-location status",
+      "bits": {
+        "7": "parity-check pointer: 1 lower 128 KiB failed, 0 upper 512 KiB failed",
+        "6": "active-low enable planar RAM 0x90000-0x9FFFF",
+        "5": "active-low enable planar RAM 0x80000-0x8FFFF",
+        "4": "active-low enable planar RAM 0x70000-0x7FFFF",
+        "3": "active-low enable planar RAM 0x60000-0x6FFFF",
+        "2": "active-low enable planar RAM 0x50000-0x5FFFF",
+        "1": "active-low enable planar RAM 0x40000-0x4FFFF",
+        "0": "remap low memory"
+      },
+      "behavior": "POST can disable conflicting 64 KiB planar blocks and remap remaining memory. On 8525 it also remaps around an absent/failed optional low 128 KiB bank; on 8530 the low bank is soldered but failure handling still exists.",
+      "citation": "model25_techref physical page 35; model30_techref physical page 36"
+    },
+    "0xA0": {
+      "write_behavior": "write 0x80 to enable NMI; write 0x00 to disable NMI",
+      "secondary_read_behavior": "bits 2 and 3 indicate IRQ1 from PS/2 serial ports 1 and 2",
+      "citation": "model25_techref physical page 37; model30_techref physical page 38; vogons_M30_planar_registers.html lines 1461-1465"
+    },
+    "0xA1": {
+      "models": [
+        "8530"
+      ],
+      "secondary_reverse_engineered_bits": {
+        "0": "RTC IRQ1 mask, active high: 0 enabled, 1 masked"
+      },
+      "citation": "vogons_M30_planar_registers.html lines 1466-1469"
+    }
+  },
+  "dma": {
+    "controller": "8237A-5-compatible, 4 MHz, four 20-bit channels, 8-bit transfers only",
+    "assignments": {
+      "DRQ0": "not exposed/available to the I/O channel",
+      "DRQ1": "not used by planar; available to expansion channel",
+      "DRQ2": "integrated diskette; available to channel when diskette CS is disabled",
+      "DRQ3": "integrated fixed disk; available to channel when fixed-disk CS is disabled"
+    },
+    "page_registers_by_model": {
+      "8525": {
+        "0x81": "channel 2",
+        "0x82": "channel 3",
+        "0x83": "channel 1",
+        "0x87": "channel 0"
+      },
+      "8530": {
+        "0x81": "channel 2",
+        "0x82": "channel 3",
+        "0x83": "channel 1",
+        "0x87": "channel 0"
+      }
+    },
+    "critical_difference": "None - both models share the standard XT page-register map (0x81=ch2, 0x82=ch3, 0x83=ch1, 0x87=ch0). The Model 30 TR Figure 1-8 prints a shifted map (0x80=ch2, 0x81=ch3, 0x82=ch1, 0x87=ch0), but the 8530's own BIOS and diagnostics only ever program the XT addresses, and live INT 13h DMA tests with buffers above 64 KiB land correctly only with the XT decode; the shifted map crashes both machines. The TR figure is a documentation error: its channel-1/2/3 rows are shifted one port while channel 0 stays at 0x87 (an internally inconsistent pattern).",
+    "citation": "model25_techref physical page 26; model30_techref physical page 27 (printed shifted map, contradicted by ROM and live DMA test); 8525/8530 BIOS rev 0 disassembly (out 0x81 for FDC/ch2, out 0x82 for HDC/ch3); live DMA probe 2026-08-03; model30_schematic physical pages 6 and 8"
+  },
+  "interrupts": {
+    "controller": "single IBM gate-array controller with eight IRQ levels and 8259-style programming surface; no second PIC",
+    "nmi_sources": [
+      "planar RAM parity",
+      "I/O channel check",
+      "8087 interrupt"
+    ],
+    "irq_map": {
+      "IRQ0": "PIT channel 0; not available to expansion channel",
+      "IRQ1": "keyboard and pointing device on both models; Model 30 additionally RTC alarm; not available to expansion channel",
+      "IRQ2": "MCGA video, or expansion channel when integrated video is disabled",
+      "IRQ3": "unused by planar, available to expansion channel",
+      "IRQ4": "integrated serial, or expansion channel when integrated serial is disabled",
+      "IRQ5": "integrated fixed disk, or expansion channel when integrated fixed disk is disabled",
+      "IRQ6": "integrated diskette, or expansion channel when integrated diskette is disabled",
+      "IRQ7": "integrated parallel, or expansion channel when integrated parallel is disabled"
+    },
+    "irq1_dispatch_contract": {
+      "entry": "custom controller vectors shared IRQ1 sources to INT 71h independently of the programmed normal PIC base",
+      "keyboard": "BIOS copies selected port data to 0x60 and invokes programmed PIC-base + 1 handler",
+      "pointing_device": "BIOS copies selected port data to 0x60 and invokes INT 73h",
+      "rtc_alarm_8530_only": "BIOS dispatches through INT 70h and AT-compatible alarm callback INT 4Ah",
+      "scan_codes": "There is no 8042 translation. Operate the keyboard in scan-code set 1.",
+      "confidence": "IRQ1 sharing and INT 71h are primary-reference facts; detailed demultiplex flow is supplied-ROM reverse engineering in the archived discussion.",
+      "citation": "model25_techref physical pages 26-27; model30_techref physical pages 27-28; vogons_M30_planar_registers.html lines 682-684 and 1051-1055"
+    },
+    "irq_sharing_protocol": {
+      "documented": "IBM documents active-low pulse sharing, per-adapter rearm, global rearm ports 0x02F0-0x02F7, and chained software handlers.",
+      "integrated_devices": "do not use the documented adapter IRQ-sharing protocol",
+      "emulation_priority": "implement conventional asserted IRQ behavior plus the proprietary integrated-source dispatch first; only implement external pulse-sharing/rearm when emulating adapters that require it.",
+      "citation": "model25_techref physical pages 27-34; model30_techref physical pages 28-35; ISA_Interrupt_Sharing_25_30.html"
+    }
+  },
+  "timer_and_audio": {
+    "timer": "8253-compatible PIT",
+    "clock_hz": 1193180,
+    "channels": {
+      "0": "system timer tick / IRQ0",
+      "1": "memory refresh support",
+      "2": "beeper tone source controlled by port 0x61 bits 0 and 1"
+    },
+    "beeper": "planar driver approximately 1/2 watt; supports direct program bit, PIT channel 2, and simultaneous control",
+    "citation": "model25_techref physical pages 22-24 and 140; model30_techref physical pages 23-25 and 141"
+  },
+  "mcga": {
+    "models": [
+      "8525",
+      "8530"
+    ],
+    "video_ram_bytes": 65536,
+    "font_sram_bytes": 8192,
+    "ramdac": "IMS G171-family 256-entry, 18-bit RGB palette device on examined planars",
+    "address_ranges": [
+      "0x03C0-0x03DF I/O",
+      "0xA0000-0xBFFFF memory aperture"
+    ],
+    "integrated_select": "port 0x65 bit 2",
+    "irq": 2,
+    "documented_modes": [
+      {
+        "bios_modes": [
+          "0x00",
+          "0x01"
+        ],
+        "kind": "40x25 text",
+        "colors": 16,
+        "character_cell": "8x8 or 8x16 depending setup"
+      },
+      {
+        "bios_modes": [
+          "0x02",
+          "0x03"
+        ],
+        "kind": "80x25 text",
+        "colors": 16,
+        "character_cell": "8x8 or 8x16 depending setup"
+      },
+      {
+        "bios_modes": [
+          "0x04",
+          "0x05"
+        ],
+        "kind": "320x200 graphics",
+        "colors": 4
+      },
+      {
+        "bios_modes": [
+          "0x06"
+        ],
+        "kind": "640x200 graphics",
+        "colors": 2
+      },
+      {
+        "bios_modes": [
+          "0x11"
+        ],
+        "kind": "640x480 graphics",
+        "colors": 2
+      },
+      {
+        "bios_modes": [
+          "0x13"
+        ],
+        "kind": "320x200 graphics",
+        "colors": 256
+      }
+    ],
+    "unsupported_ega_mode": "MCGA does not provide 640x350 EGA mode",
+    "compatibility": "CGA register/memory behavior plus MCGA extensions; MCGA is not VGA and does not expose a VGA plane architecture.",
+    "model_specific_output": {
+      "8525": "route RGB/sync and monitor configuration to integrated 12-inch monochrome or color panel through 14-pin planar connector",
+      "8530": "route analog RGB and separate H/V sync to 15-pin D-sub; monitor-sense bits select color/monochrome behavior"
+    },
+    "8530_display_pinout": {
+      "1": "red",
+      "2": "green",
+      "3": "blue",
+      "4": "reserved",
+      "5": "reserved",
+      "6": "red return",
+      "7": "green return",
+      "8": "blue return",
+      "9": "key",
+      "10": "ground",
+      "11": "monitor sense 0",
+      "12": "monitor sense 1",
+      "13": "horizontal sync",
+      "14": "vertical sync",
+      "15": "reserved"
+    },
+    "citation": "model25_techref physical pages 50-90; model30_techref physical pages 39-92; model30_schematic physical page 7; MCGA.html"
+  },
+  "diskette": {
+    "controller": "NEC uPD765/Intel 8272-compatible controller plus IBM diskette support/data-separator logic",
+    "io": {
+      "0x3F0": "read-only RAS port A signal status",
+      "0x3F1": "read-only RAS port B signal status / writable interface controls as documented",
+      "0x3F2": "digital output register: motor enables, drive select, DMA/IRQ enable, controller reset",
+      "0x3F4": "main status register",
+      "0x3F5": "FIFO/data register",
+      "0x3F7_read": "digital input status",
+      "0x3F7_write": "configuration control including 250 kbit/s and write-precomp selection"
+    },
+    "dma": 2,
+    "irq": 6,
+    "announced_default_media": "3.5-inch 720 KiB, 250 kbit/s; up to two internal drives",
+    "secondary_note": "Both 8086 models have undocumented 1.44 MiB support in some BIOS/planar/drive combinations. Keep default configuration 720 KiB; expose high-density only as an explicit variant backed by a compatible ROM/planar selection.",
+    "citation": "model25_techref physical pages 92-117; model30_techref physical pages 94-118; model30_schematic physical page 6; 8525_Planar.html lines 451-470"
+  },
+  "fixed_disk": {
+    "architecture": "dedicated 44-pin planar connector carrying local 8-bit I/O, address, DMA, IRQ, and power to IBM's integrated-controller 20 MB drive; not standard ATA",
+    "io_range": "0x320-0x32F",
+    "dma": 3,
+    "irq": 5,
+    "installed_status": "port 0x62 bit 2 active low",
+    "select_enable": "port 0x65 bit 0",
+    "model_configuration": {
+      "8525": "not part of the 1987 launch configuration; IBM offered optional 20 MB drive in 1988, with a no-slot planar-connector version and a separate expansion-adapter version",
+      "8530": "launch model 8530-021 included one 20 MB integrated-controller drive and one 720 KiB diskette; 8530-002 used two diskettes"
+    },
+    "citation": "model25_techref physical pages 118-120; model30_techref physical pages 119-121; option-announcements/188-083_8525-20MB-fixed-disk.txt lines 11-23 and 43-57; option-announcements/187-048_8530.txt lines 20-23 and 65-69"
+  },
+  "serial": {
+    "device": "NS8250-compatible UART",
+    "base": "0x3F8",
+    "irq": 4,
+    "clock_hz": 1843200,
+    "connector": "DB-25 RS-232-C",
+    "select_enable": "port 0x65 bit 4",
+    "citation": "model25_techref physical pages 121-133; model30_techref physical pages 122-134; Model 30 schematic physical page 5"
+  },
+  "parallel": {
+    "base": "0x378",
+    "irq": 7,
+    "dma": null,
+    "connector": "DB-25 PC printer interface",
+    "select_enable": "port 0x65 bit 1",
+    "output_direction": "port 0x65 bit 7 enables planar output drivers; clearing it permits external input",
+    "citation": "model25_techref physical pages 134-139; model30_techref physical pages 135-140; Model 30 schematic physical page 4"
+  },
+  "bios_contract": {
+    "common": {
+      "model_byte": "0xFA at physical 0xFFFFE",
+      "int15_ah_c0": "returns pointer to model-specific system configuration table; use submodel and revision to distinguish these machines",
+      "feature_byte_1_common": {
+        "bit7": "BIOS uses DMA channel 3",
+        "bit6": "one interrupt controller",
+        "bit4": "keyboard escape-sequence hook used",
+        "bit2": "extended BIOS data area present"
+      }
+    },
+    "differences": {
+      "8525": {
+        "submodel": "0x01",
+        "rtc_present_bit5": 0,
+        "rtc_int1a_services": "do not advertise battery RTC"
+      },
+      "8530": {
+        "submodel": "0x00",
+        "rtc_present_bit5": 1,
+        "rtc_int1a_services": "implement get/set time/date and alarm over MM58167-compatible state"
+      }
+    },
+    "rom_selection_rule": "Select a coherent pair from reference/rom_analysis.json; never mix halves or expose Model 30 RTC identity with Model 25 BIOS tables.",
+    "citation": "model25_techref physical page 258; model30_techref physical page 254; bios_interface physical pages 179 and INT 15h C0 section"
+  },
+  "diagnostic_evidence": {
+    "images": [
+      "25start.img",
+      "30start.img",
+      "adv25dia.img",
+      "adv30dig.img"
+    ],
+    "advanced_versions": {
+      "8525": "1.00",
+      "8530": "1.05"
+    },
+    "starter_versions": {
+      "8525": "1.00",
+      "8530": "1.02"
+    },
+    "high_signal_differences": [
+      "Model-specific CPU0.DGS, DTMEDTE.COM, DISK2.DGS, STG0.DGS, and SERVICES.COM binaries differ.",
+      "The Model 25 DTMEDTE.COM is larger and tests a system feature bit / uses a DOS-time fallback before RTC INT 1Ah functions; the Model 30 utility calls RTC services directly. This independently supports 'no hardware RTC on 8525'.",
+      "The Model 30 fixed-disk diagnostic contains an 'IBM HARDFILE TYPE 000' marker and is substantially larger than the Model 25 counterpart."
+    ],
+    "machine_readable_detail": "reference/diagnostic_analysis.json"
+  },
+  "implementation_invariants": [
+    "Machine kind must be a first-class configuration value; do not implement 8525 as a cosmetic 8530 alias.",
+    "8525 must not decode RTC ports 0xB0-0xBF or 0xE0-0xEF and must report INT 15h/C0 feature byte 1 bit 5 clear.",
+    "8530 must decode its battery-backed MM58167 register banks, route alarm as a shared IRQ1 source, and report feature byte 1 bit 5 set.",
+    "Use the model-specific DMA page-register map; this is an easy silent corruption bug.",
+    "Use custom IRQ1/INT 71h demultiplex behavior and PS/2 scan-code set 1; do not insert an AT 8042 or a second PIC.",
+    "Keep the integrated-device enables at port 0x65 functional so disabled planar decodes fall through to the I/O channel.",
+    "Represent 8525 launch RAM as 512 KiB plus optional 128 KiB; represent 8530 launch RAM as soldered 640 KiB. Both still implement port 0x6B remap/parity behavior.",
+    "Represent 8525 display as integrated 14-pin analog monitor configuration and 8530 as external 15-pin monitor-sense configuration.",
+    "The 44-pin fixed-disk interface is IBM-specific, not ATA/IDE despite later similar form factors."
+  ],
+  "known_uncertainties": [
+    {
+      "subject": "proprietary ports 0x66-0x6A and 0xA0/0xA1",
+      "status": "bit semantics are primarily BIOS reverse-engineering results, with several electrical functions explicitly guessed by the original investigator",
+      "recommended_validation": "trace supplied BIOS accesses and run the Model 25/30 keyboard, mouse, and RTC diagnostic paths"
+    },
+    {
+      "subject": "MM58167 exact suffix",
+      "status": "schematic marking is 58167A; archived board analysis says MM58167B. Register architecture and port banks agree.",
+      "recommended_validation": "emulate observed register behavior rather than suffix-specific undocumented analog details"
+    },
+    {
+      "subject": "undocumented 1.44 MiB diskette support",
+      "status": "secondary hardware note; launch specifications are 720 KiB only",
+      "recommended_validation": "gate high-density support on later BIOS/planar configuration and test with 25start.img, which is a 1.44 MiB FAT image"
+    },
+    {
+      "subject": "IBM BookManager BOO files",
+      "status": "source_manifest.json inventories and hashes docs/S15F2191.boo and docs/S64F3987.boo, but their proprietary compressed payload is not decoded by the query tool",
+      "recommended_validation": "use an IBM BookManager reader/exporter if service-manual content beyond the Technical References is required"
+    }
+  ]
+}

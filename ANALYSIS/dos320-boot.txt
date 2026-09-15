@@ -1,0 +1,25 @@
+SeaBIOS (version rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org)
+
+
+iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+00F91FB0+00EF1FB0 CA00
+
+
+
+Booting from Floppy...
+
+A>ECHO OFF
+Derived PC DOS 3.20 / IBM 7690 v1.10 research disk
+Type SERVICES only on a compatible IBM firmware and hardware model.
+
+A>
+
+
+
+
+
+
+
+
+
+
+

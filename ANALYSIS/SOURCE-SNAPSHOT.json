@@ -1,0 +1,137 @@
+{
+  "schema": "ibm7690.source-snapshot.v1",
+  "scope": "Original supplied files; hashes matched prior inventory/media comparison. Photo identity recorded during research; originals never written by research tools.",
+  "files": [
+    {
+      "path": "IBM_7690_Clinical_Workstation_Technical_Reference.pdf",
+      "bytes": 51045276,
+      "sha256": "e45778aea663a09a9ebd029e6bcde3e0992fd9af58ddde567c174ab708e2fe4e"
+    },
+    {
+      "path": "IBM_7690_Clinical_Workstation_Guide_to_Operations.pdf",
+      "bytes": 11667542,
+      "sha256": "70521548cbedc6680525008de3004101d686456561f15a9d1eb0519e02c9f5e5"
+    },
+    {
+      "path": "7690KQPW.IMA",
+      "bytes": 737280,
+      "sha256": "6b89fe1a982eb7e480fb1757ca0285d9889e0154f18611a8e57cc4a8bb8997fe"
+    },
+    {
+      "path": "7690diag.jpg",
+      "bytes": 890456,
+      "sha256": "8510a07d4599922e09c37630ae161c0744233219373aac4d2f98e4145299356a"
+    },
+    {
+      "path": "7690diag/COLORFIX.COM",
+      "bytes": 267,
+      "sha256": "21f47f663254e2a08dde514d4741a291605f2eefa31fea6fda26c1c8ee912028"
+    },
+    {
+      "path": "7690diag/CPU0.DGS",
+      "bytes": 2942,
+      "sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1"
+    },
+    {
+      "path": "7690diag/DCOPY.COM",
+      "bytes": 2172,
+      "sha256": "f5c585544042d30fb8adaedcacad45fd51faf96f9142f995f92c7d26dce252c5"
+    },
+    {
+      "path": "7690diag/DFORMAT.COM",
+      "bytes": 906,
+      "sha256": "8d7ae244bb44ea48d85a460d2475bf9f0483e34d80d0bf32d18f7eded9f6eca7"
+    },
+    {
+      "path": "7690diag/DIAGS.COM",
+      "bytes": 3338,
+      "sha256": "ba9a7d2974e568e0cd80def9541613c173c30b4e5e77368c9e4ce2303498ae14"
+    },
+    {
+      "path": "7690diag/DISPLAY1.DGS",
+      "bytes": 5557,
+      "sha256": "f1dbe20f6a5f1b2624f8f461f7beb756b1f3d94c467d036b8e8d1e5d31717f61"
+    },
+    {
+      "path": "7690diag/DSKT1.DGS",
+      "bytes": 4800,
+      "sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c"
+    },
+    {
+      "path": "7690diag/DTMEDTE.COM",
+      "bytes": 1395,
+      "sha256": "33053e2079a4a59985e738f9601de17f9fdb3a12d5580467a99068011a129e11"
+    },
+    {
+      "path": "7690diag/IBM7690.DGS",
+      "bytes": 10474,
+      "sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57"
+    },
+    {
+      "path": "7690diag/LEDINST.BAT",
+      "bytes": 1426,
+      "sha256": "03839e0cd9e9ecf5510e051f06ddb8afee56d034d03f18bf43457f8fa311145a"
+    },
+    {
+      "path": "7690diag/LEDTOUCH.SYS",
+      "bytes": 8111,
+      "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df"
+    },
+    {
+      "path": "7690diag/NSTALL.EXE",
+      "bytes": 9918,
+      "sha256": "9f3df6a4a5c24219b6476b97f198850d84b14d14342059b08cde1e10c7c67d69"
+    },
+    {
+      "path": "7690diag/PAR1.DGS",
+      "bytes": 601,
+      "sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd"
+    },
+    {
+      "path": "7690diag/RBT.EXE",
+      "bytes": 7828,
+      "sha256": "9cd96256b9e472ed8775048a8886a6e5c023d1f41a214c2fd056b72757870177"
+    },
+    {
+      "path": "7690diag/SER0.DGS",
+      "bytes": 3039,
+      "sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4"
+    },
+    {
+      "path": "7690diag/SERVICES.COM",
+      "bytes": 21696,
+      "sha256": "b20e20228d14eb0587050e5c350e33b709b5240fc27d68d78d8ba964ec1a1028"
+    },
+    {
+      "path": "7690diag/STG0.DGS",
+      "bytes": 1675,
+      "sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526"
+    },
+    {
+      "path": "7690diag/TXT.OK",
+      "bytes": 602,
+      "sha256": "ae255aeb50c0e7447fafa3300400f2b55bc1964cd91c2d28b9c7ef85af6683a9"
+    },
+    {
+      "path": "7690diag/US0KMAIN.DGS",
+      "bytes": 1602,
+      "sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620"
+    },
+    {
+      "path": "7690diag/US0PCN.DGS",
+      "bytes": 6096,
+      "sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b"
+    },
+    {
+      "path": "7690diag/VERSION.110",
+      "bytes": 3,
+      "sha256": "6f864b1705ae269c03903f630181ca89b5372a25f0d17147bc9d98a5c84f72be"
+    }
+  ],
+  "external_donor": {
+    "path": "/Users/josh/src/JoshRodd/IBM5140_REF/DOS/PCDOS32.IMG",
+    "bytes": 737280,
+    "sha256": "87b5cc84562cdf90b367c5c575680f3d37de92cc2f684033b15299015a568915",
+    "unchanged": true
+  }
+}

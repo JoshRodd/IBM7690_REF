@@ -1,0 +1,153 @@
+{
+  "schema": "ibm7690.platform-trace.v1",
+  "engine": "Unicorn 2.1.4",
+  "scope": "Original CPU0 paths entered directly under synthetic ROM/BIOS fixtures; no full module, target firmware, RTC device, NMI, PIT/PIC/DMA or physical machine execution",
+  "source": {
+    "path": "7690diag/CPU0.DGS",
+    "sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1"
+  },
+  "windows_hex": {
+    "0159-01AD": "b800f08ed8b90020bb0060e8ed077526e8e8077521e8e307751ce8de077517bb0060e8fb07750fe8f607750ae8f1077505e8ec077404b005eba0b800f08ed8bb0000b9000053e8b2075b7505e8d1077404b005eb85",
+    "0954-0986": "51baff0032e48a073a0775173a07751302e00af022d043e2ed0ad27506fec675020ae459c35103d95332c04b0207e2fb5b59c3",
+    "025B-027C": "b404cd1a890e5e00891660007303e95202b402cd1a890e5a0089165c007303e94102",
+    "04BE-04C2": "b03de92904"
+  },
+  "rom_gate": [
+    {
+      "source": "synthetic_zero",
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "whole_sum8": 0,
+      "result": {
+        "entry": "0159",
+        "instructions": 81938,
+        "bios_calls": [],
+        "stop": "0133",
+        "stop_meaning": "ROM failure path, before saved-stack restoration",
+        "al": "05"
+      }
+    },
+    {
+      "source": "synthetic_ff",
+      "sha256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "whole_sum8": 0,
+      "result": {
+        "entry": "0159",
+        "instructions": 81936,
+        "bios_calls": [],
+        "stop": "0133",
+        "stop_meaning": "ROM failure path, before saved-stack restoration",
+        "al": "05"
+      }
+    },
+    {
+      "source": "synthetic_checkerboard",
+      "sha256": "9cb11b57898a05612433d14f6dac343ec9fb23306e4b9a2878e85ca08b96f9ab",
+      "whole_sum8": 0,
+      "result": {
+        "entry": "0159",
+        "instructions": 1278069,
+        "bios_calls": [],
+        "stop": "01AE",
+        "stop_meaning": "ROM tests complete; before NMI test",
+        "al": "00"
+      }
+    },
+    {
+      "source": "synthetic_balanced_cross_block_error",
+      "sha256": "f83818ba2805488469da4798f2b6907c5e76d0bbba1fa3f493b438e6620d1eed",
+      "whole_sum8": 0,
+      "result": {
+        "entry": "0159",
+        "instructions": 81939,
+        "bios_calls": [],
+        "stop": "0133",
+        "stop_meaning": "ROM failure path, before saved-stack restoration",
+        "al": "05"
+      }
+    },
+    {
+      "source": "synthetic_unstable_read",
+      "sha256": "9cb11b57898a05612433d14f6dac343ec9fb23306e4b9a2878e85ca08b96f9ab",
+      "whole_sum8": 0,
+      "result": {
+        "entry": "0159",
+        "instructions": 17,
+        "bios_calls": [],
+        "read_fault": "Second read of F000:6000 changes returned data",
+        "stop": "0133",
+        "stop_meaning": "ROM failure path, before saved-stack restoration",
+        "al": "05"
+      }
+    },
+    {
+      "source": "/Users/josh/src/bios8530/goldens/8525/type1/linear.bin",
+      "comparison_only": true,
+      "sha256": "cfbdc2cd67c95c15b06be14e2e5f4bbd6991f3506428af64038b6381a1120166",
+      "whole_sum8": 0,
+      "result": {
+        "entry": "0159",
+        "instructions": 1278069,
+        "bios_calls": [],
+        "stop": "01AE",
+        "stop_meaning": "ROM tests complete; before NMI test",
+        "al": "00"
+      }
+    },
+    {
+      "source": "/Users/josh/src/bios8530/disasm/m25/type2/src/m25_seg.bin",
+      "comparison_only": true,
+      "sha256": "ed11efb8184ccf7055956ef34a6f81a496ac38e066d117f17df3fa2c79d9d2ee",
+      "whole_sum8": 0,
+      "result": {
+        "entry": "0159",
+        "instructions": 1278069,
+        "bios_calls": [],
+        "stop": "01AE",
+        "stop_meaning": "ROM tests complete; before NMI test",
+        "al": "00"
+      }
+    }
+  ],
+  "clock_rejection": [
+    {
+      "absent_bios_function": "04",
+      "result": {
+        "entry": "025B",
+        "instructions": 9,
+        "bios_calls": [
+          {
+            "interrupt": "1A",
+            "ah": "04",
+            "carry": true
+          }
+        ],
+        "stop": "08EC",
+        "stop_meaning": "Common module error path",
+        "al": "3D"
+      }
+    },
+    {
+      "absent_bios_function": "02",
+      "result": {
+        "entry": "025B",
+        "instructions": 14,
+        "bios_calls": [
+          {
+            "interrupt": "1A",
+            "ah": "04",
+            "carry": false
+          },
+          {
+            "interrupt": "1A",
+            "ah": "02",
+            "carry": true
+          }
+        ],
+        "stop": "08EC",
+        "stop_meaning": "Common module error path",
+        "al": "3D"
+      }
+    }
+  ],
+  "interpretation": "A zero whole-image checksum is insufficient: per8KiB checks, AND/OR coverage and read stability matter. A synthetic checkerboard passes this narrow gate, so passing it does not authenticate firmware. Absent clock services return AL3D via the real error path, not a skip."
+}

@@ -1,0 +1,25 @@
+INCORRECT DIAGNOSTIC DISKETTE
+This diagnostic diskette is for the IBM MODEL 7690
+and will not run on your computer. Please insert
+the diskette for your computer in drive "A" then
+PRESS ENTER TO CONTINUE.
+
+?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

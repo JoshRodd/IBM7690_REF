@@ -1,0 +1,595 @@
+{
+  "kind": "derived research disk, not original IBM diagnostic media",
+  "donor_sha256": "87b5cc84562cdf90b367c5c575680f3d37de92cc2f684033b15299015a568915",
+  "output_sha256": "d62da26560bcaab05f9d367dca6912db95b9c08b5b90111cb8bb58bb110981fd",
+  "startup": "menu",
+  "touch_driver_loaded": false,
+  "new_file_timestamp": "1990-01-01T00:00:00 (synthetic DOS local time)",
+  "loose_inputs": {
+    "COLORFIX.COM": {
+      "size": 267,
+      "sha256": "21f47f663254e2a08dde514d4741a291605f2eefa31fea6fda26c1c8ee912028"
+    },
+    "CPU0.DGS": {
+      "size": 2942,
+      "sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1"
+    },
+    "DCOPY.COM": {
+      "size": 2172,
+      "sha256": "f5c585544042d30fb8adaedcacad45fd51faf96f9142f995f92c7d26dce252c5"
+    },
+    "DFORMAT.COM": {
+      "size": 906,
+      "sha256": "8d7ae244bb44ea48d85a460d2475bf9f0483e34d80d0bf32d18f7eded9f6eca7"
+    },
+    "DIAGS.COM": {
+      "size": 3338,
+      "sha256": "ba9a7d2974e568e0cd80def9541613c173c30b4e5e77368c9e4ce2303498ae14"
+    },
+    "DISPLAY1.DGS": {
+      "size": 5557,
+      "sha256": "f1dbe20f6a5f1b2624f8f461f7beb756b1f3d94c467d036b8e8d1e5d31717f61"
+    },
+    "DSKT1.DGS": {
+      "size": 4800,
+      "sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c"
+    },
+    "DTMEDTE.COM": {
+      "size": 1395,
+      "sha256": "33053e2079a4a59985e738f9601de17f9fdb3a12d5580467a99068011a129e11"
+    },
+    "IBM7690.DGS": {
+      "size": 10474,
+      "sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57"
+    },
+    "LEDINST.BAT": {
+      "size": 1426,
+      "sha256": "03839e0cd9e9ecf5510e051f06ddb8afee56d034d03f18bf43457f8fa311145a"
+    },
+    "LEDTOUCH.SYS": {
+      "size": 8111,
+      "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df"
+    },
+    "NSTALL.EXE": {
+      "size": 9918,
+      "sha256": "9f3df6a4a5c24219b6476b97f198850d84b14d14342059b08cde1e10c7c67d69"
+    },
+    "PAR1.DGS": {
+      "size": 601,
+      "sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd"
+    },
+    "RBT.EXE": {
+      "size": 7828,
+      "sha256": "9cd96256b9e472ed8775048a8886a6e5c023d1f41a214c2fd056b72757870177"
+    },
+    "SER0.DGS": {
+      "size": 3039,
+      "sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4"
+    },
+    "SERVICES.COM": {
+      "size": 21696,
+      "sha256": "b20e20228d14eb0587050e5c350e33b709b5240fc27d68d78d8ba964ec1a1028"
+    },
+    "STG0.DGS": {
+      "size": 1675,
+      "sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526"
+    },
+    "TXT.OK": {
+      "size": 602,
+      "sha256": "ae255aeb50c0e7447fafa3300400f2b55bc1964cd91c2d28b9c7ef85af6683a9"
+    },
+    "US0KMAIN.DGS": {
+      "size": 1602,
+      "sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620"
+    },
+    "US0PCN.DGS": {
+      "size": 6096,
+      "sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b"
+    },
+    "VERSION.110": {
+      "size": 3,
+      "sha256": "6f864b1705ae269c03903f630181ca89b5372a25f0d17147bc9d98a5c84f72be"
+    }
+  },
+  "media": {
+    "size": 737280,
+    "sha256": "d62da26560bcaab05f9d367dca6912db95b9c08b5b90111cb8bb58bb110981fd",
+    "boot_sha256": "c8c1da9c4b616dd730c32e279c43821b2d21157396e3f8e6eef6a88aed8bca10",
+    "boot_signature": "55aa",
+    "oem": "IBM  3.2",
+    "bpb": {
+      "bytes_per_sector": 512,
+      "sectors_per_cluster": 2,
+      "reserved_sectors": 1,
+      "fat_copies": 2,
+      "root_entries": 112,
+      "total_sectors": 1440,
+      "media": 249,
+      "sectors_per_fat": 3,
+      "sectors_per_track": 9,
+      "heads": 2
+    },
+    "layout": {
+      "fat_sector": 1,
+      "root_sector": 7,
+      "root_sectors": 7,
+      "data_sector": 14,
+      "data_clusters": 713
+    },
+    "fat_copies_equal": true,
+    "free_clusters": 542,
+    "root": [
+      {
+        "name": "IBMBIO.COM",
+        "slot": 0,
+        "root_offset": 3584,
+        "attributes": 39,
+        "entry_hex": "49424d42494f2020434f4d270000000000000000000000609e0b0200f13f0000",
+        "start_cluster": 2,
+        "size": 16369,
+        "chain": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "sha256": "841bf028620d0867293d7ba7613772f07e2681f36442182d2fa439133343fd8f"
+      },
+      {
+        "name": "IBMDOS.COM",
+        "slot": 1,
+        "root_offset": 3616,
+        "attributes": 39,
+        "entry_hex": "49424d444f532020434f4d270000000000000000000000609e0b12003d6f0000",
+        "start_cluster": 18,
+        "size": 28477,
+        "chain": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ],
+        "sha256": "bbe0ad857e91f1f077af287d2f6748bd868983be9585a6cb0bba7c52dd42f789"
+      },
+      {
+        "name": "AUTOEXEC.BAT",
+        "slot": 2,
+        "root_offset": 3648,
+        "attributes": 32,
+        "entry_hex": "4155544f455845434241542000000000000000000000000021142e004d000000",
+        "start_cluster": 46,
+        "size": 77,
+        "chain": [
+          46
+        ],
+        "sha256": "bce37dece095a788c0181f22d3604abe3b19beb6837c1adcb6e1f619388c0057"
+      },
+      {
+        "name": "COLORFIX.COM",
+        "slot": 3,
+        "root_offset": 3680,
+        "attributes": 32,
+        "entry_hex": "434f4c4f52464958434f4d2000000000000000000000000021142f000b010000",
+        "start_cluster": 47,
+        "size": 267,
+        "chain": [
+          47
+        ],
+        "sha256": "21f47f663254e2a08dde514d4741a291605f2eefa31fea6fda26c1c8ee912028"
+      },
+      {
+        "name": "CPU0.DGS",
+        "slot": 4,
+        "root_offset": 3712,
+        "attributes": 32,
+        "entry_hex": "435055302020202044475320000000000000000000000000211430007e0b0000",
+        "start_cluster": 48,
+        "size": 2942,
+        "chain": [
+          48,
+          49,
+          50
+        ],
+        "sha256": "8d8943a0fb9bdd6cbd7bb8733387796f3057e1a608a51766927faaf105cabac1"
+      },
+      {
+        "name": "DCOPY.COM",
+        "slot": 5,
+        "root_offset": 3744,
+        "attributes": 32,
+        "entry_hex": "44434f5059202020434f4d20000000000000000000000000211433007c080000",
+        "start_cluster": 51,
+        "size": 2172,
+        "chain": [
+          51,
+          52,
+          53
+        ],
+        "sha256": "f5c585544042d30fb8adaedcacad45fd51faf96f9142f995f92c7d26dce252c5"
+      },
+      {
+        "name": "DFORMAT.COM",
+        "slot": 6,
+        "root_offset": 3776,
+        "attributes": 32,
+        "entry_hex": "44464f524d415420434f4d20000000000000000000000000211436008a030000",
+        "start_cluster": 54,
+        "size": 906,
+        "chain": [
+          54
+        ],
+        "sha256": "8d7ae244bb44ea48d85a460d2475bf9f0483e34d80d0bf32d18f7eded9f6eca7"
+      },
+      {
+        "name": "DIAGS.COM",
+        "slot": 7,
+        "root_offset": 3808,
+        "attributes": 32,
+        "entry_hex": "4449414753202020434f4d20000000000000000000000000211437000a0d0000",
+        "start_cluster": 55,
+        "size": 3338,
+        "chain": [
+          55,
+          56,
+          57,
+          58
+        ],
+        "sha256": "ba9a7d2974e568e0cd80def9541613c173c30b4e5e77368c9e4ce2303498ae14"
+      },
+      {
+        "name": "DISPLAY1.DGS",
+        "slot": 8,
+        "root_offset": 3840,
+        "attributes": 32,
+        "entry_hex": "444953504c4159314447532000000000000000000000000021143b00b5150000",
+        "start_cluster": 59,
+        "size": 5557,
+        "chain": [
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "sha256": "f1dbe20f6a5f1b2624f8f461f7beb756b1f3d94c467d036b8e8d1e5d31717f61"
+      },
+      {
+        "name": "COMMAND.COM",
+        "slot": 9,
+        "root_offset": 3872,
+        "attributes": 32,
+        "entry_hex": "434f4d4d414e4420434f4d200000000000000000000000609e0b8300ef5c0000",
+        "start_cluster": 131,
+        "size": 23791,
+        "chain": [
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154
+        ],
+        "sha256": "77402f36394f77fa8270f0563068f7f75949ce030dd28ec9fee7383f1e0b64db"
+      },
+      {
+        "name": "DSKT1.DGS",
+        "slot": 10,
+        "root_offset": 3904,
+        "attributes": 32,
+        "entry_hex": "44534b54312020204447532000000000000000000000000021144100c0120000",
+        "start_cluster": 65,
+        "size": 4800,
+        "chain": [
+          65,
+          66,
+          67,
+          68,
+          69
+        ],
+        "sha256": "4d188e243a57882f8ec36e5539fb8054a36a88a3dfc2d5f10db571d70f03409c"
+      },
+      {
+        "name": "DTMEDTE.COM",
+        "slot": 11,
+        "root_offset": 3936,
+        "attributes": 32,
+        "entry_hex": "44544d4544544520434f4d200000000000000000000000002114460073050000",
+        "start_cluster": 70,
+        "size": 1395,
+        "chain": [
+          70,
+          71
+        ],
+        "sha256": "33053e2079a4a59985e738f9601de17f9fdb3a12d5580467a99068011a129e11"
+      },
+      {
+        "name": "IBM7690.DGS",
+        "slot": 12,
+        "root_offset": 3968,
+        "attributes": 32,
+        "entry_hex": "49424d37363930204447532000000000000000000000000021144800ea280000",
+        "start_cluster": 72,
+        "size": 10474,
+        "chain": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82
+        ],
+        "sha256": "e44671fa1565793365a748743e364b4be4027c12f012b9b687c8047b2459fa57"
+      },
+      {
+        "name": "LEDINST.BAT",
+        "slot": 13,
+        "root_offset": 4000,
+        "attributes": 32,
+        "entry_hex": "4c4544494e535420424154200000000000000000000000002114530092050000",
+        "start_cluster": 83,
+        "size": 1426,
+        "chain": [
+          83,
+          84
+        ],
+        "sha256": "03839e0cd9e9ecf5510e051f06ddb8afee56d034d03f18bf43457f8fa311145a"
+      },
+      {
+        "name": "LEDTOUCH.SYS",
+        "slot": 14,
+        "root_offset": 4032,
+        "attributes": 32,
+        "entry_hex": "4c4544544f5543485359532000000000000000000000000021145500af1f0000",
+        "start_cluster": 85,
+        "size": 8111,
+        "chain": [
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92
+        ],
+        "sha256": "bfb95e3a5d1a9ef87742b33b19d33fee2fbcb0718f04995f770b0a3c37d6d2df"
+      },
+      {
+        "name": "NSTALL.EXE",
+        "slot": 15,
+        "root_offset": 4064,
+        "attributes": 32,
+        "entry_hex": "4e5354414c4c20204558452000000000000000000000000021145d00be260000",
+        "start_cluster": 93,
+        "size": 9918,
+        "chain": [
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102
+        ],
+        "sha256": "9f3df6a4a5c24219b6476b97f198850d84b14d14342059b08cde1e10c7c67d69"
+      },
+      {
+        "name": "PAR1.DGS",
+        "slot": 16,
+        "root_offset": 4096,
+        "attributes": 32,
+        "entry_hex": "5041523120202020444753200000000000000000000000002114670059020000",
+        "start_cluster": 103,
+        "size": 601,
+        "chain": [
+          103
+        ],
+        "sha256": "18da88d08d5251bfb9f0960eea892d51658206be93059e347441669f0f83a4cd"
+      },
+      {
+        "name": "RBT.EXE",
+        "slot": 17,
+        "root_offset": 4128,
+        "attributes": 32,
+        "entry_hex": "52425420202020204558452000000000000000000000000021146800941e0000",
+        "start_cluster": 104,
+        "size": 7828,
+        "chain": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "sha256": "9cd96256b9e472ed8775048a8886a6e5c023d1f41a214c2fd056b72757870177"
+      },
+      {
+        "name": "SER0.DGS",
+        "slot": 18,
+        "root_offset": 4160,
+        "attributes": 32,
+        "entry_hex": "53455230202020204447532000000000000000000000000021147000df0b0000",
+        "start_cluster": 112,
+        "size": 3039,
+        "chain": [
+          112,
+          113,
+          114
+        ],
+        "sha256": "8455a1b55d8cdaf604e04166badb63f47dd5efae37eaa12701551666af19e6d4"
+      },
+      {
+        "name": "SERVICES.COM",
+        "slot": 19,
+        "root_offset": 4192,
+        "attributes": 32,
+        "entry_hex": "5345525649434553434f4d2000000000000000000000000021147300c0540000",
+        "start_cluster": 115,
+        "size": 21696,
+        "chain": [
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160
+        ],
+        "sha256": "b20e20228d14eb0587050e5c350e33b709b5240fc27d68d78d8ba964ec1a1028"
+      },
+      {
+        "name": "STG0.DGS",
+        "slot": 20,
+        "root_offset": 4224,
+        "attributes": 32,
+        "entry_hex": "5354473020202020444753200000000000000000000000002114a1008b060000",
+        "start_cluster": 161,
+        "size": 1675,
+        "chain": [
+          161,
+          162
+        ],
+        "sha256": "524fcb52dc0b868b7055603f7d04e63a6ad3f7eea646f58c2a834d0bcd6d8526"
+      },
+      {
+        "name": "TXT.OK",
+        "slot": 21,
+        "root_offset": 4256,
+        "attributes": 32,
+        "entry_hex": "54585420202020204f4b20200000000000000000000000002114a3005a020000",
+        "start_cluster": 163,
+        "size": 602,
+        "chain": [
+          163
+        ],
+        "sha256": "ae255aeb50c0e7447fafa3300400f2b55bc1964cd91c2d28b9c7ef85af6683a9"
+      },
+      {
+        "name": "US0KMAIN.DGS",
+        "slot": 22,
+        "root_offset": 4288,
+        "attributes": 32,
+        "entry_hex": "5553304b4d41494e444753200000000000000000000000002114a40042060000",
+        "start_cluster": 164,
+        "size": 1602,
+        "chain": [
+          164,
+          165
+        ],
+        "sha256": "7bc9cf9fbacb8d7bbbfdc6a2cd23dcca893c21f9291c94872a66023ccfa76620"
+      },
+      {
+        "name": "US0PCN.DGS",
+        "slot": 23,
+        "root_offset": 4320,
+        "attributes": 32,
+        "entry_hex": "55533050434e2020444753200000000000000000000000002114a600d0170000",
+        "start_cluster": 166,
+        "size": 6096,
+        "chain": [
+          166,
+          167,
+          168,
+          169,
+          170,
+          171
+        ],
+        "sha256": "59e2287e0798dd6be22d8af3583d993149bd4ff43a132786a85b3fb0040fb67b"
+      },
+      {
+        "name": "VERSION.110",
+        "slot": 24,
+        "root_offset": 4352,
+        "attributes": 32,
+        "entry_hex": "56455253494f4e20313130200000000000000000000000002114ac0003000000",
+        "start_cluster": 172,
+        "size": 3,
+        "chain": [
+          172
+        ],
+        "sha256": "6f864b1705ae269c03903f630181ca89b5372a25f0d17147bc9d98a5c84f72be"
+      }
+    ]
+  }
+}

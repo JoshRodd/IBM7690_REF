@@ -1,0 +1,427 @@
+{
+  "corpus": {
+    "jsonl": "corpus.jsonl",
+    "nonempty_records": 942,
+    "records": 951,
+    "sqlite": "corpus.sqlite3",
+    "text_bytes_utf8": 1804977
+  },
+  "files": [
+    {
+      "bytes": 267769,
+      "path": "25start.zip",
+      "sha256": "dc68f2fad80fab989b353ec3b9d534778569f3dd0418ddaefead4c66977cd618",
+      "zip_members": [
+        {
+          "bytes": 1474560,
+          "crc32": "366b4ce5",
+          "path": "25start.img"
+        },
+        {
+          "bytes": 6438,
+          "crc32": "5fc36d42",
+          "path": "license.txt"
+        }
+      ]
+    },
+    {
+      "bytes": 259016,
+      "path": "30start.zip",
+      "sha256": "05207655e2d5a8bd2f39b478cbd11c638bf19d0cc5804eb8c0073f392ce37faa",
+      "zip_members": [
+        {
+          "bytes": 737280,
+          "crc32": "c0790e9d",
+          "path": "30start.img"
+        },
+        {
+          "bytes": 6438,
+          "crc32": "5fc36d42",
+          "path": "license.txt"
+        }
+      ]
+    },
+    {
+      "bytes": 19585,
+      "path": "8525_Planar.html",
+      "sha256": "d224824c71187a01d7a60572848fb92d0e05381869bcc583ed89615fb1422d70"
+    },
+    {
+      "bytes": 25106,
+      "path": "8530_Planar.html",
+      "sha256": "253a6f2648699928b53e6682cef1253348e51b6dadc2dcc3c5ab2a2d2c56f6a2"
+    },
+    {
+      "bytes": 22074,
+      "path": "ISA_Interrupt_Sharing_25_30.html",
+      "sha256": "d769f1b1a4cd6273484a1414535d639812560b62044291c9457a135fe5824e90"
+    },
+    {
+      "bytes": 25285,
+      "path": "MCGA.html",
+      "sha256": "17150ac6ca41533d51515d0774a5bf2c6ef80755f902a87a5daee8f51f034aa8"
+    },
+    {
+      "bytes": 11833068,
+      "path": "PS2_Model_25_Technical_Reference_Jun87.pdf",
+      "sha256": "b4d3df94571cfa6299f45290d75374322c03d68ddba4370cce8e41ab7dd4f899"
+    },
+    {
+      "bytes": 93422250,
+      "path": "PS2_Model_30_Technical_Reference_Jan87.pdf",
+      "sha256": "c809a7651435aaed0e4dc9de0c16af2b5ebe7e39a1e1672fe37d0ed30402fc60"
+    },
+    {
+      "bytes": 5816663,
+      "path": "PS2_and_PC_BIOS_Interface_Technical_Reference_Apr87.pdf",
+      "sha256": "950f2a5508f7092a7eaf0f6181464bc21d0d39e59a9bb63f02ee86ac8668cff2"
+    },
+    {
+      "bytes": 115549,
+      "path": "adv25dia.zip",
+      "sha256": "ce29d23bdf58f7826ca851db34bafb3d527df0821c1d92f7a6ac152bcd2b36bd",
+      "zip_members": [
+        {
+          "bytes": 737280,
+          "crc32": "48885c1e",
+          "path": "adv25dia.img"
+        },
+        {
+          "bytes": 6438,
+          "crc32": "5fc36d42",
+          "path": "license.txt"
+        }
+      ]
+    },
+    {
+      "bytes": 116784,
+      "path": "adv30dig.zip",
+      "sha256": "47a5c8c3f6e681854c313ee9b55569a99a877672c809e8dd6af0e1c7b4af1f3b",
+      "zip_members": [
+        {
+          "bytes": 737280,
+          "crc32": "4f48c350",
+          "path": "adv30dig.img"
+        },
+        {
+          "bytes": 6438,
+          "crc32": "5fc36d42",
+          "path": "license.txt"
+        }
+      ]
+    },
+    {
+      "bytes": 1474560,
+      "path": "disks/25start.img",
+      "sha256": "f2fd92315e53644817ab6efa0d0aca4d9fc8c34a044056c558a1fb2718fbda53"
+    },
+    {
+      "bytes": 737280,
+      "path": "disks/30start.img",
+      "sha256": "67544bd0e3954cdba440508b3a8e59f554afa9519b446a30406ffc8ea62e04c5"
+    },
+    {
+      "bytes": 737280,
+      "path": "disks/adv25dia.img",
+      "sha256": "b2c2e8e2c64991670df2eaf62e558a90b739becd3023b4957bc5e36d67ce834c"
+    },
+    {
+      "bytes": 737280,
+      "path": "disks/adv30dig.img",
+      "sha256": "6a3173cf870d3038022bfa5fbc5188c3bb1ec06ed2b3bd5599c31022700fde6f"
+    },
+    {
+      "bytes": 167936,
+      "path": "docs/S15F2191.boo",
+      "sha256": "b11873bad4c7ab47b6554c5b31cabdd82b7cfca80a24619b69aa45402fbe0b45"
+    },
+    {
+      "bytes": 290816,
+      "path": "docs/S64F3987.boo",
+      "sha256": "39369af76b4ac3ea564d786ef2eeff47cb21dbc7245862759b762660e967a034"
+    },
+    {
+      "bytes": 21830468,
+      "path": "m30_sch.pdf",
+      "sha256": "68c79ecefab2e686a8ce5986b70e33a1d2c8bbcd6840ee5045b607dc148d5558"
+    },
+    {
+      "bytes": 38688,
+      "path": "option-announcements/187-048_8530.txt",
+      "sha256": "7fca9f92297159fc4ecf83f099246b6a0564a76fdfec9ccf485b6db0c9a8ceb6"
+    },
+    {
+      "bytes": 58840,
+      "path": "option-announcements/187-148_8525.txt",
+      "sha256": "a18eae34eee1f93865d7560f99b0d7a13775228b6c62e513ea7fafc190a24d75"
+    },
+    {
+      "bytes": 21255,
+      "path": "option-announcements/187-149_8525-collegiate.txt",
+      "sha256": "15329e125cf58a8d02ae0ddd584332e173515f83ac4055390591f3cf6ca81532"
+    },
+    {
+      "bytes": 10407,
+      "path": "option-announcements/188-083_8525-20MB-fixed-disk.txt",
+      "sha256": "255c83e289baab46d01ed4fc980e222da54fca8c97c30741824dbbdaf1ea6018"
+    },
+    {
+      "bytes": 5266,
+      "path": "option-announcements/189-145_8525-720KB-diskette.txt",
+      "sha256": "4a58fb19f96d7187355c221428bb9bc3f163d988e2d3921a7a68e1e655903650"
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8525/00F2092.BIN",
+      "sha256": "a22c1aeb00b199cab5f6e02d3dc2b08d35d84acae55bb26d4e7e094d79c161d5"
+    },
+    {
+      "bytes": 26406,
+      "path": "roms/8525/00F2092.zip",
+      "sha256": "893c6858cc9b9dc73ab797074c3ca27d4a2caf0587b746ac5f7d202dede171b4",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "07504d59",
+          "path": "00F2092.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8525/00F2093.BIN",
+      "sha256": "7af8a4bd8d1008b57316c2350bc69e412b65b4958b3369823a542a8537e02f6b"
+    },
+    {
+      "bytes": 26371,
+      "path": "roms/8525/00F2093.zip",
+      "sha256": "336054bc49a5b272c1b51051bbaadcb05c3c0a9d6382475d5efd3c517e250893",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "6bec269b",
+          "path": "00F2093.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8525/00F2122.BIN",
+      "sha256": "944e24a2b5d158576dbe007dd37b26f950a4e1d134bced770332a884ffa3f055"
+    },
+    {
+      "bytes": 26338,
+      "path": "roms/8525/00F2122.zip",
+      "sha256": "4dcbcf797c6ea9c670d6806cb5f350963b0e239c1ee009cea5695269ca9e73dd",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "021f7a96",
+          "path": "00F2122.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8525/00F2123.BIN",
+      "sha256": "ee401d092733b81d5cf290f9da353003c7c0ce08f1f0a02f5612a25f7ce35727"
+    },
+    {
+      "bytes": 26288,
+      "path": "roms/8525/00F2123.zip",
+      "sha256": "0c897b119ef70050c1bf7bddcbefe2e5bb8749ed35104883ecd626e2f94c0590",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "43db597f",
+          "path": "00F2123.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/33F4498.BIN",
+      "sha256": "b1cf997f771ee471ed72b97127aaf998f64dfdc93439a096c5dc777c332e2b97"
+    },
+    {
+      "bytes": 26346,
+      "path": "roms/8530/33F4498.zip",
+      "sha256": "b7821dd6a49c1d1751f2f4fbd07fe48ff0b0cadefbe161d19a49f4c8dbd64900",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "f85c8482",
+          "path": "33F4498.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/33F4499.BIN",
+      "sha256": "8ae25d480e7b00abd8bafdc6d46da02ae205052f9cfa2f5181c54212313981fc"
+    },
+    {
+      "bytes": 26208,
+      "path": "roms/8530/33F4499.zip",
+      "sha256": "997b6fe95c09f2bc3d42189f3e6eb8c79e91173a054c3ced93063ce563530048",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "6e94043c",
+          "path": "33F4499.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/61X8937.BIN",
+      "sha256": "c900e6b618212638773353a5694c1e38aa4066e2bdfedd843636f85908fe051a"
+    },
+    {
+      "bytes": 26185,
+      "path": "roms/8530/61X8937.zip",
+      "sha256": "dfb9817f6b1e76742607f1455b1b3572e01f4f7a8c4ba4be2375a5962f590624",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "5a94c1bc",
+          "path": "61X8937.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/61X8938.BIN",
+      "sha256": "51a669b0adbe53e0cf2077cf717d6069879d391d4508d83dfb32e97a94c28325"
+    },
+    {
+      "bytes": 26148,
+      "path": "roms/8530/61X8938.zip",
+      "sha256": "5bdadba60432d21da2aa903fcbfe794ab7cd77a7926a533257ce5a9ddd49e3ea",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "a14309fe",
+          "path": "61X8938.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/61X8939.BIN",
+      "sha256": "0b007c64b49b1955e6e18fbfc0708094e56e1048bd77713590dc647866fdb7be"
+    },
+    {
+      "bytes": 26189,
+      "path": "roms/8530/61X8939.zip",
+      "sha256": "5f677f30f3a96380fb9e9f1295df85b0a58c707d6750ecec6b6cea2f56bd5b53",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "32be05ec",
+          "path": "61X8939.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/61X8940.BIN",
+      "sha256": "bb442dc635ad297ccddbcc14fb3902e7337c8f302d6c40f87479ae2bb12f0071"
+    },
+    {
+      "bytes": 26145,
+      "path": "roms/8530/61X8940.zip",
+      "sha256": "d01a6e46ce0e293ab20710a622e23ea624a78a78b99692c380291a1d4b9a8456",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "d4dd49e5",
+          "path": "61X8940.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/68X1627.BIN",
+      "sha256": "6651af5f641184058e7a2b57a49e677962b278515925c157f2a5a08b51b22f46"
+    },
+    {
+      "bytes": 26036,
+      "path": "roms/8530/68X1627.zip",
+      "sha256": "d89feea60d140775a08420bf102eba321b8b6f9beb31672167ef004d0cd2cb0e",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "b39f4ad8",
+          "path": "68X1627.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 32768,
+      "path": "roms/8530/68X1687.BIN",
+      "sha256": "ef2105f6f489ac4b4dcbbb1a7984aa84a207adf173328614813729a692730f6a"
+    },
+    {
+      "bytes": 26101,
+      "path": "roms/8530/68X1687.zip",
+      "sha256": "a4eacc39de0d06192a347286fc6b725b6d20be9900b81e20f3dab31ed95bb65f",
+      "zip_members": [
+        {
+          "bytes": 32768,
+          "crc32": "8540a875",
+          "path": "68X1687.BIN"
+        }
+      ]
+    },
+    {
+      "bytes": 107148,
+      "path": "vogons_M30_planar_registers.html",
+      "sha256": "0d262b7b673167dd6b4111f3200e77299dd24e801b61258d8100f1f80bd49ce8"
+    }
+  ],
+  "notes": {
+    "boo": "IBM BookManager .BOO files are inventoried but not decoded; their payload is proprietary/compressed.",
+    "page_numbering": "PDF page values are one-based physical pages, not printed section page labels."
+  },
+  "pdf_sources": {
+    "bios_interface": {
+      "bytes": 5816663,
+      "extraction": "text",
+      "pages": 218,
+      "path": "PS2_and_PC_BIOS_Interface_Technical_Reference_Apr87.pdf",
+      "sha256": "950f2a5508f7092a7eaf0f6181464bc21d0d39e59a9bb63f02ee86ac8668cff2",
+      "strategy": "text",
+      "title": "IBM Personal System/2 and Personal Computer BIOS Interface Technical Reference, April 1987"
+    },
+    "model25_techref": {
+      "bytes": 11833068,
+      "extraction": "text",
+      "pages": 349,
+      "path": "PS2_Model_25_Technical_Reference_Jun87.pdf",
+      "sha256": "b4d3df94571cfa6299f45290d75374322c03d68ddba4370cce8e41ab7dd4f899",
+      "strategy": "text",
+      "title": "IBM Personal System/2 Model 25 Technical Reference, June 1987"
+    },
+    "model30_schematic": {
+      "bytes": 21830468,
+      "extraction": "ocr_sparse",
+      "pages": 8,
+      "path": "m30_sch.pdf",
+      "sha256": "68c79ecefab2e686a8ce5986b70e33a1d2c8bbcd6840ee5045b607dc148d5558",
+      "strategy": "ocr_sparse",
+      "title": "IBM Personal System/2 Model 30 Planar Schematics"
+    },
+    "model30_techref": {
+      "bytes": 93422250,
+      "extraction": "ocr",
+      "pages": 348,
+      "path": "PS2_Model_30_Technical_Reference_Jan87.pdf",
+      "sha256": "c809a7651435aaed0e4dc9de0c16af2b5ebe7e39a1e1672fe37d0ed30402fc60",
+      "strategy": "ocr",
+      "title": "IBM Personal System/2 Model 30 Technical Reference, January 1987"
+    }
+  },
+  "root": "/Users/josh/src/86Box-8525/8525info",
+  "schema_version": 1
+}

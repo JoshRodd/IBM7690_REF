@@ -1,0 +1,90 @@
+{
+  "schema": "ibm7690.dos-boot-evidence.v1",
+  "scope": "Actual generic QEMU PC/SeaBIOS boot and DOS execution; not an IBM7690 emulator, target ROM POST, diagnostic-menu pass, or physical touchscreen run.",
+  "qemu_version": {
+    "qemu": {
+      "micro": 3,
+      "minor": 0,
+      "major": 11
+    },
+    "package": ""
+  },
+  "machine": "pc",
+  "memory_mib": 16,
+  "memory_caveat": "16MiB chosen to run modern SeaBIOS; target documented RAM is640KiB. An earlier640KiB SeaBIOS smoke stalled before video.",
+  "drives": "One read-only floppy; no hard disk; display captured through QMP; commands entered through emulated keyboard.",
+  "bios_banner": "SeaBIOS rel-1.17.0-0-gb52ca86e094d-prebuilt.qemu.org",
+  "scenarios": [
+    {
+      "image": "MEDIA/7690diag-pcdos320.img",
+      "sha256": "d62da26560bcaab05f9d367dca6912db95b9c08b5b90111cb8bb58bb110981fd",
+      "startup": "menu",
+      "observed": "PC DOS boot chain executes AUTOEXEC and SERVICES; stops at INCORRECT DIAGNOSTIC DISKETTE / IBM MODEL7690 gate.",
+      "captures": [
+        "dos320-menu-firmware-gate"
+      ]
+    },
+    {
+      "image": "temporary prompt derivative",
+      "sha256": "13a75a8710e73ece177e100e62f00bb3adb827b723febab9e426667a8d50a59c",
+      "startup": "prompt",
+      "commands": [
+        "ver",
+        "dir /w",
+        "type autoexec.bat",
+        "services"
+      ],
+      "observed": "IBM PC DOS3.20; 23visiblefiles;555008freebytes; valid ECHO OFF; expected SERVICES firmware refusal.",
+      "captures": [
+        "dos320-boot",
+        "dos320-ver",
+        "dos320-dir",
+        "dos320-autoexec",
+        "dos320-services-gate"
+      ]
+    },
+    {
+      "image": "temporary driver derivative",
+      "sha256": "68cf5a592cefffb56ab78bd2da8812eca8f202e8462b6e872765ddabb87ee8ec",
+      "startup": "prompt plus DEVICE=LEDTOUCH.SYS",
+      "observed": "Actual DOS loads version3.02, reports touch panel absent and IBM mouse fallback, reaches prompt and runs VER.",
+      "captures": [
+        "dos320-driver-load"
+      ]
+    },
+    {
+      "image": "temporary driver derivative plus POINTCHK.COM",
+      "sha256": "7a9a3535f3f10c04e281b6fa63cf71628e8d53d6d579e4a76e4cab0a7ec38a59",
+      "observed": "Unpatched3.02 loads through DOS; real INT21 open POINT/read requested10bytes returns2bytes 30 0D (0 CR); client exits to prompt.",
+      "captures": [
+        "dos320-point-consumer"
+      ],
+      "probe": {
+        "source_asm": "bits 16\norg 100h\nstart:\n    mov dx,name\n    mov ax,3d00h\n    int 21h\n    jc fail\n    mov bx,ax\n    mov dx,buffer\n    mov cx,10\n    mov ah,3fh\n    int 21h\n    jc fail\n    push ax\n    mov ah,3eh\n    int 21h\n    mov dx,heading\n    mov ah,9\n    int 21h\n    pop cx\n    push cx\n    mov dx,buffer\n    mov bx,1\n    mov ah,40h\n    int 21h\n    mov dx,newline\n    mov ah,9\n    int 21h\n    pop ax\n    add al,'0'\n    mov dl,al\n    mov ah,2\n    int 21h\n    mov dx,ending\n    mov ah,9\n    int 21h\n    mov ax,4c00h\n    int 21h\nfail:\n    mov dx,error\n    mov ah,9\n    int 21h\n    mov ax,4c01h\n    int 21h\nname db 'POINT',0\nheading db 'DOS handle read from POINT: $'\nnewline db 13,10,'Returned byte count: $'\nending db 13,10,'POINT probe returned to DOS.',13,10,'$'\nerror db 'POINT open/read failed.',13,10,'$'\nbuffer times 10 db 0\n",
+        "bytes": 216,
+        "sha256": "e2f88ac51b54a212d72ac3b89e8656ad045dc0ac5a1188d27d7cd91ae42e8a9b",
+        "hex": "ba5801b8003dcd21724289c3bace01b90a00b43fcd21723450b43ecd21ba5e01b409cd215951bace01bb0100b440cd21ba7b01b409cd2158043088c2b402cd21ba9301b409cd21b8004ccd21bab401b409cd21b8014ccd21504f494e5400444f532068616e646c6520726561642066726f6d20504f494e543a20240d0a52657475726e6564206279746520636f756e743a20240d0a504f494e542070726f62652072657475726e656420746f20444f532e0d0a24504f494e54206f70656e2f72656164206661696c65642e0d0a2400000000000000000000",
+        "boundary": "Idle IBM-mouse fallback only; no optical hardware and no active touch. Byte-count display in this disposable probe assumes a single decimal digit."
+      }
+    },
+    {
+      "image": "7690KQPW.IMA",
+      "sha256": "6b89fe1a982eb7e480fb1757ca0285d9889e0154f18611a8e57cc4a8bb8997fe",
+      "observed": "Boots to DOS date/time prompts; Enter retains current values; VER reports MS-DOS Version5.00. No AUTOEXEC or KQPW application automatically launched.",
+      "captures": [
+        "msdos500-original-startup",
+        "msdos500-original-ver"
+      ]
+    }
+  ],
+  "not_run": [
+    "7690 system ROM or C000 adapter ROM",
+    "SERVICES menu after successful identity gate",
+    "complete DGS suite",
+    "KQPW application",
+    "real optical touch under DOS",
+    "physical machine"
+  ],
+  "capture_format": "Each capture basename names ANALYSIS/<name>.png and .txt. PNG is QMP screendump; text is80x25 CP437 from physicalB8000.",
+  "correction_during_smoke": "Generated AUTOEXEC changed from @ECHO OFF (unsupported under PC DOS3.20, observed Bad command or file name) to ECHO OFF; rebuilt corrected variants reached prompt with no such error. Original LEDINST.BAT not modified."
+}

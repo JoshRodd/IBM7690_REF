@@ -1,0 +1,1931 @@
+{
+  "schema_version": 1,
+  "warning": "Existing PDF OCR/text layer extracted with layout. Numeric and graphical evidence must be checked against page images. Physical pages are scanned spreads, not printed page numbers.",
+  "tool_version": "pdftotext version 26.08.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC",
+  "sources": {
+    "TECHREF": {
+      "source_path": "IBM_7690_Clinical_Workstation_Technical_Reference.pdf",
+      "source_bytes": 51045276,
+      "source_sha256": "e45778aea663a09a9ebd029e6bcde3e0992fd9af58ddde567c174ab708e2fe4e",
+      "text_filename": "TECHREF.txt",
+      "text_sha256": "c1642e1840ab762dd7a8b1faa0d2c8be1f20ccec2ef0f0a55395f0ab6c39733c",
+      "physical_pdf_pages": 149,
+      "command": [
+        "pdftotext",
+        "-layout",
+        "IBM_7690_Clinical_Workstation_Technical_Reference.pdf",
+        "TECHREF.txt"
+      ],
+      "pages": [
+        {
+          "physical_pdf_page": 1,
+          "start_text_line": 1,
+          "characters": 0,
+          "footer_locators": []
+        },
+        {
+          "physical_pdf_page": 2,
+          "start_text_line": 1,
+          "characters": 135,
+          "footer_locators": [
+            "Technical",
+            "Reference",
+            "IBM 7690 Clinical Workstation"
+          ]
+        },
+        {
+          "physical_pdf_page": 3,
+          "start_text_line": 17,
+          "characters": 6038,
+          "footer_locators": [
+            "\u00a9 Copyright International Business Machines Corporation 1990.",
+            "All rights reserved.",
+            "Ill"
+          ]
+        },
+        {
+          "physical_pdf_page": 4,
+          "start_text_line": 73,
+          "characters": 1860,
+          "footer_locators": [
+            "An Index is also provided.",
+            "Iv",
+            "Preface      v"
+          ]
+        },
+        {
+          "physical_pdf_page": 5,
+          "start_text_line": 110,
+          "characters": 6205,
+          "footer_locators": [
+            "Connector . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1-121",
+            "Contents      vii",
+            "vi   Preface"
+          ]
+        },
+        {
+          "physical_pdf_page": 6,
+          "start_text_line": 157,
+          "characters": 9046,
+          "footer_locators": [
+            "Device Driver Installation . ..... .. ..... .. . \u2022 \u2022 . \u2022 \u2022 \u2022 \u2022 \u00b7 \u00b7 5-4",
+            ",.....",
+            "viii   Contents                                                                                                                                                                Contents      Ix"
+          ]
+        },
+        {
+          "physical_pdf_page": 7,
+          "start_text_line": 219,
+          "characters": 4037,
+          "footer_locators": [
+            "1-38.    Cursor Position High Register . . . . . . . . . . . . . . . . 1-50",
+            "1-39.    Mode Control, Write . . . . . . . . . . . . . . . . . . . . . . . 1-51",
+            "x   Contents                                                                              Figures     xi"
+          ]
+        },
+        {
+          "physical_pdf_page": 8,
+          "start_text_line": 264,
+          "characters": 7711,
+          "footer_locators": [
+            "1-81.    Format a Track Command                                                1-94              3-1.    Keyboard Data Stream . . . . . . . . . . . . . . . . . . . . . . 3-7",
+            "Figures    xiii",
+            "xii   Figures"
+          ]
+        },
+        {
+          "physical_pdf_page": 9,
+          "start_text_line": 311,
+          "characters": 7665,
+          "footer_locators": [
+            "7-4.   Sample Assembler Program to Blank the LCD ...... 7-5                                        Video Memory Controller Registers . . . . . . . . . . . . . . . 1-45",
+            "7-5.   Sample Assembler Program to Turn On the LCD                               7-5               Video Formatter Registers . . . . . . . . . . . . . . . . . . . . . 1-55",
+            "xiv      Figures                                                                                                                              System Board/Interface Adapter          1-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 10,
+          "start_text_line": 358,
+          "characters": 5699,
+          "footer_locators": [
+            "Personal System/2 and PS/2 are registered trademarks of the Interna-",
+            "tional Business Machines Corporation.",
+            "1-2    System Board/Interface Adapter                                                                                             System Board/Interface Adapter       1-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 11,
+          "start_text_line": 405,
+          "characters": 6323,
+          "footer_locators": [
+            "Figure      1_1 _ System Functional Diagram",
+            "System Board/Interface Adapter   1-5",
+            "1-4      System Board/Interface Adapter"
+          ]
+        },
+        {
+          "physical_pdf_page": 12,
+          "start_text_line": 480,
+          "characters": 2564,
+          "footer_locators": [
+            "ROY' line to determine the wait states required.",
+            "1-6   System Board/Interface Adapte r",
+            "System Board/Interface Adapter   1-7"
+          ]
+        },
+        {
+          "physical_pdf_page": 13,
+          "start_text_line": 528,
+          "characters": 5171,
+          "footer_locators": [
+            "Figure   1-4. System Timer Block Diagram",
+            "1-8   System Board/Interface Adapter",
+            "System Board/Interface Adapter   1-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 14,
+          "start_text_line": 587,
+          "characters": 5362,
+          "footer_locators": [
+            "zero.",
+            "System Board/Interface Adapter    1-11",
+            "1-10     System Board/Interface Adapter"
+          ]
+        },
+        {
+          "physical_pdf_page": 15,
+          "start_text_line": 647,
+          "characters": 5694,
+          "footer_locators": [
+            "rupt hex 71 . Level 2 is available to the video subsystem, and level 7",
+            "System Board/Interface Adapter   1-13",
+            "1-12       System Board/Interface Adapter"
+          ]
+        },
+        {
+          "physical_pdf_page": 16,
+          "start_text_line": 706,
+          "characters": 5153,
+          "footer_locators": [
+            "trailing edge of the pulse causes the interrupt.",
+            "1-14     System Board/I nterface Adapter",
+            "System Board/Interface Adapter     1-15"
+          ]
+        },
+        {
+          "physical_pdf_page": 17,
+          "start_text_line": 763,
+          "characters": 6193,
+          "footer_locators": [
+            "Except for those residing in adapter ROM, handlers designed for",
+            "interrupt sharing must use hex 4248 as the signature to avoid cor-",
+            "1-16   System Board/Interface Adapter                                                                                  System Board/Interface Adapter     1-17"
+          ]
+        },
+        {
+          "physical_pdf_page": 18,
+          "start_text_line": 820,
+          "characters": 6375,
+          "footer_locators": [
+            "END       ENTRY",
+            "1-18   System Board/Interface Adapter",
+            "System Board/Interface Adapter       1-19"
+          ]
+        },
+        {
+          "physical_pdf_page": 19,
+          "start_text_line": 873,
+          "characters": 8478,
+          "footer_locators": [
+            "POP      DS",
+            "System Board/Interface Adapter         1-21",
+            "1-20     System Board/Interface Adapter"
+          ]
+        },
+        {
+          "physical_pdf_page": 20,
+          "start_text_line": 942,
+          "characters": 3536,
+          "footer_locators": [
+            "the POST and BIOS routines for the LCD, touch panel, and bar code",
+            "feature.",
+            "1-22     System Board/ Interface Adapter                                                                   System Board/Interface Adapter   1-23"
+          ]
+        },
+        {
+          "physical_pdf_page": 21,
+          "start_text_line": 991,
+          "characters": 5511,
+          "footer_locators": [
+            "Figure     1-13. 1/0 Channel",
+            "System Board/Interface Adapter   1-25",
+            "1-24     System Board/Interface Adapter"
+          ]
+        },
+        {
+          "physical_pdf_page": 22,
+          "start_text_line": 1045,
+          "characters": 5146,
+          "footer_locators": [
+            "lowest. A request is generated by bringing a request line to an active    0SC (0): Oscillator: This is a high-speed clock with a 70-ns period",
+            "(14.31818 MHz). It has a 50% duty cycle.",
+            "1-26   System Board/Interface Adapter                                                                       System Board/Interface Adapter    1-27"
+          ]
+        },
+        {
+          "physical_pdf_page": 23,
+          "start_text_line": 1091,
+          "characters": 4049,
+          "footer_locators": [
+            "t12           Command inactive from 1/0 CH RDY active               160",
+            "Figure     1-14. 8-Bit 1/0 Timing",
+            "1-28   System Board/Interface Adapter                                                                                 System Board/Interface Adapter           1-29"
+          ]
+        },
+        {
+          "physical_pdf_page": 24,
+          "start_text_line": 1144,
+          "characters": 7198,
+          "footer_locators": [
+            "Figure   1-16. 16-Bit 1/0 Timing",
+            "System Board/Interface Adapter            1-31",
+            "1-30     System Board/Interface Adapter"
+          ]
+        },
+        {
+          "physical_pdf_page": 25,
+          "start_text_line": 1220,
+          "characters": 5132,
+          "footer_locators": [
+            "t12              Command inactive from 1/0 CH ADY active                         160",
+            "Figure     1-17. 16-Bit Memory Timing",
+            "1-32      System Board/Interface Adapter                                                                                                           System Board/Interface Adapter    1-33"
+          ]
+        },
+        {
+          "physical_pdf_page": 26,
+          "start_text_line": 1288,
+          "characters": 4930,
+          "footer_locators": [
+            "Figure      1-19. OMA Read Timing",
+            "Figure    1-20. OMA Write Timing",
+            "1-34      System Board/Interface Adapter                                                                                        System Board/Interface Adapter         1-35"
+          ]
+        },
+        {
+          "physical_pdf_page": 27,
+          "start_text_line": 1347,
+          "characters": 6599,
+          "footer_locators": [
+            "erface adapter ,s responsible for proper initializa-",
+            "1-36   Video Subsystem",
+            "Video Subsystem                 1-37"
+          ]
+        },
+        {
+          "physical_pdf_page": 28,
+          "start_text_line": 1408,
+          "characters": 6352,
+          "footer_locators": [
+            "Figure   1-22. MCGA Video Mode Summary",
+            "Video Subsystem      1-39",
+            "1-38   Video Subsystem"
+          ]
+        },
+        {
+          "physical_pdf_page": 29,
+          "start_text_line": 1473,
+          "characters": 4997,
+          "footer_locators": [
+            "while even-numbered colors appear black.",
+            "Video Subsystem    1-41",
+            "1-40    Video Subsystem"
+          ]
+        },
+        {
+          "physical_pdf_page": 30,
+          "start_text_line": 1533,
+          "characters": 3961,
+          "footer_locators": [
+            "Remember: - - - - - - - - - - - - - - - - - - - ~",
+            "The palette is not used in the Type 7690.",
+            "1-42     Video Subsystem                                                                                                  Video Subsystem   1-43"
+          ]
+        },
+        {
+          "physical_pdf_page": 31,
+          "start_text_line": 1586,
+          "characters": 3745,
+          "footer_locators": [
+            "AFFFF",
+            "Figure    1-31. Graphics Modes 11 and 13",
+            "1-44     Video Subsystem                                                                                                    Video Subsystem   1-45"
+          ]
+        },
+        {
+          "physical_pdf_page": 32,
+          "start_text_line": 1637,
+          "characters": 5018,
+          "footer_locators": [
+            "register determine the frequency of the 'vertical sync' signal.",
+            "1-46    Video Subsystem",
+            "Video Subsystem    1-47"
+          ]
+        },
+        {
+          "physical_pdf_page": 33,
+          "start_text_line": 1690,
+          "characters": 5187,
+          "footer_locators": [
+            "Figure       1-35 (Part 1 of 2). Scan Lines per Character Register               Figure         1-37. Cursor End Register",
+            "1-48     Video Subsystem",
+            "Video Subsystem   1-49"
+          ]
+        },
+        {
+          "physical_pdf_page": 34,
+          "start_text_line": 1749,
+          "characters": 4130,
+          "footer_locators": [
+            "Bit 0         When set to 1, this bit selects mode 13. Bit 2 in the Extended",
+            "Mode Control register must also be set.",
+            "1-50       Video Subsystem                                                                                                        Video Subsystem     1-51"
+          ]
+        },
+        {
+          "physical_pdf_page": 35,
+          "start_text_line": 1794,
+          "characters": 6049,
+          "footer_locators": [
+            "Figure         1-42. Character Generator Interface and Sync Polarity Register",
+            "Video Subsystem        1-53",
+            "1-52        Video Subsystem"
+          ]
+        },
+        {
+          "physical_pdf_page": 36,
+          "start_text_line": 1860,
+          "characters": 4340,
+          "footer_locators": [
+            "Figure    1-43. Monitor Sense Bits",
+            "Video Subsystem   1-55",
+            "1-54     Video Subsystem"
+          ]
+        },
+        {
+          "physical_pdf_page": 37,
+          "start_text_line": 1910,
+          "characters": 5010,
+          "footer_locators": [
+            "Figure         1-45 (Part 1 of 2) . CGA Border Control Register",
+            "1-56     Video Subsystem",
+            "Video Subsystem   1-57"
+          ]
+        },
+        {
+          "physical_pdf_page": 38,
+          "start_text_line": 1971,
+          "characters": 3454,
+          "footer_locators": [
+            "0             Reserved= 0",
+            "Figure         1-48. Extended Mode Control Register",
+            "1-58         Video Subsystem                                                                                             Video Subsystem    1-59"
+          ]
+        },
+        {
+          "physical_pdf_page": 39,
+          "start_text_line": 2014,
+          "characters": 5719,
+          "footer_locators": [
+            "This value should not be changed because mask operations are",
+            "not supported on the Type 7690.",
+            "1-60   Video Subsystem                                                                                                                     Video Subsystem     1-61"
+          ]
+        },
+        {
+          "physical_pdf_page": 40,
+          "start_text_line": 2068,
+          "characters": 2768,
+          "footer_locators": [
+            "0            PDO",
+            "Figure          1-50. Color Palette Data Register",
+            "1-62       Video Subsystem                                                                                                Video Subsystem   1-63"
+          ]
+        },
+        {
+          "physical_pdf_page": 41,
+          "start_text_line": 2118,
+          "characters": 4430,
+          "footer_locators": [
+            "Figure    1-52. LCD Controller Address Space",
+            "Video Subsystem   1-65",
+            "1-64     Video Subsystem"
+          ]
+        },
+        {
+          "physical_pdf_page": 42,
+          "start_text_line": 2175,
+          "characters": 5211,
+          "footer_locators": [
+            "Mode)                                       reversed. By combining + Reverse Video & + Border Reverse func-",
+            "tion, either white porch or black porch can be obtained.",
+            "1-66      Video Subsystem                                                                                                      Video Subsystem       1-67"
+          ]
+        },
+        {
+          "physical_pdf_page": 43,
+          "start_text_line": 2233,
+          "characters": 8797,
+          "footer_locators": [
+            "Figure   1-56. Memory Controller Initialization",
+            "1-68   Video Subsystem",
+            "Video Subsystem      1-69"
+          ]
+        },
+        {
+          "physical_pdf_page": 44,
+          "start_text_line": 2308,
+          "characters": 4842,
+          "footer_locators": [
+            "Figure   1-59. Font Memory Map",
+            "1-70     Video Subsystem",
+            "Video Subsystem   1-71"
+          ]
+        },
+        {
+          "physical_pdf_page": 45,
+          "start_text_line": 2367,
+          "characters": 3484,
+          "footer_locators": [
+            "8-by-8 and 8-by-16 character fonts, depending on the mode selected.",
+            "1-72       Video Subsystem",
+            "Video Subsystem   1-73"
+          ]
+        },
+        {
+          "physical_pdf_page": 46,
+          "start_text_line": 2406,
+          "characters": 6443,
+          "footer_locators": [
+            "positions of the character generator, or font page 1. The second 256          bute byte to specify the font page (see \"Programming",
+            "positions of the character generator define characters 256 - 511. If          Considerations \" later in this section). Whenever a 512 character set",
+            "1-74    Video Subsystem                                                                                                                    Video Subsystem   1-75"
+          ]
+        },
+        {
+          "physical_pdf_page": 47,
+          "start_text_line": 2462,
+          "characters": 5988,
+          "footer_locators": [
+            "goes to the BIOS font table. If they are not zero, the Mode Set loads",
+            "the user font pointed to by the auxiliary pointer.",
+            "1-76   Video Subsystem                                                                                                                        Video Subsystem            1-77"
+          ]
+        },
+        {
+          "physical_pdf_page": 48,
+          "start_text_line": 2518,
+          "characters": 1775,
+          "footer_locators": [
+            "20 be a blank space.",
+            "1-78   Video Subsystem",
+            "-   Video Subsystem   1-79"
+          ]
+        },
+        {
+          "physical_pdf_page": 49,
+          "start_text_line": 2559,
+          "characters": 3827,
+          "footer_locators": [
+            "Figure         1-64. RAS Port B , Hex 3F1",
+            "1-80   Di skette Drive",
+            "Diskette Drive     1-81"
+          ]
+        },
+        {
+          "physical_pdf_page": 50,
+          "start_text_line": 2603,
+          "characters": 3325,
+          "footer_locators": [
+            "0               Reserved",
+            "Figure         1-66. Digital Input, Hex 3F7",
+            "1-82     Diskette Drive                                                                                                        Diskette Drive   1-83"
+          ]
+        },
+        {
+          "physical_pdf_page": 51,
+          "start_text_line": 2644,
+          "characters": 3943,
+          "footer_locators": [
+            "mode.                                                           \u2022 Seek.",
+            "1-84        Diskette Drive",
+            "Diskette Drive   1-85"
+          ]
+        },
+        {
+          "physical_pdf_page": 52,
+          "start_text_line": 2688,
+          "characters": 3444,
+          "footer_locators": [
+            "SC           Sector-The number of sectors per cylinder.",
+            "SK           Skip-The skip deleted-data address mark.",
+            "1-86   Diskette Drive                                                                                                Diskette Drive   1-87"
+          ]
+        },
+        {
+          "physical_pdf_page": 53,
+          "start_text_line": 2735,
+          "characters": 3387,
+          "footer_locators": [
+            "Figure     1-70. Read Data Result",
+            "1-88      Diskette Drive",
+            "Diskette Drive   1-89"
+          ]
+        },
+        {
+          "physical_pdf_page": 54,
+          "start_text_line": 2787,
+          "characters": 1978,
+          "footer_locators": [
+            "Byte 6    Number of Data Bytes in Sector",
+            "Figure    1-74. Read a Track Result",
+            "1-90     Diskette Drive                                                                Diskette Drive   1-91"
+          ]
+        },
+        {
+          "physical_pdf_page": 55,
+          "start_text_line": 2835,
+          "characters": 2187,
+          "footer_locators": [
+            "Byte 6     Number of Data Bytes in Sector        Byte 6    Number of Data Bytes in Sector",
+            "Figure     1-78. Write Data Result               Figure    1-80. Write Deleted Data Result",
+            "1-92      Diskette Drive                                                                         Diskette Drive   1-93"
+          ]
+        },
+        {
+          "physical_pdf_page": 56,
+          "start_text_line": 2876,
+          "characters": 2522,
+          "footer_locators": [
+            "Byte 6    Number of Data Bytes in Sector",
+            "Figure    1-84. Scan Equal Result",
+            "1-94      Diskette Drive                                                                         Diskette Drive   1-95"
+          ]
+        },
+        {
+          "physical_pdf_page": 57,
+          "start_text_line": 2926,
+          "characters": 2197,
+          "footer_locators": [
+            "Byte 6     Number of Data Bytes in Sector     Byte 6    Number of Data Bytes in Sector",
+            "Figure     1-86. Scan Low or Equal Result     Figure    1-88. Scan High or Equal Result",
+            "1-96      Diskette Drive                                                                      Diskette Drive   1-97"
+          ]
+        },
+        {
+          "physical_pdf_page": 58,
+          "start_text_line": 2968,
+          "characters": 2381,
+          "footer_locators": [
+            "Status 3 Register",
+            "Figure     1-94. Sense Drive Status Result",
+            "1-98      Diskette Drive                                                                               Diskette Drive   1-99"
+          ]
+        },
+        {
+          "physical_pdf_page": 59,
+          "start_text_line": 3020,
+          "characters": 4169,
+          "footer_locators": [
+            "either the ID field or the data field.",
+            "Diskette Drive   1-101",
+            "1-100    Diskette Drive"
+          ]
+        },
+        {
+          "physical_pdf_page": 60,
+          "start_text_line": 3069,
+          "characters": 4044,
+          "footer_locators": [
+            "ister or when the content of C is hex FF.",
+            "1-102   Diskette Drive",
+            "Diskette Drive   1-103"
+          ]
+        },
+        {
+          "physical_pdf_page": 61,
+          "start_text_line": 3120,
+          "characters": 3328,
+          "footer_locators": [
+            "250,Q00-bps transfer rate. Write precompensation of 125 ns is done",
+            "by the diskette gate array.",
+            "1-104   Diskette Drive                                                                                                      Diskette Drive   1-105"
+          ]
+        },
+        {
+          "physical_pdf_page": 62,
+          "start_text_line": 3164,
+          "characters": 4506,
+          "footer_locators": [
+            "\u2022   Provides modem controls (CTS, RTS, DSR, DTR, RI, and CD).",
+            "Serial Port   1-107",
+            "1-106     Diskette Drive"
+          ]
+        },
+        {
+          "physical_pdf_page": 63,
+          "start_text_line": 3218,
+          "characters": 4647,
+          "footer_locators": [
+            "0            Bit 0",
+            "Figure         1-100. Transmitter Holding Register",
+            "1-108   Serial Port                                                                                                                              Serial Port   1-109"
+          ]
+        },
+        {
+          "physical_pdf_page": 64,
+          "start_text_line": 3269,
+          "characters": 4079,
+          "footer_locators": [
+            "interrupt.",
+            "1-110       Serial Port",
+            "Serial Port   1-111"
+          ]
+        },
+        {
+          "physical_pdf_page": 65,
+          "start_text_line": 3317,
+          "characters": 4448,
+          "footer_locators": [
+            "no interrupt is pending, and polling (if used) continues.",
+            "Serial Port      1-113",
+            "1-112       Serial Port"
+          ]
+        },
+        {
+          "physical_pdf_page": 66,
+          "start_text_line": 3362,
+          "characters": 5395,
+          "footer_locators": [
+            "length greater than 5 is specified, 2 stop bits are generated",
+            "or checked. If the word length is 5 and this bit is set to 1,",
+            "1-114       Serial Port                                                                                                                     Serial Port   1-115"
+          ]
+        },
+        {
+          "physical_pdf_page": 67,
+          "start_text_line": 3415,
+          "characters": 5937,
+          "footer_locators": [
+            "and transferred into the Receiver Buffer register.",
+            "Figure        1-107 {Part 1 of 2) . Line Status Register",
+            "1-116         Serial Port                                                                                                                     Serial Port   1-117"
+          ]
+        },
+        {
+          "physical_pdf_page": 68,
+          "start_text_line": 3468,
+          "characters": 5921,
+          "footer_locators": [
+            "-CTS to the chip has changed state.",
+            "Serial Port   1-119",
+            "1-118         Serial Port"
+          ]
+        },
+        {
+          "physical_pdf_page": 69,
+          "start_text_line": 3528,
+          "characters": 5994,
+          "footer_locators": [
+            "Below -15 Vdc                  Invalid",
+            "Figure        1-110. Serial Interface Specifications",
+            "1-120   Serial Port                                                                                                                             Serial Port   1-121"
+          ]
+        },
+        {
+          "physical_pdf_page": 70,
+          "start_text_line": 3586,
+          "characters": 5008,
+          "footer_locators": [
+            "series with the output drivers.",
+            "1-122    Parallel Port",
+            "Parallel Port   1-123"
+          ]
+        },
+        {
+          "physical_pdf_page": 71,
+          "start_text_line": 3652,
+          "characters": 6296,
+          "footer_locators": [
+            "13               Slct",
+            "Figure    1-115. Parallel Port Connector",
+            "1-124       Parallel Port                                                                                                                   Parallel Port   1-125"
+          ]
+        },
+        {
+          "physical_pdf_page": 72,
+          "start_text_line": 3724,
+          "characters": 3713,
+          "footer_locators": [
+            "Earphones with 1/8-inch plugs may be used with adapter plugs.                   Figure   1-117. System Board Connector Location",
+            "System Board       1-127",
+            "1-126    System Board"
+          ]
+        },
+        {
+          "physical_pdf_page": 73,
+          "start_text_line": 3783,
+          "characters": 3837,
+          "footer_locators": [
+            "machines.",
+            "System Board   1-129",
+            "1-128        System Board"
+          ]
+        },
+        {
+          "physical_pdf_page": 74,
+          "start_text_line": 3839,
+          "characters": 1044,
+          "footer_locators": [
+            "-",
+            "1-130   System Board",
+            "Power Supply       2-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 75,
+          "start_text_line": 3863,
+          "characters": 2883,
+          "footer_locators": [
+            "the ON position.",
+            "2-2   Power Supply",
+            "Power Supply      2-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 76,
+          "start_text_line": 3900,
+          "characters": 3700,
+          "footer_locators": [
+            "when this signal is low (0) the -22.3 Vdc output goes to + 5 Vdc.",
+            "2-4   Power Supply",
+            "Power Supply   2-5"
+          ]
+        },
+        {
+          "physical_pdf_page": 77,
+          "start_text_line": 3947,
+          "characters": 2784,
+          "footer_locators": [
+            "Bar Code Characters . . . . . . . . . . . . . . . . . . . . . . . . . . . 3-24",
+            "Keyboard Layout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3-26",
+            "2-6   Power Supply                                                                           Keyboard      3-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 78,
+          "start_text_line": 3979,
+          "characters": 5217,
+          "footer_locators": [
+            "pressed is released, even if other keys are still held down. If a key is",
+            "pressed and held down while keyboard transmission is inhibited, only",
+            "3-2   Keyboard                                                                                                                      Keyboard     3-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 79,
+          "start_text_line": 4031,
+          "characters": 4461,
+          "footer_locators": [
+            "During typematic operation, the artificial shift codes can overload the",
+            "interlace. Therefore, only the unique base scan code is repeated at",
+            "3-4    Keyboard                                                                                                                       Keyboard    3-5"
+          ]
+        },
+        {
+          "physical_pdf_page": 80,
+          "start_text_line": 4077,
+          "characters": 4305,
+          "footer_locators": [
+            "During the BAT, the keyboard allows the 'clock' and 'data' lines to go",
+            "active.",
+            "3-6   Keyboard                                                                                                                        Keyboard    3-7"
+          ]
+        },
+        {
+          "physical_pdf_page": 81,
+          "start_text_line": 4125,
+          "characters": 5735,
+          "footer_locators": [
+            "except that the keyboard discontinues scanning and awaits further      retransmission of the SET RATE/DELAY command and its accompa-",
+            "instruction.                                                           nying parameter byte will restart scanning (if previously enabled).",
+            "3-8   Keyboard                                                                                                                   Keyboard       3-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 82,
+          "start_text_line": 4180,
+          "characters": 3981,
+          "footer_locators": [
+            "2         Caps Lock Indicator",
+            "3-7       Reserved - all bits must be 0.",
+            "3-10     Keyboard                                                                                                                Keyboard    3-11"
+          ]
+        },
+        {
+          "physical_pdf_page": 83,
+          "start_text_line": 4226,
+          "characters": 3287,
+          "footer_locators": [
+            "new command.",
+            "3-12     Keyboard",
+            "Keyboard    3-13"
+          ]
+        },
+        {
+          "physical_pdf_page": 84,
+          "start_text_line": 4276,
+          "characters": 5461,
+          "footer_locators": [
+            "Figure    3-3. Key Number Assignments",
+            "3-14     Keyboard",
+            "Keyboard   3-15"
+          ]
+        },
+        {
+          "physical_pdf_page": 85,
+          "start_text_line": 4331,
+          "characters": 6523,
+          "footer_locators": [
+            "the required scan code to enable the system Num Lock state.",
+            "Keyboard      3-17",
+            "3-16       Keyboard"
+          ]
+        },
+        {
+          "physical_pdf_page": 86,
+          "start_text_line": 4411,
+          "characters": 7394,
+          "footer_locators": [
+            "PrtSc",
+            "Figure   3-9. Scan Codes (Part 6 of 11)",
+            "3-18    Keyboard                                                                                                                              Keyboard        3-19"
+          ]
+        },
+        {
+          "physical_pdf_page": 87,
+          "start_text_line": 4494,
+          "characters": 5229,
+          "footer_locators": [
+            "are held down, both sets of make/break codes envelop the other scan",
+            "codes.",
+            "3-20     Keyboard                                                                                                                    Keyboard      3-21"
+          ]
+        },
+        {
+          "physical_pdf_page": 88,
+          "start_text_line": 4557,
+          "characters": 5488,
+          "footer_locators": [
+            "scan codes.",
+            "Keyboard        3-23",
+            "3-22      Keyboard"
+          ]
+        },
+        {
+          "physical_pdf_page": 89,
+          "start_text_line": 4614,
+          "characters": 9922,
+          "footer_locators": [
+            "Keyboard    3-25",
+            "3-24     Keyboard                                                      -",
+            "I"
+          ]
+        },
+        {
+          "physical_pdf_page": 90,
+          "start_text_line": 4716,
+          "characters": 8851,
+          "footer_locators": [
+            "Fn +.                                  PgDn                                       Fn + Enter                        Numeric keypad Enter",
+            "Figure       3-17 . Key Combinations Producing \"P\" Keyboard Functions",
+            "3-26     Keyboard                                                                                                                                                                                          Keyboard      3-27"
+          ]
+        },
+        {
+          "physical_pdf_page": 91,
+          "start_text_line": 4778,
+          "characters": 990,
+          "footer_locators": [
+            "Bar Code Commands .. . .. .. .. . .. .. ... . .. ... .. . 4-6",
+            "\u2022",
+            "3-28   Keyboard                                                                Bar Code Feature        4-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 92,
+          "start_text_line": 4798,
+          "characters": 4720,
+          "footer_locators": [
+            "the bar code controller is present.",
+            "4-2   Bar Code Feature",
+            "Bar Code Feature    4-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 93,
+          "start_text_line": 4851,
+          "characters": 4764,
+          "footer_locators": [
+            "controller through the keyboard controller.",
+            "Bar Code Feature   4-5",
+            "4-4      Bar Code Feature"
+          ]
+        },
+        {
+          "physical_pdf_page": 94,
+          "start_text_line": 4903,
+          "characters": 4307,
+          "footer_locators": [
+            "character verification in a single escape sequence.                               < boc >    Is the beginning of command marker (F0 hex 04 hex)",
+            "Bar Code Feature    4-7",
+            "4-6     Bar Code Feature"
+          ]
+        },
+        {
+          "physical_pdf_page": 95,
+          "start_text_line": 4956,
+          "characters": 4455,
+          "footer_locators": [
+            "bled for Code 39) .",
+            "4-8   Bar Code Feature",
+            "Bar Code Feature   4-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 96,
+          "start_text_line": 5013,
+          "characters": 3492,
+          "footer_locators": [
+            "Note: These options are disabled by default.",
+            "Bar Code Feature   4-11",
+            "4-10   Bar Code Feature"
+          ]
+        },
+        {
+          "physical_pdf_page": 97,
+          "start_text_line": 5063,
+          "characters": 4508,
+          "footer_locators": [
+            "1 = Allow next bar code read",
+            "< eoc >   Is the end of command marker (F0 hex 00 hex)",
+            "4-12   Bar Code Feature                                                                                                        Bar Code Feature   4-13"
+          ]
+        },
+        {
+          "physical_pdf_page": 98,
+          "start_text_line": 5112,
+          "characters": 5791,
+          "footer_locators": [
+            "7           carriage return               Terminator character",
+            "9           PO 1 1                  100 1",
+            "4-14    Bar Code Feature                                                                                                          Bar Code Feature           4-15"
+          ]
+        },
+        {
+          "physical_pdf_page": 99,
+          "start_text_line": 5178,
+          "characters": 5459,
+          "footer_locators": [
+            "Read Light Pen Position (88) . . . . . . . . . . . . . . . . . . . . 5-17",
+            "Set Mouse Button Following (89) . . . . . . . . . . . . . . . . . 5-17",
+            "4-16   Bar Code Featu re                                                                                                                Touch Panel      5-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 100,
+          "start_text_line": 5226,
+          "characters": 4537,
+          "footer_locators": [
+            "Figure      5-1 . F300h Touch Panel Data",
+            "5-2   Touch Panel",
+            "Touch Panel   5-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 101,
+          "start_text_line": 5281,
+          "characters": 4410,
+          "footer_locators": [
+            "1,040,012          The screen center.",
+            "5-4   Touch Panel",
+            "Touch Panel   5-5"
+          ]
+        },
+        {
+          "physical_pdf_page": 102,
+          "start_text_line": 5327,
+          "characters": 4401,
+          "footer_locators": [
+            "Microsoft is a registered trademark of Microsoft Corporation",
+            "Touch Panel   5-7",
+            "5-6     Touch Panel"
+          ]
+        },
+        {
+          "physical_pdf_page": 103,
+          "start_text_line": 5377,
+          "characters": 4240,
+          "footer_locators": [
+            "The current button status for all buttons is also provided in AX. Refer",
+            "to Figure 5-8 on page 5-8.",
+            "5-8     Touch Panel                                                                                                                    Touch Panel     5-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 104,
+          "start_text_line": 5422,
+          "characters": 4168,
+          "footer_locators": [
+            "values are interchanged.",
+            "Touch Panel    5-11",
+            "5-10    Touch Panel"
+          ]
+        },
+        {
+          "physical_pdf_page": 105,
+          "start_text_line": 5476,
+          "characters": 6831,
+          "footer_locators": [
+            "ware cursor is selected (BX= 0), this function defines the screen",
+            "mask and cursor data. If the hardware cursor is specified (BX= 1),",
+            "5-12   Touch Panel                                                                                                                     Touch Panel   5-13"
+          ]
+        },
+        {
+          "physical_pdf_page": 106,
+          "start_text_line": 5547,
+          "characters": 4732,
+          "footer_locators": [
+            "Note: The user subroutine must use a FAR RETurn. That is, it must",
+            "be defined as a PROC FAR.",
+            "5-14     Touch Panel                                                                                                               Touch Panel    5-15"
+          ]
+        },
+        {
+          "physical_pdf_page": 107,
+          "start_text_line": 5598,
+          "characters": 4116,
+          "footer_locators": [
+            "active until changed by a subsequent call to this function.",
+            "Touch Panel     5-17",
+            "5-16     Touch Panel"
+          ]
+        },
+        {
+          "physical_pdf_page": 108,
+          "start_text_line": 5654,
+          "characters": 2774,
+          "footer_locators": [
+            "Diskette Parameter Table . . . . . . . . . . . . . . . . . . . . . . . . 6-67",
+            "Model Bytes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6-68",
+            "5-18   Touch Panel                                                                   System BIOS       6-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 109,
+          "start_text_line": 5687,
+          "characters": 4486,
+          "footer_locators": [
+            "size example, no parameters are passed. The memory size, in 1K",
+            "increments, is returned in the AX register.",
+            "6-2   System BIOS                                                                                                                  System BIOS   6-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 110,
+          "start_text_line": 5736,
+          "characters": 4645,
+          "footer_locators": [
+            "Figure     6-1. Software Interrupt Listing",
+            "System BIOS    6-5",
+            "6-4   System BIOS"
+          ]
+        },
+        {
+          "physical_pdf_page": 111,
+          "start_text_line": 5794,
+          "characters": 5911,
+          "footer_locators": [
+            "Figure     6-5. BIOS Memory Map",
+            "Figure    6-2. BASIC and DOS Interrupts",
+            "6-6   System BIOS                                                                                                                                  System BIOS           6-7"
+          ]
+        },
+        {
+          "physical_pdf_page": 112,
+          "start_text_line": 5852,
+          "characters": 4580,
+          "footer_locators": [
+            "= FF     Error encountered during printing .",
+            "6-8   System BIOS",
+            "System BIOS, INT 02H    6-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 113,
+          "start_text_line": 5898,
+          "characters": 4083,
+          "footer_locators": [
+            "Note: Refer to INT 10H for bar code programming.",
+            "6-10       System BIOS, INT 08H",
+            "System BIOS, INT 09H     6-11"
+          ]
+        },
+        {
+          "physical_pdf_page": 114,
+          "start_text_line": 5940,
+          "characters": 4249,
+          "footer_locators": [
+            "0-3 for modes 2,3",
+            "\u2022",
+            "6-12      System BIOS INT 10H                                                                                             System BIOS INT 10H   6-13"
+          ]
+        },
+        {
+          "physical_pdf_page": 115,
+          "start_text_line": 5985,
+          "characters": 5452,
+          "footer_locators": [
+            "6-14     System BIOS INT 10H",
+            "-                   (DX) - Row number",
+            "System BIOS INT 10H     6-15"
+          ]
+        },
+        {
+          "physical_pdf_page": 116,
+          "start_text_line": 6039,
+          "characters": 4320,
+          "footer_locators": [
+            "(BL) - Register to set",
+            "\u2022",
+            "6-16     System BIOS INT 10H                                                                                           System BIOS INT 10H    6-17"
+          ]
+        },
+        {
+          "physical_pdf_page": 117,
+          "start_text_line": 6086,
+          "characters": 3424,
+          "footer_locators": [
+            "(AL) = 02H ROM 8-by-8 Double-Dot Font",
+            "(BL)= Block to load",
+            "6-18     System BIOS INT 10H                                                                                      System BIOS INT 10H    6-19"
+          ]
+        },
+        {
+          "physical_pdf_page": 118,
+          "start_text_line": 6125,
+          "characters": 3901,
+          "footer_locators": [
+            "(AH)= BAH if the function is supported",
+            "6-20   System BIOS INT 10H",
+            "System BIOS INT 10H   6-21"
+          ]
+        },
+        {
+          "physical_pdf_page": 119,
+          "start_text_line": 6169,
+          "characters": 3718,
+          "footer_locators": [
+            "This loads the BIOS print screen pointer into INT 15H. No",
+            "alternate print screen routine is supported.",
+            "6-22     System BIOS INT 10H                                                                                  System BIOS INT 10H     6-23"
+          ]
+        },
+        {
+          "physical_pdf_page": 120,
+          "start_text_line": 6214,
+          "characters": 3680,
+          "footer_locators": [
+            "(ES:DX) - Pointer to Switch State buffer saved earlier",
+            "System BIOS INT 10H   6-25",
+            "6-24   System BIOS INT 10H"
+          ]
+        },
+        {
+          "physical_pdf_page": 121,
+          "start_text_line": 6258,
+          "characters": 5135,
+          "footer_locators": [
+            "Bit 1 - Summing Active",
+            "Bit 0 - Reserved = 0",
+            "6-26    System BIOS INT 10H                                                                                                     System BIOS INT 10H     6-27"
+          ]
+        },
+        {
+          "physical_pdf_page": 122,
+          "start_text_line": 6314,
+          "characters": 5266,
+          "footer_locators": [
+            "1            Mode9",
+            "0            Modes",
+            "6-28      System BIOS INT 10H                                                                                                       System BIOS INT 10H     6-29"
+          ]
+        },
+        {
+          "physical_pdf_page": 123,
+          "start_text_line": 6370,
+          "characters": 5262,
+          "footer_locators": [
+            "\u2022",
+            "\u2022",
+            "6-30     System BIOS INT 10H                                                                                                       System BIOS, INT 11 H   6-31"
+          ]
+        },
+        {
+          "physical_pdf_page": 124,
+          "start_text_line": 6422,
+          "characters": 2927,
+          "footer_locators": [
+            "(AH) - Status of operation (see Read Status)",
+            "Diskette status at 40:41 = status of operation",
+            "6-32   System BIOS, INT 12H                                                                                     System BIOS, INT 13H    6-33"
+          ]
+        },
+        {
+          "physical_pdf_page": 125,
+          "start_text_line": 6452,
+          "characters": 5247,
+          "footer_locators": [
+            "Diskette status at 40:41 = status of operation",
+            "\u2022",
+            "6-34     System BIOS, INT 13H                                                                                                 System BIOS, INT 13H    6-35"
+          ]
+        },
+        {
+          "physical_pdf_page": 126,
+          "start_text_line": 6500,
+          "characters": 4584,
+          "footer_locators": [
+            "\u2022",
+            "System BIOS, INT 13H   6-37",
+            "6-36     System BIOS, INT 13H"
+          ]
+        },
+        {
+          "physical_pdf_page": 127,
+          "start_text_line": 6549,
+          "characters": 3415,
+          "footer_locators": [
+            "3. If the attempt fails, BIOS returns the time-out error (hex 80) in",
+            "AH.",
+            "6-38     System BIOS, INT 13H                                                                                     System BIOS, INT 13H       6-39"
+          ]
+        },
+        {
+          "physical_pdf_page": 128,
+          "start_text_line": 6589,
+          "characters": 4883,
+          "footer_locators": [
+            "\u2022",
+            "6-40    System BIOS, INT 13H",
+            "System BIOS, INT 14H   6-41"
+          ]
+        },
+        {
+          "physical_pdf_page": 129,
+          "start_text_line": 6641,
+          "characters": 2911,
+          "footer_locators": [
+            "Bit 2 = Parity error",
+            "Bit 1 = Overrun error",
+            "6-42    System BIOS, INT 14H                                                                             System BIOS, INT 14H   6-43"
+          ]
+        },
+        {
+          "physical_pdf_page": 130,
+          "start_text_line": 6678,
+          "characters": 3232,
+          "footer_locators": [
+            "(AL) - Modem status register, see (AH)=03",
+            "(AH) - Line status register, see (AH)=03",
+            "6-44     System BIOS, INT 14H                                                                       System BIOS, INT 14H   6-45"
+          ]
+        },
+        {
+          "physical_pdf_page": 131,
+          "start_text_line": 6720,
+          "characters": 4335,
+          "footer_locators": [
+            "(BX) = Device ID",
+            "(CX) = Process ID",
+            "6-46        System BIOS, INT 15H                                                                                  System BIOS, INT 15H   6-47"
+          ]
+        },
+        {
+          "physical_pdf_page": 132,
+          "start_text_line": 6768,
+          "characters": 4403,
+          "footer_locators": [
+            "FC = Reserved                                  Yes",
+            "System BIOS, INT 15H   6-49",
+            "6-48     System BIOS, INT 15H"
+          ]
+        },
+        {
+          "physical_pdf_page": 133,
+          "start_text_line": 6819,
+          "characters": 4257,
+          "footer_locators": [
+            "06 Reserved",
+            "6-50     System BIOS, INT 15H",
+            "System BIOS, INT 15H   6-51"
+          ]
+        },
+        {
+          "physical_pdf_page": 134,
+          "start_text_line": 6875,
+          "characters": 4829,
+          "footer_locators": [
+            "Bit 1 - Left shift key pressed",
+            "Bit 0 - Right shift key pressed",
+            "6-52   System BIOS, INT 15H                                                                                             System BIOS, INT 16H   6-53"
+          ]
+        },
+        {
+          "physical_pdf_page": 135,
+          "start_text_line": 6925,
+          "characters": 3196,
+          "footer_locators": [
+            "(AL)= 00 Successful operation",
+            "= 01 Buffer full",
+            "6-54     System BIOS , INT 16H                                                                                     System BIOS, INT 16H       6-55"
+          ]
+        },
+        {
+          "physical_pdf_page": 136,
+          "start_text_line": 6974,
+          "characters": 5202,
+          "footer_locators": [
+            "(AH) - Status - same as function 00",
+            "(AH) = 03H - FFH Reserved",
+            "6-56     System BIOS, INT 16H                                                                                                      System BIOS, INT 17H   6-57"
+          ]
+        },
+        {
+          "physical_pdf_page": 137,
+          "start_text_line": 7040,
+          "characters": 3854,
+          "footer_locators": [
+            "(CY) - Set for i nval id function request",
+            "6-58   System BIOS, INT 19H",
+            "System BIOS, INT 1AH      6-59"
+          ]
+        },
+        {
+          "physical_pdf_page": 138,
+          "start_text_line": 7085,
+          "characters": 4845,
+          "footer_locators": [
+            "40:40     Motor Off Counter (Byte) . Decremented by Timer. When 0, All",
+            "Drive Motors Turned Off",
+            "6-60     System BIOS , Data Area                                                                           System BIOS, Data Area      6-61"
+          ]
+        },
+        {
+          "physical_pdf_page": 139,
+          "start_text_line": 7148,
+          "characters": 5375,
+          "footer_locators": [
+            "0C = Color Analog",
+            "System BIOS , Data Area        6-63",
+            "6-62    System BIOS, Data Area"
+          ]
+        },
+        {
+          "physical_pdf_page": 140,
+          "start_text_line": 7206,
+          "characters": 2571,
+          "footer_locators": [
+            "40:97           Keyboard LED Flags (Byte)",
+            "40:98           Pointer to Users Wait Flag (DWord)",
+            "6-64     System BIOS, Data Area                                                                        System BIOS, Data Area      6-65"
+          ]
+        },
+        {
+          "physical_pdf_page": 141,
+          "start_text_line": 7262,
+          "characters": 5166,
+          "footer_locators": [
+            "A       Byte         Motor startup time in 1/8 seconds",
+            "E",
+            "6-66      System BIOS , Extended Data Area                                                                            System BIOS, ROM Tables             6-67"
+          ]
+        },
+        {
+          "physical_pdf_page": 142,
+          "start_text_line": 7320,
+          "characters": 1750,
+          "footer_locators": [
+            "Power On Indicator . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7-5",
+            "Hot Key LCD Blanking .. . .. . ... . ... . ... . . . .. . ... . 7-6",
+            "6-68   System BIOS, Model Bytes                                                                              Programming Tips and Techniques            7-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 143,
+          "start_text_line": 7337,
+          "characters": 5343,
+          "footer_locators": [
+            "the video mode is 1, 3, or 5 use any of the color attribute combi-",
+            "nations.",
+            "7-2    Programming Tips and Techniques                                                                            Programming Tips and Techniques   7-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 144,
+          "start_text_line": 7387,
+          "characters": 4208,
+          "footer_locators": [
+            "light is turned back on.",
+            "7-4   Programming Tips and Techniques",
+            "Programming Tips and Techniques      7-5"
+          ]
+        },
+        {
+          "physical_pdf_page": 145,
+          "start_text_line": 7433,
+          "characters": 7425,
+          "footer_locators": [
+            "int 19, bootstrap 6-58",
+            "interrupt complete 6-48",
+            "7-6   Programming Tips and Techniques                                                                                                        Index    X-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 146,
+          "start_text_line": 7496,
+          "characters": 5507,
+          "footer_locators": [
+            "set cursor type 6-13",
+            "Index   X-3",
+            "X-2   Index"
+          ]
+        },
+        {
+          "physical_pdf_page": 147,
+          "start_text_line": 7546,
+          "characters": 8092,
+          "footer_locators": [
+            "channel ready (1/0 CH                      register 1-112",
+            "ADY) 1-27",
+            "X-4    Index                                                                                                                          Index   X-5"
+          ]
+        },
+        {
+          "physical_pdf_page": 148,
+          "start_text_line": 7633,
+          "characters": 5969,
+          "footer_locators": [
+            "parallel port 1-122               LCD user controls 5-6",
+            "Index    X-7",
+            "X-6   Index"
+          ]
+        },
+        {
+          "physical_pdf_page": 149,
+          "start_text_line": 7683,
+          "characters": 5556,
+          "footer_locators": [
+            "Washington, DC 20554            Tele (202) 634-1940",
+            "Tele (202) 632-7000",
+            "X-8   Index                                                                                                                                Ill"
+          ]
+        }
+      ]
+    },
+    "OPERATIONS": {
+      "source_path": "IBM_7690_Clinical_Workstation_Guide_to_Operations.pdf",
+      "source_bytes": 11667542,
+      "source_sha256": "70521548cbedc6680525008de3004101d686456561f15a9d1eb0519e02c9f5e5",
+      "text_filename": "OPERATIONS.txt",
+      "text_sha256": "0216e1ef271ed60214f5cfde037bc8fe9af350e158d648cf2f8c394a1dde33c9",
+      "physical_pdf_pages": 41,
+      "command": [
+        "pdftotext",
+        "-layout",
+        "IBM_7690_Clinical_Workstation_Guide_to_Operations.pdf",
+        "OPERATIONS.txt"
+      ],
+      "pages": [
+        {
+          "physical_pdf_page": 1,
+          "start_text_line": 1,
+          "characters": 0,
+          "footer_locators": []
+        },
+        {
+          "physical_pdf_page": 2,
+          "start_text_line": 1,
+          "characters": 145,
+          "footer_locators": [
+            "Guide to",
+            "Operations",
+            "IBM 7690 Clinical Workstation"
+          ]
+        },
+        {
+          "physical_pdf_page": 3,
+          "start_text_line": 16,
+          "characters": 7315,
+          "footer_locators": [
+            "\u00a9 Copyright International Business Mach ines Corporation 1989.",
+            "All r ights reserved .",
+            "iii"
+          ]
+        },
+        {
+          "physical_pdf_page": 4,
+          "start_text_line": 73,
+          "characters": 7049,
+          "footer_locators": [
+            "repair or exchange under one of the Types of Service described in this Statement. IBM",
+            "will specify the specific Type of Service for this Machine during its Warranty Period in",
+            "Iv                                                                                                                                                                                 V"
+          ]
+        },
+        {
+          "physical_pdf_page": 5,
+          "start_text_line": 133,
+          "characters": 7012,
+          "footer_locators": [
+            "determines to be applicable to this Machine. You may, by providing notice subject to",
+            "vi",
+            "vii"
+          ]
+        },
+        {
+          "physical_pdf_page": 6,
+          "start_text_line": 194,
+          "characters": 7069,
+          "footer_locators": [
+            "2) parts and material prices then generally in effect, and 3) charges for travel and ship-",
+            "ping expenses , all as applicable.",
+            "viii                                                                                                                                                                                     ix"
+          ]
+        },
+        {
+          "physical_pdf_page": 7,
+          "start_text_line": 256,
+          "characters": 3771,
+          "footer_locators": [
+            "c:::::>",
+            "B                                    ~",
+            "X                                                                                                                                                     xi"
+          ]
+        },
+        {
+          "physical_pdf_page": 8,
+          "start_text_line": 302,
+          "characters": 1705,
+          "footer_locators": [
+            "about your Clinical Workstation that may help you .",
+            "xiii",
+            "xii"
+          ]
+        },
+        {
+          "physical_pdf_page": 9,
+          "start_text_line": 344,
+          "characters": 5829,
+          "footer_locators": [
+            "Installing the Touch Panel Software . . . . . . . . . . . . .                   4-11",
+            "xv",
+            "xiv"
+          ]
+        },
+        {
+          "physical_pdf_page": 10,
+          "start_text_line": 394,
+          "characters": 3171,
+          "footer_locators": [
+            "tional Business Machines Corporation .",
+            "xvi",
+            "Getting Started     1-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 11,
+          "start_text_line": 434,
+          "characters": 2354,
+          "footer_locators": [
+            "two short) for the installation of additional features . Refer to",
+            "Section 2, \" Installing Options \" on page 2-1 for more information.      ~",
+            "1-2   Getting Started                                                                                                   Installing Your Workstation   1-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 12,
+          "start_text_line": 468,
+          "characters": 3261,
+          "footer_locators": [
+            "The Clinical Workstation is installed . Continue with the next section",
+            "to use the services of the Customer-Level Diagnostic Diskette.",
+            "1-4        Installing Your Workstation                                                                              Installing Your Workstation    1-5"
+          ]
+        },
+        {
+          "physical_pdf_page": 13,
+          "start_text_line": 514,
+          "characters": 1003,
+          "footer_locators": [
+            "3 Turn the knob counter-clockwise on the diskette drive door and",
+            "pull it open .",
+            "1-6     Installing Your Workstation                                                                      Installing Your Workstation   1-7"
+          ]
+        },
+        {
+          "physical_pdf_page": 14,
+          "start_text_line": 544,
+          "characters": 951,
+          "footer_locators": [
+            "clicks into place, and close the door.",
+            "7 Turn on the power switch.",
+            "1-8     Installing Your Workstation                                                                           Installing Your Workstation   1-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 15,
+          "start_text_line": 563,
+          "characters": 5263,
+          "footer_locators": [
+            "page 1-7.                                                   time and date. Since your workstation contains a battery that",
+            "keeps the internal clock operating continuously , you will only",
+            "1-10   Insta lli ng Your Workstation                                                                                           Installing Your Workstation   1-11"
+          ]
+        },
+        {
+          "physical_pdf_page": 16,
+          "start_text_line": 622,
+          "characters": 4265,
+          "footer_locators": [
+            "3 When the Services menu appears, select the Copy Diskette",
+            "option by typing 2 and pressing the Enter key.",
+            "1-12   Installing Your Workstation                                                                                 Installing Your Workstation     1-13"
+          ]
+        },
+        {
+          "physical_pdf_page": 17,
+          "start_text_line": 680,
+          "characters": 4102,
+          "footer_locators": [
+            "of the International Business Machines Corporation .",
+            "Installing Options    2-1",
+            "1-14   Installing Your Workstation"
+          ]
+        },
+        {
+          "physical_pdf_page": 18,
+          "start_text_line": 729,
+          "characters": 2313,
+          "footer_locators": [
+            "fJ Keyboard Cable             II Bar Code Wand Cable",
+            "2-2     Installing Options",
+            "Installing Options   2-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 19,
+          "start_text_line": 773,
+          "characters": 2919,
+          "footer_locators": [
+            "I",
+            "t",
+            "2-4     Installing Options                                                                                                               Installing Options   2-5"
+          ]
+        },
+        {
+          "physical_pdf_page": 20,
+          "start_text_line": 811,
+          "characters": 1252,
+          "footer_locators": [
+            "it out of the chassis .",
+            "Installing Options   2-7",
+            "2-6     Installing Options"
+          ]
+        },
+        {
+          "physical_pdf_page": 21,
+          "start_text_line": 844,
+          "characters": 2998,
+          "footer_locators": [
+            "~J !I",
+            "~1~",
+            "2-8     Installing Options                                                   ~                                                               Installing Options   2-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 22,
+          "start_text_line": 880,
+          "characters": 2425,
+          "footer_locators": [
+            "~l w                                                             Installing Options   2-11",
+            "2-10     Installing Options",
+            "T"
+          ]
+        },
+        {
+          "physical_pdf_page": 23,
+          "start_text_line": 915,
+          "characters": 3369,
+          "footer_locators": [
+            "I! ~ it",
+            "2-12    Installing Options                                                l!~ 11                                                      Installing Options    2-13",
+            "i"
+          ]
+        },
+        {
+          "physical_pdf_page": 24,
+          "start_text_line": 958,
+          "characters": 2388,
+          "footer_locators": [
+            "~ ~ ])",
+            "2-14   Installing Options   ~ ....    :I                                             Testing Your Workstation   3-1",
+            "1"
+          ]
+        },
+        {
+          "physical_pdf_page": 25,
+          "start_text_line": 1000,
+          "characters": 5794,
+          "footer_locators": [
+            "~ l~",
+            "3-2     Testing Your Workstation",
+            "~ l;i!.I                                                                Testing Your Workstation   3-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 26,
+          "start_text_line": 1072,
+          "characters": 4410,
+          "footer_locators": [
+            "~",
+            "Testing Your Workstation   3-5",
+            "3-4     Testing Your Workstation                                             ~   :)"
+          ]
+        },
+        {
+          "physical_pdf_page": 27,
+          "start_text_line": 1126,
+          "characters": 7582,
+          "footer_locators": [
+            "Not Load                             program will not load, have the workstation",
+            "serviced .                                        ~   ~",
+            "3-6   Testing Your Workstation                                                                                                                      Testing Your Workstation           3-7"
+          ]
+        },
+        {
+          "physical_pdf_page": 28,
+          "start_text_line": 1197,
+          "characters": 4862,
+          "footer_locators": [
+            "procedures.",
+            "Testing Your Wo rkstation     3-9",
+            "3-8      Testing Your Workstation"
+          ]
+        },
+        {
+          "physical_pdf_page": 29,
+          "start_text_line": 1247,
+          "characters": 4652,
+          "footer_locators": [
+            "~!ft",
+            "3-10    Testing Your Workstation                                         ~I~                                                    Operating Your Workstation     4-1",
+            "I"
+          ]
+        },
+        {
+          "physical_pdf_page": 30,
+          "start_text_line": 1305,
+          "characters": 3914,
+          "footer_locators": [
+            "d rive is not operational. You will not be able to save programs on",
+            "~~ ~      diskette.",
+            "4-2        Ope rating Your Workstation                                                                                                Ope rating Yo ur Workstation   4-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 31,
+          "start_text_line": 1348,
+          "characters": 5337,
+          "footer_locators": [
+            "4-4    Operating Your Workstation",
+            "~J ~                                                 Operating Your Workstation      4-5",
+            "1"
+          ]
+        },
+        {
+          "physical_pdf_page": 32,
+          "start_text_line": 1402,
+          "characters": 4565,
+          "footer_locators": [
+            "The F keys are defined by the programming language you are using.",
+            "These keys are located on the top row of the keyboard.",
+            "4-6     Operating Your Workstation                                                                              Operating Your Workstation   4-7"
+          ]
+        },
+        {
+          "physical_pdf_page": 33,
+          "start_text_line": 1447,
+          "characters": 5265,
+          "footer_locators": [
+            "~ ~ ::i",
+            "4-8    Operating Your Workstation",
+            "~i !I    I                                            Operating You r Workstation    4-9"
+          ]
+        },
+        {
+          "physical_pdf_page": 34,
+          "start_text_line": 1507,
+          "characters": 5025,
+          "footer_locators": [
+            "4-10     Ope rating Your Wo rkstation",
+            "! ,;, '!I                                          Ope rating Your Workstation     4-11",
+            "I"
+          ]
+        },
+        {
+          "physical_pdf_page": 35,
+          "start_text_line": 1564,
+          "characters": 4504,
+          "footer_locators": [
+            "~ - ti",
+            "4-12     Operating Your Workstation                                         ~. .:. :.                                               Operating Your Workstation   4-13",
+            "I"
+          ]
+        },
+        {
+          "physical_pdf_page": 36,
+          "start_text_line": 1614,
+          "characters": 5009,
+          "footer_locators": [
+            "4-14",
+            "! ... !I                                                       Maintaining Your Workstation   5-1",
+            "Operating Your Workstation"
+          ]
+        },
+        {
+          "physical_pdf_page": 37,
+          "start_text_line": 1673,
+          "characters": 3485,
+          "footer_locators": [
+            "1 Wipe off the bezel with a damp cloth.",
+            "2 Dust off the face of the display with a soft dry cloth.",
+            "5-2     Maintaining Your Workstation                                                                                       Maintaining Your Workstation   5-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 38,
+          "start_text_line": 1726,
+          "characters": 4766,
+          "footer_locators": [
+            "~    . . ..",
+            "l!lI ~",
+            "5-4     Maintaining Your Workstation                                      !1\u2022                                                            Ad ditional Information   A-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 39,
+          "start_text_line": 1776,
+          "characters": 4618,
+          "footer_locators": [
+            "~~",
+            "A-2    Additional Information",
+            "~ - !l                                                 Additional Information    A-3"
+          ]
+        },
+        {
+          "physical_pdf_page": 40,
+          "start_text_line": 1844,
+          "characters": 4349,
+          "footer_locators": [
+            "~",
+            "A-4   Additional Information",
+            "Index   X-1"
+          ]
+        },
+        {
+          "physical_pdf_page": 41,
+          "start_text_line": 1903,
+          "characters": 8537,
+          "footer_locators": [
+            "Index    X-3",
+            "X-2   Index",
+            "l"
+          ]
+        }
+      ]
+    }
+  }
+}
