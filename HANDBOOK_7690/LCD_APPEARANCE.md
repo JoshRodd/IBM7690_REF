@@ -135,3 +135,10 @@ backlight-off appearance or the cause of the two colour profiles. A known
 binary test pattern, fixed camera exposure/white balance and recorded control
 settings would be needed to improve the endpoints. No such new measurement or
 video investigation is claimed here.
+
+## Aspect ratio
+
+The device has square pixels with an aspect of ratio of 4:3, with the pixels
+being fixed at 640x480. The top and bottom are letterboxed with 40 pixels
+each in 400-line modes, such as the default 80x25 text mode, or the doubled
+320x200 graphics modes.
