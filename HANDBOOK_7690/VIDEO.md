@@ -550,6 +550,8 @@ DOCUMENTED ordinary behavior:
 3. **Modes `06h/11h`:** one bit defines each pel, most-significant bit first. The documented default black/white operation must remain binary; programmed formatter foreground-code effects and LCD emulation reverse controls should be retained rather than bypassed by a permanent “all set bits white” shortcut for arbitrary register configurations.
 4. **Mode `13h`:** byte-per-pel MCGA memory organization is documented, as is two-color LCD output. The manuals do not provide a complete eight-bit input-to-LCD truth table. Do not threshold the DAC, invent 256 LCD gray levels, or present a claimed authentic mapping based solely on the generic odd/even text-color advice.
 
+**INTENTIONAL EMULATOR OVERRIDE:** mode04/05 now assumes the reference's C1-only statement is wrong. Render `00` as off, `01` and `10` as the component-wise arithmetic RGB average of off/on (rounding half-channel values upward), and `11` as on. This is a requested rendering assumption, not newly established hardware evidence. It bypasses the DAC, uses the selected LCD color set, and adds a midpoint target to the existing optical response. Presentation levels interpolate in RGB so the settled midpoint is that exact average. Other modes retain their binary targets.
+
 An implementation can structure ordinary rendering as:
 
 ```text
@@ -561,7 +563,7 @@ fetch text or graphics data
     -> uncalibrated or measured optical presentation
 ```
 
-For supported default text/mode-4/5 rendering the first two ordinary mapping rules above are concrete acceptance criteria. The generalized digital truth table for nondefault formatter selections, `02h[7]`, `0Eh[3:4]`, and mode `13h` is not yet complete. Preserving these control states and identifying an open truth table is better than hiding them behind a generic luminance calculation.
+For text rendering, the documented parity rule remains the acceptance criterion. Mode04/05 emulator acceptance uses the explicitly stated midpoint override above rather than the reference's C1-only rule. The generalized digital truth table for nondefault formatter selections, `02h[7]`, `0Eh[3:4]`, and mode `13h` is not yet complete.
 
 ## 10. Three different “color maps”: hardware, BIOS, COLORFIX
 
